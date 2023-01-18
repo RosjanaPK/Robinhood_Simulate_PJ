@@ -1,0 +1,248 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="icon" href="./image/RBH_MAIN_LOGO-crop.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles_promotion.css">
+    <title>โปรโมชั่นพิเศษ - Robinhood</title>
+</head>
+
+<body>
+    <div id="popup_container">
+        <div id="popup">
+            <div class="container text-center">
+                <div class="row ">
+                    <p class="font-weight-bold mt-3" style="font-size: 22px;">แอปสั่งอาหารโรบินฮู้ด</p>
+                </div>
+                <div class="row">
+                    <p class="font-weight-bold" style="font-size: 30px;">สแกนเพื่อดาวน์โหลด</p>
+                </div>
+                <img class="my-3" src="./image/qrcode.png" style="width:170px;">
+                <div class="row">
+                    <div class="col-5 ml-4">
+                        <img class="ml-5" src="./image/img.png" style="width: 92px;">
+                    </div>
+                    <div class="col mt-2">
+                        <img class="row" src="./image/download_App-Store.png" style="width: 96px;">
+                        <img class="row mt-2" src="./image/download_Google-Play.png" style="width: 96px;">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="font-weight-bold" style="font-size: 16px;">Robinhood ทางเลือกใหม่ของฟู้ดเดลิเวอรี่ไทย</p>
+                </div>
+                <div class="row">
+                    <a class="pointer" onclick="hidePopup()" style="font-size: 14px; color: rgb(171,76,171);">ปิดหน้าต่างนี้</a>
+                </div>
+            </div>
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button> -->
+            
+        </div>
+    </div>
+    <div id="popup_container2">
+        <div id="popup2">
+            <div class="container text-center">
+                <div class="row ">
+                    <p class="font-weight-bold mt-3" style="font-size: 22px;">แอปสั่งอาหารโรบินฮู้ด</p>
+                </div>
+                <div class="row">
+                    <p class="font-weight-bold" style="font-size: 30px;">สแกนเพื่อดาวน์โหลด</p>
+                </div>
+                <img class="my-3" src="./image/qrcode.png" style="width:170px;">
+                <div class="row">
+                    <div class="col-5 ml-4">
+                        <img class="ml-5 " src="./image/img.png" style="width: 92px;">
+                    </div>
+                    <div class="col mt-2">
+                        <img class="row" src="./image/download_App-Store.png" style="width: 96px;">
+                        <img class="row mt-2" src="./image/download_Google-Play.png" style="width: 96px;">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="font-weight-bold" style="font-size: 16px;">Robinhood ทางเลือกใหม่ของฟู้ดเดลิเวอรี่ไทย</p>
+                </div>
+                <div class="row">
+                    <a class="pointer" onclick="hidePopup2()" style="font-size: 14px; color: rgb(171,76,171);">ปิดหน้าต่างนี้</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg_top">
+        <nav id="navbar_top" class="navbar navbar-expand-xl navbar-dark">
+            <div class="container-fluid" id="nav_top">
+                <a href="index.html"><img src="image/RBH_MAIN_LOGO.png" width="60"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ml-4 d-flex justify-content-end" id="main_nav">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="about-us.html">รู้จักเรา</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link" id="navbar2" href="promotion.html">โปรโมชั่น</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="food-playlist.html">กินอะไรดี</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="zone-list.html">จานเด็ดย่านดัง</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="food-tips.html">ทิปความรู้</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark"
+                                href="restaurant-story.html">เรื่องราวร้านอาหาร</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle ms-1 text-dark" href="#"
+                                data-bs-toggle="dropdown">พาร์ทเนอร์ร้านอาหาร</a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a class="dropdown-item" href="merchant.html">สมัครเป็นพาร์ทเนอร์</a></li>
+                                <li><a class="dropdown-item" href="merchantcenter.html">คู่มือสำหรับอาหาร</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark"
+                                href="travel-partner.html">พาร์ทเนอร์ท่องเที่ยว</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="rider.html">ไรเดอร์</a></li>
+                        <a class="nav-item ms-1 ps-4 mt-1 pointer" onclick="showPopup()"><img src="image/download_App-Store.png"
+                            width="110"></a>
+                    <a class="nav-item ms-1 ps-4 mt-1 pointer" onclick="showPopup2()"><img src="image/download_Google-Play.png"
+                            width="110"></a>
+                    </ul>
+                </div> <!-- navbar-collapse.// -->
+            </div> <!-- container-fluid.// -->
+        </nav>
+        <div class="container">
+            <div class="txt-1-1 row">
+                <a class="font-weight-bold">อิ่มอร่อย สะดวกท้อง สบายกระเป๋า
+                    <br>กับโปรโมชั่นพิเศษ จากโรบินฮู้ด
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- ============= COMPONENT ============== -->
+    <div class="promp m-5" id="promo">
+        <div class="container">
+            <div class="row">
+                <div class="row txt-5 font-weight-bold py-4">
+                    <h1 class="txt_hihglight">โปรโมชัน</h1>
+                </div>
+                <div class="row">
+                    <a class="col-4 nav-link" id="promo6">
+                        <div class="row" id="img_promo6"></div>
+                    </a>
+                    <a class="col-4 nav-link" id="promo1">
+                        <div class="row" id="img_promo1"></div>
+                    </a>
+                    <a class="col-4 nav-link" id="promo2">
+                        <div class="row" id="img_promo2"></div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a class="col-4 nav-link" id="promo3">
+                        <div class="row" id="img_promo3"></div>
+                    </a>
+                    <a class="col-4 nav-link" id="promo4">
+                        <div class="row" id="img_promo4"></div>
+                    </a>
+                    <a class="col-4 nav-link" id="promo5">
+                        <div class="row" id="img_promo5"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <br>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-3">
+                    <div class="row">
+                        <img class="" id="" src="./image/logo-White.png" alt="" style="width: 31%;">
+                    </div>
+                    <div class="row mt-3">
+                        <p class="text-warning">ติดตามเราช่องทางอื่นๆ</p>
+                    </div>
+                    <div class="row mt-3 ml-5">
+                        <img class="ml-5" id="" src="./image/facebook.png" alt="" style="width: 25%;">
+                    </div>
+                    <div class="row mt-4 ml">
+                        <p class="text-white" style="font-size: 13px;">Call Center :  <a class="ml-1">02-777-7564</a></p>
+                        <p class="text-white" style="font-size: 13px;">เปิดให้บริการทุกวัน ตลอด 24 ชั่วโมง</p>
+                    </div>
+                    <div class="row mt-4">
+
+                    </div>
+                    <div class="row ml">
+                        <p class="text-white" style="font-size: 13px;">©Robinhood</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row mt-5">
+                        
+                    </div>
+                    <div class="row mt-1">
+                        <p class="text-warning">ข้อกำหนดการใช้งาน Robinhood</p>
+                    </div>
+                    <div class="row">
+                        <a class="text-white mt-4" style="font-size: 11px;" href=""><u>ข้อกำหนดและเงื่อนไขการใช้บริการร้านอาหารโรบินฮู้ด</u></a>
+                    </div>
+                    <div class="row">
+                        <a class="text-white mt-3" style="font-size: 11px;" href=""><u>ข้อกำหนดและเงื่อนไขการใช้บริการสั่งอาหาร</u></a>
+                    </div>
+                    <div class="row">
+                        <p class="text-warning mt-5">ข้อกำหนดการใช้งานเว็บไซต์</p>
+                    </div>
+                    <div class="row ml">
+                        <a class="text-white" style="font-size: 12px;" href=""><u>Privacy policy</u></a>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="row mt-4">
+                        <a class="col-9 nav-link" href="merchant.html">
+                            <div class="card" style="width: 19rem;">
+                                <img class="card-img-top " src="./image/rectangle.png"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="row txt-10 font-weight-bold" style="font-size: 14px;">พาร์ทเนอร์ร้านอาหาร​
+                                    </p>
+                                    <p class="row txt-11 font-weight-normal" style="font-size: 12px;">มาเพิ่มยอดขายง่ายๆ ให้ร้านอาหารของคุณ
+                                        สามารถสมัครร่วมเป็นร้านอาหารกับ Robinhood ได้แล้ววันนี้</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="col-2 nav-link" href="rider.html">
+                            <div class="card" style="width: 19rem;">
+                                <img class="card-img-top \" src="./image/Robinhood-Rider-Footer-box-edit.png"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="row txt-10 font-weight-bold" style="font-size: 14px;">โรบินฮู้ด ไรเดอร์​
+                                    </p>
+                                    <p class="row txt-11 font-weight-normal" style="font-size: 12px;">เช้ารับงาน ค่ำรับเงิน ได้เต็มๆ ไม่ต้องสำรองเงินค่าอาหาร พร้อมรับสิทธิพิเศษมากมาย สมัครได้แล้วเพียงโหลดแอป</p>
+                                </div>
+                            </div>
+                        </a>
+        
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+
+            </div>
+            <div class="row mt-5 text-center ml-5">
+                <p class="text-muted ml-4 my-4">Copyright © 2021 <a class="text-white" href="index.html">Robinhood.</a> All Rights Reserved. <a class="text-white" href="#">Privacy-th</a> | Catch Foodmania by <a class="text-white" href="https://catchthemes.com/">Catch Themes</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,804 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="icon" href="./image/RBH_MAIN_LOGO-crop.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <script src="script_rider.js"></script>
+    <link rel="stylesheet" href="styles_rider.css">
+
+    <link href="/lib/lity/lity.min.css" rel="stylesheet">
+    <script src="/lib/lity/lity.min.js"></script>
+    <title>โรบินฮู้ด ไรเดอร์ - Robinhood</title>
+
+</head>
+
+<body>
+    <div id="popup_container">
+        <div id="popup">
+            <div class="container text-center">
+                <div class="row ">
+                    <p class="font-weight-bold mt-3" style="font-size: 22px;">แอปสั่งอาหารโรบินฮู้ด</p>
+                </div>
+                <div class="row">
+                    <p class="font-weight-bold" style="font-size: 30px;">สแกนเพื่อดาวน์โหลด</p>
+                </div>
+                <img class="my-3" src="./image/qrcode.png" style="width:170px;">
+                <div class="row">
+                    <div class="col-5 ml-4">
+                        <img class="ml-5" src="./image/img.png" style="width: 92px;">
+                    </div>
+                    <div class="col mt-2">
+                        <img class="row" src="./image/download_App-Store.png" style="width: 96px;">
+                        <img class="row mt-2" src="./image/download_Google-Play.png" style="width: 96px;">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="font-weight-bold" style="font-size: 16px;">Robinhood ทางเลือกใหม่ของฟู้ดเดลิเวอรี่ไทย</p>
+                </div>
+                <div class="row">
+                    <a class="pointer" onclick="hidePopup()"
+                        style="font-size: 14px; color: rgb(171,76,171);">ปิดหน้าต่างนี้</a>
+                </div>
+            </div>
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button> -->
+
+        </div>
+    </div>
+    <div id="popup_container2">
+        <div id="popup2">
+            <div class="container text-center">
+                <div class="row ">
+                    <p class="font-weight-bold mt-3" style="font-size: 22px;">แอปสั่งอาหารโรบินฮู้ด</p>
+                </div>
+                <div class="row">
+                    <p class="font-weight-bold" style="font-size: 30px;">สแกนเพื่อดาวน์โหลด</p>
+                </div>
+                <img class="my-3" src="./image/qrcode.png" style="width:170px;">
+                <div class="row">
+                    <div class="col-5 ml-4">
+                        <img class="ml-5 " src="./image/img.png" style="width: 92px;">
+                    </div>
+                    <div class="col mt-2">
+                        <img class="row" src="./image/download_App-Store.png" style="width: 96px;">
+                        <img class="row mt-2" src="./image/download_Google-Play.png" style="width: 96px;">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="font-weight-bold" style="font-size: 16px;">Robinhood ทางเลือกใหม่ของฟู้ดเดลิเวอรี่ไทย</p>
+                </div>
+                <div class="row">
+                    <a class="pointer" onclick="hidePopup2()"
+                        style="font-size: 14px; color: rgb(171,76,171);">ปิดหน้าต่างนี้</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg_another_bg"></div>
+    <div class="bg_top">
+        <nav id="navbar_top" class="navbar navbar-expand-xl navbar-dark">
+            <div class="container-fluid" id="nav_top">
+                <a href="index.html"><img src="image/RBH_MAIN_LOGO.png" width="60"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ml-4 d-flex justify-content-end" id="main_nav">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="about-us.html">รู้จักเรา</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="promotion.html">โปรโมชั่น</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="food-playlist.html">กินอะไรดี</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="zone-list.html">จานเด็ดย่านดัง</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="food-tips.html">ทิปความรู้</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark"
+                                href="restaurant-story.html">เรื่องราวร้านอาหาร</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle ms-1 text-dark" href="#"
+                                data-bs-toggle="dropdown">พาร์ทเนอร์ร้านอาหาร</a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a class="dropdown-item" href="merchant.html">สมัครเป็นพาร์ทเนอร์</a></li>
+                                <li><a class="dropdown-item" href="merchantcenter.html">คู่มือสำหรับอาหาร</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark"
+                                href="travel-partner.html">พาร์ทเนอร์ท่องเที่ยว</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link" id="navbar9" href="rider.html">ไรเดอร์</a></li>
+                        <a class="nav-item ms-1 ps-4 mt-1 pointer" onclick="showPopup()"><img
+                                src="image/download_App-Store.png" width="110"></a>
+                        <a class="nav-item ms-1 ps-4 mt-1 pointer" onclick="showPopup2()"><img
+                                src="image/download_Google-Play.png" width="110"></a>
+                    </ul>
+                </div> <!-- navbar-collapse.// -->
+            </div> <!-- container-fluid.// -->
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col" id="test">
+                    <div class="row" id="text">
+                        <div class="col-1 mr-1"><img src="./image/RiderApp-Icon.png" class="rider_icon"></div>
+                        <div class="col ml-5">
+                            <h1 class="txt-regis">สมัครเข้าร่วมเป็น<br>
+                                ไรเดอร์ส่งอาหารกับ</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="./image/RobinhoodRIder.png" class="robinhood_rider">
+                        <h4 class="txt-regis2">สมัครพร้อมอบรม ฟรี!<br>
+                            เพียงแค่โหลดแอปและลงทะเบียนก็วิ่งได้ทันที</h4>
+                    </div>
+                    <div class="row mt-4 col-3" id="div_btn">
+                        <a href="#" class="btn_rider_regis" style="text-decoration: none;">สมัครเป็นโรบินฮู้ด
+                            ไรเดอร์</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <iframe width="642" height="361" src="https://www.youtube.com/embed/9k8MNSQxrbE"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen class="vdo_rider"></iframe>
+        </div>
+    </div>
+    <div class="container-fluid" style="margin-top: -200px;">
+        <img class="row" src="./image/Rider-Section1-Bottom-Image.png" alt="" style="width: 102.4%;">
+    </div>
+    <div class="container-fluid" style="margin-top: 0px;">
+        <img class="row" src="./image/Rider-Section2-Background.png" alt="" style="width: 102.4%; height: 100%;">
+    </div>
+    <div class="container-fluid" style="margin-top: -65px;">
+        <img class="row" src="./image/purple-crop-1.png" alt="" style="width: 102.4%; height: 60%;">
+    </div>
+    <div class="container-fluid" style="margin-top: -150px;" id="bg-1">
+        <img class="row" src="./image/Vector-257.png" alt="" style="width: 102.4%;  z-index: 1;">
+    </div>
+    <div class="container" style="margin-top: -990px;  z-index: 0;">
+        <div class="row mt-5"></div>
+        <div class="row mt-5 mb-5">
+            <div class="col-6 mt-5">
+                <br>
+                <img class="row mt-5" src="./image/D41_9017-copy-1.png" alt="" style="width: 100%; z-index: -3;">
+            </div>
+            <div class="col-6 text-white font-weight-bold">
+                <h1 class="text-dark" style="font-size: 2.7rem; font-weight: bold;">รวมเหตุผล โดนๆ<br>
+                    เมื่อเป็น โรบินฮู้ด ไรเดอร์</h1>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col" id="benefit">
+                        <i class='fa fa-line-chart' style='font-size:32px;color:rgb(255, 255, 255)'></i>
+                        <h5 class="font-weight-bold mt-4" style="font-style: 32px;">เช้ารับงาน ค่ำรับเงิน</h5>
+                        <p>รายได้ 25,000-35,000 ต่อเดือน<br>
+                            *ตัดรอบทุก 6 โมงเย็น รับเงินภายใน 4 ทุ่มของทุกวัน</p>
+                    </div>
+                    <div class="col" id="benefit">
+                        <i class='fa fa-credit-card' style='font-size:32px;color:rgb(255, 255, 255)'></i>
+                        <h5 class="font-weight-bold mt-4">ได้เงินเต็มๆ ไม่เม้มรายได้</h5>
+                        <p>ไม่หัก% รายได้ รับค่าตอบแทนอย่างเต็มเม็ดเต็มหน่วย</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" id="benefit">
+                        <i class='fa fa-coffee' style='font-size:32px;color:rgb(255, 254, 254)'></i>
+                        <h5 class="font-weight-bold mt-4">ไม่ต้องสำรองเงิน ไม่ต้องเติมเครดิต</h5>
+                        <p>ไม่ต้องจ่ายค่าอาหารก่อน ไม่ต้องเติมเครดิตรับงาน</p>
+                    </div>
+                    <div class="col" id="benefit">
+                        <i class='fa fa-archive' style='font-size:32px;color:rgb(255, 255, 255)'></i>
+                        <h5 class="font-weight-bold mt-4">อิสระเรื่องกระเป๋า จะค่ายไหนก็วิ่งได้</h5>
+                        <p>ไม่บังคับซื้อกระเป๋าใส่อาหาร สามารถใช้ของค่ายไหนก็ได้</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" id="benefit">
+                        <i class='fa fa-motorcycle' style='font-size:32px;color:rgb(250, 250, 250)'></i>
+                        <h5 class="font-weight-bold mt-4">เช่าขับ EV เก็บเงินเข้าบัญชีได้หลายตังค์</h5>
+                        <p>เพียงวันละ 120 บาท พร้อมเปลี่ยนแบตเตอรี่ได้ไม่จำกัด</p>
+                    </div>
+                    <div class="col" id="benefit">
+                        <i class='fa fa-heart' style='font-size:32px;color:rgb(255, 255, 255)'></i>
+                        <h5 class="font-weight-bold mt-4">ปลอดภัยได้ทุกวัน มีประกันคุ้มครอง</h5>
+                        <p>สมัครขับรับฟรีประกันชีวิตและอุบัติเหตุฟรี สูงสุด 3 เดือน</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="row mt-5"></div>
+            <div class="row mt-5" style="text-align: center;">
+                <h1 style="font-size: 3rem; font-weight: bolder;">สิทธิพิเศษสำหรับ Robinhood Rider เท่านั้น!</h1>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="box" style="text-align: center; margin: 20px;">
+                        <img src="./image/Group-2902-1.png">
+                        <h2>สามารถเช่ามอเตอร์ไซค์ไฟฟ้า<br>
+                            ในราคาเริ่มต้นเพียง 120 บาท/วัน</h2>
+                        <h5 style="margin-top: 20px;">ไม่ต้องมีรถก็เป็น โรบินฮู้ด ไรเดอร์ ได้<br>
+                            ไม่มีค่าบำรุงรักษา ไม่ต้องผ่อนรายเดือน<br>
+                            และที่สำคัญไม่ต้องมีค่าน้ำมัน!</h5>
+                        <center>
+                            <div class="row mt-4 col-6" id="div_btn">
+                                <a href="#" class="btn_rider_regis" style="text-decoration: none;">รายละเอียดเพิ่มเติม
+                                    คลิก!</a>
+                            </div>
+                        </center>
+                    </div>
+
+                </div>
+                <div class="col-6">
+                    <div class="box" style="text-align: center; margin: 20px;">
+                        <img src="./image/20-1.png" class="pic_box">
+                        <h2>สามารถเช่ามอเตอร์ไซค์ไฟฟ้า<br>
+                            ในราคาเริ่มต้นเพียง 120 บาท/วัน</h2>
+                        <h5 style="margin-top: 20px;">ไม่ต้องมีรถก็เป็น โรบินฮู้ด ไรเดอร์ ได้<br>
+                            ไม่มีค่าบำรุงรักษา ไม่ต้องผ่อนรายเดือน<br>
+                            และที่สำคัญไม่ต้องมีค่าน้ำมัน!</h5>
+                        <center>
+                            <div class="row mt-4 col-6" id="div_btn">
+                                <a href="#" class="btn_rider_regis" style="text-decoration: none;">รายละเอียดเพิ่มเติม
+                                    คลิก!</a>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row text-center mt-5">
+                <p class="font-weight-bold" style="font-size: 40px;">ขั้นตอนการสมัครเป็น</p>
+            </div>
+            <div class="row">
+                <center>
+                    <img class="row" src="./image/RobinhoodRIder.png" alt="" style="width: 45%;">
+                </center>
+            </div>
+        </div>
+        <div class="order_with_robinhood">
+            <div class="container">
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-5 mt-2">
+                        <img class="ml-5" id="myimage" src="./image/How-to-Step-1-สมัครลงทะเบียน.png" alt="..."
+                            style="width: 70%;">
+                    </div>
+                    <div class="col-6 ml-5 mt-2">
+                        <div class="row">
+                            <div class="col-2">
+                                <button onclick=one(); type="submit" class="button1 txt-circle">1</button>
+                                <img class="row ml-2 mt-2" src="./image/Arrow-1.png" alt="..." style="width: 32%;">
+                            </div>
+                            <div class="col">
+                                <div class="row txt-1 font-weight-bold">สมัครลงทะเบียน กรอกข้อมูลส่วนตัว</div>
+                                <div class="row txt-2 font-weight-bold figure">
+                                    <div class="col-1 ">
+                                        <img class="row ml-2 mt-2 image-main" id="img-1" src="./image/Vector-play.png"
+                                            alt="..." style="width: 300%;">
+                                        <img class="row ml-4 mt-2 image-hover" id="img-2"
+                                            src="./image/Vector-play-hover.png" alt="..." style="width: 65.5%;">
+                                    </div>
+                                    <div class="col ml-1 mt-2 ">
+                                        <p><u><a class="txt-7" href="#">ดูขั้นตอนการลงทะเบียน คลิก</a></u></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-2">
+                                <button onclick=two(); type="submit" class="button2 txt-circle">2</button>
+                                <img class="row ml-2 mt-2" src="./image/Arrow-1.png" alt="..." style="width: 32%;">
+                            </div>
+                            <div class="col">
+                                <div class="row txt-3 font-weight-bold">อัปโหลดเอกสาร</div>
+                                <div class="row txt-2 font-weight-bold figure">
+                                    <div class="col-1 ">
+                                        <img class="row ml-2 mt-2 image-main" id="img-1" src="./image/Vector-play.png"
+                                            alt="..." style="width: 300%;">
+                                        <img class="row ml-4 mt-2 image-hover" id="img-2"
+                                            src="./image/Vector-play-hover.png" alt="..." style="width: 65.5%;">
+                                    </div>
+                                    <div class="col ml-1 mt-2 ">
+                                        <a class="txt-7 " href>ดูขั้นตอนการอัปโหลดเอกสาร คลิก</a>
+                                    </div>
+
+                                </div>
+                                <br><br>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-2">
+                                <button onclick="three()" type="submit" class="button3 txt-circle">3</button>
+                                <img class="row ml-2 mt-2" src="./image/Arrow-1.png" alt="..." style="width: 32%;">
+                            </div>
+                            <div class="col">
+                                <div class="row txt-5 font-weight-bold">อบรมการบริการ กับ Robinhood</div>
+                                <br><br>
+
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-2">
+                                <button onclick="four()" type="submit" class="button4 txt-circle">4</button>
+
+                            </div>
+                            <div class="col">
+                                <div class="row txt-6 font-weight-bold">เปิดระบบ รับงานได้ทันที ! (3-5 วัน)</div>
+                                <br><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+
+                </div>
+                <div class="col-6" id="div_btn">
+                    <a href="#" class="btn_rider_regis"
+                        style="text-decoration: none; background-color: white;">สมัครเป็นโรบินฮู้ดไรเดอร์</a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" style="margin-top: -700px; margin-left: -20%;">
+            <img class="row " src="./image/Frame-2941-yellow-crop.png" alt="" style="width: 130%;">
+        </div>
+        <div class="container-fluid" style="margin-top: 0px; margin-left: -20%;">
+            <img class="row" src="./image/frame-2953-new_optimized.png" alt="" style="width: 130%; height: 190%;">
+        </div>
+        <div class="container" style="margin-top: -590px;">
+            <center><img class="" src="./image/ผู้หญิงเสื้อสีเหลือง.png" alt="" style="width: 35%; height: 110%;">
+            </center>
+        </div>
+        <div class="container" style="margin-top: -730px;">
+            <div class="row">
+                <div class="col-4 font-weight-bold">
+                    <img class="" src="./image/carbon_document-attachment.png" alt="" style="width: 25%; height: 15%;">
+                    <p class="font-weight-bold" style="font-size: 48px;">เอกสารที่ต้องใช้
+                        ในการสมัคร</p>
+                    <p style="font-size: 24px;">&bull; บัตรประชาชน (ไม่หมดอายุ)</p>
+                    <p style="font-size: 24px;">&bull; ใบขับขี่รถจักรยานยนต์
+                        (ไม่หมดอายุ)</p>
+                    <p style="font-size: 24px;">&bull; เล่มทะเบียนรถจักรยานยนต์</p>
+                    <p style="font-size: 24px;">&bull; รูปถ่ายรถจักรยานยนต์เห็นป้าย
+                        ทะเบียนพร้อมกล่องอาหาร</p>
+                    <p style="font-size: 24px;">&bull; เอกสารการตรวจประวัติอาชญากรรม</p>
+                </div>
+                <div class="col-4">
+
+                </div>
+                <div class="col-4 font-weight-bold">
+                    <img class="" src="./image/Vector.png" alt="" style="width: 25%; height: 12%;">
+                    <p class="font-weight-bold" style="font-size: 48px;">คุณสมบัติของ
+                        ผู้สมัคร</p>
+                    <p style="font-size: 24px;">&bull; อายุ 18 ปีขึ้นไป</p>
+                    <p style="font-size: 24px;">&bull; มีมอเตอร์ไซด์สำหรับวิ่งงาน</p>
+                    <p style="font-size: 24px;">&bull; มีโทรศัพท์แอนดรอยด์ เวอร์ชั่น 8.0 ขึ้นไป หรือ ระบบ IO</p>
+                    <p style="font-size: 24px;">&bull; ไม่มีประวัติคดีร้ายแรง</p>
+                    <p style="font-size: 24px;">&bull; มารยาทดี มีใจรักบริการ</p>
+                </div>
+            </div>
+        </div>
+        <div class="five">
+            <div class="container-fluid" id="five">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="row ml-5 mt-5 bg-white" id="book">
+                            <div class="col-4 mt-2 ml-4">
+
+                            </div>
+                            <div class="col-7 mt-3">
+                                <div class="row">
+                                    <p class="font-weight-bold text-center mt-2" style="font-size: 34px;">
+                                        ข้อกำหนด
+                                        และเงื่อนไข</p>
+                                </div>
+                                <div class="row ml-4">
+                                    <p><u><a class="txt-7 ml-5" href="#">ดูรายละเอียดเพิ่มเติม คลิก</a></u></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row mt-5 bg-white" id="book2">
+                            <div class="col-4 mt-2">
+
+                            </div>
+                            <div class="col-7 mt-3">
+                                <div class="row ml-1">
+                                    <p class="font-weight-bold text-center mt-2 ml-5" style="font-size: 34px;">
+                                        เงื่อนไขการขอ
+                                        คืนเงินประกัน</p>
+                                </div>
+                                <div class="row ml-4">
+                                    <p><u><a class="txt-7 ml-5" href="#">ดูรายละเอียดเพิ่มเติม คลิก</a></u></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+        <br>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-10">
+                    <div class="row" id="text">
+                        <div class="col-1 mr-2 mt-1"><img src="./image/RiderApp-Icon.png" class="rider_icon2"></div>
+                        <div class="col ml-5">
+                            <p class="txt-regis3">สมัครเข้าร่วมเป็นไรเดอร์ส่งอาหารกับ
+
+                                <img src="./image/RobinhoodRIder.png" class="robinhood_rider">
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-2">
+                    <a href="#"><img src="./image/download_Google-Play.png"></a>
+
+                    <a href="#"><img src="./image/iosเร็วๆนี้.png" style="width: 122%;" class="mt-3"></a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="ans">
+            <div class="container-fluid mt-5">
+                <div class="row text-center">
+                    <div class="col txt-16">
+                        <h1 class="txt_hihglight"><img src="./image/Group-501.png" alt="..." style="width: 5%;">
+                            ตอบทุกคำถามที่คุณสงสัย</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <h3 class="text-center mt-2">คลายทุกข้อสงสัยเกี่ยวกับ โรบินฮู้ด ไรเดอร์ ให้เรารู้จักกันมากขึ้น <i
+                            class="fa fa-heart" style="font-size:25px;"></i></h3>
+                </div>
+                <div class="row mt-5 justify-content-md-center" id="ans_div">
+                    <div class="row ans1 mt-2" id="flip">
+                        <div class="col-11"><a class="ans_1 font-weight-bold ml-4">สมัครเป็น Robinhood Rider
+                                ทำอย่างไร?</a></div>
+                        <div class="col-1 mt-2" id="down1"><img class="" id="down1" src="./image/Group-4-1.png" alt=""
+                                style="width: 50%;"></div>
+                    </div>
+                    <div class="row-12 ans2" id="panel">โหลดแอปพลิเคชั่น Robinhood Rider ผ่านทาง Google Play Store หรือ
+                        Apple Store เพื่อขอใช้บริการ จากนั้นทำตามขั้นตอนเพื่ออัพโหลดเอกสารที่กำหนด
+                        รอเจ้าหน้าที่อนุมัติภายใน 7 วันทำการ
+
+                        มีข้อสงสัยสามารถสอบถามเพิ่มเติมได้ที่ LINE : @robinhoodrider
+                        หรือ Call Center Robinhood Rider 02-7777564 กด3</div>
+
+                    <div class="row ans1 mt-4" id="flip2">
+                        <div class="col-11"><a class="ans_1 font-weight-bold ml-4">เข้าร่วมเป็น Robinhood Rider
+                                ดีอย่างไร?</a></div>
+                        <div class="col-1 mt-2" id="down2"><img class="" id="down2" src="./image/Group-4-1.png" alt=""
+                                style="width: 50%;"></div>
+                    </div>
+                    <div class="ans2" id="panel2">เช้ารับงาน ค่ำรับเงิน !
+                        รับรายได้ 25,000-35,000 บาท/เดือน
+                        *ตัดรอบทุก 6 โมงเย็น รับเงินภายใน4 ทุ่มของทุกวัน
+                        ได้เงินเต็มๆ ไม่เม้มรายได้
+                        ไม่หัก% รายได้ รับค่าตอบแทนอย่างเต็มเม็ดเต็มหน่วย
+                        ไม่ต้องสำรองเงิน ไม่ต้องเติมเครดิต
+                        ไม่ต้องจ่ายค่าอาหารก่อน ไม่ต้องเติมเครดิตรับงาน
+                        อิสระเรื่องกระเป๋า จะค่ายไหนก็วิ่งได้
+                        ไม่บังคับซื้อกระเป๋าใส่อาหาร สามารถใช้ของค่ายไหนก็ได้
+                        เช่าขับ EV เก็บเงินเข้าบัญชีได้หลายตังค์
+                        เพียงวันละ 120 บาท พร้อมเปลี่ยนแบตเตอรี่ได้ไม่จำกัด
+                        ปลอดภัยได้ทุกวัน มีประกันคุ้มครองสมัครขับรับประกันชีวิตและอุบัติเหตุฟรีสูงสุด 3 เดือน</div>
+
+                    <div class="row ans1 mt-4" id="flip3">
+                        <div class="col-11"><a
+                                class="ans_1 font-weight-bold ml-4">เงื่อนไขในการสมัครเป็นอย่างไรบ้าง?</a></div>
+                        <div class="col-1 mt-2" id="down3"><img class="" id="down3" src="./image/Group-4-1.png" alt=""
+                                style="width: 50%;"></div>
+                    </div>
+                    <div class="ans2" id="panel3">สัญชาติไทย, อายุ 18 ปีขึ้นไป, มีใบขับขี่รถจักรยานยนต์ (ที่ไม่หมดอายุ)
+                        และไม่มีประวัติอาชญากรรมตามเงื่อนไขของผู้ให้บริการ
+                    </div>
+
+                    <div class="row ans1 mt-4" id="flip4">
+                        <div class="col-11"><a class="ans_1 font-weight-bold ml-4">Robinhood คิดค่าบริการอะไรบ้าง</a>
+                        </div>
+                        <div class="col-1 mt-2" id="down4"><img class="" id="down4" src="./image/Group-4-1.png" alt=""
+                                style="width: 50%;"></div>
+                    </div>
+                    <div class="ans2" id="panel4">ค่าอาหารตามจริงที่ร้านอาหารเป็นผู้กำหนด
+                        ค่าบริการอื่นๆ ในบางกรณี เช่น ค่าจอดรถ หรือค่ารอลูกค้านานเกิน 15 นาที
+                        ซึ่งทุกกรณีดังกล่าวจะมีการโทรเพื่อแจ้งกับลูกค้าก่อน และชำระเงินให้ Robinhood Platform
+                        ด้วยการสแกน PromptPay QR Code</div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row mt-4 container justify-content-md-center" id="button">
+                    <div class="col-4"></div>
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col-3"></div>
+                            <button class="button col-6 ml-2 text-center" width="500" type="button" id="list"
+                                onclick="list()" data-toggle="collapse" data-target="#collapseExample"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                คำถามทั้งหมด<img class="col img-down" src="./image/back.png" alt=""
+                                    style="width: 28%;"></button>
+                            <div class="col-3"></div>
+                        </div>
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+            </div>
+            <script>
+                function list() {
+                    document.getElementById("list").style.display = "none";
+                    document.getElementById("food_playlist").style.marginBottom = "-48px";
+                }
+            </script>
+            <div class="collapse" id="collapseExample">
+                <div class="container">
+                    <div class="row justify-content-md-center">
+                        <div class="row ans1 mt-2" id="flip5">
+                            <div class="col-11"><a class="ans_1 font-weight-bold ml-4">สอบถามปัญหาเปิดระบบงาน Robinhood
+                                    ผ่านช่องทางใดได้บ้าง?</a>
+                            </div>
+                            <div class="col-1 mt-2" id="down5"><img class="" id="down5" src="./image/Group-4-1.png"
+                                    alt="" style="width: 50%;"></div>
+                        </div>
+                        <div class="row-12 ans2" id="panel5">สามารถติดต่อทีม Robinhood ได้ที่ LINE : @robinhoodrider
+                            หรือ Call Center Robinhood Rider 02-7777564 กด3
+
+                            ติดตามสถานะการเปิดระบบวิ่งงาน
+                            ต้องการส่งเอกสารเพิ่มเติม
+                            เปลี่ยนแปลงข้อมูลส่วนตัว
+                            ลืมชื่อผู้ใช้และรหัสผ่านเข้าแอปพลิเคชั่น</div>
+
+                        <div class="row ans1 mt-4" id="flip6">
+                            <div class="col-11"><a
+                                    class="ans_1 font-weight-bold ml-4">ต้องการเปลี่ยนแปลงข้อมูลส่วนตัวบัญชีผู้ใช้ระหว่างการทำงาน
+                                    ติดต่อช่องทางใดได้บ้าง?</a>
+                            </div>
+                            <div class="col-1 mt-2" id="down6"><img class="" id="down6" src="./image/Group-4-1.png"
+                                    alt="" style="width: 50%;"></div>
+                        </div>
+                        <div class="ans2" id="panel6">ท่านสามารถเปลี่ยนแปลงข้อมูลดังต่อไปนี้ได้ด้วยตนเองผ่านแอปพลิเคชั่น
+
+                            หมายเลขโทรศัพท์
+                            เขตรับงาน
+                            ข้อมูลติดต่อกรณีฉุกเฉิน
+                            หากต้องการเปลี่ยนแปลงข้อมูลอื่นๆข้อมูลอื่นๆสามารถติดต่อเจ้าหน้าที่ Robinhood ได้ที่ LINE :
+                            @robinhoodrider
+                            หรือ Call Center Robinhood Rider 02-7777564 กด3</div>
+
+                        <div class="row ans1 mt-4" id="flip7">
+                            <div class="col-11"><a class="ans_1 font-weight-bold ml-4">การแต่งกายที่ถูกต้องระหว่างรับงาน
+                                    Robinhood เป็นอย่างไร?</a>
+                            </div>
+                            <div class="col-1 mt-2" id="down7"><img class="" id="down7" src="./image/Group-4-1.png"
+                                    alt="" style="width: 50%;"></div>
+                        </div>
+                        <div class="ans2" id="panel7">สวมเสื้อแจ็คเก็ต Robinhood และรูดซิปเสื้อปิดหน้าอก
+                            กางเกงขายาวหรือกางเกงยีนส์ไม่ขาด สีสุภาพ
+                            รองเท้าคัชชูหรือรองเท้าผ้าใบ รองเท้าหุ้มส้นที่ไม่เห็นนิ้วเท้าและส้นเท้า
+                            สวมหน้ากากอนามัย ตลอดเวลาการปฏิบัติงาน
+                        </div>
+
+                        <div class="row ans1 mt-4" id="flip8">
+                            <div class="col-11"><a class="ans_1 font-weight-bold ml-4">การรับโอนเงินผ่านบัญชี
+                                    เมื่อรับงาน Robinhood ต้องทำอย่างไรบ้าง?</a>
+                            </div>
+                            <div class="col-1 mt-2" id="down8"><img class="" id="down8" src="./image/Group-4-1.png"
+                                    alt="" style="width: 50%;"></div>
+                        </div>
+                        <div class="ans2" id="panel8">ระบบจะทำการตัดรอบงานที่สำเร็จภายในเวลา 18.00 น. ของวัน
+                            และจะถูกโอนเข้าบัญชี SCB ที่ท่านได้เลือกไว้ภายในเวลา 23.00 น. ของวันนั้นๆ</div>
+
+                        <div class="row ans1 mt-4" id="flip9">
+                            <div class="col-11"><a class="ans_1 font-weight-bold ml-4">เงินประกัน คืออะไร?</a>
+                            </div>
+                            <div class="col-1 mt-2" id="down9"><img class="" id="down9" src="./image/Group-4-1.png"
+                                    alt="" style="width: 50%;"></div>
+                        </div>
+                        <div class="row-12 ans2" id="panel9">เงินประกัน คือ
+                            จำนวนเงินที่พนักงานส่งอาหารจ่ายไว้กับผู้ให้บริการ
+                            เพื่อเป็นเงินสำหรับชดใช้ค่าเสียหายของสินค้าหากเกิดกรณีสินค้าเสียหากจากพนักงานส่งอาหาร
+                            หากมีการแจ้งขอยกเลิกการขอใช้บริการ
+                            ผู้ให้บริการจะดำเนินการตรวจสอบตามเงื่อนไขการขอคืนเงินประกัน หากได้รับการอนุมัติ
+                            พนักงานส่งอาหารจะได้รับการคืนเงินประกันจ่ายผ่านบัญชี SCB
+                            ที่ให้แจ้งไว้กับทางผู้ให้บริการภายใน 30 วัน</div>
+
+
+                        <div class="row ans3 mt-4" id="flip10">
+                            <div class="col-11"><a
+                                    class="ans_1 font-weight-bold ml-4">ช่องทางจัดจำหน่ายอุปกรณ์สำหรับการทำงานมีช่องทางใดบ้าง?</a>
+                            </div>
+                            <div class="col-1 mt-2" id="down10"><img class="" id="down10" src="./image/Group-4-1.png"
+                                    alt="" style="width: 50%;"></div>
+                        </div>
+                        <div class="ans2" id="panel10">
+                            พนักงานส่งอาหารสามารถเลือกซื้ออุปกรณ์สำหรับการทำงานได้ผ่านทางร้านค้าในเมนูของ LINE :
+                            @robinhoodrider</div>
+
+                        <div class="row ans2 mt-4" id="flip11">
+                            <div class="col-11"><a class="ans_1 font-weight-bold ml-4">กระบวนการรับงาน Robinhood
+                                    เป็นอย่างไร?</a>
+                            </div>
+                            <div class="col-1 mt-2" id="down11"><img class="" id="down11" src="./image/Group-4-1.png"
+                                    alt="" style="width: 50%;"></div>
+                        </div>
+                        <div class="ans2" id="panel11">การถ่ายรูปอาหาร
+
+                            เมื่อไปรับอาหาร แจ้งคำสั่งซื้อกับร้านค้า รับอาหารและทำการถ่ายรูปอาหารให้ติดหน้าร้าน
+                            เมื่อไปส่งอาหาร ถ่ายรูปอาหารที่จัดส่ง โดยไม่เห็นหน้าลูกค้า
+                            ค่าที่จอดรถ
+                            โทรแจ้งลูกค้าและเก็บใบเสร็จ เพื่อเรียกเก็บเงินสดจากลูกค้า
+                            อัตราค่ารองาน Robinhood
+                            ค่ารอ 20 บาท เมื่อรอเกิน 40 นาที เป็นต้นไป สำหรับการรอร้านค้าและลูกค้า (ติดต่อ Call Center
+                            Robinhood Rider 02-7777564 กด3 เพื่อแก้ไขงาน )
+                            ปัญหาเกี่ยวกับงานและการแก้ไขงานทุกกรณี
+                            ติดต่อ Line : @robinhoodrider หรือ Call Center Robinhood Rider 02-7777564 กด3
+                            เกิดอุบัติเหตุระหว่างปฏิบัติงาน
+
+                            ติดต่อ LINE : @robinhoodrider หรือ Call Center Robinhood Rider 02-7777564 กด3
+                        </div>
+
+                        <div class="row ans3 mt-4" id="flip12">
+                            <div class="col-11"><a class="ans_1 font-weight-bold ml-4">ไม่สามารถผูกบัญชีธนาคารผ่าน Easy
+                                    App ได้ต้องทำอย่างไร ?</a>
+                            </div>
+                            <div class="col-1 mt-2" id="down12"><img class="" id="down12" src="./image/Group-4-1.png"
+                                    alt="" style="width: 50%;"></div>
+                        </div>
+                        <div class="ans2" id="panel12">เบอร์โทรศัพท์ที่ใช้ลงทะเบียน จะต้องเป็นเบอร์เดียวกันกับที่ใช้งาน
+                            Easy App หากต้องการเพิ่มหรือแก้ไขเบอร์โทรศัพท์ กรุณาติดต่อสาขาของธนาคารฯ
+                            บัญชีธนาคารฯจะต้องเป็นประเภทออมทรัพย์เท่านั้น
+                            ไม่สามารถใช้บัญชีธนาคารฯแบบไม่มีสมุดบัญชี
+                            ติดต่อสาขาสาขาของธนาคารฯเพื่อทำการเปิดบัญชีใหม่แบบมีสมุดบัญชี
+                        </div>
+
+                        <div class="row ans3 mt-4" id="flip13">
+                            <div class="col-11"><a
+                                    class="ans_1 font-weight-bold ml-4">ลงทะเบียนขอใช้งานและเลือกวันที่อบรมเรียบร้อยแล้วจะต้อง
+                                    ดำเนินการอย่างไรต่อ ?</a>
+                            </div>
+                            <div class="col-1 mt-2" id="down13"><img class="" id="down13" src="./image/Group-4-1.png"
+                                    alt="" style="width: 50%;"></div>
+                        </div>
+                        <div class="ans2" id="panel13">เข้ารับการอบรมตาม วัน เวลา และสถานที่ที่ได้เลือกไว้
+                            ระบบจะเปิดให้รับงานได้หลังจากพนักงานส่งอาหารได้เข้ารับการอบรมและส่งเอกสารถูกต้องครบถ้วน
+                            ภายใน 7 วันทำการ
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" style="margin-top: -290px; margin-left: 75px;">
+                <div class="row mt-5">
+                    <div class="col-3"></div>
+                    <div class="col-9 bg_aboutus"></div>
+                </div>
+            </div>
+            <div class="footer">
+                <br>
+                <div class="container" style="margin-left: 75px;">
+                    <div class="row mt-5">
+                        <div class="col-3">
+                            <div class="row">
+                                <img class="" id="" src="./image/logo-White.png" alt="" style="width: 31%;">
+                            </div>
+                            <div class="row mt-3">
+                                <p class="text-warning">ติดตามเราช่องทางอื่นๆ</p>
+                            </div>
+                            <div class="row mt-3 ml-5">
+                                <img class="ml-5" id="" src="./image/facebook.png" alt="" style="width: 25%;">
+                            </div>
+                            <div class="row mt-4 ml">
+                                <p class="text-white" style="font-size: 13px;">Call Center : <a
+                                        class="ml-1">02-777-7564</a></p>
+                                <p class="text-white" style="font-size: 13px;">เปิดให้บริการทุกวัน ตลอด 24 ชั่วโมง</p>
+                            </div>
+                            <div class="row mt-4">
+
+                            </div>
+                            <div class="row ml">
+                                <p class="text-white" style="font-size: 13px;">©Robinhood</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="row mt-5">
+
+                            </div>
+                            <div class="row mt-1">
+                                <p class="text-warning">ข้อกำหนดการใช้งาน Robinhood</p>
+                            </div>
+                            <div class="row">
+                                <a class="text-white mt-4" style="font-size: 11px;"
+                                    href=""><u>ข้อกำหนดและเงื่อนไขการใช้บริการร้านอาหารโรบินฮู้ด</u></a>
+                            </div>
+                            <div class="row">
+                                <a class="text-white mt-3" style="font-size: 11px;"
+                                    href=""><u>ข้อกำหนดและเงื่อนไขการใช้บริการสั่งอาหาร</u></a>
+                            </div>
+                            <div class="row">
+                                <p class="text-warning mt-5">ข้อกำหนดการใช้งานเว็บไซต์</p>
+                            </div>
+                            <div class="row ml">
+                                <a class="text-white" style="font-size: 12px;" href=""><u>Privacy policy</u></a>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="row mt-4">
+                                <a class="col-9 nav-link" href="merchant.html">
+                                    <div class="card" style="width: 19rem;">
+                                        <img class="card-img-top " src="./image/rectangle.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <p class="row txt-10 font-weight-bold text-dark" style="font-size: 14px;">
+                                                พาร์ทเนอร์ร้านอาหาร​
+                                            </p>
+                                            <p class="row txt-11 font-weight-normal text-dark" style="font-size: 12px;">
+                                                มาเพิ่มยอดขายง่ายๆ
+                                                ให้ร้านอาหารของคุณ
+                                                สามารถสมัครร่วมเป็นร้านอาหารกับ Robinhood ได้แล้ววันนี้</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="col-2 nav-link" href="rider.html">
+                                    <div class="card" style="width: 19rem;">
+                                        <img class="card-img-top \" src="./image/Robinhood-Rider-Footer-box-edit.png"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <p class="row txt-10 font-weight-bold text-dark" style="font-size: 14px;">
+                                                โรบินฮู้ด
+                                                ไรเดอร์​
+                                            </p>
+                                            <p class="row txt-11 font-weight-normal text-dark" style="font-size: 12px;">
+                                                เช้ารับงาน
+                                                ค่ำรับเงิน ได้เต็มๆ ไม่ต้องสำรองเงินค่าอาหาร พร้อมรับสิทธิพิเศษมากมาย
+                                                สมัครได้แล้วเพียงโหลดแอป</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+
+                    </div>
+                    <div class="row mt-5 text-center ml-5">
+                        <p class="text-muted ml-4 my-4">Copyright © 2021 <a class="text-white"
+                                href="index.html">Robinhood.</a>
+                            All Rights Reserved. <a class="text-white" href="#">Privacy-th</a> | Catch Foodmania by <a
+                                class="text-white" href="https://catchthemes.com/">Catch Themes</a></p>
+                    </div>
+                </div>
+            </div>
+</body>
+
+
+</html>

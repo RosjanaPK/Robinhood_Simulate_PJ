@@ -1,0 +1,893 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+        <link rel="icon" href="./image/RBH_MAIN_LOGO-crop.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="script.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles_restaurant-story-บางกะปิ-วังทองหลาง.css">
+    <script src="https://kit.fontawesome.com/fa4852718f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles_food-tips.css">
+    <title>บางกะปิ วังทองหลาง - Robinhood</title>
+</head>
+
+<body>
+    <div id="popup_container">
+        <div id="popup">
+            <div class="container text-center">
+                <div class="row ">
+                    <p class="font-weight-bold mt-3" style="font-size: 22px;">แอปสั่งอาหารโรบินฮู้ด</p>
+                </div>
+                <div class="row">
+                    <p class="font-weight-bold" style="font-size: 30px;">สแกนเพื่อดาวน์โหลด</p>
+                </div>
+                <img class="my-3" src="./image/qrcode.png" style="width:170px;">
+                <div class="row">
+                    <div class="col-5 ml-4">
+                        <img class="ml-5" src="./image/img.png" style="width: 92px;">
+                    </div>
+                    <div class="col mt-2">
+                        <img class="row" src="./image/download_App-Store.png" style="width: 96px;">
+                        <img class="row mt-2" src="./image/download_Google-Play.png" style="width: 96px;">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="font-weight-bold" style="font-size: 16px;">Robinhood ทางเลือกใหม่ของฟู้ดเดลิเวอรี่ไทย</p>
+                </div>
+                <div class="row">
+                    <a class="pointer" onclick="hidePopup()" style="font-size: 14px; color: rgb(171,76,171);">ปิดหน้าต่างนี้</a>
+                </div>
+            </div>
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button> -->
+            
+        </div>
+    </div>
+    <div id="popup_container2">
+        <div id="popup2">
+            <div class="container text-center">
+                <div class="row ">
+                    <p class="font-weight-bold mt-3" style="font-size: 22px;">แอปสั่งอาหารโรบินฮู้ด</p>
+                </div>
+                <div class="row">
+                    <p class="font-weight-bold" style="font-size: 30px;">สแกนเพื่อดาวน์โหลด</p>
+                </div>
+                <img class="my-3" src="./image/qrcode.png" style="width:170px;">
+                <div class="row">
+                    <div class="col-5 ml-4">
+                        <img class="ml-5 " src="./image/img.png" style="width: 92px;">
+                    </div>
+                    <div class="col mt-2">
+                        <img class="row" src="./image/download_App-Store.png" style="width: 96px;">
+                        <img class="row mt-2" src="./image/download_Google-Play.png" style="width: 96px;">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="font-weight-bold" style="font-size: 16px;">Robinhood ทางเลือกใหม่ของฟู้ดเดลิเวอรี่ไทย</p>
+                </div>
+                <div class="row">
+                    <a class="pointer" onclick="hidePopup2()" style="font-size: 14px; color: rgb(171,76,171);">ปิดหน้าต่างนี้</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg_top2">
+        <nav id="navbar_top" class="navbar navbar-expand-xl navbar-dark">
+            <div class="container-fluid" id="nav_top">
+                <a href="index.html"><img src="image/RBH_MAIN_LOGO.png" width="60"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ml-4 d-flex justify-content-end" id="main_nav">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="about-us.html">รู้จักเรา</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="promotion.html">โปรโมชั่น</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="food-playlist.html">กินอะไรดี</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="zone-list.html">จานเด็ดย่านดัง</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="food-tips.html">ทิปความรู้</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark"
+                                href="restaurant-story.html">เรื่องราวร้านอาหาร</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle ms-1 text-dark" href="#"
+                                data-bs-toggle="dropdown">พาร์ทเนอร์ร้านอาหาร</a>
+                            <ul class="dropdown-menu dropdown-menu-right glyphicon glyphicon-menu-down">
+                                <li><a class="dropdown-item" href="merchant.html">สมัครเป็นพาร์ทเนอร์</a></li>
+                                <li><a class="dropdown-item" href="merchantcenter.html">คู่มือสำหรับอาหาร</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark"
+                                href="travel-partner.html">พาร์ทเนอร์ท่องเที่ยว</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="rider.html">ไรเดอร์</a></li>
+                        <a class="nav-item ms-1 ps-4 mt-1 pointer" onclick="showPopup()"><img src="image/download_App-Store.png"
+                            width="110"></a>
+                    <a class="nav-item ms-1 ps-4 mt-1 pointer" onclick="showPopup2()"><img src="image/download_Google-Play.png"
+                            width="110"></a>
+                    </ul>
+                </div> <!-- navbar-collapse.// -->
+            </div> <!-- container-fluid.// -->
+        </nav>
+        <!-- <div class="container">
+            <div class="txt-top row">
+                <p><strong>ร้านเขียง</strong></p>
+            </div>
+        </div> -->
+    </div>
+    <!-- ============= COMPONENT ============== -->
+    <div class="mid0">
+        <div class="container">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-9 my-5 mx-5">
+                    <p class="txt-mid0-1 "><a class="txt-mid0-1" href="...">Zone List
+                    </a> > บางกะปิ วังทองหลาง</p>
+                    <p class="txt-mid0-2 color-robinhood font-weight-bold">รวมร้านอร่อย บางกะปิ วังทองหลาง</p>
+                    <p class="font-weight-bold">ช่วยเราแชร์ได้นะ</p>
+                    <div class="row">
+                        <div class="col-5">
+                            <a href="#" class="icon_social"><i class="fab fa-facebook" style="font-size: 32px;"></i></a>
+                            <a href="#" class="icon_social"><i class="fab fa-twitter-square"
+                                    style="font-size: 32px; color: rgb(35, 183, 241);"></i></a>
+                            <a href="#" class="icon_social"><i class="fab fa-line"
+                                    style="font-size: 32px; color: green;"></i></a>
+                        </div>
+                        <div class="col-6 mx-4">
+                            <p class="txt-mid0-3 font-weight-bold">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPosted Oct 22, 2020</p>
+                            <p class="txt-mid0-4 font-weight-bold">&nbspZone List</p>
+                            <p class="txt-mid0-3 font-weight-bold">หมวดหมู่ : </p>
+                        </div>
+                    </div>
+                    <img class="" id="" src="./image_บางกะปิวังทองหลาง/1.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5 font-weight-bold py-4">อาหารดี รสชาติเด็ด ครบทุกแนว</p>
+                    <p class="txt-mid0-6">ย่านที่อยู่อาศัยโซนนี้ มีร้านอร่อยๆ ซ่อนอยู่มากมายกว่าที่หลายคนคิด บางกะปิ
+                        วังทองหลาง มีอาหารดี-เด็ดครบทุกแนว จะคาว จะหวาน หรือจะเป็นอาหารจานเดียวก็เลือกกันได้อย่างจุใจ
+                        เรื่องโลเคชั่นจะอยู่ใกล้หรือไกล ก็ไม่ใช่ปัญหา Robinhood พร้อมส่งความอร่อยทุกพื้นที่</p>
+                    <center>
+                        <p class="txt-mid0-7 font-weight-bold color-robinhood">หิวแล้ว! สั่งเลยผ่านแอป Robinhood</p>
+                    </center>
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-7">
+                            <img class="" id="" src="./image_บางกะปิวังทองหลาง/2.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/3.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_บางกะปิวังทองหลาง/4.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/5.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">ต้องตาปูดอง ทาวน์อินทาวน์</p>
+                            <p class="txt-mid0-6">ถ้าใครอยากกินมื้อค่ำ พวกกับข้าวตามสั่ง เมนูหลากหลาย รสชาติถูกปาก
+                                ขอแนะนำ ต้องตาปูดอง แน่นอนว่า เมนูเด็ดหนีไม่พ้น ปูม้าดอง แช่เย็นรสจัดจ้านจนต้องร้องซี้ด​
+                                ปลาดุกฟูผัดพริกขิงไข่เค็ม ก็กรอบฟูหนักเครื่อง หากับแกล้มดีๆ ต้องสั่งไส้ทอด
+                                เคี้ยวเพลินสุดๆ อย่าลืมขาไก่ซุปเปอร์​ด้วยนะ แซ่บถึงใจเชียวแหละ</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :
+                                <p class="txt-mid0-3-1">4661/1, ถนนศรีวรา, พลับพลา, กรุงเทพมหานคร, 10310</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ :
+                                <p class="txt-mid0-3-1"> 025394436, 0814811444</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ :
+                                <p class="txt-mid0-3-1"> ทุกวัน 16:00 - 23:59</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">เฮง หอยทอดชาวเล (โชคชัย4)
+                            </p>
+                            <p class="txt-mid0-6">ตำนานกระทะยักษ์จากภูเก็ต ที่ขนความอร่อยขึ้นมาให้ชาวกรุงเทพฯ
+                                ได้ลิ้มลองกัน เฮงหอยทอดชาวเล คัดสรรวัตถุดิบอาหารทะเลสดใหม่
+                                นำมาปรุงอย่างพิถีพิถันจนได้รสชาติสุดพิเศษ โดยเฉพาะออลั่วะ เมนูเด็ดที่เป็น Bestseller
+                                ตลอดกาล รับรองว่าจะติดใจหอยนางรมทอดตัวโต แป้งบางกรอบไม่อมน้ำมันจานนี้แน่นอน
+                                ซีฟู้ดทอดราดชีสเยิ้ม เมนูรวมทะเลที่กินเท่าไหร่ก็ไม่เบื่อ เนื้อปูทอดกรอบ
+                                เมนูที่ใช้เนื้อปูสดๆ อย่างดีมาทอดจนเป็นสีเหลืองทองกรุบกรอบ แถมที่นี่ยังมีไข่ปลาหมึก
+                                ราดน้ำจิ้มสุดแซ่บที่กินแล้วหยุดไม่ได้ ผัดไทกุ้งสดก็เริ่ดไม่แพ้ใคร เส้นนุ่มหนึบ
+                                ปรุงรสมาได้พอดี อร่อยเด็ดดวงจนทำให้ เฮงหอยทอดชาวเล
+                                กลายเป็นร้านหอยทอดผัดไทในดวงใจใครหลายๆ คน</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :
+                                <p class="txt-mid0-3-1">191/515, ถนนโชคชัย 4, สะพานสอง, กรุงเทพมหานคร, 10310</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ :
+                                <p class="txt-mid0-3-1"> 020016397</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ :
+                                <p class="txt-mid0-3-1"> ทุกวัน 10:00 - 22:00</p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <img class="" id="" src="./image_บางกะปิวังทองหลาง/6.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/7.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_บางกะปิวังทองหลาง/8.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/9.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-7">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/10.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/11.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/12.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/13.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">ก๋วยเตี๋ยวขาหมู ABAC
+                            </p>
+                            <p class="txt-mid0-6">ร้านยอดฮิตของบรรดาศิษย์เก่า และศิษย์ปัจจุบันแห่ง ม.อัสสัมชัญ
+                                ก๋วยเตี๋ยวขาหมู ABAC เมนูเด็ดที่ห้ามพลาดก็คือ ก๋วยเตี๋ยวขาหมู อร่อยขั้นเทพ
+                                รสชาติกลมกล่อมลงตัวสุดๆ ข้าวขาหมู และขาหมูพะโล้ก็เคี่ยวมาจนนุ่ม
+                                พะโล้ซึมเข้าเนื้อดีงามไม่แพ้กันเลย สำหรับคนกลัวอ้วนก็มีก๋วยเตี๋ยวลูกชิ้นปลา
+                                และเย็นตาโฟที่เด็ดพอๆ กัน ต้องลองสั่งดู แล้วจะรู้ว่าทำไมเด็กเอแบคถึงติดใจร้านนี้</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :
+                                <p class="txt-mid0-3-1"> 2098/1042, ซอยหมู่บ้านปรีชา 8, หัวหมาก,กรุงเทพมหานคร, 10250</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ :
+                                <p class="txt-mid0-3-1"> 02-300-4490, 089-202-8952, 086-310-0841</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ :
+                                <p class="txt-mid0-3-1"> ทุกวัน 07:00 - 16:00</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">ราชาเมี่ยงปลาเผา เจ๊กุ้ง
+                            </p>
+                            <p class="txt-mid0-6">เมี่ยงปลาเผาร้านแรกแห่งย่านนี้ ไม่เด็ดจริงไม่อยู่มาถึงวันนี้หรอก
+                                เมนูเด็ดก็ยกให้ เมี่ยงปลาเผาร้อนๆ มาพร้อมน้ำจิ้มรสเด็ด ถ้าได้ชิมต้องติดใจแน่
+                                หากไม่จุใจรับอาหารอีสานไปทานด้วยเพื่อเพิ่มความฟิน ส้มตำกุ้งสด รสจัดจ้านถึงใจ
+                                กุ้งแช่น้ำปลา ตัวใหญ่ เนื้อสดเด้ง แล้วต่อด้วยซดน้ำซุปแซ่บซี้ดของต้มแซ่บพวงไข่ไก่
+                                คอหมูย่างที่นี่ก็นุ่ม เด็ดไม่แพ้ใคร จัดหนักมื้อต่อไปต้องสั่งมาให้ครบ</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :
+                                <p class="txt-mid0-3-1"> ซอยรามคำแหง 24 แยก 34, หัวหมาก, กรุงเทพมหานคร, 10240</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ :
+                                <p class="txt-mid0-3-1"> 097-093-4555</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ :
+                                <p class="txt-mid0-3-1"> ทุกวัน 09:30 - 22:00</p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <img class="" id="" src="./image_บางกะปิวังทองหลาง/14.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/15.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_บางกะปิวังทองหลาง/16.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/17.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-7">
+                            <img class="" id="" src="./image_บางกะปิวังทองหลาง/18.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/19.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_บางกะปิวังทองหลาง/20.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/21.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">เนื้อต้มบ้านม้า รามคำแหง 81</p>
+                            <p class="txt-mid0-6">สายเนื้อพลาดไม่ได้กับร้านนี้ เนื้อต้มบ้านม้า อร่อยจนต้องกลับมาซ้ำ
+                                เมนูยอดฮิตอย่าง เกาเหลาเนื้อ และต้มยำเนื้อสด ที่สั่งกันแทบทุกโต๊ะ เนื้อแดดเดียว นุ่มๆ
+                                ติดมันนิดๆ สั่งมากินเล่นเคี้ยวเพลินสุดๆ หรือจะสั่งเนื้อย่างจิ้มแจ่วก็เด็ดไม่แพ้กัน
+                                หมี่เสฉวนของที่ร้านทำรสชาติจัดจ้าน ระบุระดับความเผ็ดที่ต้องการได้ ถูกใจแน่นอน</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :
+                                <p class="txt-mid0-3-1"> 757, ซอยรามคำแหง 81/4, หัวหมาก, กรุงเทพมหานคร, 10240</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ :
+                                <p class="txt-mid0-3-1"> 0850899911</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ :
+                                <p class="txt-mid0-3-1"> จันทร์ - พฤหัสบดี 09:00 - 18:00 , เสาร์ - อาทิตย์ 09:00 - 18:00
+                                </p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">ติ่งไท้ฝู รามคำแหง
+                            </p>
+                            <p class="txt-mid0-6">อาหารจีนพื้นบ้านสไตล์เซี่ยงไฮ้และเสฉวน รสชาติดี ติ่งไท้ฝู
+                                มีเมนูยอดฮิตอย่างเสี่ยวหลงเปาที่ทำสดเข่งต่อเข่ง ซี่โครงหมูน้ำแดงก็เด็ดเนื้อนุ่ม
+                                รสกลมกล่อม กุ้งแม็กกี้ กุ้งสดตัวโตปรุงรสจัดจ้าน 3 รส คอบะหมี่ห้ามพลาด
+                                บะหมี่ผัดเซี่ยงไฮ้ของที่นี่ดีงามสุดๆ หมั่นโถวนึ่งร้อนๆ แป้งนุ่มๆ
+                                ของติ่งไท้ฝูก็ถูกใจคนทุกเพศทุกวัย อย่ารอช้ารีบจัดกันเลย</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :
+                                <p class="txt-mid0-3-1"> ซอยรามคำแหง 14, หัวหมาก, กรุงเทพมหานคร, 10240</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ :
+                                <p class="txt-mid0-3-1"> 02-718-8586</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ :
+                                <p class="txt-mid0-3-1"> ทุกวัน 10:00 - 21:00</p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <img class="" id="" src="./image_บางกะปิวังทองหลาง/22.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/23.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_บางกะปิวังทองหลาง/24.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/25.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-7">
+                            <!-- <img class="" id="" src="./image_บางกะปิวังทองหลาง/.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;"> -->
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/26.jpg" alt=""
+                                            style="width: 235px; height: 455px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_บางกะปิวังทองหลาง/27.jpg" alt=""
+                                            style="width: 240px; height: 227px;border-radius: 10px;margin-top: 7px;">
+                                        <img class="img-table mx-2" id="" src="./image_บางกะปิวังทองหลาง/28.jpg" alt=""
+                                            style="width: 240px; height: 227px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">หอยจ๊อปูแม่วรรณา สาขารามคำแหง24</p>
+                            <p class="txt-mid0-6">หอยจ๊อ เมนูของทอดยอดฮิตที่หลายๆ คนติดอกติดใจ หอยจ๊อปู แม่วรรณา
+                                ร้านดังที่ไม่ควรพลาด เมนูเด็ดหนีไม่พ้นหอยจ๊อปู มีให้เลือกทั้งจัมโบ้ปูไส้ทะลัก
+                                ที่เนื้อปูเยอะแบบจุใจ หรือแบบธรรมดาก็มีแบบเนื้อกรรเชียงปู และเนื้อก้ามปูอ่อน
+                                ปูจ๋าร้านนี้ก็โดนเนื้อแน่นปรุงรสมาพอดี อีกเมนูแนะนำก็ต้อง
+                                แฮ่กึ้นกุ้งแชบ๊วย ที่ใส่เนื้อกุ้งเน้นๆ ต้องรีบลองแล้วล่ะ สั่งกันเลย</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :
+                                <p class="txt-mid0-3-1"> 10/15, ถนนรามคำแหง 24, หัวหมาก, กรุงเทพมหานคร, 10240</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ :
+                                <p class="txt-mid0-3-1"> 090-568-5692, 089-692-7692</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ :
+                                <p class="txt-mid0-3-1"> พุธ - ศุกร์ 06:00 - 17:00 , เสาร์ 06:00 - 16:00
+                                </p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">โส่ยข้าวขาหมูเลิศรส หลังราม
+                            </p>
+                            <p class="txt-mid0-6">โส่ยข้าวขาหมูเลิศรส ไม่ได้มีดีแค่ขาหมู
+                                เจ๊โส่ยยังมีอีกหลายเมนูเด็ดที่ถูกอกถูกใจลูกค้าไปทั่ว ทั้งก๋วยเตี๋ยว ข้าวไก่ทอด หมูทอด
+                                ยำไก่แซ่บ ยำหมูแซ่บ ที่พลาดไม่ได้คือ เล้งแซ่บ รสชาติซี้ดซ้าด แซ่บถึงใจ เมนูง่ายๆ
+                                แต่อร่อยทุกอย่างเลย</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :
+                                <p class="txt-mid0-3-1"> ถนนรามคำแหง 24, หัวหมาก, กรุงเทพมหานคร, 10240</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ :
+                                <p class="txt-mid0-3-1"> 08-5985-5437, 02-3143496</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ :
+                                <p class="txt-mid0-3-1"> ทุกวัน 10:30 - 21:00</p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/29.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/30.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/31.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/32.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-7">
+                            <img class="" id="" src="./image_บางกะปิวังทองหลาง/33.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/34.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_บางกะปิวังทองหลาง/35.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/36.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">โคตรเล้ง ทาวน์อินทาวน์</p>
+                            <p class="txt-mid0-6">เล้งที่ไหนก็ไม่เหมือนที่นี่ เพราะว่าเป็น โคตรเล้ง ทาวน์อินทาวน์
+                                น้ำซุปเปรี้ยวแซ่บซี้ดถูกใจ กระดูกเล้งเนื้อล่อนดีงามมาก เมนูข้าวของที่นี่ก็เด็ด
+                                ทั้งข้าวกะเพราหมูก้อนเดือนดาว และข้าวหมูก้อนทอดจิ้มแจ่ว กะเพราซี่โครงตุ๋นรสเข้ม
+                                ใครได้ชิมก็ติดใจ เมนูเส้นต้องสั่งก๋วยเตี๋ยวต้มยำกระดูกซี่โครงตุ๋น น้ำซุปหอมมะนาวสด
+                                จัดจ้านกำลังดี ใครชอบแบบไหน สั่งได้ไม่ต้องยั้ง</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :
+                                <p class="txt-mid0-3-1"> 226 ถนน ประดิษฐ์มนูญธรรม กรุงเทพมหานคร</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ :
+                                <p class="txt-mid0-3-1"> 0615548346</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ :
+                                <p class="txt-mid0-3-1"> ทุกวัน 10:00 - 20:00
+                                </p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">Urban Street
+                            </p>
+                            <p class="txt-mid0-6">อาหารสัญชาติอเมริกันยอดฮิต ร้าน Urban Street
+                                นอกจากอร่อยแล้วยังขึ้นชื่อเรื่องปริมาณ รับรองว่าสั่งมากินมีอิ่มแบบจุกๆ
+                                เมนูขายดีที่ขอแนะนำต้องเบอร์เกอร์เนื้อคอมโบ เนื้อนุ่มฉ่ำชุ่มซอส แซลมอนสไปซี่สลัด
+                                ก็แซ่บถึงใจ ใครสายแป้งขอให้จัด คาร์โบนาร่า รสชาติเข้มข้นหอมชีสมาก
+                                เสต็กเนื้อสันนอกจากออสเตรเลียก็ดีงามจนต้องสั่ง
+                                ยิ่งได้มันบดราดซอสทรัฟเฟิลเนื้อละเอียดมากินด้วย รับรองติดใจต้องกลับมาซ้ำชัวร์</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :
+                                <p class="txt-mid0-3-1"> ถนนลาดพร้าว 101, คลองจั่น, กรุงเทพมหานคร, 10240</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ :
+                                <p class="txt-mid0-3-1"> 092-696-0007</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ :
+                                <p class="txt-mid0-3-1"> ทุกวัน 16:00 - 23:00</p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <img class="" id="" src="./image_บางกะปิวังทองหลาง/37.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/38.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_บางกะปิวังทองหลาง/39.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/40.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-7">
+                            <!-- <img class="" id="" src="./image_บางกะปิวังทองหลาง/.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;"> -->
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/41.jpg" alt=""
+                                            style="width: 235px; height: 455px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_บางกะปิวังทองหลาง/42.jpg" alt=""
+                                            style="width: 240px; height: 227px;border-radius: 10px;margin-top: 7px;">
+                                        <img class="img-table mx-2" id="" src="./image_บางกะปิวังทองหลาง/43.jpg" alt=""
+                                            style="width: 240px; height: 227px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">เช็งซิมอี๊</p>
+                            <p class="txt-mid0-6">ร้านของหวานที่ใครๆ ก็รู้จัก เช็งซิมอี๊
+                                ด้วยความที่มีเครื่องหลากหลายให้เลือกอิ่มอร่อย จนลูกค้าติดใจ คิดถึงทีไรต้องกลับมากินซ้ำ
+                                เช็งซิมอี๊ หรือเต้าทึง ของที่ร้านนี้ ให้เครื่องเยอะจนกลายเป็นเมนูขายดีตลอดกาล
+                                ที่ใครมาก็ต้องสั่ง อีกเมนูที่เด็ดพอๆ กันก็ สลิ่มทับทิมมะพร้าว หวานหอม กลมกล่อมถูกใจมาก
+                                หรือใครชอบเครื่องแบบไหนก็สั่งได้ ที่ร้านมีพร้อมเสิร์ฟ</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :
+                                <p class="txt-mid0-3-1"> 3312/49, ถนนลาดพร้าว 101, คลองจั่น, กรุงเทพมหานคร, 10240</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ :
+                                <p class="txt-mid0-3-1"> 0816435448</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ :
+                                <p class="txt-mid0-3-1"> ทุกวัน 10:30 - 23:30
+                                </p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">Moomin Cafe
+                            </p>
+                            <p class="txt-mid0-6">สาวกมูมินห้ามพลาด กับของหวานสุดน่ารักแถมยังอร่อยถูกใจ ที่ Moomin Cafe
+                                เมนูแนะนำต้อง Moomin Cheesecake เนื้อเค้กนุ่มละมุนลิ้น สัมผัสรสชีสแน่นๆ
+                                ทุกคำที่ตักเข้าปาก Moomin Pancake เมนูเบาๆ แต่จัดเต็มด้วยท้อปปิ้งสุดอลัง ปิดท้ายกับ
+                                Earlgrey Pudding ขนมพุดดิ้งรสชา เนื้อเนียนนุ่ม จนแทบละลายในปาก
+                                อร่อยแบบนี้ไม่สั่งไม่ได้แล้ว</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :
+                                <p class="txt-mid0-3-1"> อาคาร สิงห์ คอมเพล็กซ์ (Singha Complex) ชั้น 1 กรุงเทพมหานคร
+                                </p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ :
+                                <p class="txt-mid0-3-1"> 0989265953</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ :
+                                <p class="txt-mid0-3-1"> ทุกวัน 10:00 - 21:00</p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <img class="" id="" src="./image_บางกะปิวังทองหลาง/44.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/45.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_บางกะปิวังทองหลาง/46.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/47.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-7">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/48.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/49.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/50.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/51.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">วรากรขนมไทย ลาดพร้าว 101
+                            </p>
+                            <p class="txt-mid0-6">ขนมไทยโบราณ ขนมไทยประยุกต์ รวมถึงขนมงานมงคล จากสถาบันบ้านขนม
+                                วรากรขนมไทย มีครบจบในที่เดียว ทั้งขนมชั้น เนื้อนุ่มหวานอ่อนๆ
+                                วุ้นมะพร้าวที่ทำจากมะพร้าวน้ำหอมแท้ ขนมต้มมะพร้าวอ่อน ไส้แน่นเคี้ยวเพลิน
+                                ข้าวเหนียวปิ้งไส้กล้วยและไส้เผือกที่ใครได้ชิมก็ติดใจ
+                                รวมถึงน้ำกะทิทุเรียนที่มากับข้าวเหนียวนุ่มๆ ชอบขนมแบบไหนที่นี่จัดให้ได้หมด</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :
+                                <p class="txt-mid0-3-1"> 1153/15, ถนนลาดพร้าว 101, คลองจั่น, กรุงเทพมหานคร, 10240</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ :
+                                <p class="txt-mid0-3-1"> 095-563-5413, 086-344-0641, 081-934-9686</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ :
+                                <p class="txt-mid0-3-1"> อังคาร - อาทิตย์ 08:00 - 20:00</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">HOOCHA
+                            </p>
+                            <p class="txt-mid0-6">ร้านชาแนวญี่ปุ่น คิ้วท์ คิ้วท์ ฮูฉะทีบาร์ ที่ไม่ได้มีเมนูเด็ดแค่ชา
+                                ลองเติมความสดชื่นให้วันใหม่ด้วย Sparkling Yuzu Espresso
+                                กาแฟเอสเปรสโซ่กับส้มยูซุที่เข้ากันอย่างลงตัว สายชาเขียวต้องลอง Summer (มัทฉะกับยูซุ) กับ
+                                Winter (มันฉะลาเต้ใส่สตรอว์เบอร์รี่สดเชื่อม) หรือจะลอง Cocoa Strawberry ก็หวานหอมถูกใจ
+                                ปิดท้ายด้วย Peach Latte เข้มข้นหอมนมและกลิ่นพีชมาก อร่อยจนลืมอ้วนเลยทีเดียว</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :
+                                <p class="txt-mid0-3-1"> 545/41 ซอย ลาดพร้าว 101 แขวง คลองเจ้าคุณสิงห์ เขตวังทองหลาง
+                                    กรุงเทพมหานคร
+                                </p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ :
+                                <p class="txt-mid0-3-1"> 0805594808</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ :
+                                <p class="txt-mid0-3-1"> ทุกวัน 10:30 - 20:00</p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <img class="" id="" src="./image_บางกะปิวังทองหลาง/44.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/52.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_บางกะปิวังทองหลาง/53.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/54.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="" style="margin-top: 100px;">
+                        <a class="Yellow font-weight-bold" href="..." style="width: 320px;
+                        padding: 7px;
+                        border: 1px solid rgb(255, 255, 255);
+                        border-color: rgb(219, 219, 219);
+                        margin: 0;">Highlight
+                        </a>
+                        <a href="..." class="Yellow font-weight-bold mx-2 " style="width: 320px;
+                        padding: 7px;
+                        border: 1px solid rgb(255, 255, 255);
+                        border-color: rgb(219, 219, 219);
+                        margin: 0;">กะเพรา
+
+                        </a>
+                        <a class="Yellow font-weight-bold" href="..." style="width: 320px;
+                        padding: 7px;
+                        border: 1px solid rgb(255, 255, 255);
+                        border-color: rgb(219, 219, 219);
+                        margin: 0;">อาหารจานเดียว
+                        </a>
+                    </div>
+                    <div class="row py-5">
+                        <a class="col-3 nav-link txt-mid0-7-1 font-weight-bold" href="#highlight"><img class=""
+                                src="./image/Group-1115-e1599403771374.png" width="22%">&emsp;Robinhood</a>
+                        <a class="col-5 nav-link mt-2 txt-mid0-7-1 font-weight-bold text-secondary"
+                            href="#highlight">|&emsp;<i class="far fa-calendar-alt text-secondary"
+                                style="font-size:16px"></i> ตุลาคม 22, 2020&emsp;|&emsp;watching 1,325</a>
+                    </div>
+                    <hr width="818" style="margin-top: 1px;">
+                    <div class="row">
+                        <div class="col-12 py-5">
+                            <p class="txt-mid0-1-1 font-weight-bold color-robinhood">เนื้อหาที่เกี่ยวข้อง</p>
+                        </div>
+                        <div class="col-4">
+                            <a href="..."><img class="img1" id="" src="./image/RBH-Nonthaburi_Highlight-Banner-1.jpg" alt=""
+                                style="width: 106%;height: 235; border-radius: 10px;"></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="..."><img class="" id="" src="./image/รวมร้านอร่อยวัฒนา272x272.jpg" alt=""
+                                style="width: 106%;height: 235; border-radius: 10px;"></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="..."><img class="" id="" src="./image/รวมร้านบางคอแหลม.ยานนาวา272x272.jpg" alt=""
+                                style="width: 106%;height: 235; border-radius: 10px;"></a>
+                        </div>
+                        <div class="col-4 py-3">
+                            <a href="..."><img class="" id="" src="./image/รวมร้านสาธร272x272.jpg" alt=""
+                                style="width: 106%;height: 235; border-radius: 10px;"></a>
+                        </div>
+                        <div class="col-4 py-3">
+                            <a href="..."><img class="" id="" src="./image/รวมร้านสัมพันธวงศ์_272x272.jpg" alt=""
+                                style="width: 106%;height: 235; border-radius: 10px;"></a>
+                        </div>
+                        <div class="col-4 py-3">
+                            <a href="..."><img class="" id="" src="./image/1700x960.jpg" alt=""
+                                style="width: 106%;height: 235; border-radius: 10px;"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <br>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-3">
+                    <div class="row">
+                        <img class="" id="" src="./image/logo-White.png" alt="" style="width: 31%;">
+                    </div>
+                    <div class="row mt-3">
+                        <p class="text-warning">ติดตามเราช่องทางอื่นๆ</p>
+                    </div>
+                    <div class="row mt-3 ml-5">
+                        <img class="ml-5" id="" src="./image/facebook.png" alt="" style="width: 25%;">
+                    </div>
+                    <div class="row mt-4 ml">
+                        <p class="text-white" style="font-size: 13px;">Call Center : <a class="ml-1">02-777-7564</a></p>
+                        <p class="text-white" style="font-size: 13px;">เปิดให้บริการทุกวัน ตลอด 24 ชั่วโมง</p>
+                    </div>
+                    <div class="row mt-4">
+
+                    </div>
+                    <div class="row ml">
+                        <p class="text-white" style="font-size: 13px;">©Robinhood</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row mt-5">
+
+                    </div>
+                    <div class="row mt-1">
+                        <p class="text-warning">ข้อกำหนดการใช้งาน Robinhood</p>
+                    </div>
+                    <div class="row">
+                        <a class="text-white mt-4" style="font-size: 11px;"
+                            href=""><u>ข้อกำหนดและเงื่อนไขการใช้บริการร้านอาหารโรบินฮู้ด</u></a>
+                    </div>
+                    <div class="row">
+                        <a class="text-white mt-3" style="font-size: 11px;"
+                            href=""><u>ข้อกำหนดและเงื่อนไขการใช้บริการสั่งอาหาร</u></a>
+                    </div>
+                    <div class="row">
+                        <p class="text-warning mt-5">ข้อกำหนดการใช้งานเว็บไซต์</p>
+                    </div>
+                    <div class="row ml">
+                        <a class="text-white" style="font-size: 12px;" href=""><u>Privacy policy</u></a>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="row mt-4">
+                        <a class="col-9 nav-link" href="merchant.html">
+                            <div class="card" style="width: 19rem;">
+                                <img class="card-img-top " src="./image/rectangle.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="row txt-10 font-weight-bold" style="font-size: 14px;">พาร์ทเนอร์ร้านอาหาร​
+                                    </p>
+                                    <p class="row txt-11 font-weight-normal" style="font-size: 12px;">มาเพิ่มยอดขายง่ายๆ
+                                        ให้ร้านอาหารของคุณ
+                                        สามารถสมัครร่วมเป็นร้านอาหารกับ Robinhood ได้แล้ววันนี้</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="col-2 nav-link" href="rider.html">
+                            <div class="card" style="width: 19rem;">
+                                <img class="card-img-top \" src="./image/Robinhood-Rider-Footer-box-edit.png"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="row txt-10 font-weight-bold" style="font-size: 14px;">โรบินฮู้ด ไรเดอร์​
+                                    </p>
+                                    <p class="row txt-11 font-weight-normal" style="font-size: 12px;">เช้ารับงาน
+                                        ค่ำรับเงิน ได้เต็มๆ ไม่ต้องสำรองเงินค่าอาหาร พร้อมรับสิทธิพิเศษมากมาย
+                                        สมัครได้แล้วเพียงโหลดแอป</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+
+            </div>
+            <div class="row mt-5 text-center ml-5">
+                <p class="text-muted ml-4 my-4">Copyright © 2021 <a class="text-white" href="index.html">Robinhood.</a>
+                    All Rights Reserved. <a class="text-white" href="#">Privacy-th</a> | Catch Foodmania by <a
+                        class="text-white" href="https://catchthemes.com/">Catch Themes</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

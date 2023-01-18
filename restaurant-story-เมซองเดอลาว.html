@@ -1,0 +1,670 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="icon" href="./image/RBH_MAIN_LOGO-crop.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="script.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles_restaurant-story-เมซองเดอลาว.css">
+    <script src="https://kit.fontawesome.com/fa4852718f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles_food-tips.css">
+    <title>เมซองเดอลาว - Robinhood</title>
+</head>
+
+<body>
+    <div id="popup_container">
+        <div id="popup">
+            <div class="container text-center">
+                <div class="row ">
+                    <p class="font-weight-bold mt-3" style="font-size: 22px;">แอปสั่งอาหารโรบินฮู้ด</p>
+                </div>
+                <div class="row">
+                    <p class="font-weight-bold" style="font-size: 30px;">สแกนเพื่อดาวน์โหลด</p>
+                </div>
+                <img class="my-3" src="./image/qrcode.png" style="width:170px;">
+                <div class="row">
+                    <div class="col-5 ml-4">
+                        <img class="ml-5" src="./image/img.png" style="width: 92px;">
+                    </div>
+                    <div class="col mt-2">
+                        <img class="row" src="./image/download_App-Store.png" style="width: 96px;">
+                        <img class="row mt-2" src="./image/download_Google-Play.png" style="width: 96px;">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="font-weight-bold" style="font-size: 16px;">Robinhood ทางเลือกใหม่ของฟู้ดเดลิเวอรี่ไทย</p>
+                </div>
+                <div class="row">
+                    <a class="pointer" onclick="hidePopup()" style="font-size: 14px; color: rgb(171,76,171);">ปิดหน้าต่างนี้</a>
+                </div>
+            </div>
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button> -->
+            
+        </div>
+    </div>
+    <div id="popup_container2">
+        <div id="popup2">
+            <div class="container text-center">
+                <div class="row ">
+                    <p class="font-weight-bold mt-3" style="font-size: 22px;">แอปสั่งอาหารโรบินฮู้ด</p>
+                </div>
+                <div class="row">
+                    <p class="font-weight-bold" style="font-size: 30px;">สแกนเพื่อดาวน์โหลด</p>
+                </div>
+                <img class="my-3" src="./image/qrcode.png" style="width:170px;">
+                <div class="row">
+                    <div class="col-5 ml-4">
+                        <img class="ml-5 " src="./image/img.png" style="width: 92px;">
+                    </div>
+                    <div class="col mt-2">
+                        <img class="row" src="./image/download_App-Store.png" style="width: 96px;">
+                        <img class="row mt-2" src="./image/download_Google-Play.png" style="width: 96px;">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="font-weight-bold" style="font-size: 16px;">Robinhood ทางเลือกใหม่ของฟู้ดเดลิเวอรี่ไทย</p>
+                </div>
+                <div class="row">
+                    <a class="pointer" onclick="hidePopup2()" style="font-size: 14px; color: rgb(171,76,171);">ปิดหน้าต่างนี้</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg_top2">
+        <nav id="navbar_top" class="navbar navbar-expand-xl navbar-dark">
+            <div class="container-fluid" id="nav_top">
+                <a href="index.html"><img src="image/RBH_MAIN_LOGO.png" width="60"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ml-4 d-flex justify-content-end" id="main_nav">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="about-us.html">รู้จักเรา</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="promotion.html">โปรโมชั่น</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="food-playlist.html">กินอะไรดี</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="zone-list.html">จานเด็ดย่านดัง</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="food-tips.html">ทิปความรู้</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark"
+                                href="restaurant-story.html">เรื่องราวร้านอาหาร</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle ms-1 text-dark" href="#"
+                                data-bs-toggle="dropdown">พาร์ทเนอร์ร้านอาหาร</a>
+                            <ul class="dropdown-menu dropdown-menu-right glyphicon glyphicon-menu-down">
+                                <li><a class="dropdown-item" href="merchant.html">สมัครเป็นพาร์ทเนอร์</a></li>
+                                <li><a class="dropdown-item" href="merchantcenter.html">คู่มือสำหรับอาหาร</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark"
+                                href="travel-partner.html">พาร์ทเนอร์ท่องเที่ยว</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="rider.html">ไรเดอร์</a></li>
+                        <a class="nav-item ms-1 ps-4 mt-1 pointer" onclick="showPopup()"><img src="image/download_App-Store.png"
+                            width="110"></a>
+                    <a class="nav-item ms-1 ps-4 mt-1 pointer" onclick="showPopup2()"><img src="image/download_Google-Play.png"
+                            width="110"></a>
+                    </ul>
+                </div> <!-- navbar-collapse.// -->
+            </div> <!-- container-fluid.// -->
+        </nav>
+        <!-- <div class="container">
+            <div class="txt-top row">
+                <p><strong>ร้านเขียง</strong></p>
+            </div>
+        </div> -->
+    </div>
+    <!-- ============= COMPONENT ============== -->
+    <div class="mid0">
+        <div class="container">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-9 my-5 mx-5">
+                    <p class="txt-mid0-1 "><a class="txt-mid0-1" href="...">Food Playlist</a> > เมซองเดอลาว</p>
+                    <p class="txt-mid0-2 color-robinhood font-weight-bold">เมซองเดอลาว</p>
+                    <p class="font-weight-bold">ช่วยเราแชร์ได้นะ</p>
+                    <div class="row mb-3">
+                        <div class="col-5">
+                            <a href="#" class="icon_social mr-3"><i class="fab fa-facebook"
+                                    style="font-size: 32px; color: rgb(30, 104, 245);"></i></a>
+                            <a href="#" class="icon_social mr-3"><i class="fab fa-twitter-square"
+                                    style="font-size: 32px; color: rgb(35, 183, 241);"></i></a>
+                            <a href="#" class="icon_social"><i class="fab fa-line"
+                                    style="font-size: 32px; color: green;"></i></a>
+                        </div>
+                        <div class="col-6 mx-4">
+                            <p class="txt-mid0-3 font-weight-bold">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPosted Oct 22, 2020</p>
+                            <p class="txt-mid0-4 font-weight-bold">&nbspFood Playlist</p>
+                            <p class="txt-mid0-3 font-weight-bold">หมวดหมู่ : </p>
+                        </div>
+                    </div>
+                    <img class="" id="" src="./image_เมซองเดอลาว/1.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5 font-weight-bold py-4">เพราะชีวิตต้องติดความแซ่บ!</p>
+                    <p class="txt-mid0-6">แซ่บชัวร์นัวเด๊อ ต้องนี่เลยเมซองเดอลาว อาหารอีสานรสจัดจ้านถึงใจ
+                        จัดให้ทั้งร้านดังในตำนานและร้านฮอตฮิต จะเมนูตำ ยำ ต้ม ลาบ ก้อย ย่าง น้ำตก
+                        ก็ยกมาให้เลือกกันครบที่ Robinhood ที่เดียวจบ ครบทุกความซี๊ด</p>
+                    <center>
+                        <p class="txt-mid0-7 font-weight-bold color-robinhood">หิวแล้ว! สั่งเลยผ่านแอป Robinhood</p>
+                    </center>
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-7">
+                            <img class="" id="" src="./image_เมซองเดอลาว/2.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_เมซองเดอลาว/3.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_เมซองเดอลาว/4.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_เมซองเดอลาว/5.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">ไก่ทอดเจ๊กี (ซอยโปโล)</p>
+                            <p class="txt-mid0-6">50 ปีแห่งความอร่อย เจ๊กีซอยโปโล
+                                ไก่ทอดระดับตำนานกับหลากหลายเมนูอีสานสุดแซ่บ
+                                จานเด็ดที่ห้ามพลาดแน่นอนไก่ทอดกรอบนอกนุ่มในกับกระเทียมเจียวรสเด็ด ส้มตำรสจัดจ้าน
+                                ปลาช่อนลุยสวนหรือจะเป็นปลาทับทิมทอดระเทียมก็เด็ดไม่แพ้กัน
+                                คอหมูย่างเนื้อนุ่มหอมอร่อยจิ้มกับน้ำจิ้มแจ่วยิ่งล้ำ เมนูอาหารคุณภาพราคาเป็นกันเอง
+                                บริการรวดเร็วทันใจต้องไก่ทอดเจ๊กี</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1"><span class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :</span>
+                                    137, ซอยสนามคลี, ลุมพินี, กรุงเทพมหานคร, 10330 (อยู่ใกล้สถานีตำรวจลุมพินี)
+                                </p>
+                                <p class="txt-mid0-3-1"><span class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ</span>
+                                    022520856, 022512772, 022522252, 0813004444
+                                </p>
+                                <p class="txt-mid0-3-1"><span
+                                        class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ</span>
+                                    ทุกวัน 07:00 - 21:00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">แซ่บวัน</p>
+                            <p class="txt-mid0-6">อาหารอีสานรสชาติจัดจ้าน แซ่บถึงใจ
+                                สมชื่อแซ่บวันที่เป็นเบอร์หนึ่งเรื่องความแซ่บกับเมนูเด็ดหลากหลายทั้งเมนูตำ เมนูยำ เมนูต้ม
+                                ไม่ว่าจะเป็นตำซั่วรสแซ่บ ยำหมูยอไข่แดงที่หาทานได้ยาก ไก่ย่างหอมกรุ่น ต้มแซ่บซี้ดถึงใจ
+                                เมี่ยงปลาทับทิมสดๆ แซ่บและอีกมากมายหลายเมนูให้คุณได้เลือกแซ่บอย่างถึงใจในราคากันเอง</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1"><span class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :</span>
+                                    84/1 ถนน รัชดาภิเษก กรุงเทพมหานคร (ตรงข้ามบิ๊กซีรัชดา)
+                                </p>
+                                <p class="txt-mid0-3-1"><span class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ</span>
+                                    0817513181, 0818304894
+                                </p>
+                                <p class="txt-mid0-3-1"><span
+                                        class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ</span>
+                                    ทุกวัน 10:00 - 22:30
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_เมซองเดอลาว/6.jpg" alt=""
+                                            style="width: 235px; height: 455px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_เมซองเดอลาว/7.jpg" alt=""
+                                            style="width: 240px; height: 227px;border-radius: 10px;margin-top: 7px;">
+                                        <img class="img-table mx-2" id="" src="./image_เมซองเดอลาว/8.jpg" alt=""
+                                            style="width: 240px; height: 227px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-7">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_เมซองเดอลาว/9.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_เมซองเดอลาว/10.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_เมซองเดอลาว/11.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_เมซองเดอลาว/12.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">ตำมั่ว</p>
+                            <p class="txt-mid0-6">ร้านอาหารอีสานฮิปๆ ที่เน้นรสชาติความเป็นอาหารอีสานแท้ๆ
+                                แม้บรรยากาศจะร่วมสมัย เมนูเด็ดคือ
+                                ตำมั่ว ตำผลไม้ ตำปูนิ่ม แซลมอนน้ำตก ปากเป็ดทอด นอกจากนั้นเมนูอื่นๆ ทั้งส้มตำ ลาบ น้ำตก
+                                ต้มแซ่บ ซุปหน่อไม้ ก็อร่อยไม่แพ้กัน
+                                นอกจากอาหารอีสานรสแซ่บยังมีอาหารไทยหลากหลายเมนูอีกด้วย ไม่ว่าจะเป็นปลากะพงทอดน้ำปลา
+                                ไก่ทอดน้ำปลา ยำสะเดากุ้งสด และเมนูอื่นๆ อีกมากมาย</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1"><span class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :</span>
+                                    บิ๊กซีราชดำริ ถนนราชประสงค์ กรุงเทพมหานคร
+                                </p>
+                                <p class="txt-mid0-3-1"><span class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ</span>
+                                    02-250-5438
+                                </p>
+                                <p class="txt-mid0-3-1"><span
+                                        class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ</span>
+                                    ทุกวัน 10:00 - 21:00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">ตะบันตำ ตำถาดบันลือโลก
+                                (ปิ่นเงินพลาซ่า)</p>
+                            <p class="txt-mid0-6">ร้านอาหารอีสานรสเด็ด ที่เปิดมากว่า 13 ปี มีเมนูส้มตำให้เลือกมากมาย
+                                ถูกใจคอส้มตำ การันตีความอร่อยจากหลายเมนู ราคาสมเหตุสมผล มากันเป็น กลุ่มสั่งเยอะๆ
+                                ยิ่งถึงใจ บริการรวดเร็ว เมนูเด็ดมากมายที่แค่ได้ยินชื่อก็น้ำลายสอ ทั้งตำป่าดงดิบ
+                                ตำกรอบสามรส ยำลาวไข่แดงเค็มดิบ สามซ่าต้ม
+                                แซ่บ ปลากระพงทอดยำสมุนไพร และอีกหลากหลายเมนูให้ซี้ดกันแบบยกกำลังสอง</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1"><span class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :</span>
+                                    1100 ถนนบรมราชชนนี, บางบำหรุ, บางพลัด,กรุงเทพมหานคร 10700
+                                </p>
+                                <p class="txt-mid0-3-1"><span class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ</span>
+                                    081 934 7155
+                                </p>
+                                <p class="txt-mid0-3-1"><span
+                                        class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ</span>
+                                    081 934 7155
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <img class="" id="" src="./image_เมซองเดอลาว/13.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_เมซองเดอลาว/14.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_เมซองเดอลาว/15.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_เมซองเดอลาว/16.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-7">
+                            <img class="" id="" src="./image_เมซองเดอลาว/17.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_เมซองเดอลาว/18.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_เมซองเดอลาว/19.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_เมซองเดอลาว/20.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">นิตยาไก่ย่าง</p>
+                            <p class="txt-mid0-6">อาหารอีสานถูกปากคนกรุงที่เน้นวัตถุดิบชั้นเลิศ
+                                เพราะเชื่อว่าความอร่อยต้องเริ่มจากวัตถุดิบที่ดี
+                                นิตยาไก่ย่างเขาเน้นมาตรฐานไม่ว่าทานสาขาไหนก็อร่อยเหมือนกันไม่มีเปลี่ยน
+                                ร้านนี้เมนูเยอะมากทั้งอาหารอีสาน อาหารไทยสมกับฉายาที่เป็นชุมทางของอร่อยจริงๆ
+                                เมนูเด็ดห้ามพลาด แน่นอนไก่ย่างหนังบางมันน้อย ปลาช่อนริมสวนที่หอมเครื่องสมุนไพร
+                                ยำผักบุ้งกรอบที่กรอบตั้งแต่คำแรก แกงลาวเห็ดเผาะไข่มดแดงเมนูที่หาทานได้ยากแต่นิตยา
+                                มีให้ทั้งปี ส้มตำไข่เค็มจานนี้ก็เด็ดนำไข่ขาวมาคลุกกับเส้นส้มตำอร่อยแซ่บแบบนัวๆ
+                                ทานแล้วติดใจ นอกจากเมนูที่บอกนิตยาไก่ย่างยังมีอีกหลายหลายเมนูให้เลือกอย่างจุใจ</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1"><span class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :</span>
+                                    ซอยพหลโยธิน 8 (ซอยสายลม ) สามเสนใน พญาไท กรุงเทพมหานคร 10400
+                                </p>
+                                <p class="txt-mid0-3-1"><span class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ</span>
+                                    02-616-9018, 02-616-9019
+                                </p>
+                                <p class="txt-mid0-3-1"><span
+                                        class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ</span>
+                                    ทุกวัน 10:00 - 22:00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">ส้มตำนัว</p>
+                            <p class="txt-mid0-6">ร้านส้มตำจัดจ้าน ซี้ดซ้าด ที่ไม่ได้เด็ดแค่ส้มตำ
+                                แต่ยังมีเมนูอื่นที่อร่อยไม่แพ้กันอีกหลากหลายเมนูทั้ง ตำมั่วรสชาติแซ่บ นัว ตั้งแต่คำแรก
+                                ผัดขนมจีน กุนเชียงทอด ลาบไก่ทอด ยำหมูยอ ที่ทุกจานอร่อยล้ำจนลืมอิ่ม</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1"><span class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :</span>
+                                    ซอย สยามสแควร์ 5 กรุงเทพมหานคร
+                                </p>
+                                <p class="txt-mid0-3-1"><span class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ</span>
+                                    022514880
+                                </p>
+                                <p class="txt-mid0-3-1"><span
+                                        class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ</span>
+                                    ทุกวัน 10:00 - 20:30
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <img class="" id="" src="./image_เมซองเดอลาว/21.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_เมซองเดอลาว/22.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_เมซองเดอลาว/23.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_เมซองเดอลาว/24.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-7">
+                            <img class="" id="" src="./image_เมซองเดอลาว/25.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_เมซองเดอลาว/26.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_เมซองเดอลาว/27.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_เมซองเดอลาว/28.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">ไก่ย่างพระราม 9</p>
+                            <p class="txt-mid0-6">ไก่บ้านหมักตามสูตรเฉพาะของร้าน ไก่เนื้อแน่นไม่ติดมัน
+                                กับเมนูหลากหลายทั้งอาหารอีสาน อาหารเวียดนาม ของหวาน เมนูเด็ดห้ามพลาด ไก่ย่างสูตรเด็ด
+                                ตำหลวงพระบางรสแซ่บ คอหมูย่างเนื้อนุ่ม และลาบเป็ดที่แซ่บถึงเครื่อง</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1"><span class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :</span>
+                                    25/8 ถนนพระราม 9 กรุงเทพมหานคร
+                                </p>
+                                <p class="txt-mid0-3-1"><span class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ</span>
+                                    02-318-3939, 088-847-3939, 081-447-3897
+                                </p>
+                                <p class="txt-mid0-3-1"><span
+                                        class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ</span>
+                                    ทุกวัน 10:00 - 20:00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">ลาบ ลับ ลับ</p>
+                            <p class="txt-mid0-6">
+                                ร้านอาหารอีสานแบบแหวกแนวด้วยการผสมผสานความเป็นญี่ปุ่นกับอาหารอีสานได้อย่างลงตัว
+                                อร่อยทั้งอาหารอีสานและอาหารญี่ปุ่น แปลกแบบนี้มีที่นี่ที่เดียว
+                                เมนูสุดเด็ดห้ามพลาดทั้งชาบูเนื้อนุ่ม
+                                ตำปลาร้าสุดแซ่บ หอยนางรมสดที่สดได้ใจและ Salmon Sashimi ที่สดอร่อยอย่างญี่ปุ่นแท้ๆ
+                                ไปไขความลับกันได้ที่ซอยปรีดี 43 เลยจ้า</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1"><span class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :</span>
+                                    1013/59, ซอยปรีดี พนมยงค์ 43 กรุงเทพมหานคร
+                                </p>
+                                <p class="txt-mid0-3-1"><span class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ</span>
+                                    091-206-0005
+                                </p>
+                                <p class="txt-mid0-3-1"><span
+                                        class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ</span>
+                                    ทุกวัน 19:00 - 23:00
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <img class="" id="" src="./image_เมซองเดอลาว/29.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_เมซองเดอลาว/30.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_เมซองเดอลาว/31.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_เมซองเดอลาว/32.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-7">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_เมซองเดอลาว/33.jpg" alt=""
+                                            style="width: 235px; height: 455px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_เมซองเดอลาว/34.jpg" alt=""
+                                            style="width: 240px; height: 227px;border-radius: 10px;margin-top: 7px;">
+                                        <img class="img-table mx-2" id="" src="./image_เมซองเดอลาว/35.jpg" alt=""
+                                            style="width: 240px; height: 227px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">ส้มตำเจ๊แดงสามย่าน</p>
+                            <p class="txt-mid0-6">อีกตัวเลือกที่ลงตัวของคออาหารอีสาน คอหมูย่างหนังหมูนุ่มๆ หวานๆ
+                                กินกับน้ำจิ้มเผ็ดๆ รสเลิศ
+                                ยำไก่ทอดก็สุดอร่อยจากตัวไก่ที่รสชาติเข้มข้น
+                                เมนูตำที่นี่ก็ไม่เป็นสองรองใครแนะนำตำไข่เค็มอร่อยนัวๆ กำลังดี
+                                ส่วนสายเฮทตี้ต้องเมนูนี้เลยลาบปลาดุก
+                                แอบกระซิบว่าถ้าไม่อยากรอคิวนานต้องรีบมาแต่วันหน่อยจ้า
+                                เพราะร้านนี้เขาฮอตฮิตในย่านจุฬาเลยละ</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1"><span class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :</span>
+                                    209, ซอยจุฬาฯ 48, วังใหม่, กรุงเทพมหานคร,10330
+                                </p>
+                                <p class="txt-mid0-3-1"><span class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ</span>
+                                    02 214 2590
+                                </p>
+                                <p class="txt-mid0-3-1"><span
+                                        class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ</span>
+                                    จันทร์-เสาร์ 10:30 - 16:00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="" style="margin-top: 100px;">
+                        <a class="Yellow font-weight-bold" href="..." style="width: 320px;
+                        padding: 7px;
+                        border: 1px solid rgb(255, 255, 255);
+                        border-color: rgb(219, 219, 219);
+                        margin: 0;">อาหารอีสาน
+                        </a>
+                    </div>
+                    <div class="row py-5">
+                        <a class="col-3 nav-link txt-mid0-7-1 font-weight-bold" href="#highlight"><img class=""
+                                src="./image/Group-1115-e1599403771374.png" width="22%">&emsp;Robinhood</a>
+                        <a class="col-5 nav-link mt-2 txt-mid0-7-1 font-weight-bold text-secondary"
+                            href="#highlight">|&emsp;<i class="far fa-calendar-alt text-secondary"
+                                style="font-size:16px"></i> ตุลาคม 22, 2020&emsp;|&emsp;watching 1,531</a>
+                    </div>
+                    <hr width="818" style="margin-top: 1px;">
+                    <div class="row">
+                        <div class="col-12 py-5">
+                            <p class="txt-mid0-1-1 font-weight-bold color-robinhood">เนื้อหาที่เกี่ยวข้อง</p>
+                        </div>
+                        <div class="col-4">
+                            <a href="..."><img class="img1" id="" src="./image/ชานม.jpg" alt=""
+                                    style="width: 106%;height: 235; border-radius: 10px;"></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="..."><img class="" id="" src="./image/SSSxRBH-Opening-Picture.png" alt=""
+                                    style="width: 106%;height: 140; border-radius: 10px;"></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="..."><img class="" id="" src="./image/Seafood272x272.jpg" alt=""
+                                    style="width: 106%;height: 235; border-radius: 10px;"></a>
+                        </div>
+                        <div class="col-4 py-3">
+                            <a href="..."><img class="" id="" src="./image/1414x996.jpg" alt=""
+                                    style="width: 106%;height: 235; border-radius: 10px;"></a>
+                        </div>
+                        <div class="col-4 py-3">
+                            <a href="..."><img class="" id="" src="./image/Sugar272x272.jpg" alt=""
+                                    style="width: 106%;height: 235; border-radius: 10px;"></a>
+                        </div>
+                        <div class="col-4 py-3">
+                            <a href="..."><img class="" id="" src="./image/Morning272x272.jpg" alt=""
+                                    style="width: 106%;height: 235; border-radius: 10px;"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <br>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-3">
+                    <div class="row">
+                        <img class="" id="" src="./image/logo-White.png" alt="" style="width: 31%;">
+                    </div>
+                    <div class="row mt-3">
+                        <p class="text-warning">ติดตามเราช่องทางอื่นๆ</p>
+                    </div>
+                    <div class="row mt-3 ml-5">
+                        <img class="ml-5" id="" src="./image/facebook.png" alt="" style="width: 25%;">
+                    </div>
+                    <div class="row mt-4 ml">
+                        <p class="text-white" style="font-size: 13px;">Call Center : <a class="ml-1">02-777-7564</a></p>
+                        <p class="text-white" style="font-size: 13px;">เปิดให้บริการทุกวัน ตลอด 24 ชั่วโมง</p>
+                    </div>
+                    <div class="row mt-4">
+
+                    </div>
+                    <div class="row ml">
+                        <p class="text-white" style="font-size: 13px;">©Robinhood</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row mt-5">
+
+                    </div>
+                    <div class="row mt-1">
+                        <p class="text-warning">ข้อกำหนดการใช้งาน Robinhood</p>
+                    </div>
+                    <div class="row">
+                        <a class="text-white mt-4" style="font-size: 11px;"
+                            href=""><u>ข้อกำหนดและเงื่อนไขการใช้บริการร้านอาหารโรบินฮู้ด</u></a>
+                    </div>
+                    <div class="row">
+                        <a class="text-white mt-3" style="font-size: 11px;"
+                            href=""><u>ข้อกำหนดและเงื่อนไขการใช้บริการสั่งอาหาร</u></a>
+                    </div>
+                    <div class="row">
+                        <p class="text-warning mt-5">ข้อกำหนดการใช้งานเว็บไซต์</p>
+                    </div>
+                    <div class="row ml">
+                        <a class="text-white" style="font-size: 12px;" href=""><u>Privacy policy</u></a>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="row mt-4">
+                        <a class="col-9 nav-link" href="merchant.html">
+                            <div class="card" style="width: 19rem;">
+                                <img class="card-img-top " src="./image/rectangle.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="row txt-10 font-weight-bold" style="font-size: 14px;">พาร์ทเนอร์ร้านอาหาร​
+                                    </p>
+                                    <p class="row txt-11 font-weight-normal" style="font-size: 12px;">มาเพิ่มยอดขายง่ายๆ
+                                        ให้ร้านอาหารของคุณ
+                                        สามารถสมัครร่วมเป็นร้านอาหารกับ Robinhood ได้แล้ววันนี้</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="col-2 nav-link" href="rider.html">
+                            <div class="card" style="width: 19rem;">
+                                <img class="card-img-top \" src="./image/Robinhood-Rider-Footer-box-edit.png"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="row txt-10 font-weight-bold" style="font-size: 14px;">โรบินฮู้ด ไรเดอร์​
+                                    </p>
+                                    <p class="row txt-11 font-weight-normal" style="font-size: 12px;">เช้ารับงาน
+                                        ค่ำรับเงิน ได้เต็มๆ ไม่ต้องสำรองเงินค่าอาหาร พร้อมรับสิทธิพิเศษมากมาย
+                                        สมัครได้แล้วเพียงโหลดแอป</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+
+            </div>
+            <div class="row mt-5 text-center ml-5">
+                <p class="text-muted ml-4 my-4">Copyright © 2021 <a class="text-white" href="index.html">Robinhood.</a>
+                    All Rights Reserved. <a class="text-white" href="#">Privacy-th</a> | Catch Foodmania by <a
+                        class="text-white" href="https://catchthemes.com/">Catch Themes</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

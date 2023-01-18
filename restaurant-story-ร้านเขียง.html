@@ -1,0 +1,510 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="icon" href="./image/RBH_MAIN_LOGO-crop.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="script.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles_restaurant-story-ร้านเขียง.css">
+    <script src="https://kit.fontawesome.com/fa4852718f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles_food-tips.css">
+    <title>"เขียง" ยกระดับอาหารตามสั่ง อร่อยถึงใจ</title>
+</head>
+
+<body>
+    <div id="popup_container">
+        <div id="popup">
+            <div class="container text-center">
+                <div class="row ">
+                    <p class="font-weight-bold mt-3" style="font-size: 22px;">แอปสั่งอาหารโรบินฮู้ด</p>
+                </div>
+                <div class="row">
+                    <p class="font-weight-bold" style="font-size: 30px;">สแกนเพื่อดาวน์โหลด</p>
+                </div>
+                <img class="my-3" src="./image/qrcode.png" style="width:170px;">
+                <div class="row">
+                    <div class="col-5 ml-4">
+                        <img class="ml-5" src="./image/img.png" style="width: 92px;">
+                    </div>
+                    <div class="col mt-2">
+                        <img class="row" src="./image/download_App-Store.png" style="width: 96px;">
+                        <img class="row mt-2" src="./image/download_Google-Play.png" style="width: 96px;">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="font-weight-bold" style="font-size: 16px;">Robinhood ทางเลือกใหม่ของฟู้ดเดลิเวอรี่ไทย</p>
+                </div>
+                <div class="row">
+                    <a class="pointer" onclick="hidePopup()" style="font-size: 14px; color: rgb(171,76,171);">ปิดหน้าต่างนี้</a>
+                </div>
+            </div>
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button> -->
+            
+        </div>
+    </div>
+    <div id="popup_container2">
+        <div id="popup2">
+            <div class="container text-center">
+                <div class="row ">
+                    <p class="font-weight-bold mt-3" style="font-size: 22px;">แอปสั่งอาหารโรบินฮู้ด</p>
+                </div>
+                <div class="row">
+                    <p class="font-weight-bold" style="font-size: 30px;">สแกนเพื่อดาวน์โหลด</p>
+                </div>
+                <img class="my-3" src="./image/qrcode.png" style="width:170px;">
+                <div class="row">
+                    <div class="col-5 ml-4">
+                        <img class="ml-5 " src="./image/img.png" style="width: 92px;">
+                    </div>
+                    <div class="col mt-2">
+                        <img class="row" src="./image/download_App-Store.png" style="width: 96px;">
+                        <img class="row mt-2" src="./image/download_Google-Play.png" style="width: 96px;">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="font-weight-bold" style="font-size: 16px;">Robinhood ทางเลือกใหม่ของฟู้ดเดลิเวอรี่ไทย</p>
+                </div>
+                <div class="row">
+                    <a class="pointer" onclick="hidePopup2()" style="font-size: 14px; color: rgb(171,76,171);">ปิดหน้าต่างนี้</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg_top2">
+        <nav id="navbar_top" class="navbar navbar-expand-xl navbar-dark">
+            <div class="container-fluid" id="nav_top">
+                <a href="index.html"><img src="image/RBH_MAIN_LOGO.png" width="60"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ml-4 d-flex justify-content-end" id="main_nav">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="about-us.html">รู้จักเรา</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="promotion.html">โปรโมชั่น</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="food-playlist.html">กินอะไรดี</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="zone-list.html">จานเด็ดย่านดัง</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="food-tips.html">ทิปความรู้</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark"
+                                href="restaurant-story.html">เรื่องราวร้านอาหาร</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle ms-1 text-dark" href="#"
+                                data-bs-toggle="dropdown">พาร์ทเนอร์ร้านอาหาร</a>
+                            <ul class="dropdown-menu dropdown-menu-right glyphicon glyphicon-menu-down">
+                                <li><a class="dropdown-item" href="merchant.html">สมัครเป็นพาร์ทเนอร์</a></li>
+                                <li><a class="dropdown-item" href="merchantcenter.html">คู่มือสำหรับอาหาร</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark"
+                                href="travel-partner.html">พาร์ทเนอร์ท่องเที่ยว</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="rider.html">ไรเดอร์</a></li>
+                        <a class="nav-item ms-1 ps-4 mt-1 pointer" onclick="showPopup()"><img src="image/download_App-Store.png"
+                            width="110"></a>
+                    <a class="nav-item ms-1 ps-4 mt-1 pointer" onclick="showPopup2()"><img src="image/download_Google-Play.png"
+                            width="110"></a>
+                    </ul>
+                </div> <!-- navbar-collapse.// -->
+            </div> <!-- container-fluid.// -->
+        </nav>
+        <div class="container">
+            <div class="txt-top row">
+                <p><strong>ร้านเขียง</strong></p>
+            </div>
+        </div>
+    </div>
+    <!-- ============= COMPONENT ============== -->
+    <div class="mid0">
+        <div class="container">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-9 my-5 mx-5">
+                    <p class="txt-mid0-1 "><a class="txt-mid0-1" href="...">Restaurant Story</a> > “เขียง”
+                        ยกระดับอาหารตามสั่ง อร่อยถึงใจ</p>
+                    <p class="txt-mid0-2 color-robinhood font-weight-bold">“เขียง” ยกระดับอาหารตามสั่ง อร่อยแบบไทย
+                        ถึงเครื่อง ถึงใจ</p>
+                    <p class="font-weight-bold">ช่วยเราแชร์ได้นะ</p>
+                    <div class="row">
+                        <div class="col-5">
+                            <a href="#" class="icon_social"><i class="fab fa-facebook" style="font-size: 32px;"></i></a>
+                            <a href="#" class="icon_social"><i class="fab fa-twitter-square"
+                                    style="font-size: 32px; color: rgb(35, 183, 241);"></i></a>
+                            <a href="#" class="icon_social"><i class="fab fa-line"
+                                    style="font-size: 32px; color: green;"></i></a>
+                        </div>
+                        <div class="col-6 mx-4">
+                            <p class="txt-mid0-3 font-weight-bold">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPosted Oct 22, 2020</p>
+                            <p class="txt-mid0-4 font-weight-bold">&nbspRestaurant Story</p>
+                            <p class="txt-mid0-3 font-weight-bold">หมวดหมู่ : </p>
+                        </div>
+                    </div>
+                    <img class="" id="" src="./image_ร้านเขียง/เขียง_1.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5">หากคุณกำลังอยากกินข้าวผัดกะเพราสูตรไทยแท้ รสจัดจ้าน
+                        ใช้วัตถุดิบที่คัดสรรคุณภาพอย่างดี ทั้งเนื้อหมูสดใหม่ได้มาตรฐาน เนื้อ
+                        โคขุนเกรดพรีเมี่ยม
+                        ไก่เบญจาออร์แกนิค กุ้งสดตัวโต ปลาหมึกเนื้อแน่น พร้อมใส่ใบกะเพราแบบเน้นๆ ไม่เติมหอมหัวใหญ่
+                        ถั่วฝักยาว
+                        ข้าวโพดอ่อน ให้แสลงใจ กินกับข้าวสวยร้อนๆ ที่หุงสุกกำลังดีไม่แข็งไม่แฉะ
+                        หรืออยากกินอาหารตามสั่งที่รสชาติคงเส้นคงวากินกี่ครั้ง
+                        ก็อร่อยเหมือนเดิม แถมสะอาดได้มาตรฐาน
+                        ร้านในฝันแบบนี้จะหาได้ที่ไหนถ้าไม่ใช่ที่ “เขียง” ร้านอาหารไทยสไตล์สตรีทฟู้ดที่ทำสดใหม่
+                        ทุกจาน
+                        พร้อมเสิร์ฟความอร่อยทั้งแบบร้านอาหารและเดลิเวอรี่ กว่า 100 สาขาทั่วเขตกรุงเทพฯ ปริมณฑล
+                        และตามหัวเมืองใหญ่</p>
+                    <img class="" id="" src="./image_ร้านเขียง/เขียง_2.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5">
+                    <p class="txt-mid0-6 font-weight-bold my-3">ส่งมอบความอร่อยสไตล์ “เขียง”</p>“เขียง”
+                    แบรนด์อาหารในเครือ
+                    ZEN Group คุณศิรุวัฒน์ ชัชวาลย์
+                    (เบส) รองประธานเจ้าหน้าที่บริหาร กลุ่มธุรกิจแบรนด์ไทย บริษัท เซ็น คอร์ปอเรชั่น กรุ๊ป จำกัด
+                    (มหาชน) ได้เล่าถึงความเป็นมาของร้านเขียงว่า จากการศึกษา Insight
+                    ลูกค้าทำให้พบว่ายังมีลูกค้าบางกลุ่มที่ยังไม่รู้จัก จึงเป็นที่มาของการทำแบรนด์ให้ครอบคลุมทุก
+                    Segment ตั้งแต่สตรีทฟู้ดจนถึงระดับพรีเมี่ยม สำหรับร้าน “เขียง” มีกลุ่มเป้าหมาย คือ นิสิต
+                    นักศึกษา คนอยู่คอนโด รวมถึงคนที่ชอบกินอาหารตามสั่ง </p>
+                    <p class="txt-mid0-5">เมื่อถามว่า “เขียง” ต่างจากร้านอาหารตามสั่งทั่วไปอย่างไร คุณเบสบอกว่า
+                        อย่างแรกคือ อาหารถูกสุขอนามัย (Food Hygiene) มั่นใจได้ในเรื่องความสะอาด มีมาตรฐาน GMP
+                        ในส่วนวัตถุดิบมาจากแหล่งเดียวกัน สามารถเช็คสอบแหล่งที่มาได้ อย่างที่สองคือ ความสม่ำเสมอของรสชาติ
+                        เพราะที่นี่ใช้ Premixed Sauce (ซอสสำเร็จ)
+                        ทำให้ทุกจานที่เสิร์ฟรสชาติคงที่อร่อยเหมือนเดิมทุกครั้งที่สั่ง
+                        อย่างที่สามเน้นรสชาติอาหารแบบไทยแท้ที่จัดจ้าน ถึงเครื่อง ถึงใจผู้บริโภค
+                        อย่างที่สี่ปริมาณอาหารเหมาะสม เนื้อสัตว์และข้าวจะต้องสมดุลกัน เพราะมีการชั่งตวงวัด เช่น
+                        ใส่เนื้อไก่กี่กรัม กุ้งสดกี่ตัว โดยจะคิดเป็นอัตราส่วนเนื้อสัตว์กับข้าว 30 ต่อ 70
+                        จึงทำให้อาหารทุกจานมีปริมาณเหมาะสมได้มาตรฐาน นอกจากนี้ในเรื่องโลเคชั่น “เขียง”
+                        จะเน้นตามแหล่งชุมชน ใกล้คอนโด สถานศึกษา ออฟฟิศบิวดิ้ง ปั๊มน้ำมัน ร้านสะดวกซื้อ
+                        เพื่อตอบโจทย์ทั้งการเดลิเวอรี่และการกินอาหารที่ร้านอีกด้วย</p>
+                    <img class="" id="" src="./image_ร้านเขียง/เขียง_3.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5">ส่วนในเรื่องเดลิเวอรี่ “เขียง”
+                        ใส่ใจตั้งแต่การออกแบบภาชนะที่ไม่ทำลายสิ่งแวดล้อม คุณเบสเล่าต่ออีกว่า
+                        อาหารเดลิเวอรี่จะทำจากกล่องกระดาษที่หนาเพื่อให้สามารถใส่ได้ทั้งอาหารประเภทผัดหรือต้มและแกง
+                        หรือจะนำเข้าเตาไมโครเวฟเพื่ออุ่นก็ทำได้ สามารถกินในกล่องได้เลยโดยไม่ต้องเปลี่ยนใส่จานใหม่
+                        ส่วนช้อนก็ใช้ช้อนที่มีความหนาสามารถนำกลับมาใช้ซ้ำได้เพื่อเป็นการลดปริมาณขยะพลาสติก เรียกได้ว่า
+                        “เขียง” คิดได้ครบทั้งกระบวนการตั้งแต่การนั่งทานอาหารที่ร้านจนถึงการเดลิเวอรี่เลยทีเดียว</p>
+                    <img class="" id="" src="./image_ร้านเขียง/เขียง_4.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5">
+                    <p class="txt-mid0-6 font-weight-bold my-3">เลือกวัตถุดิบคุณภาพให้ทุกเมนูอาหารอร่อยลงตัว</p>“เขียง”
+                    นอกจากเรื่องความสะอาดและรสชาติที่สม่ำเสมอแล้ว วัตถุดิบในการปรุงอาหารก็สำคัญไม่แพ้กันที่ “เขียง”
+                    เลือกใช้วัตถุดิบชั้นดีภายในประเทศจากกลุ่มเกษตรกรท้องถิ่น คุณเบสได้เล่าว่า
+                    ไทยเป็นประเทศการเกษตรจึงไม่ยากในการหาแหล่งวัตถุดิบที่สดใหม่ได้มาตรฐาน
+                    อย่างเนื้อโคขุนเกรดพรีเมี่ยมใช้ของสหกรณ์กำแพงแสน ข้าวหอมมะลิคุณภาพดีระดับโลกจากทุ่งกะลาร้องไห้
+                    ไก่สดใช้ไก่เบญจาออร์แกนิคที่คุณภาพชั้นเยี่ยม รวมถึงเนื้อหมูสดอย่างดีได้มาตรฐาน
+                    ส่วนผักจะเลือกซื้อจากกลุ่มเกษตรกรท้องถิ่นละแวกใกล้เคียง จากการที่ “เขียง”
+                    ให้ความสำคัญกับการเรียนรู้ที่จะอยู่ร่วมกันกับชุมชนและสังคม
+                    แม้แต่ในด้านแรงงานจะเลือกคนจากในท้องถิ่นเพื่อสร้างระบบนิเวศน์ (Ecosystem)
+                    ที่เกื้อกูลระหว่างกันอีกด้วย</p>
+                    <p class="txt-mid0-5">เมื่อถามว่า “เขียง” อยากส่งมอบอะไรให้กับลูกค้า คุณเบส กล่าวว่า
+                        อยากส่งมอบความภาคภูมิใจในอาหารไทยจากการที่ทำแบรนด์ตำมั่วพบว่าคนต่างชาติต้องการกินอาหารไทยรสชาติแบบดั้งเดิมไม่ว่าจะกินที่ไทยหรือต่างประเทศต้องการได้รสชาติไม่ต่างกัน
+                        และอยากเป็นอีกทางเลือกหนึ่งให้ผู้บริโภคได้กินอาหารที่สะอาดสดใหม่ ได้มาตรฐาน ใช้วัตถุดิบชั้นดี
+                        มีความสม่ำเสมอในเรื่องรสชาติ และได้ปริมาณที่เหมาะสมคุ้มค่าคุ้มราคา
+                        เพื่อตอบโจทย์ผู้บริโภคยุคใหม่ที่ใส่ใจเรื่องความสะอาดและคุณภาพ</p>
+                    <p class="txt-mid0-5">
+                    <p class="txt-mid0-6 font-weight-bold my-3">เมนูเด็ดห้ามพลาดที่ร้าน “เขียง”</p>
+                    <strong>1.ข้าวกะเพราเทพ&nbsp</strong>
+                    ข้าวกะเพราหมูสับความอร่อยขั้นเทพที่หนักเครื่องเผ็ดร้อนถึงใจ
+                    ไม่เพียงแค่ผัดพริกแห้งพริกสดกับหมูสับเท่านั้น ยังเสริมทัพความอร่อยด้วยหมูยอรสเด็ดจากร้านตำมั่ว
+                    แถมด้วยกุนเชียง ผัดกับซอสสูตรพิเศษ แล้วใส่ใบกะเพราแบบเน้นๆ จนกลิ่นหอมขึ้นจมูก ราดลงบนข้าวสวยร้อนๆ
+                    ที่หุงสุกกำลังดีไม่แข็งไม่แฉะไม่ร่วน ชิมหมูสับคำแรกหอมกลิ่นกะเพราสุดๆ รสชาติจัดจ้านเผ็ดร้อน
+                    ส่วนหมูยออร่อยเว่อร์ หมูเป็นหมูไม่ผสมแป้ง กุนเชียงก็ไม่มันไม่เลี่ยน
+                    กินด้วยกันอร่อยกลมกล่อมสมชื่อกะเพราเทพจริงๆ คนรักกะเพราหมูสับเครื่องหนักจัดเต็มต้องสั่งเมนูนี้เลย
+                    </p>
+                    <img class="" id="" src="./image_ร้านเขียง/เขียง_5.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5">
+                        <strong>2.ข้าวกะเพราโคตรเจ้าสมุทร&nbsp</strong>
+                        ข้าวกะเพราหมูสับความอร่อยขั้นเทพที่หนักเครื่องเผ็ดร้อนถึงใจ
+                        ไม่เพียงแค่ผัดพริกแห้งพริกสดกับหมูสับเท่านั้น ยังเสริมทัพความอร่อยด้วยหมูยอรสเด็ดจากร้านตำมั่ว
+                        แถมด้วยกุนเชียง ผัดกับซอสสูตรพิเศษ แล้วใส่ใบกะเพราแบบเน้นๆ จนกลิ่นหอมขึ้นจมูก
+                        ราดลงบนข้าวสวยร้อนๆ
+                        ที่หุงสุกกำลังดีไม่แข็งไม่แฉะไม่ร่วน ชิมหมูสับคำแรกหอมกลิ่นกะเพราสุดๆ รสชาติจัดจ้านเผ็ดร้อน
+                        ส่วนหมูยออร่อยเว่อร์ หมูเป็นหมูไม่ผสมแป้ง กุนเชียงก็ไม่มันไม่เลี่ยน
+                        กินด้วยกันอร่อยกลมกล่อมสมชื่อกะเพราเทพจริงๆ
+                        คนรักกะเพราหมูสับเครื่องหนักจัดเต็มต้องสั่งเมนูนี้เลย
+                    </p>
+                    <img class="" id="" src="./image_ร้านเขียง/เขียง_6.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5">
+                        <strong>3.ข้าวกะเพราดิบเถื่อน&nbsp</strong>
+                        ข้าวกะเพราเนื้อหากินได้ยาก ยิ่งกะเพราเนื้อโคขุนด้วยแล้วยิ่งหากินยากกว่า แต่ที่ “เขียง”
+                        การันตีความอร่อยเพราะคัดสรรเนื้อโคขุนเกรดพรีเมี่ยมจากสหกรณ์โคขุนกำแพงแสนมาเป็นวัตถุดิบ
+                        สับเนื้อจนละเอียดผัดกับพริกแห้งที่ให้ความหอมและพริกสดที่ให้ความเผ็ดถึงใจ
+                        ใส่ซอสสูตรพิเศษผัดจนซึมเข้าเนื้อ
+                        เพิ่มความหอมอีกยกด้วยพริกไทยอ่อนแล้วปิดท้ายด้วยใบกะเพราแบบไม่มีหวง ผัดจนกลิ่นหอมเตะจมูก
+                        ทานกับข้าวสวยร้อนๆ จากทุ่งกุลาร้องไห้ที่หุงสุกกำลังดีอร่อยจนต้องขอเบิ้ลอีกจาน
+                        สายเนื้อตัวจริงห้ามพลาดโดยเด็ดขาด
+                    </p>
+                    <img class="" id="" src="./image_ร้านเขียง/เขียง_7.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5">
+                        <strong>4.ข้าวหมูกระเทียม&nbsp</strong>
+                        นอกจากข้าวผัดกะเพราที่เป็นซิกเนเจอร์ของที่นี่ ยังมีเมนูอื่นที่อยากแนะนำคือ ข้าวหมูกระเทียม
+                        ที่นี่จะหั่นเนื้อหมูเป็นชิ้นโตๆ หมักจนได้ที่แล้วนำไปผัดกับซอสสูตรพิเศษจนมีกลิ่นหอมของกระเทียม
+                        แต่แค่นั้นยังไม่ถึงใจ
+                        ตามปกติเวลาไปสั่งข้าวหมูกระเทียมที่อื่นจะผัดกระเทียมสับกับเนื้อหมูไปพร้อมกัน
+                        แต่ที่นี่ยังมีท้อปปิ้งกระเทียมเจียวสีเหลืองทองโรยหน้าแบบไม่มีกั๊ก คนรักกระเทียมเจียวแทบร้องกรี๊ด
+                        พอได้ลองชิมคำแรกเนื้อหมูชิ้นโตนุ่มมากไม่มีเหนียว กระเทียมเจียวทอดสุกกำลังดีหอมจนน้ำลายสอ
+                        ทานพร้อมกับข้าวสวยร้อนๆ อร่อยกลมกล่อม รสชาติเข้มข้นไม่ต้องเติมน้ำปลาพริกเลย
+                        อีกสิ่งที่ชอบมากปกติข้าวหมูกระเทียมมักจะมันเยิ้มแต่ของที่นี่ไม่มันทานได้หมดจานไม่มีเลี่ยน
+                    </p>
+                    <img class="" id="" src="./image_ร้านเขียง/เขียง_8.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5">
+                        <strong>5.ก๋วยเตี๋ยวคั่วไก่&nbsp</strong>
+                        หากเบื่อเมนูข้าวที่นี่ก็มีเมนูเส้นให้ลอง ขอแนะนำ ก๋วยเตี๋ยวคั่วไก่
+                        ที่ทางร้านเลือกใช้เนื้อไก่เบญจาไก่ออร์แกนิคที่นุ่มละมุนลิ้นมีรสสัมผัสฉ่ำกว่าเนื้อไก่ทั่วไป
+                        หั่นเป็นชิ้นหนาพอดีคำหมักจนได้ที่ผัดกับซอสสูตรพิเศษใส่ปลาหมึกกรอบชิ้นหนา ไข่ไก่สดๆ
+                        ผัดจนมีกลิ่นหอมแล้วใส่เส้นใหญ่ตามลงไป ที่ชอบมากคือ หนักเครื่อง
+                        ทั้งเนื้อไก่และปลาหมึกกรอบปริมาณเนื้อพอเหมาะกับเส้น ชิมคำแรกเนื้อไก่หนานุ่มชุ่มฉ่ำ
+                        ปลาหมึกกรุบกรอบ เส้นใหญ่เหนียวนุ่ม รสชาติกำลังดีไม่ต้องปรุงเพิ่ม
+                        แถมไม่มันเยิ้มทานแล้วสบายใจแคลอรี่ไม่พุ่ง คนรักเมนูเส้นต้องลองสั่งดู
+                    </p>
+                    <img class="" id="" src="./image_ร้านเขียง/เขียง_9.jpg" alt="" style="width: 100%;">
+                    <img class="py-5" id="" src="./image_ร้านเขียง/เขียง_10.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5">หากคุณอยากกินอาหารตามสั่งที่สดใหม่มีคุณภาพ ได้มาตรฐาน
+                        ปลอดภัยมั่นใจเรื่องความสะอาด
+                        มีรสชาติคงเส้นคงวาแบบเชื่อใจได้ “เขียง” คือ คำตอบที่อยากแนะนำ
+                        นอกจากเมนูข้าวผัดกะเพราแบบดั้งเดิมรสจัดจ้านที่รู้จักกันอย่างดี ยังมีเมนูให้เลือกมากถึง 15 เมนู
+                        เช่น คนไม่ทานเผ็ดก็มีข้าวไข่ยู่ยี่ที่เด็กชื่นชอบ ข้าวผัดโบราณ
+                        หรือชอบกินผักก็มีข้าวหมูผัดคะน้าน้ำมันหอย ข้าวผัดผักบุ้งหมูชิ้นให้เลือกทาน
+                        หากเบื่อเมนูข้าวก็มีเมนูเส้นทั้งเส้นใหญ่ผัดขี้เมา สุกี้แห้ง-น้ำ หรือผัดซีอิ๊ว
+                        ให้เลือกได้ตามใจชอบ อยากกินแล้วแล้วใช่มั้ยไม่ต้องออกจากบ้านไปไหน เพียงแค่<strong>ดาวน์โหลด
+                            Robinhood
+                            แอปสั่งอาหารเดลิเวอรี่</strong>ได้ทันทีไม่มีบวกค่าบริการเพิ่ม คิดค่าส่งตามระยะทางจริง
+                        โหลดเลยได้กินของอร่อยทันที.</p>
+                    <table class="container">
+                        <tr class="mb-4">
+                            <td><img class="img-table" id="" src="./image_ร้านเขียง/เขียง_1.jpg" alt=""
+                                    style="width: 155px; height: 145px;"></td>
+                            <td><img class="img-table" id="" src="./image_ร้านเขียง/เขียง_2.jpg" alt=""
+                                    style="width: 155px; height: 145px;"></td>
+                            <td><img class="img-table" id="" src="./image_ร้านเขียง/เขียง_3.jpg" alt=""
+                                    style="width: 155px; height: 145px;"></td>
+                            <td><img class="img-table" id="" src="./image_ร้านเขียง/เขียง_4.jpg" alt=""
+                                    style="width: 155px; height: 145px;"></td>
+                            <td><img class="img-table" id="" src="./image_ร้านเขียง/เขียง_5.jpg" alt=""
+                                    style="width: 155px; height: 145px;"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="width: 100%; height: 10px;">
+                            </td>
+                        </tr>
+                        <tr class="mb-4">
+                            <td><img class="img-table" id="" src="./image_ร้านเขียง/เขียง_6.jpg" alt=""
+                                    style="width: 155px; height: 145px;"></td>
+                            <td><img class="img-table" id="" src="./image_ร้านเขียง/เขียง_7.jpg" alt=""
+                                    style="width: 155px; height: 145px;"></td>
+                            <td><img class="img-table" id="" src="./image_ร้านเขียง/เขียง_8.jpg" alt=""
+                                    style="width: 155px; height: 145px;"></td>
+                            <td><img class="img-table" id="" src="./image_ร้านเขียง/เขียง_9.jpg" alt=""
+                                    style="width: 155px; height: 145px;"></td>
+                            <td><img class="img-table" id="" src="./image_ร้านเขียง/เขียง_10.jpg" alt=""
+                                    style="width: 155px; height: 145px;"></td>
+                        </tr>
+                    </table>
+                    <div class="my-5">
+                        <a class="Yellow font-weight-bold" href="..." style="width: 320px;
+                        padding: 7px;
+                        border: 1px solid gray;
+                        margin: 0;
+                        ">Highlight
+                        </a>
+                        <a href="..." class="Yellow font-weight-bold mx-2 " style="width: 320px;
+                        padding: 7px;
+                        border: 1px solid gray;
+                        margin: 0;">กะเพรา
+
+                        </a>
+                        <a class="Yellow font-weight-bold" href="..." style="width: 320px;
+                        padding: 7px;
+                        border: 1px solid gray;
+                        margin: 0;">อาหารจานเดียว
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a class="col-3 nav-link txt-mid0-7 font-weight-bold" href="#highlight"><img class=""
+                                src="./image/Group-1115-e1599403771374.png" width="22%">&emsp;Robinhood</a>
+                        <a class="col-5 nav-link mt-2 txt-mid0-7 font-weight-bold text-secondary"
+                            href="#highlight">|&emsp;<i class="far fa-calendar-alt text-secondary"
+                                style="font-size:16px"></i> กันยายน 22, 2021&emsp;|&emsp;watching 1,606</a>
+                    </div>
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="mid0-1">
+                        <div class="row">
+                            <div class="col-12 py-5">
+                                <p class="txt-mid0-1-1 font-weight-bold color-robinhood">เนื้อหาที่เกี่ยวข้อง</p>
+                            </div>
+                            <div class="col-4">
+                                <a href="..."><img class="" id="" src="./image_ร้านเขียง/เขียง_2.jpg" alt=""
+                                        style="width: 105%; height: 220px; border-radius: 10px;"></a>
+                                <a href="restaurant-story-ร้านเขียง.html">
+                                    <p class="txt-mid0-1-2 font-weight-bold">"เขียง" ยกระดับอาหารตามสั่ง</p>
+                                </a>
+                                <a href="...">
+                                    <p class="color-robinhood" style="margin-top: -10px;">Robinhood</p>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="..."><img class="" id="" src="./image/สีมรกต-Thumbnail-Cover.jpg" alt=""
+                                        style="width: 105%; height: 220px; border-radius: 10px;"></a>
+                                <a href="restaurant-story-ร้านเขียง.html">
+                                    <p class="txt-mid0-1-2 font-weight-bold">ข้าวหมูแดงสีมรกต ที่สุดของข้าว</p>
+                                </a>
+                                <a href="...">
+                                    <p class="color-robinhood" style="margin-top: -10px;">Robinhood</p>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="..."><img class="" id="" src="./image/คั่วกลิ้ง.jpg" alt=""
+                                        style="width: 105%; height: 220px; border-radius: 10px;"></a>
+                                <a href="restaurant-story-ร้านเขียง.html">
+                                    <p class="txt-mid0-1-2 font-weight-bold">คั่วกลิ้งผักสด อาหารใต้ดีกรีมิ</p>
+                                </a>
+                                <a href="...">
+                                    <p class="color-robinhood" style="margin-top: -10px;">Robinhood</p>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="..."><img class="" id="" src="./image/Greyhound.jpg" alt=""
+                                        style="width: 105%; height: 220px; border-radius: 10px;"></a>
+                                <a href="restaurant-story-ร้านเขียง.html">
+                                    <p class="txt-mid0-1-2 font-weight-bold">Greyhound Café จากแฟชั่นสู่</p>
+                                </a>
+                                <a href="...">
+                                    <p class="color-robinhood" style="margin-top: -10px;">Robinhood</p>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="..."><img class="" id="" src="./image/Sushi.jpg" alt=""
+                                        style="width: 105%; height: 220px; border-radius: 10px;"></a>
+                                <a href="restaurant-story-ร้านเขียง.html">
+                                    <p class="txt-mid0-1-2 font-weight-bold">SUSHI HANA มื้ออาหารในวัน</p>
+                                </a>
+                                <a href="...">
+                                    <p class="color-robinhood" style="margin-top: -10px;">Robinhood</p>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="..."><img class="" id="" src="./image/นิตยาไก่ย่าง.jpg" alt=""
+                                        style="width: 105%; height: 220px; border-radius: 10px;"></a>
+                                <a href="restaurant-story-ร้านเขียง.html">
+                                    <p class="txt-mid0-1-2 font-weight-bold">นิตยาไก่ย่าง อาหารอีสานปรุง</p>
+                                </a>
+                                <a href="...">
+                                    <p class="color-robinhood" style="margin-top: -10px;">Robinhood</p>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <br>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-3">
+                    <div class="row">
+                        <img class="" id="" src="./image/logo-White.png" alt="" style="width: 31%;">
+                    </div>
+                    <div class="row mt-3">
+                        <p class="text-warning">ติดตามเราช่องทางอื่นๆ</p>
+                    </div>
+                    <div class="row mt-3 ml-5">
+                        <img class="ml-5" id="" src="./image/facebook.png" alt="" style="width: 25%;">
+                    </div>
+                    <div class="row mt-4 ml">
+                        <p class="text-white" style="font-size: 13px;">Call Center : <a class="ml-1">02-777-7564</a></p>
+                        <p class="text-white" style="font-size: 13px;">เปิดให้บริการทุกวัน ตลอด 24 ชั่วโมง</p>
+                    </div>
+                    <div class="row mt-4">
+
+                    </div>
+                    <div class="row ml">
+                        <p class="text-white" style="font-size: 13px;">©Robinhood</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row mt-5">
+
+                    </div>
+                    <div class="row mt-1">
+                        <p class="text-warning">ข้อกำหนดการใช้งาน Robinhood</p>
+                    </div>
+                    <div class="row">
+                        <a class="text-white mt-4" style="font-size: 11px;"
+                            href=""><u>ข้อกำหนดและเงื่อนไขการใช้บริการร้านอาหารโรบินฮู้ด</u></a>
+                    </div>
+                    <div class="row">
+                        <a class="text-white mt-3" style="font-size: 11px;"
+                            href=""><u>ข้อกำหนดและเงื่อนไขการใช้บริการสั่งอาหาร</u></a>
+                    </div>
+                    <div class="row">
+                        <p class="text-warning mt-5">ข้อกำหนดการใช้งานเว็บไซต์</p>
+                    </div>
+                    <div class="row ml">
+                        <a class="text-white" style="font-size: 12px;" href=""><u>Privacy policy</u></a>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="row mt-4">
+                        <a class="col-9 nav-link" href="merchant.html">
+                            <div class="card" style="width: 19rem;">
+                                <img class="card-img-top " src="./image/rectangle.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="row txt-10 font-weight-bold" style="font-size: 14px;">พาร์ทเนอร์ร้านอาหาร​
+                                    </p>
+                                    <p class="row txt-11 font-weight-normal" style="font-size: 12px;">มาเพิ่มยอดขายง่ายๆ
+                                        ให้ร้านอาหารของคุณ
+                                        สามารถสมัครร่วมเป็นร้านอาหารกับ Robinhood ได้แล้ววันนี้</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="col-2 nav-link" href="rider.html">
+                            <div class="card" style="width: 19rem;">
+                                <img class="card-img-top \" src="./image/Robinhood-Rider-Footer-box-edit.png"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="row txt-10 font-weight-bold" style="font-size: 14px;">โรบินฮู้ด ไรเดอร์​
+                                    </p>
+                                    <p class="row txt-11 font-weight-normal" style="font-size: 12px;">เช้ารับงาน
+                                        ค่ำรับเงิน ได้เต็มๆ ไม่ต้องสำรองเงินค่าอาหาร พร้อมรับสิทธิพิเศษมากมาย
+                                        สมัครได้แล้วเพียงโหลดแอป</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+
+            </div>
+            <div class="row mt-5 text-center ml-5">
+                <p class="text-muted ml-4 my-4">Copyright © 2021 <a class="text-white" href="index.html">Robinhood.</a>
+                    All Rights Reserved. <a class="text-white" href="#">Privacy-th</a> | Catch Foodmania by <a
+                        class="text-white" href="https://catchthemes.com/">Catch Themes</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

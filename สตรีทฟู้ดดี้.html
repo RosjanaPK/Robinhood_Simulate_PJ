@@ -1,0 +1,726 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="script.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fa4852718f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="สตรีทฟู้ดดี้.css">
+    <link rel="stylesheet" href="styles_food-tips.css">
+    <link rel="icon" href="./image/RBH_MAIN_LOGO-crop.png">
+    <title>สตรีทฟู้ดดี้ - Robinhood</title>
+</head>
+
+<body>
+    <div id="popup_container">
+        <div id="popup">
+            <div class="container text-center">
+                <div class="row ">
+                    <p class="font-weight-bold mt-3" style="font-size: 22px;">แอปสั่งอาหารโรบินฮู้ด</p>
+                </div>
+                <div class="row">
+                    <p class="font-weight-bold" style="font-size: 30px;">สแกนเพื่อดาวน์โหลด</p>
+                </div>
+                <img class="my-3" src="./image/qrcode.png" style="width:170px;">
+                <div class="row">
+                    <div class="col-5 ml-4">
+                        <img class="ml-5" src="./image/img.png" style="width: 92px;">
+                    </div>
+                    <div class="col mt-2">
+                        <img class="row" src="./image/download_App-Store.png" style="width: 96px;">
+                        <img class="row mt-2" src="./image/download_Google-Play.png" style="width: 96px;">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="font-weight-bold" style="font-size: 16px;">Robinhood ทางเลือกใหม่ของฟู้ดเดลิเวอรี่ไทย</p>
+                </div>
+                <div class="row">
+                    <a class="pointer" onclick="hidePopup()"
+                        style="font-size: 14px; color: rgb(171,76,171);">ปิดหน้าต่างนี้</a>
+                </div>
+            </div>
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button> -->
+
+        </div>
+    </div>
+    <div id="popup_container2">
+        <div id="popup2">
+            <div class="container text-center">
+                <div class="row ">
+                    <p class="font-weight-bold mt-3" style="font-size: 22px;">แอปสั่งอาหารโรบินฮู้ด</p>
+                </div>
+                <div class="row">
+                    <p class="font-weight-bold" style="font-size: 30px;">สแกนเพื่อดาวน์โหลด</p>
+                </div>
+                <img class="my-3" src="./image/qrcode.png" style="width:170px;">
+                <div class="row">
+                    <div class="col-5 ml-4">
+                        <img class="ml-5 " src="./image/img.png" style="width: 92px;">
+                    </div>
+                    <div class="col mt-2">
+                        <img class="row" src="./image/download_App-Store.png" style="width: 96px;">
+                        <img class="row mt-2" src="./image/download_Google-Play.png" style="width: 96px;">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="font-weight-bold" style="font-size: 16px;">Robinhood ทางเลือกใหม่ของฟู้ดเดลิเวอรี่ไทย</p>
+                </div>
+                <div class="row">
+                    <a class="pointer" onclick="hidePopup2()"
+                        style="font-size: 14px; color: rgb(171,76,171);">ปิดหน้าต่างนี้</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg_top2">
+        <nav id="navbar_top" class="navbar navbar-expand-xl navbar-dark">
+            <div class="container-fluid" id="nav_top">
+                <a href="index.html"><img src="image/RBH_MAIN_LOGO.png" width="60"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ml-4 d-flex justify-content-end" id="main_nav">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="about-us.html">รู้จักเรา</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="promotion.html">โปรโมชั่น</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="food-playlist.html">กินอะไรดี</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="zone-list.html">จานเด็ดย่านดัง</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="food-tips.html">ทิปความรู้</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark"
+                                href="restaurant-story.html">เรื่องราวร้านอาหาร</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle ms-1 text-dark" href="#"
+                                data-bs-toggle="dropdown">พาร์ทเนอร์ร้านอาหาร</a>
+                            <ul class="dropdown-menu dropdown-menu-right glyphicon glyphicon-menu-down">
+                                <li><a class="dropdown-item" href="merchant.html">สมัครเป็นพาร์ทเนอร์</a></li>
+                                <li><a class="dropdown-item" href="merchantcenter.html">คู่มือสำหรับอาหาร</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark"
+                                href="travel-partner.html">พาร์ทเนอร์ท่องเที่ยว</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="rider.html">ไรเดอร์</a></li>
+                        <a class="nav-item ms-1 ps-4 mt-1 pointer" onclick="showPopup()"><img
+                                src="image/download_App-Store.png" width="110"></a>
+                        <a class="nav-item ms-1 ps-4 mt-1 pointer" onclick="showPopup2()"><img
+                                src="image/download_Google-Play.png" width="110"></a>
+                    </ul>
+                </div> <!-- navbar-collapse.// -->
+            </div> <!-- container-fluid.// -->
+        </nav>
+        <!-- <div class="container">
+            <div class="txt-top row">
+                <p><strong>ร้านเขียง</strong></p>
+            </div>
+        </div> -->
+    </div>
+    <!-- ============= COMPONENT ============== -->
+    <div class="mid0">
+        <div class="container">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-9 mx-5">
+                    <p class="txt-mid0-1 "><a class="txt-mid0-1" href="...">Food Playlist</a> >
+                        สตรีทฟูดดี้</p>
+                    <p class="txt-mid0-2 color-robinhood font-weight-bold">สตรีทฟู้ดดี้</p>
+                    <p class="font-weight-bold">ช่วยเราแชร์ได้นะ</p>
+                    <div class="row">
+                        <div class="col-5">
+                            <a href="#" class="icon_social mr-3"><i class="fab fa-facebook"
+                                    style="font-size: 32px; color: rgb(30, 104, 245);"></i></a>
+                            <a href="#" class="icon_social mr-3"><i class="fab fa-twitter-square"
+                                    style="font-size: 32px; color: rgb(35, 183, 241);"></i></a>
+                            <a href="#" class="icon_social"><i class="fab fa-line"
+                                    style="font-size: 32px; color: green;"></i></a>
+                        </div>
+                        <div class="col-6 mx-4">
+                            <p class="txt-mid0-3 font-weight-bold">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPosted Oct 22, 2020</p>
+                            <p class="txt-mid0-4 font-weight-bold">&nbspFood Playlist</p>
+                            <p class="txt-mid0-3 font-weight-bold">หมวดหมู่ : </p>
+                        </div>
+                    </div>
+                    <img class="" id="" src="./image_สตรีทฟู้ดดี้/1.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5 font-weight-bold py-4">กรุงเทพฯ ขึ้นชื่อเรื่องสตรีทฟู้ด
+                        โรบินฮู้ดขอรวมสุดยอดร้านเด็ด ร้านดัง มาให้เลือกอิ่มอร่อยกันถึงบ้าน</p>
+                    <p class="txt-mid0-6">สตรีทฟู้ด หรือร้านอาหารริมทาง มีให้เห็นนับไม่ถ้วนทุกย่านทั่วกรุงเทพมหานคร
+                        เรียกว่าอยากกินอะไร ก็หาได้หมด แต่ร้านเด็ดร้านดังที่อร่อยจนใครๆ ก็พูดถึง
+                        ส่วนใหญ่จะไปกินแต่ละทีแสนจะลำบาก ต้องหาที่จอดรถ ต้องยืนต่อคิวรอโต๊ะที่มีอยู่อย่างจำกัด
+                        โรบินฮู้ดขออาสานำความอร่อยแบบสตรีทๆ ไปส่งให้ถึงบ้าน รับรองว่ารสชาติเหมือนกินอยู่ที่ร้านแน่นอน
+                    </p>
+                    <center>
+                        <p class="txt-mid0-7 font-weight-bold color-robinhood">หิวแล้ว! สั่งเลยผ่านแอป Robinhood</p>
+                    </center>
+                    <hr width="818" style="margin-top: 40px;">
+                    <!-- ------------------------- -->
+                    <div class="row my-5">
+                        <div class="col-7">
+                            <!-- <img class="" id="" src="./image_บางกะปิวังทองหลาง/.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;"> -->
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_สตรีทฟู้ดดี้/2.jpg" alt=""
+                                            style="width: 235px; height: 455px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_สตรีทฟู้ดดี้/3.jpg" alt=""
+                                            style="width: 240px; height: 227px;border-radius: 10px;margin-top: 7px;">
+                                        <img class="img-table mx-2" id="" src="./image_สตรีทฟู้ดดี้/4.jpg" alt=""
+                                            style="width: 240px; height: 227px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">รุ่งเรืองตั๋งก๋วยเตี๋ยวหมู</p>
+                            <p class="txt-mid0-6">ร้านก๋วยเตี๋ยวเก่าแก่ อายุกว่า 55 ปี รุ่งเรืองตั๋ง ก๋วยเตี๋ยวหมู
+                                การันตีความอร่อยด้วยการคว้า Michelin Streetfood มาได้ 4 ปีซ้อน คนรักเส้นห้ามพลาด
+                                ไม่ว่าจะสั่งก๋วยเตี๋ยวหมูธรรมดา หรือก๋วยเตี๋ยวต้มยำก็อร่อยล้ำ
+                                ชอบเส้นแบบไหนก็เลือกได้เพราะอร่อยทุกเส้น เสริมความฟินด้วยหนังปลา
+                                กรอบเข้าไป รับรองชามเดียวไม่พอ</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :
+                                <p class="txt-mid0-3-1"> ซอย สุขุมวิท 26 กรุงเทพมหานคร (เข้าซอยมาประมาณ 150 เมตร
+                                    ร้านห้องหัวมุมติดในซอย)</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ :
+                                <p class="txt-mid0-3-1"> 0845271640, 022586746</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ :
+                                <p class="txt-mid0-3-1"> ทุกวัน 08:00 - 17:00
+                                </p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ---------------------------------- -->
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">ขาหมูตรอกซุงบางรัก</p>
+                            <p class="txt-mid0-6">ขาหมูเจ้าดังแห่งบางรัก ขาหมูตรอกซุงที่ใครชิมก็ติดใจ
+                                กินแล้วก็อยากกินอีก จุดเด่นอยู่ที่ขาหมูเนื้อแน่น ติดหนังนุ่มเด้งกำลังดี
+                                ราดน้ำต้มขาหมูรสกลมกล่อม กินกับน้ำจิ้มพริกน้ำส้ม หรือพริกสด กระเทียมซอย แล้วแต่ความชอบ
+                                อร่อยง่ายๆ แบบลงตัว</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :
+                                <p class="txt-mid0-3-1"> ถนน เจริญเวียง กรุงเทพมหานคร (กลางซอยจรัลเวียง ถนนเจริญกรุง)
+                                </p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ :
+                                <p class="txt-mid0-3-1"> 022354930</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ :
+                                <p class="txt-mid0-3-1"> จันทร์ - เสาร์ 10:00 - 19:00</p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <img class="" id="" src="./image_สตรีทฟู้ดดี้/5.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_สตรีทฟู้ดดี้/6.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_สตรีทฟู้ดดี้/7.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_สตรีทฟู้ดดี้/8.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- ---------------------------------- -->
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-7">
+                            <img class="" id="" src="./image_สตรีทฟู้ดดี้/9.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_สตรีทฟู้ดดี้/10.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_สตรีทฟู้ดดี้/11.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_สตรีทฟู้ดดี้/12.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">ประจักษ์เป็ดย่าง (เจริญกรุง)</p>
+                            <p class="txt-mid0-6">ร้านเก่าแก่ย่านบางรัก การันตีความอร่อยมากว่า 110 ปี ต้นตำรับเป็ดย่าง
+                                หมูย่าง เกี๊ยวหมูสไตล์กวางโจว ส่งต่อกันมาถึง 4 รุ่น
+                                คัดสรรวัตถุดิบชั้นดีอย่างเนื้อเป็ดฉ่ำๆ หนังบาง หมูแดงสันนอกหมักเครื่องจนเข้าเนื้อ
+                                ราดน้ำซอสเข้มข้นกลมกล่อมหอมเครื่องเทศ เอกลักษณ์เฉพาะตัวที่ขอท้าให้ลิ้มลอง</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :
+                                <p class="txt-mid0-3-1"> 1415 ถนน เจริญกรุง กรุงเทพมหานคร
+                                    (ตรงข้ามกับห้างโรบินสันบางรัก)
+                                </p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ :
+                                <p class="txt-mid0-3-1"> 022343755, 022356324, 0839101444</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ :
+                                <p class="txt-mid0-3-1"> ทุกวัน 08:00 - 20:30</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -------------------------------- -->
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">ต้องตาปูดอง</p>
+                            <p class="txt-mid0-6">ถ้าใครอยากกินมื้อค่ำ พวกกับข้าวตามสั่ง เมนูหลากหลาย รสชาติถูกปาก
+                                ขอแนะนำ ต้องตาปูดอง แน่นอนว่า เมนูเด็ดหนีไม่พ้น ปูม้าดอง แช่เย็นรสจัดจ้านจนต้องร้องซี้ด​
+                                ปลาดุกฟูผัดพริกขิงไข่เค็ม ก็กรอบฟูหนักเครื่อง หากับแกล้มดีๆ ต้องสั่งไส้ทอด
+                                เคี้ยวเพลินสุดๆ อย่าลืมขาไก่ซุปเปอร์​ด้วยนะ แซ่บถึงใจเชียวแหละ</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :
+                                <p class="txt-mid0-3-1">4661/1, ถนนศรีวรา, พลับพลา, กรุงเทพมหานคร, 10310</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ :
+                                <p class="txt-mid0-3-1"> 025394436, 0814811444</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ :
+                                <p class="txt-mid0-3-1"> ทุกวัน 16:00 - 23:59</p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <img class="" id="" src="./image_บางกะปิวังทองหลาง/2.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/3.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_บางกะปิวังทองหลาง/4.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_บางกะปิวังทองหลาง/5.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- ------------------------------- -->
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-7">
+                            <img class="" id="" src="./image_สตรีทฟู้ดดี้/17.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_สตรีทฟู้ดดี้/18.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_สตรีทฟู้ดดี้/19.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_สตรีทฟู้ดดี้/20.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">โจ๊กสามย่าน บรรทัดทอง</p>
+                            <p class="txt-mid0-6">ร้านโจ๊กยอดฮิต ที่ใครๆ ก็รู้จัก โจ๊กสามย่าน จะกินเป็นมื้อเช้า
+                                หรือลากยาวถึงมื้อดึก ก็อิ่มอร่อยเหมือนกัน หมูสับชิ้นโต ปรุงรสกลมกล่อม
+                                หรือจะใส่เครื่องในหมูก็สดสะอาด อร่อยถูกใจ</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :
+                                <p class="txt-mid0-3-1"> 687, ถนนบรรทัดทอง, วังใหม่, กรุงเทพมหานคร, 10330
+                                    (โครงการสเตเดี้ยมวัน​ ใกล้สมบูรณ์โภชนา)
+
+                                </p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ :
+                                <p class="txt-mid0-3-1"> 0917197836</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ :
+                                <p class="txt-mid0-3-1"> ทุกวัน 05:00 - 10:00, 15:30 - 22:00</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -------------------------------- -->
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">ซ้งเป็ดพะโล้ - ลาดพร้าววังหิน
+                            </p>
+                            <p class="txt-mid0-6">อยากกินอาหารหลากหลาย ลองสั่ง ซ้งเป็ดพะโล้ ที่นี่ไม่ได้มีแค่เป็ดพะโล้
+                                เนื้อนุ่ม แต่ไส้พะโล้ทอดก็เด็ดมาก อย่าลืมซดน้ำแซ่บๆ ของต้มซุปเปอร์ขาไก่ด้วย
+                                เมนูที่ถูกใจทุกเพศทุกวัยก็ต้องไข่ยู่ยี่ รสนุ่มละมุนลิ้น หรือจะสั่งปูผัดผงกะหรี่
+                                ร้านนี้ก็ให้เนื้อปูมาเป็นก้อนๆ เลยล่ะ</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :
+                                <p class="txt-mid0-3-1"> 12/2 ซอยลาดพร้าววังหิน 82 กรุงเทพมหานคร</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ :
+                                <p class="txt-mid0-3-1"> 02-570-4080, 092-514-5757</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ :
+                                <p class="txt-mid0-3-1"> ทุกวัน 11:00 - 04:00</p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <img class="" id="" src="./image_สตรีทฟู้ดดี้/21.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_สตรีทฟู้ดดี้/22.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_สตรีทฟู้ดดี้/23.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_สตรีทฟู้ดดี้/24.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- -------------------------------- -->
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-7">
+                            <img class="" id="" src="./image_สตรีทฟู้ดดี้/25.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_สตรีทฟู้ดดี้/26.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_สตรีทฟู้ดดี้/27.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_สตรีทฟู้ดดี้/28.jpg" alt=""
+                                            style="width: 149px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">นายเม้งบะหมี่ปู เกี๊ยวกุ้งยักษ์
+                                ซอยอารีย์</p>
+                            <p class="txt-mid0-6">คนเลิฟบะหมี่เกี๊ยว ต้องเจอ นายเม้งบะหมี่ปู เกี๊ยวกุ้งยักษ์
+                                บะหมี่ไข่เส้นเหนียวนุ่ม ลวกมาแบบพอดีโรยหน้าด้วยหมูแดง หมูกรอบ กินกับเกี๊ยวกุ้งตัวโต
+                                เนื้อแน่นเด้งถูกใจ เพิ่มความพิเศษด้วยเนื้อปูขาวๆ และเห็ดหอม มาพร้อมน้ำซุปรสกลมกล่อม
+                                เพราะอร่อยแบบนี้แหละ ไม่แปลกใจที่มาทีไรโต๊ะก็เต็มตลอด</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :
+                                <p class="txt-mid0-3-1"> ซอย พหลโยธิน 7 กรุงเทพมหานคร (ร้านอยู่ปากซอย พหลโยธิน7 (อารีย์
+                                    ซอย 1)
+
+                                </p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ :
+                                <p class="txt-mid0-3-1"> 026197981</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ :
+                                <p class="txt-mid0-3-1"> จันทร์ - ศุกร์ 09:30 - 20:30, เสาร์ 09:30 - 20:00, อาทิตย์
+                                    09:30 - 20:30</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -------------------------------- -->
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">สมศักดิ์ปูอบ (สาขาลาดหญ้า)
+                            </p>
+                            <p class="txt-mid0-6">คนรักวุ้นเส้นต้องรู้จัก สมศักดิ์ปูอบ
+                                ร้านสตรีทฟู้ดชื่อดังที่คนต่อแถวรอกิน เมนูเด็ดขึ้นชื่อก็ต้องเมนูอบวุ้นเส้น จะสั่งปู
+                                หรือกุ้งก็อร่อยเด็ดไม่แพ้กัน วุ้นเส้นนุ่มเหนียวกำลังดี
+                                หอมกลิ่นซอสปรุงรสสูตรพิเศษที่ยั่วน้ำลายสุดๆ สำหรับคนชอบหอยแครงลวก ร้านนี้ขอบอกว่า
+                                หอยสดน้ำจิ้มแซ่บซี้ดถึงใจเลยจ้า</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :
+                                <p class="txt-mid0-3-1"> ซอยเจริญรัถ 1 กรุงเทพมหานคร (ปากทางเจริญรัถซอย 1)</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ :
+                                <p class="txt-mid0-3-1"> 081-400-0542</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ :
+                                <p class="txt-mid0-3-1"> อังคาร - เสาร์ 17:00 - 22:00, อาทิตย์ 16:00 - 22:00</p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <img class="" id="" src="./image_สตรีทฟู้ดดี้/29.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_สตรีทฟู้ดดี้/30.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_สตรีทฟู้ดดี้/31.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_สตรีทฟู้ดดี้/32.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- -------------------------------- -->
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-7">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_สตรีทฟู้ดดี้/33.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_สตรีทฟู้ดดี้/34.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_สตรีทฟู้ดดี้/35.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_สตรีทฟู้ดดี้/36.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">กล้วยทอดนางเลิ้ง
+                            </p>
+                            <p class="txt-mid0-6">กล้วยทอดในตำนาน ที่ใครๆ ก็อยากกิน ต้องกล้วยทอดนางเลิ้ง
+                                นอกจากกล้วยทอดชิ้นโต แล้วยังมี มันทอด ข้าวเม่าทอด และไข่นกกระทาทอด
+                                ใครชอบแบบไหนสั่งได้เลย ทอดร้อนๆ กินเพลินจนลืมพุงกันไปเลย</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :
+                                <p class="txt-mid0-3-1"> 184, ถนนนครสวรรค์, วัดโสมนัส, กรุงเทพมหานคร, 10100 ประเทศไทย
+                                </p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ :
+                                <p class="txt-mid0-3-1"> 084-084-7054</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ :
+                                <p class="txt-mid0-3-1"> ทุกวัน 08:30 - 16:00</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -------------------------------- -->
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="row my-5">
+                        <div class="col-5">
+                            <p class="txt-mid0-8 font-weight-bold color-robinhood">สุขนิยม ขนมครกสิงคโปร์(ประตูผี)
+                            </p>
+                            <p class="txt-mid0-6">ของหวานแถวย่านประตูผีต้องร้านนี้ สุขนิยม ที่มีเมนูขึ้นชื่ออย่าง
+                                ขนมครกสิงคโปร์ รสใบเตย กับมะพร้าวอ่อน ให้เลือกอร่อย ตามด้วยลอดช่องสิงคโปร์ หวานมัน
+                                แป้งเหนียวหนุบหนับสู้ฟัน ขนมตาลก้นกรอบร้อนๆ ปิดท้ายด้วยขนมเบื้องคาเวียร์รสหวานดั้งเดิม
+                                และรสเค็มทรงเครื่อง ถูกใจแบบไหน จัดมาให้หายอยากกันเลย</p>
+                            <div class="my-4">
+                                <p class="txt-mid0-3-1 font-weight-bold">ตั้งอยู่ที่ :
+                                <p class="txt-mid0-3-1"> ริมถนนมหาไชย ใกล้ประตูผี กรุงเทพมหานคร</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เบอร์ติดต่อ :
+                                <p class="txt-mid0-3-1"> 0955164241</p>
+                                </p>
+                                <p class="txt-mid0-3-1 font-weight-bold">เวลาเปิดบริการ :
+                                <p class="txt-mid0-3-1"> ทุกวัน 17:30 - 00:30</p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <img class="" id="" src="./image_สตรีทฟู้ดดี้/37.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_สตรีทฟู้ดดี้/38.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_สตรีทฟู้ดดี้/39.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_สตรีทฟู้ดดี้/40.jpg" alt=""
+                                            style="width: 150px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- -------------------------------- -->
+                    <div class="" style="margin-top: 100px;">
+                        <a class="Yellow font-weight-bold" href="..." style="width: 320px;
+                        padding: 7px;
+                        border: 1px solid rgb(255, 255, 255);
+                        border-color: rgb(219, 219, 219);
+                        margin: 0;">สตรีทฟู้ดดี้
+                        </a>
+                    </div>
+                    <div class="row py-5">
+                        <a class="col-3 nav-link txt-mid0-7-1 font-weight-bold" href="#highlight"><img class=""
+                                src="./image/Group-1115-e1599403771374.png" width="22%">&emsp;Robinhood</a>
+                        <a class="col-5 nav-link mt-2 txt-mid0-7-1 font-weight-bold text-secondary"
+                            href="#highlight">|&emsp;<i class="far fa-calendar-alt text-secondary"
+                                style="font-size:16px"></i> ตุลาคม 25, 2020&emsp;|&emsp;watching 2,761</a>
+                    </div>
+                    <hr width="818" style="margin-top: 1px;">
+                    <div class="row">
+                        <div class="col-12 py-5">
+                            <p class="txt-mid0-1-1 font-weight-bold color-robinhood">เนื้อหาที่เกี่ยวข้อง</p>
+                        </div>
+                        <div class="col-4">
+                            <a href="..."><img class="img1" id="" src="./image_สตรีทฟู้ดดี้/41.jpg" alt=""
+                                    style="width: 106%;height: 260; border-radius: 10px;"></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="..."><img class="" id="" src="./image_สตรีทฟู้ดดี้/46.png" alt=""
+                                    style="width: 106%;height: 260; border-radius: 10px;"></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="..."><img class="" id="" src="./image_สตรีทฟู้ดดี้/45.jpg" alt=""
+                                    style="width: 106%;height: 260; border-radius: 10px;"></a>
+                        </div>
+                        <div class="col-4 py-3">
+                            <a href="..."><img class="" id="" src="./image_สตรีทฟู้ดดี้/42.jpg" alt=""
+                                    style="width: 106%;height: 260; border-radius: 10px;"></a>
+                        </div>
+                        <div class="col-4 py-3">
+                            <a href="..."><img class="" id="" src="./image_สตรีทฟู้ดดี้/44.jpg" alt=""
+                                    style="width: 106%;height: 260; border-radius: 10px;"></a>
+                        </div>
+                        <div class="col-4 py-3">
+                            <a href="..."><img class="" id="" src="./image_สตรีทฟู้ดดี้/43.jpg" alt=""
+                                    style="width: 106%;height: 260; border-radius: 10px;"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <br>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-3">
+                    <div class="row">
+                        <img class="" id="" src="./image/logo-White.png" alt="" style="width: 31%;">
+                    </div>
+                    <div class="row mt-3">
+                        <p class="text-warning">ติดตามเราช่องทางอื่นๆ</p>
+                    </div>
+                    <div class="row mt-3 ml-5">
+                        <img class="ml-5" id="" src="./image/facebook.png" alt="" style="width: 25%;">
+                    </div>
+                    <div class="row mt-4 ml">
+                        <p class="text-white" style="font-size: 13px;">Call Center : <a class="ml-1">02-777-7564</a></p>
+                        <p class="text-white" style="font-size: 13px;">เปิดให้บริการทุกวัน ตลอด 24 ชั่วโมง</p>
+                    </div>
+                    <div class="row mt-4">
+
+                    </div>
+                    <div class="row ml">
+                        <p class="text-white" style="font-size: 13px;">©Robinhood</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row mt-5">
+
+                    </div>
+                    <div class="row mt-1">
+                        <p class="text-warning">ข้อกำหนดการใช้งาน Robinhood</p>
+                    </div>
+                    <div class="row">
+                        <a class="text-white mt-4" style="font-size: 11px;"
+                            href=""><u>ข้อกำหนดและเงื่อนไขการใช้บริการร้านอาหารโรบินฮู้ด</u></a>
+                    </div>
+                    <div class="row">
+                        <a class="text-white mt-3" style="font-size: 11px;"
+                            href=""><u>ข้อกำหนดและเงื่อนไขการใช้บริการสั่งอาหาร</u></a>
+                    </div>
+                    <div class="row">
+                        <p class="text-warning mt-5">ข้อกำหนดการใช้งานเว็บไซต์</p>
+                    </div>
+                    <div class="row ml">
+                        <a class="text-white" style="font-size: 12px;" href=""><u>Privacy policy</u></a>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="row mt-4">
+                        <a class="col-9 nav-link" href="merchant.html">
+                            <div class="card" style="width: 19rem;">
+                                <img class="card-img-top " src="./image/rectangle.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="row txt-10 font-weight-bold" style="font-size: 14px;">พาร์ทเนอร์ร้านอาหาร​
+                                    </p>
+                                    <p class="row txt-11 font-weight-normal" style="font-size: 12px;">มาเพิ่มยอดขายง่ายๆ
+                                        ให้ร้านอาหารของคุณ
+                                        สามารถสมัครร่วมเป็นร้านอาหารกับ Robinhood ได้แล้ววันนี้</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="col-2 nav-link" href="rider.html">
+                            <div class="card" style="width: 19rem;">
+                                <img class="card-img-top \" src="./image/Robinhood-Rider-Footer-box-edit.png"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="row txt-10 font-weight-bold" style="font-size: 14px;">โรบินฮู้ด ไรเดอร์​
+                                    </p>
+                                    <p class="row txt-11 font-weight-normal" style="font-size: 12px;">เช้ารับงาน
+                                        ค่ำรับเงิน ได้เต็มๆ ไม่ต้องสำรองเงินค่าอาหาร พร้อมรับสิทธิพิเศษมากมาย
+                                        สมัครได้แล้วเพียงโหลดแอป</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+
+            </div>
+            <div class="row mt-5 text-center ml-5">
+                <p class="text-muted ml-4 my-4">Copyright © 2021 <a class="text-white" href="index.html">Robinhood.</a>
+                    All Rights Reserved. <a class="text-white" href="#">Privacy-th</a> | Catch Foodmania by <a
+                        class="text-white" href="https://catchthemes.com/">Catch Themes</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

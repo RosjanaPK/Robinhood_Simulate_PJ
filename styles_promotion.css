@@ -1,0 +1,92 @@
+.bg_top{
+    width: 100%;
+    height: 600px;
+    background-image: url(./image/Promotion-Page-Top-Banner.jpg);
+    /* position: absolute; */
+    z-index: -100;
+    background-size: cover;
+    background-position: center;
+}
+#navbar2{
+    color: rgb(156, 55, 156);
+}
+.txt-1-1{
+    font-family: 'Kanit', sans-serif;
+    font-size: 45px;
+    font-weight: bolder;
+    margin-top: 175px;
+    color: rgb(53, 52, 52);
+    margin-right: 10px;
+}
+#img_promo1{
+    height: 450px;
+    width:106.5%;
+    background-image: url(./image/RBH_TASTEOFSIAM_Phase3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: right;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+    
+}
+#img_promo2{
+    width:106.5%;
+    height: 450px;
+    background-image: url(./image/RBH-DTAC_2_Promotion-Banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: right;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+    
+}
+#img_promo3{
+    height: 450px;
+    width:106.5%;
+    background-image: url(./image/RBH-x-SCB-Debit-Promotion-Banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: right;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+}
+#img_promo4{
+    height: 450px;
+    width:106.5%;
+    background-image: url(./image/RBHxAIS_Phase2_Promotion-Banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: right;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+    
+}
+#img_promo5{
+    height: 450px;
+    width:106.5%;
+    background-image: url(./image/SCB-Credit-Card-Point-Redeem_Promotion-Banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: right;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2); 
+}
+#img_promo6{
+    height: 450px;
+    width:106.5%;
+    background-image: url(./image/promotion_เพิ่ม.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: right;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2); 
+}
+.footer{
+    background-color: black;
+}

@@ -1,0 +1,384 @@
+*{
+    font-family: 'Kanit', sans-serif;
+}
+.pointer {cursor: pointer;}
+#popup_container {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(50, 50, 50, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 500;
+}
+
+#popup {
+    background: white;
+    width: 400px;
+    height: 500px;
+    margin: 90px auto;
+    border-radius: 10px;
+}
+#popup_container2 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(50, 50, 50, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 500;
+}
+
+#popup2 {
+    background: white;
+    width: 400px;
+    height: 500px;
+    margin: 90px auto;
+    border-radius: 10px;
+}
+
+.bg{
+    position: relative;
+}
+.bg_top{
+    width: 100%;
+    /* height: 39.5%; */
+    height: 193%;
+    background-image: url(./image/หน้าปกสมัครพาร์ทเนอร์1.jpg);
+    /* position: absolute; */
+    z-index: -100;
+    /* background-size: cover; */
+    /* background-position: left; */
+    flex-wrap: wrap;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    background-size: cover;
+    background-position: center;
+    
+}
+.bg_aboutus{
+    width: 100%;
+    height: 350px;
+    
+    background-image: url(./image/banner-หน้ารู้จักเรา.png);
+    /* position: absolute; */
+    z-index: -100;
+    background-size: cover;
+    /* background-position: center; */
+    opacity: 0.5;
+    filter: alpha(opacity=40);
+}
+
+#nav_top{
+    padding-top: 20px;
+    font-family: 'Kanit', sans-serif;
+    font-weight:bold;
+    
+}
+
+.fixed-top {
+    top: -40px;
+    transform: translateY(40px);
+    transition: transform .3s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgb(0, 0, 0);
+    /* padding: 12px 16px; */
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown:hover .dropdown-toggle {
+    background-color: none;
+}
+.nav-item{
+    font-size: 14px;
+}
+#navbar1, #navbar2, #navbar3, #navbar4, #navbar5, #navbar6, #navbar7, #navbar8, #navbar9 {
+    color: white;
+}
+
+#text{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+
+}
+.nav-item{
+    color: white;
+}
+.nav_link{
+    color: white;
+}
+#item1{
+    color: #a0308f;
+}
+.ans1 {
+    background-color: #FFF;
+    width: 70%;
+    height: 100%;
+    /* font-size: 25px; */
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #111;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 3px 10px 0 rgb(162 143 163 / 20%);
+}
+#panel, #flip, #panel2, #flip2, #panel3, #flip3, #panel4, #flip4, #panel5, #flip5, #panel6, #flip6, #panel7, #flip7, #panel8, #flip8, #panel9, #flip9, #panel10, #flip10, #panel11, #flip11, #panel12, #flip12{
+    padding: 5px;
+    background-color: #ffffff;
+    border: solid 1px #000000;
+    /* font-size: 24px; */
+  }
+  
+#panel, #panel2, #panel3, #panel4, #panel5, #panel6, #panel7, #panel8, #panel9, #panel10, #panel11, #panel12{
+    padding: 10px;
+    display: none;
+}
+.bg_aboutus{
+    width: 100%;
+    height: 350px;
+    
+    background-image: url(./image/banner-หน้ารู้จักเรา.png);
+    /* position: absolute; */
+    z-index: -100;
+    background-size: cover;
+    /* background-position: center; */
+    opacity: 0.5;
+    filter: alpha(opacity=40);
+}
+.ans1{
+    width: 72%;
+    height: 75px;
+}
+.ans2{
+    font-size: 16px;
+    background-color: #FFF;
+    width: 72%;
+    height: 100%;
+    /* font-size: 25px; */
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #111;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 3px 10px 0 rgb(162 143 163 / 20%);
+}
+.ans3{
+    background-color: #FFF;
+    /* font-size: 25px; */
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #111;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 3px 10px 0 rgb(162 143 163 / 20%);
+    width: 72%;
+    height: 75px;
+}
+.ans_1{
+    
+    font-size: 22px;
+}
+.ans_div{
+    margin-left: 10%;
+}
+#list{
+    height: 40px;
+    width: 135px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-decoration: none;
+    border-radius: 20px;
+    background: linear-gradient( 45deg, #c428a0, #8b4aae);
+    border: none;
+    z-index: 0;
+}
+.footer{
+    margin-left: -150px;
+    background-color: black;
+}
+.txt-1-1{
+    /* width: 150px; */
+    background: linear-gradient(45deg, rgb(218,125,58), rgb(125,105,50));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+}
+.button{
+    height: 40px;
+    width: 135px;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-decoration: none;
+    border-radius: 20px;
+    background: linear-gradient( 45deg, #c428a0, #8b4aae);
+    border: none;
+}
+.two{
+    padding: 10px;
+    max-width: 100%;
+    /* height: 75%; */
+    /* background-image: url(./image/Mask-Group.png); */
+    position: absolute;
+    /* z-index: -100; */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.bg_robin{
+    width: 80%;
+    max-width: 100%;
+    
+    background-image: url(./image/Mask-Group.png);
+    /* position: absolute; */
+    z-index: -100;
+    background-size: cover;
+    /* background-position: center; */
+    background-color: transparent;
+    opacity: 1;
+    filter: alpha(opacity=40);
+}
+#Robinhood_Shop{
+    height: 100%;
+    background-image: linear-gradient(rgb(89,48,134), rgb(174,50,141));
+}
+#Robinhood_Shop_2{
+    height: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+}
+.button2{
+    height: 55px;
+    width: 60%;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-decoration: none;
+    border-radius: 25px;
+    background: linear-gradient( 45deg, #c428a0, #8b4aae);
+    border: none;
+}
+#book{
+    height: 75%;
+    width: 85%;
+    background: white;
+    border-radius: 8px;
+    padding: 2px;
+}
+#five{
+    background-color: rgb(236, 236, 236);
+}
+#bg-six{
+    /* padding: 10px; */
+    /* width: 100%; */
+    /* height: 100%; */
+    /* height: 75%; */
+    background-image: url(./image/Frame-6-crop.jpg);
+    position: absolute;
+    /* z-index: -100; */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#txt-2-2{
+    
+    background: linear-gradient(45deg, rgb(204,33,159), rgb(134,75,176));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 45px;
+}
+#txt-2-2-2{
+    font-size: 24px;
+}
+#bg-seven{
+    /* padding: 10px; */
+    /* width: 100%; */
+    /* height: 100%; */
+    /* height: 75%; */
+    background-image: url(./image/Frame-884-e1597331443973.png);
+    position: absolute;
+    /* z-index: -100; */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#txt-3-3-3{
+    background: linear-gradient(45deg, rgb(204,33,159), rgb(134,75,176));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 45px;
+}
+.price{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.button3{
+    height: 55px;
+    width: 35%;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-decoration: none;
+    border-radius: 25px;
+    background: linear-gradient( 45deg, #c428a0, #8b4aae);
+    border: none;
+}
+#bg-nine{
+    /* padding: 10px; */
+    /* width: 100%; */
+    /* height: 100%;
+    height: 100%; */
+    background-image: url(./image/แผนที่.jpg);
+    position: absolute;
+    /* z-index: -100; */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+/* #textbuttext{
+    background-color: rgb(230, 31, 31);
+    width: 100%;
+    height: 100%;
+} */
+
+/* .one{
+    z-index: -100;
+} */

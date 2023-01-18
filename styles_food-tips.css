@@ -1,0 +1,153 @@
+*{
+    font-family: 'Kanit', sans-serif;
+}
+
+.bg_top1{
+    width: 100%;
+    height: 480px;
+    background-image: url(./image/Landing-1st-Strip-4.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -100;
+}
+
+#nav_top{
+    padding-top: 20px;
+    font-family: 'Kanit', sans-serif;
+    font-weight:bold;
+}
+
+#navbar5{
+    color: rgb(156, 55, 156);
+}
+
+.fixed-top {
+    top: -40px;
+    transform: translateY(40px);
+    transition: transform .3s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    /* padding: 12px 16px; */
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown:hover .dropdown-toggle {
+    background-color: none
+}
+.nav-item{
+    font-size: 14px;
+}
+
+a {
+    color: black;
+}
+
+a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.highlight{
+    font-weight: bold;
+    background: linear-gradient( 45deg, #c428a0, #8b4aae);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#txt-box1{
+    margin-top: 90px;
+}
+
+.txt1{
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+.txt2{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.photo1{
+    width: 600px;
+    border-radius: 10px;
+}
+
+#photo1 :hover{
+    /* filter:drop-shadow(8px 8px 10px gray); */
+    filter:brightness(86%) grayscale(2%);
+    transition: .4s;
+}
+
+.txt_photo1{
+    font-size: 25px;
+}
+
+.photo2{
+    width: 400px;
+    border-radius: 10px;
+}
+
+.txt_photo2{
+    font-size: 25px;
+}
+
+#tips{
+    width: 90%;
+    position: relative;
+    top: 70px;
+}
+
+#photo{
+    padding: 20px;
+}
+
+.robin{
+    font-size: 16px;
+}
+
+.txt_photo2{
+    font-size: 20px;
+}
+
+.robin{
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient( 45deg, #c428a0, #8b4aae);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.photo3{
+    width: 350px;
+    border-radius: 10px;
+}
+.footer{
+    background-color: black;
+}
+#tips{
+    margin-left: 45px;
+}
+/* #photo2{
+    padding: 10px;
+} */

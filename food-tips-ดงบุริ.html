@@ -1,0 +1,389 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="icon" href="./image/RBH_MAIN_LOGO-crop.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/fa4852718f.js" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles_food-tips-ดงบุริ.css">
+    <title>“ดงบุริ” อาหารมื้อง่ายๆ ทั้งอร่อยและมีประโยชน์ ​ - Robinhood</title>
+</head>
+
+<body>
+    <div id="popup_container">
+        <div id="popup">
+            <div class="container text-center">
+                <div class="row ">
+                    <p class="font-weight-bold mt-3" style="font-size: 22px;">แอปสั่งอาหารโรบินฮู้ด</p>
+                </div>
+                <div class="row">
+                    <p class="font-weight-bold" style="font-size: 30px;">สแกนเพื่อดาวน์โหลด</p>
+                </div>
+                <img class="my-3" src="./image/qrcode.png" style="width:170px;">
+                <div class="row">
+                    <div class="col-5 ml-4">
+                        <img class="ml-5" src="./image/img.png" style="width: 92px;">
+                    </div>
+                    <div class="col mt-2">
+                        <img class="row" src="./image/download_App-Store.png" style="width: 96px;">
+                        <img class="row mt-2" src="./image/download_Google-Play.png" style="width: 96px;">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="font-weight-bold" style="font-size: 16px;">Robinhood ทางเลือกใหม่ของฟู้ดเดลิเวอรี่ไทย</p>
+                </div>
+                <div class="row">
+                    <a class="pointer" onclick="hidePopup()" style="font-size: 14px; color: rgb(171,76,171);">ปิดหน้าต่างนี้</a>
+                </div>
+            </div>
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button> -->
+            
+        </div>
+    </div>
+    <div id="popup_container2">
+        <div id="popup2">
+            <div class="container text-center">
+                <div class="row ">
+                    <p class="font-weight-bold mt-3" style="font-size: 22px;">แอปสั่งอาหารโรบินฮู้ด</p>
+                </div>
+                <div class="row">
+                    <p class="font-weight-bold" style="font-size: 30px;">สแกนเพื่อดาวน์โหลด</p>
+                </div>
+                <img class="my-3" src="./image/qrcode.png" style="width:170px;">
+                <div class="row">
+                    <div class="col-5 ml-4">
+                        <img class="ml-5 " src="./image/img.png" style="width: 92px;">
+                    </div>
+                    <div class="col mt-2">
+                        <img class="row" src="./image/download_App-Store.png" style="width: 96px;">
+                        <img class="row mt-2" src="./image/download_Google-Play.png" style="width: 96px;">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="font-weight-bold" style="font-size: 16px;">Robinhood ทางเลือกใหม่ของฟู้ดเดลิเวอรี่ไทย</p>
+                </div>
+                <div class="row">
+                    <a class="pointer" onclick="hidePopup2()" style="font-size: 14px; color: rgb(171,76,171);">ปิดหน้าต่างนี้</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg_top1">
+        <nav id="navbar_top" class="navbar navbar-expand-xl navbar-dark">
+            <div class="container-fluid" id="nav_top">
+                <a href="index.html"><img src="image/RBH_MAIN_LOGO.png" width="60"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ml-4 d-flex justify-content-end" id="main_nav">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="about-us.html">รู้จักเรา</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="promotion.html">โปรโมชั่น</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="food-playlist.html">กินอะไรดี</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="zone-list.html">จานเด็ดย่านดัง</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="food-tips.html">ทิปความรู้</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark"
+                                href="restaurant-story.html">เรื่องราวร้านอาหาร</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle ms-1 text-dark" href="#"
+                                data-bs-toggle="dropdown">พาร์ทเนอร์ร้านอาหาร</a>
+                            <ul class="dropdown-menu dropdown-menu-right glyphicon glyphicon-menu-down">
+                                <li><a class="dropdown-item" href="merchant.html">สมัครเป็นพาร์ทเนอร์</a></li>
+                                <li><a class="dropdown-item" href="merchantcenter.html">คู่มือสำหรับอาหาร</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark"
+                                href="travel-partner.html">พาร์ทเนอร์ท่องเที่ยว</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="rider.html">ไรเดอร์</a></li>
+                        <a class="nav-item ms-1 ps-4 mt-1 pointer" onclick="showPopup()"><img src="image/download_App-Store.png"
+                            width="110"></a>
+                    <a class="nav-item ms-1 ps-4 mt-1 pointer" onclick="showPopup2()"><img src="image/download_Google-Play.png"
+                            width="110"></a>
+                    </ul>
+                </div> <!-- navbar-collapse.// -->
+            </div> <!-- container-fluid.// -->
+        </nav>
+    </div>
+    <!-- ============= COMPONENT ============== -->
+    <div class="mid0">
+        <div class="container">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-9 my-5 mx-5">
+                    <p class="txt-mid0-1"><a class="txt-mid0-1 mid0-1" href="...">Featured Tips Second</a> > “ดงบุริ”
+                        อาหารมื้อง่ายๆ ทั้งอร่อยและมีประโยชน์ ​</p>
+                    <p class="txt-mid0-2 color-robinhood font-weight-bold">5 เหตุผลที่คนนิยมสั่งอาหารเดลิเวอรี่</p>
+                    <p class="font-weight-bold">ช่วยเราแชร์ได้นะ</p>
+                    <div class="row mb-3">
+                        <div class="col-5">
+                            <a href="#" class="icon_social mr-3"><i class="fab fa-facebook"
+                                    style="font-size: 32px; color: rgb(30, 104, 245);"></i></a>
+                            <a href="#" class="icon_social mr-3"><i class="fab fa-twitter-square"
+                                    style="font-size: 32px; color: rgb(35, 183, 241);"></i></a>
+                            <a href="#" class="icon_social"><i class="fab fa-line"
+                                    style="font-size: 32px; color: green;"></i></a>
+                        </div>
+                        <div class="col-6 mx-4">
+                            <p class="txt-mid0-3 font-weight-bold">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPosted Oct 22, 2020</p>
+                            <p class="txt-mid0-4 font-weight-bold">&nbspFood Tips</p>
+                            <p class="txt-mid0-3 font-weight-bold">หมวดหมู่ : </p>
+                        </div>
+                    </div>
+                    <img class="mb-4" id="" src="./image_ดงบุริ/1.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5">เที่ยงนี้กินอะไรดี? คำถามง่ายๆ แต่หลายครั้งก็ทำเอาผู้ตอบต้องคิดหนัก
+                        เพราะเมนูที่มีอยู่ในหัวนั้นเริ่มซ้ำ เมนูใหม่ก็ยังคิดไม่ออก ใครที่เกิดความรู้สึกเช่นนี้
+                        ลองเปลี่ยนมื้อจำเจมาเป็นมื้อแปลกใหม่แต่เรียบง่ายกันดู โดยเมนูที่น่าสนใจและอยากจะแนะนำก็คือ
+                        <span class="font-weight-bold">“ดงบุริ”</span> อาหารจานเดียวในสไตล์ญี่ปุ่นแบบอิ่มกำลังดี
+                        แถมอร่อย และมีประโยชน์ด้วย
+                    </p>
+                    <img class="mt-5 mb-3" id="" src="./image_ดงบุริ/2.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5"><span class="font-weight-bold">ดงบุริ หรือ ดมบุริ</span> (丼 Donburi, Domburi)
+                        เป็นคำที่คนญี่ปุ่นใช้เรียก ถ้วย หรือ
+                        ชามก้นลึก อาจทำจากไม้ เซรามิก หรือดินเผา จะมีฝาปิดหรือไม่มีก็ได้
+                        แต่ในปัจจุบันเป็นที่รู้จักกันในชื่อของอาหารญี่ปุ่นที่เสิร์ฟมาในชาม
+                        ด้านล่างเป็นข้าวสวยญี่ปุ่นร้อนๆ ด้านบนโปะด้วยกับข้าว ซึ่งมักจะเป็นอาหารประเภทเนื้อสัตว์
+                        ดงบุริจึงมีความหลากหลายในเรื่องของหน้าหรือท็อปปิ้งที่โปะอยู่ด้านบน จนเกิดการเรียกดงบุริ
+                        (Donburi) แตกต่างกันไปตามชื่อของหน้าต่างๆ แต่สิ่งที่เหมือนกันก็คือ ทุกเมนู “ดงบุริ” จะมีคำว่า
+                        “ด้ง” (Don) ต่อท้าย เช่น Unadon (ข้าวหน้าปลาไหล), Oyakodon (ข้าวหน้าไก่และไข่), Katsudon
+                        (ข้าวหน้าหมูชุบแป้งทอด), Tendon (ข้าวหน้าเทมปุระ), Gyudon (ข้าวหน้าเนื้อ) เป็นต้น</p>
+                    <img class="mt-5 mb-3" id="" src="./image_ดงบุริ/3.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5">ปัจจุบันดงบุริมีหน้าใหม่ๆ เกิดขึ้นนับไม่ถ้วน มีการใช้วัตถุดิบที่หลากหลายขึ้น
+                        รวมถึงใส่ความคิดสร้างสรรค์เพิ่มเติมเข้าไป จนเกิดรสสัมผัสใหม่ๆ
+                        ที่มีความซับซ้อนและสนุกกับการได้รับประทานมากขึ้น
+                        หลายร้านมีการตกแต่งหน้าดงบุริแบบจัดเต็มด้วยปริมาณของท็อปปิ้งจนล้นหรือพูนออกมานอกชาม
+                        ชวนให้อยากถ่ายรูปแชร์ให้คนรู้จักได้มาลิ้มลองบ้าง
+                    </p>
+                    <img class="mt-5 mb-3" id="" src="./image_ดงบุริ/4.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5">ประเทศไทยเองก็มีร้านดงบุริอยู่จำนวนไม่น้อย บางเมนูหาทานที่ญี่ปุ่นไม่ได้
+                        เพราะแต่ละร้านก็มักจะมีดงบุริหน้าพิเศษที่เป็นเอกลักษณ์เฉพาะของตนเองเพิ่มเติมขึ้นมาจากเมนูปกติ
+                        หากจะนับหน้าดงบุริทั้งหมดที่มีอยู่แบบไม่ซ้ำกรรมวิธี และสไตล์การสร้างสรรค์ ก็คงจะมีดงบุริเป็นพันๆ
+                        หน้าทีเดียว ซึ่งถือเป็นเสน่ห์อย่างหนึ่งของดงบุริที่ทำให้คนกินไม่รู้สึกเบื่อ
+                        เพราะได้กินอาหารที่หลากหลายทั้งรสชาติและหน้าตาตามไปด้วย</p>
+                    <img class="mt-5 mb-3" id="" src="./image_ดงบุริ/5.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5">สำหรับที่มาของของดงบุรินั้น
+                        บางแหล่งกล่าวไว้ว่ามีที่มาจากชื่อภาชนะใส่อาหารของชนชั้นสูงที่นำเข้ามาจากกรุงธนบุรี
+                        คนญี่ปุ่นจึงเรียกอาหารที่เสิร์ฟมาในชามนี้ว่า “ธนบุรี” แต่เพี้ยนไปตามสำเนียงญี่ปุ่นจนกลายเป็น
+                        “ดมบุริ” หรือ “ดงบุริ” ซึ่งที่มานี้ได้มีนักวิชาการแย้งว่า
+                        ดงบุริเป็นอาหารที่ไม่ได้แตกต่างไปจากวัฒนธรรมการกินของคนญี่ปุ่นแบบดั้งเดิม
+                        ดังนั้นดงบุริจึงน่าจะมีมาก่อนสมัยกรุงธนบุรีของไทย ซึ่งอาจจะเป็นยุคเอโดะ หรืออาจจะก่อนศตวรรษที่
+                        17 ก็เป็นได้ รวมถึงในสมัยกรุงธนบุรีเอง ชาวต่างชาติที่มาติดต่อซื้อขายกับไทยในช่วงนั้น
+                        ก็ไม่ได้เรียกประเทศไทยว่า “ธนบุรี” จึงเป็นไปได้ยากที่ “ดงบุริ” จะเพี้ยนมาจากคำว่า “ธนบุรี”</p>
+                    <img class="mt-5 mb-3" id="" src="./image_ดงบุริ/6.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5">สำหรับที่มาของของดงบุรินั้น
+                        บางแหล่งกล่าวไว้ว่ามีที่มาจากชื่อภาชนะใส่อาหารของชนชั้นสูงที่นำเข้ามาจากกรุงธนบุรี
+                        คนญี่ปุ่นจึงเรียกอาหารที่เสิร์ฟมาในชามนี้ว่า “ธนบุรี” แต่เพี้ยนไปตามสำเนียงญี่ปุ่นจนกลายเป็น
+                        “ดมบุริ” หรือ “ดงบุริ” ซึ่งที่มานี้ได้มีนักวิชาการแย้งว่า
+                        ดงบุริเป็นอาหารที่ไม่ได้แตกต่างไปจากวัฒนธรรมการกินของคนญี่ปุ่นแบบดั้งเดิม
+                        ดังนั้นดงบุริจึงน่าจะมีมาก่อนสมัยกรุงธนบุรีของไทย ซึ่งอาจจะเป็นยุคเอโดะ หรืออาจจะก่อนศตวรรษที่
+                        17 ก็เป็นได้ รวมถึงในสมัยกรุงธนบุรีเอง ชาวต่างชาติที่มาติดต่อซื้อขายกับไทยในช่วงนั้น
+                        ก็ไม่ได้เรียกประเทศไทยว่า “ธนบุรี” จึงเป็นไปได้ยากที่ “ดงบุริ” จะเพี้ยนมาจากคำว่า “ธนบุรี”
+                    </p>
+                    <img class="mt-5 mb-3" id="" src="./image_ดงบุริ/7.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5">“ดงบุริ” เป็นเมนูที่หาทานได้ไม่ยาก ใครที่อยากลองรสชาติความอร่อยแบบไม่ซ้ำหน้า
+                        ก็สามารถหาทานได้ตามร้านอาหารญี่ปุ่นแทบทุกร้าน หรือจะสั่งเดลิเวอรี่มาทานก็สะดวกไม่น้อย
+                        อยากสั่งหน้าไหน เมื่อไหร่ ก็กดมือถือสั่งผ่านแอปได้ทันที <span
+                            class="font-weight-bold">เพราะสมัยนี้จะอยู่บ้านหรืออยู่ที่ไหน
+                            ก็หาของอร่อยๆ กินได้ไม่ยากเลย</span></p>
+                    <p class="txt-mid0-5 mt-5"><span class="font-weight-bold">อ้างอิง<br>
+                        </span>https://www.marumura.com/donburi/<br>
+                        https://thestandard.co/donburi-tokyo/</p>
+
+
+                    <div class="button">
+                        <a class="japanese-food p-2 mr-2 font-weight-bold" href="">อาหารญี่ปุ่น</a>
+                    </div>
+
+                    <div class="row mt-5">
+                        <a class="col-3 nav-link txt-robinhood font-weight-bold"><img class=""
+                                src="./image/Group-1115-e1599403771374.png" width="22%">&emsp;Robinhood</a>
+                        <a class="col-5 nav-link mt-2 txt-robinhood font-weight-bold text-secondary"
+                            href="#highlight">|&emsp;<i class="far fa-calendar-alt text-secondary"
+                                style="font-size:16px"></i> ตุลาคม 22, 2020&emsp;|&emsp;watching 769</a>
+                    </div>
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="mid0-1">
+                        <div class="row">
+                            <div class="col-12 pt-5 pb-4">
+                                <p class="txt-content font-weight-bold color-robinhood">เนื้อหาที่เกี่ยวข้อง</p>
+                            </div>
+                            <div class="col-4">
+                                <a href="..."><img class="" id="" src="./image/why-food-delivery-thumbnail-cover.jpg"
+                                        alt="" style="width: 105%; height: 220px; border-radius: 10px;"></a>
+                                <a href="">
+                                    <p class="mt-3 txt-photo font-weight-bold">5 เหตุผลที่การสั่งอาหารเดลิเวอรี่​</p>
+                                </a>
+                                <a href="...">
+                                    <p class="color-robinhood" style="margin-top: -10px;">Robinhood</p>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="..."><img class="" id="" src="./image/Donburi-Thumbnail-Cover.jpg" alt=""
+                                        style="width: 105%; height: 220px; border-radius: 10px;"></a>
+                                <a href="">
+                                    <p class="mt-3 txt-photo font-weight-bold">“ดงบุริ” อาหารมื้อง่ายๆ ทั้งอร่อย</p>
+                                </a>
+                                <a href="...">
+                                    <p class="color-robinhood" style="margin-top: -10px;">Robinhood</p>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="..."><img class="" id="" src="./image/Cheese-Thumbnail-Cover.jpg" alt=""
+                                        style="width: 105%; height: 220px; border-radius: 10px;"></a>
+                                <a href="">
+                                    <p class="mt-3 txt-photo font-weight-bold">ชีสเลิฟเวอร์ต้องรู้! มีกี่ชนิด & กิน</p>
+                                </a>
+                                <a href="...">
+                                    <p class="color-robinhood" style="margin-top: -10px;">Robinhood</p>
+                                </a>
+                            </div>
+                            <div class="col-4 mt-3">
+                                <a href="..."><img class="" id="" src="./image/Michelin-Inspector-Thumbnail-Cover.jpg"
+                                        alt="" style="width: 105%; height: 220px; border-radius: 10px;"></a>
+                                <a href="">
+                                    <p class="mt-3 txt-photo font-weight-bold">อาชีพในฝัน Michelin</p>
+                                </a>
+                                <a href="...">
+                                    <p class="color-robinhood" style="margin-top: -10px;">Robinhood</p>
+                                </a>
+                            </div>
+                            <div class="col-4 mt-3">
+                                <a href="..."><img class="" id="" src="./image/Steak-Thumbnail-Cover.jpg" alt=""
+                                        style="width: 105%; height: 220px; border-radius: 10px;"></a>
+                                <a href="">
+                                    <p class="mt-3 txt-photo font-weight-bold">How to สั่งสเต๊กยังไงให้อร่อย?</p>
+                                </a>
+                                <a href="...">
+                                    <p class="color-robinhood" style="margin-top: -10px;">Robinhood</p>
+                                </a>
+                            </div>
+                            <div class="col-4 mt-3">
+                                <a href="..."><img class="" id="" src="./image/Sushi-Thumbnail-Cover.jpg" alt=""
+                                        style="width: 105%; height: 220px; border-radius: 10px;"></a>
+                                <a href="">
+                                    <p class="mt-3 txt-photo font-weight-bold">รู้จัก “ซูชิ” อย่างเซียน</p>
+                                </a>
+                                <a href="...">
+                                    <p class="color-robinhood" style="margin-top: -10px;">Robinhood</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <br>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-3">
+                    <div class="row">
+                        <img class="" id="" src="./image/logo-White.png" alt="" style="width: 31%;">
+                    </div>
+                    <div class="row mt-3">
+                        <p class="text-warning">ติดตามเราช่องทางอื่นๆ</p>
+                    </div>
+                    <div class="row mt-3 ml-5">
+                        <img class="ml-5" id="" src="./image/facebook.png" alt="" style="width: 25%;">
+                    </div>
+                    <div class="row mt-4 ml">
+                        <p class="text-white" style="font-size: 13px;">Call Center : <a class="ml-1">02-777-7564</a></p>
+                        <p class="text-white" style="font-size: 13px;">เปิดให้บริการทุกวัน ตลอด 24 ชั่วโมง</p>
+                    </div>
+                    <div class="row mt-4">
+
+                    </div>
+                    <div class="row ml">
+                        <p class="text-white" style="font-size: 13px;">©Robinhood</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row mt-5">
+
+                    </div>
+                    <div class="row mt-1">
+                        <p class="text-warning">ข้อกำหนดการใช้งาน Robinhood</p>
+                    </div>
+                    <div class="row">
+                        <a class="text-white mt-4" style="font-size: 11px;"
+                            href=""><u>ข้อกำหนดและเงื่อนไขการใช้บริการร้านอาหารโรบินฮู้ด</u></a>
+                    </div>
+                    <div class="row">
+                        <a class="text-white mt-3" style="font-size: 11px;"
+                            href=""><u>ข้อกำหนดและเงื่อนไขการใช้บริการสั่งอาหาร</u></a>
+                    </div>
+                    <div class="row">
+                        <p class="text-warning mt-5">ข้อกำหนดการใช้งานเว็บไซต์</p>
+                    </div>
+                    <div class="row ml">
+                        <a class="text-white" style="font-size: 12px;" href=""><u>Privacy policy</u></a>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="row mt-4">
+                        <a class="col-9 nav-link" href="merchant.html">
+                            <div class="card" style="width: 19rem;">
+                                <img class="card-img-top " src="./image/rectangle.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="row txt-10 font-weight-bold" style="font-size: 14px;">พาร์ทเนอร์ร้านอาหาร​
+                                    </p>
+                                    <p class="row txt-11 font-weight-normal" style="font-size: 12px;">มาเพิ่มยอดขายง่ายๆ
+                                        ให้ร้านอาหารของคุณ
+                                        สามารถสมัครร่วมเป็นร้านอาหารกับ Robinhood ได้แล้ววันนี้</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="col-2 nav-link" href="rider.html">
+                            <div class="card" style="width: 19rem;">
+                                <img class="card-img-top \" src="./image/Robinhood-Rider-Footer-box-edit.png"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="row txt-10 font-weight-bold" style="font-size: 14px;">โรบินฮู้ด ไรเดอร์​
+                                    </p>
+                                    <p class="row txt-11 font-weight-normal" style="font-size: 12px;">เช้ารับงาน
+                                        ค่ำรับเงิน ได้เต็มๆ ไม่ต้องสำรองเงินค่าอาหาร พร้อมรับสิทธิพิเศษมากมาย
+                                        สมัครได้แล้วเพียงโหลดแอป</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+
+            </div>
+            <div class="row mt-5 text-center ml-5">
+                <p class="text-muted ml-4 my-4">Copyright © 2021 <a class="text-white" href="index.html">Robinhood.</a>
+                    All Rights Reserved. <a class="text-white" href="#">Privacy-th</a> | Catch Foodmania by <a
+                        class="text-white" href="https://catchthemes.com/">Catch Themes</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

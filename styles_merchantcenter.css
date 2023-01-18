@@ -1,0 +1,329 @@
+.bg_top{
+    width: 100%;
+    /* height: 39.5%; */
+    height: 635px;
+    background-image: url(./image/หน้าปกคู่มือสำหรับอาหาร.jpg);
+    /* position: absolute; */
+    z-index: -100;
+    background-size: cover;
+    background-position: center;
+}
+
+#item2{
+    color: #a0308f;
+}
+.txt-1{
+    margin-top: 100px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+.txt-1-1{
+    margin-top: 100px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(53, 52, 52);
+}
+.txt-1-1-2{
+    font-family: 'Kanit', sans-serif;
+    font-size: 31px;
+    font-weight: bold;
+    color: rgb(53, 52, 52);
+}
+.txt-1-1-3{
+    font-family: 'Kanit', sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(53, 52, 52);
+}
+.txt-1-1-4{
+    margin-top: 150px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(53, 52, 52);
+    text-align: right;
+}
+.txt-1-1-1{
+    margin-top: 50px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(53, 52, 52);
+}
+.txt-1-2{
+    font-family: 'Kanit', sans-serif;
+    margin-top: 10px;
+    font-size: 23px;
+}
+.txt-1-2-1{
+    font-family: 'Kanit', sans-serif;
+    font-size: 23px;
+}
+.txt-1-2-2{
+    font-family: 'Kanit', sans-serif;
+    font-size: 22px;
+}
+.txt-1-3{
+    margin-top: 100px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+.txt-mid4-1{
+    margin-top: 80px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+.txt-mid4-2{
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+.mid4{
+    background-color: #f8f8f8;
+}
+.color-robinhood{
+    font-weight: bold;
+    background: linear-gradient( 45deg, #c428a0, #8b4aae);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.button{
+    height: 60px;
+    width: 200px;
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-decoration: none;
+    background: linear-gradient( 45deg, #c428a0, #8b4aae);
+    border: none;
+}
+.button1{
+    height: 60px;
+    width: 200px;
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-decoration: none;
+    border-radius: 50px;
+    background: linear-gradient( 45deg, #c428a0, #8b4aae);
+    border: none;
+}
+.button2{
+    height: 60px;
+    width: 600px;
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-decoration: none;
+    background: linear-gradient( 45deg, #c428a0, #8b4aae);
+    border: none;
+}
+.button3{
+    height: 60px;
+    width: 600px;
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-decoration: none;
+    background: linear-gradient( 45deg, #c428a0, #8b4aae);
+    border: none;
+}
+/* .container{
+    margin: auto;
+    border-radius: 10px;
+    padding: 5px;
+    width: 85%;
+} */
+#img-mid4-1{
+    height: 630px;
+    width: 100%;
+    background-image: url(./image/สร้างโปรโมชัน_step3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: right;
+    background-size: cover;
+    border-radius: 10px;
+}
+#img-mid4-2{
+    height: 630px;
+    width: 100%;
+    background-image: url(./image/สร้างโปรโมชัน_step1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: right;
+    background-size: cover;
+    border-radius: 10px;
+}
+#img-mid4-3{
+    height: 630px;
+    width: 100%;
+    background-image: url(./image/สร้างโปรโมชัน_step2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: right;
+    background-size: cover;
+    border-radius: 10px;
+}
+#img-top-mid5{
+    height: 210px;
+    width: 100%;
+    background-image: url(./image/ดาวโหลดคู่มือ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: right;
+    background-size: cover;
+    border-radius: 10px;
+}
+.mid6{
+    width: 100%;
+    height: 680px;
+    position: relative;
+}
+#img-top-mid6{
+    width: 100%;
+    height: 580px;
+    position: absolute;
+    background-image: url(./image/food-photographer.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#img-photo2{
+    width: 830px;
+    height: 580px;
+    margin-top: -8px;
+    /* position: absolute; */
+    /* background-image: url(./image/1แถม1.png); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* #img-mid7-1{
+    height: 600px;
+    width: 100%;
+    background-image: url(./image/เชื่อมต่อRobinhood.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: right;
+    background-size: cover;
+    border-radius: 10px;
+} */
+#img-mid-mid7{
+    height: 250px;
+    width: 100%;
+    background-color: rgb(252,239,245);
+    /* margin-top: 100px; */
+    /* background-image: url(./image/ติดตามข่าวสาร.png); */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    text-align: right;*/
+    /* background-size: cover;  */
+    border-radius: 10px;
+}
+.ans1 {
+    background-color: #FFF;
+    width: 70%;
+    height: 100%;
+    /* font-size: 25px; */
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #111;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 3px 10px 0 rgb(162 143 163 / 20%);
+}
+#panel, #flip, #panel2, #flip2, #panel3, #flip3, #panel4, #flip4, #panel5, #flip5, #panel6, #flip6, #panel7, #flip7, #panel8, #flip8, #panel9, #flip9, #panel10, #flip10, #panel11, #flip11, #panel12, #flip12{
+    padding: 5px;
+    background-color: #ffffff;
+    border: solid 1px #000000;
+    /* font-size: 24px; */
+  }
+  
+#panel, #panel2, #panel3, #panel4, #panel5, #panel6, #panel7, #panel8, #panel9, #panel10, #panel11, #panel12{
+    padding: 10px;
+    display: none;
+}
+
+/* .ans{ */
+    /* width: 100%;
+    height: 100%;
+    background-image: url(./image/Mask-Group-1.png); */
+    /* position: absolute; */
+    /* z-index: -100;
+    background-size: cover; */
+    /* background-position: center; */
+/* } */
+.bg_aboutus{
+    width: 100%;
+    height: 350px;
+    
+    background-image: url(./image/banner-หน้ารู้จักเรา.png);
+    /* position: absolute; */
+    z-index: -100;
+    background-size: cover;
+    /* background-position: center; */
+    opacity: 0.5;
+    filter: alpha(opacity=40);
+}
+.ans1{
+    width: 72%;
+    height: 75px;
+}
+.ans2{
+    font-size: 16px;
+    background-color: #FFF;
+    width: 72%;
+    height: 100%;
+    /* font-size: 25px; */
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #111;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 3px 10px 0 rgb(162 143 163 / 20%);
+}
+.ans3{
+    background-color: #FFF;
+    /* font-size: 25px; */
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #111;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 3px 10px 0 rgb(162 143 163 / 20%);
+    width: 72%;
+    height: 75px;
+}
+.ans_1{
+    
+    font-size: 22px;
+}
+.ans_div{
+    margin-left: 10%;
+}
+#list{
+    height: 40px;
+    width: 135px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-decoration: none;
+    border-radius: 20px;
+    background: linear-gradient( 45deg, #c428a0, #8b4aae);
+    border: none;
+    
+    z-index: 0;
+}
+.footer{
+    margin-left: -150px;
+    background-color: black;
+}
+/* .footer{
+    margin-left: -100px;
+} */

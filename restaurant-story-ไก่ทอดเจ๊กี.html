@@ -1,0 +1,691 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="icon" href="./image/RBH_MAIN_LOGO-crop.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="script.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles_restaurant-story-ไก่ทอดเจ๊กี.css">
+    <script src="https://kit.fontawesome.com/fa4852718f.js" crossorigin="anonymous"></script>
+
+    <title>50 ปีแห่งความอร่อย เจ๊กีโปโล ไก่ทอดระดับตำนานกับหลากหลายเมนูอีสานสุดแซ่บ - Robinhood</title>
+</head>
+
+<body>
+    <div id="popup_container">
+        <div id="popup">
+            <div class="container text-center">
+                <div class="row ">
+                    <p class="font-weight-bold mt-3" style="font-size: 22px;">แอปสั่งอาหารโรบินฮู้ด</p>
+                </div>
+                <div class="row">
+                    <p class="font-weight-bold" style="font-size: 30px;">สแกนเพื่อดาวน์โหลด</p>
+                </div>
+                <img class="my-3" src="./image/qrcode.png" style="width:170px;">
+                <div class="row">
+                    <div class="col-5 ml-4">
+                        <img class="ml-5" src="./image/img.png" style="width: 92px;">
+                    </div>
+                    <div class="col mt-2">
+                        <img class="row" src="./image/download_App-Store.png" style="width: 96px;">
+                        <img class="row mt-2" src="./image/download_Google-Play.png" style="width: 96px;">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="font-weight-bold" style="font-size: 16px;">Robinhood ทางเลือกใหม่ของฟู้ดเดลิเวอรี่ไทย</p>
+                </div>
+                <div class="row">
+                    <a class="pointer" onclick="hidePopup()" style="font-size: 14px; color: rgb(171,76,171);">ปิดหน้าต่างนี้</a>
+                </div>
+            </div>
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button> -->
+            
+        </div>
+    </div>
+    <div id="popup_container2">
+        <div id="popup2">
+            <div class="container text-center">
+                <div class="row ">
+                    <p class="font-weight-bold mt-3" style="font-size: 22px;">แอปสั่งอาหารโรบินฮู้ด</p>
+                </div>
+                <div class="row">
+                    <p class="font-weight-bold" style="font-size: 30px;">สแกนเพื่อดาวน์โหลด</p>
+                </div>
+                <img class="my-3" src="./image/qrcode.png" style="width:170px;">
+                <div class="row">
+                    <div class="col-5 ml-4">
+                        <img class="ml-5 " src="./image/img.png" style="width: 92px;">
+                    </div>
+                    <div class="col mt-2">
+                        <img class="row" src="./image/download_App-Store.png" style="width: 96px;">
+                        <img class="row mt-2" src="./image/download_Google-Play.png" style="width: 96px;">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="font-weight-bold" style="font-size: 16px;">Robinhood ทางเลือกใหม่ของฟู้ดเดลิเวอรี่ไทย</p>
+                </div>
+                <div class="row">
+                    <a class="pointer" onclick="hidePopup2()" style="font-size: 14px; color: rgb(171,76,171);">ปิดหน้าต่างนี้</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg_top1">
+        <nav id="navbar_top" class="navbar navbar-expand-xl navbar-dark">
+            <div class="container-fluid" id="nav_top">
+                <a href="index.html"><img src="image/RBH_MAIN_LOGO.png" width="60"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ml-4 d-flex justify-content-end" id="main_nav">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="about-us.html">รู้จักเรา</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="promotion.html">โปรโมชั่น</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="food-playlist.html">กินอะไรดี</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="zone-list.html">จานเด็ดย่านดัง</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="food-tips.html">ทิปความรู้</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark"
+                                href="restaurant-story.html">เรื่องราวร้านอาหาร</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle ms-1 text-dark" href="#"
+                                data-bs-toggle="dropdown">พาร์ทเนอร์ร้านอาหาร</a>
+                            <ul class="dropdown-menu dropdown-menu-right glyphicon glyphicon-menu-down">
+                                <li><a class="dropdown-item" href="merchant.html">สมัครเป็นพาร์ทเนอร์</a></li>
+                                <li><a class="dropdown-item" href="merchantcenter.html">คู่มือสำหรับอาหาร</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark"
+                                href="travel-partner.html">พาร์ทเนอร์ท่องเที่ยว</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="rider.html">ไรเดอร์</a></li>
+                        <a class="nav-item ms-1 ps-4 mt-1 pointer" onclick="showPopup()"><img src="image/download_App-Store.png"
+                            width="110"></a>
+                    <a class="nav-item ms-1 ps-4 mt-1 pointer" onclick="showPopup2()"><img src="image/download_Google-Play.png"
+                            width="110"></a>
+                    </ul>
+                </div> <!-- navbar-collapse.// -->
+            </div> <!-- container-fluid.// -->
+        </nav>
+        <div class="container">
+            <div class="txt-top row">
+                <p><strong>ไก่ทอดเจ๊กี</strong></p>
+            </div>
+        </div>
+    </div>
+    <!-- ============= COMPONENT ============== -->
+    <div class="mid0">
+        <div class="container">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-9 my-5 mx-5">
+                    <p class="txt-mid0-1"><a class="txt-mid0-1 mid0-1" href="...">Featured Story Highlight</a> > 50
+                        ปีแห่งความอร่อย เจ๊กีโปโล ไก่ทอดระดับตำนานกับหลากหลายเมนูอีสานสุดแซ่บ</p>
+                    <p class="txt-mid0-2 color-robinhood font-weight-bold">50 ปีแห่งความอร่อย เจ๊กีโปโล
+                        ไก่ทอดระดับตำนานกับหลากหลายเมนูอีสานสุดแซ่บ</p>
+                    <p class="font-weight-bold">ช่วยเราแชร์ได้นะ</p>
+                    <div class="row mb-3">
+                        <div class="col-5">
+                            <a href="#" class="icon_social mr-3"><i class="fab fa-facebook"
+                                    style="font-size: 32px; color: rgb(30, 104, 245);"></i></a>
+                            <a href="#" class="icon_social mr-3"><i class="fab fa-twitter-square"
+                                    style="font-size: 32px; color: rgb(35, 183, 241);"></i></a>
+                            <a href="#" class="icon_social"><i class="fab fa-line"
+                                    style="font-size: 32px; color: green;"></i></a>
+                        </div>
+                        <div class="col-6 mx-4">
+                            <p class="txt-mid0-3 font-weight-bold">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPosted Oct 22, 2020</p>
+                            <p class="txt-mid0-4 font-weight-bold">&nbspRestaurant Story</p>
+                            <p class="txt-mid0-3 font-weight-bold">หมวดหมู่ : </p>
+                        </div>
+                    </div>
+                    <img class="mb-4" id="" src="./image_ไก่ทอดเจ๊กี/1.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5">ไก่ทอดหนังกรอบนอก นุ่มเนื้อใน หอมเครื่องหมัก ทอดสุกกำลังอร่อย
+                        โรยหน้าด้วยกระเทียมทอดกรอบซิกเนเจอร์รสเข้มข้นที่เข้ากันอย่างลงตัว
+                        ไก่ทอดระดับตำนานหนึ่งเดียวที่ไม่เหมือนใครแบบนี้ จะเป็นที่ไหนไปไม่ได้นอกจาก<span
+                            class="font-weight-bold">ไก่ทอดเจ๊กี ซอยโปโล</span>
+                        น้ำลายสอแล้วใช่มั้ย
+                        วันนี้เราชวนคุณมาเข้าครัวคลุกวงในทำความรู้จักกับที่มาของสูตรลับความอร่อยที่อยู่คู่กับกรุงเทพฯ
+                        มานานกว่า 50 ปี กับทายาทรุ่น 3 คุณไผ่ สุขเกษม ทรัพย์เกตโสภา
+                        ที่จะมาบอกเล่าเรื่องราวของความอร่อยระดับตำนานให้เราฟัง</p>
+                    <img class="mt-3 mb-3" id="" src="./image_ไก่ทอดเจ๊กี/2.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-6 font-weight-bold my-3">การเดินทางของไก่ทอดในตำนาน</p>
+                    <p class="txt-mid0-6-1">เรื่องราวของไก่ทอดกับกระเทียมเจียวกรอบอร่อยในตำนาน ย้อนกลับไปเมื่อ 50 ก่อน
+                        เมื่อเจ๊กีซึ่งเป็นคุณย่าของคุณไผ่ ผู้เดินทางมาจากภาคใต้ แล้วเริ่มต้นด้วยกิจการเล็ก ๆ
+                        ขายไก่ทอดซึ่งเป็นอาหารเด็ดของทางใต้ และถึงแม้จะเป็นคนใต้
+                        แต่เจ๊กีมีความสามารถในการทำอาหารอีสานด้วยจึงมีเมนูอื่นขายควบคู่กับไก่ทอด คือ ส้มตำและลาบ
+                        อาหารอีสานรสแซบที่มีกลิ่นอายของความใต้ผสมแบบอร่อยลงตัว ผ่านร้อนหนาวมาราว 30 ปี
+                        ร้านเจ๊กีได้รับการสืบทอดโดยรุ่นลูกคือคุณแม่ผ่อง หรือคุณผ่องศรี ทรัพย์เกตโสภา ผู้เป็นสะใภ้
+                        ที่ไม่หยุดนิ่งในการส่งมอบความอร่อย โดยมีการปรับเพิ่มเมนูและคิดสูตรอาหารใหม่ขึ้นมาอย่างต่อเนื่อง
+                        ให้ถูกลิ้นและตรงตามความต้องการของลูกค้า ในยุคแรกๆ ของทายาทรุ่นสอง คุณแม่ผ่องทำงานหนักมาก
+                        โดยหลังเที่ยงเมื่อลูกค้าเริ่มซาลงและยังมีอาหารเหลืออยู่ก็จะนำไปเดินหิ้วขาย ทั้งที่จุฬาฯ
+                        กรมศุลกากร
+                        และตึกออฟฟิศต่างๆ ในย่านนั้น เดินขายไปเรื่อยๆ จนมีลูกค้าถามว่าสั่งแล้วมาส่งได้มั้ย
+                        จึงเริ่มมีการจัดส่ง โดยเริ่มแรกคุณพ่อของคุณไผ่เป็นคนขับมอเตอร์ไซค์ไปส่งเอง
+                        เรียกว่าสู้กันมาจนมีวันนี้ ต่อมาเมื่อมีออเดอร์เยอะขึ้นเรื่อยๆ
+                        ก็เริ่มใช้บริการวินมอเตอร์ไซค์ในละแวกนั้น
+                        ถือว่าเป็นจุดผลิกผันที่ทำให้เกิดธุรกิจเดลิเวอรี่เต็มตัว
+                        ซึ่งมีส่วนสำคัญในการสร้างรายได้ให้ร้านเพราะลูกค้าตามตึกออฟฟิศ
+                        เมื่อสั่งเดลิเวอรี่มักจะเป็นออเดอร์ใหญ่ ถ้าจะกล่าวว่าร้านไก่ทอดเจ๊กีเป็นร้านแรกๆ
+                        ที่มีบริการส่งความอร่อยถึงที่ ก็ว่าได้ เพราะมีการเดลิเวอรี่มานานกว่า 30 ปีแล้ว
+                        ก่อนหน้าที่ระบบเดลิเวอรี่แพลตฟอร์มทั้งหลายจะเกิดขึ้น</p>
+                    <img class="mt-2 mb-3" id="" src="./image_ไก่ทอดเจ๊กี/3.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-6 font-weight-bold my-3">เอาหัวใจใส่ในอาหาร เอาความรักใส่ในอาชีพ</p>
+                    <p class="txt-mid0-6-1">คุณแม่ผ่องได้ให้สัมภาษณ์ในรายการโทรทัศน์รายการหนึ่งว่า “ต้องใส่ใจ
+                        ต้องรักอาชีพ ถ้าเราใส่ใจ จริงจังที่สุดแล้ว เราจะหากินได้ อย่าปล่อยปะละเลย”
+                        ดังนั้นนอกจากอาหารที่อร่อยมีคุณภาพ ทานได้ทุกกลุ่ม ทุกวัย ในราคายอมเยาแล้ว
+                        ร้านยังใส่ใจในทุกกระบวนการตั้งแต่การคัดสรรวัตถุดิบ การทำงานในครัวที่มีประสิทธิภาพ มีระเบียบ
+                        ความสะอาด คุณภาพอาหารและ รสชาติที่คงเส้นคงวา รวมทั้งบริการที่รวดเร็ว
+                        เพื่อสร้างความประทับใจให้ลูกค้าอย่างเสมอต้นเสมอปลาย กลับมาทานอีกครั้งและอีกครั้งอย่างต่อเนื่อง
+                    </p>
+                    </p>
+                    <img class="mt-2 mb-3" id="" src="./image_ไก่ทอดเจ๊กี/4.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-6 font-weight-bold my-3">ความเด็ดที่มีที่นี่ที่เดียว</p>
+                    <p class="txt-mid0-6-1">สิ่งที่ไม่มีใครเหมือนของร้านเจ๊กี
+                        คือไก่ทอดสูตรเด็ดที่มีเพียงแห่งเดียวในประเทศไทย
+                        เพราะมีวิธีการทอดที่ไม่เหมือนใครและมั่นใจได้ในความสะอาดเพราะใช้น้ำมันวันต่อวัน คัดสรรเฉพาะไก่สด
+                        คุณภาพดี ไม่ผ่านการแช่แข็ง หมักด้วยกระเทียมก่อน ไม่ชุบแป้ง ทอดทีละครึ่งตัวในน้ำมันท่วมเดือดจัดๆ
+                        กว่า 25 นาที ไก่ออกมาแห้ง ไม่อมน้ำมัน ทานแล้วไม่เลี่ยน
+                        และทีเด็ดที่ไม่มีใครเหมือนก็คือกระเทียมเจียวสูตรลับเฉพาะ ที่หมักไก่แล้วเอามาเจียว
+                        สะเด็ดน้ำมันข้ามวัน จึงแห้งกรอบไม่มัน ซึ่งต่างจากไก่ทอดทางใต้ทั่วไปที่เป็นไก่ทอดกับหอมเจียว
+                        เอกลักษณ์เฉพาะที่มีความพิถีพิถันในการรังสรรค์เมนูเด็ดของร้าน
+                        จึงเป็นที่โปรดปรานของลูกค้าเป็นที่สุด</p>
+                    <img class="mt-2 mb-3" id="" src="./image_ไก่ทอดเจ๊กี/5.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5 mb-2">
+                        นอกจากไก่ทอดกับกระเทียมเจียวสูตรลับแล้ว จุดเด่นของร้านคืออาหารทุกเมนูที่นี่จะมีความสะอาด อร่อย
+                        และเสิร์ฟรวดเร็ว ไม่มีรอนาน ซึ่งความรวดเร็วในการทำอาหาร เกิดจากประสบการณ์ล้วนๆ
+                        ที่ทำให้พัฒนาระบบการจัดการในครัวอย่างมีประสิทธิภาพ มีการเตรียมวัตถุดิบ เตรียมอาหารต่างๆ ไว้
+                        โดยรู้ว่าต้องเตรียมวัตถุดิบอะไรให้พร้อมก่อน เพื่อที่จะสามารถปรุงได้อย่างรวดเร็ว
+                        รวมทั้งการมีจำนวนพนักงานที่เพียงพอทำ ให้บริการได้ทั่วถึงและทันใจ เรียกว่าการันตี ความอร่อย
+                        แบบไม่ต้องรอนานให้หงุดหงิด ไม่ว่าทานที่ร้านหรือสั่งมาทานที่บ้าน ได้อาหารทันใจแน่นอน
+                        สั่งเดลิเวอรี่การันตีรับอาหารไปอิ่มอร่อยในเวลา 30 นาที
+                    </p>
+                    <p class="txt-mid0-6 font-weight-bold my-3">ยืดหยุ่น ยืนหยัด ผ่านร้อนหนาว</p>
+                    <p class="txt-mid0-6-1">
+                        นอกจากการที่แม่ผ่องเคยหิ้วอาหารออกไปเดินขายจนเป็นจุดเปลี่ยนที่ทำให้เกิดธุรกิจเดลิเวอรรี่แล้ว
+                        เมื่อย้อนกลับไปในช่วงที่มีเหตุการณ์ไข้หวัดนกระบาด ซึ่งตอนนั้นคนกลัวไม่กล้าทานไก่
+                        ขายไก่ได้เพียงวันละ 3 ตัว
+                        เป็นจุดที่ทำให้เห็นวิสัยทัศน์ของคุณแม่ผ่องที่สามารถปรับตัวโดยนำอาหารทะเล เมนูปลาต่างๆ
+                        เข้ามาเสริมเพื่อแก้สถานการณ์ ทั้งปลาทับทิมเผาเกลือ ปลาช่อนลุยสวน ส้มตำอันดามัน และเมนูทะเลอื่นๆ
+                        และเมื่ออีกวิกฤตอย่างโควิดมาเยือนคุณไผ่เล่า
+                        ว่าตอนนั้นก็เหลือช่องทางเดลิเวอรี่ช่องทางเดียวที่สร้างรายได้ นอกจากนี้ ยังต้องปรับการแพคอาหาร
+                        จากเดิมที่เป็นอาหารซึ่งคนทานร่วมกันเป็นกลุ่ม ก็ต้องแยกเป็นชุดๆ เช่น ชุดใหญ่ ชุดเล็ก
+                        ชุดทานคนเดียว เพื่อให้เหมาะสมกับสถานการณ์ที่คนต้องมี Social distancing
+                        และลูกค้าจะไม่ทานอาหารร่วมกันเพื่อป้องกันการติดเชื้อ
+                        ซึ่งเดลิเวอรี่ก็ทำให้ร้านมีรายได้พอในการดูแลพนักงานทั้งหมด โดยไม่ต้องให้ใครออก
+                        และในยุคปัจจุบันที่ร้านอาหารเกิดขึ้นมากมาย
+                        ร้านเจ๊กีเองก็ต้องการจะเพิ่มยอดขายโดยเข้าร่วมกับแพลตฟอร์มออนไลน์เดลิเวอรี่ต่างๆ
+                        แต่บางแพลตฟอร์มก็คิดค่า GP สูงมากกว่า 30% ซึ่งเป็นจำนวนที่หนักกับร้านอาหารมากๆ
+                        ทำให้ถ้าจะร่วมก็ต้องบวกราคากับลูกค้าเพราะถ้าไม่บวกร้านเองก็แทบไม่ได้อะไรเลย
+                        ซึ่งคุณไผ่มองว่าไม่เป็นธรรมกับลูกค้าเช่นกัน จึงต้องขอบคุณที่ SCB ที่ทำแพลตฟอร์ม Robinhood
+                        ขึ้นมาสนับสนุนร้านค้าตรงนี้โดยไม่มีการเก็บค่า GP แต่อย่างใด</p>
+                    <img class="mb-3 mt-2" id="" src="./image_ไก่ทอดเจ๊กี/6.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-6 font-weight-bold my-3">ขยายความอร่อยสู่สาขา 2 ถนนนวมินทร์</p>
+                    <p class="txt-mid0-6-1">
+                        นอกจากร้านไก่ทอดเจ๊กี สาขาดั้งเดิมที่ซอยโปโลแล้ว
+                        ได้มีการขยายฐานเพื่อให้ลูกค้าในพื้นที่อื่นได้ลิ้มรสความอร่อยได้สะดวกขึ้น โดยเปิดสาขา 2
+                        ที่ถนนนวมินทร์ ซึ่งเปิดได้กว่าสามปีแล้ว
+                        สาขาใหม่นี้รองรับลูกค้าที่แตกต่างออกไปคือมีความเป็นครอบครัวเป็นหมู่บ้าน
+                        ในขณะที่สาขาที่ซอยโปโลจะเป็นกลุ่มพนักงานออฟฟิศเป็นส่วนใหญ่ แม้จะต่างสาขา แต่มาตรฐานคุณภาพ
+                        รสชาติของอาหารและการบริการยังเหมือนเดิม
+                        เพราะได้นำพนักงานที่มีประสบการณ์จากสาขาซอยโปโลไปทำที่สาขาใหม่ รวมทั้งคุณแม่ผ่องก็ไปดูแลสาขา
+                        นวมินทร์ด้วยตัวเอง
+                        ทั้งยังใช้วิธีการให้พนักงานเก่าจากสาขาโปโลฝึกพนักงานใหม่ที่รับเพิ่มเข้ามาที่สาขานวมินทร์
+                        นอกจากนี้ ทั้งคุณแม่ผ่องหรือตัวคุณไผ่เองก็ช่วยฝึกพนักงานใหม่ด้วยเช่นกัน ทายาทรุ่น 3
+                        ที่เป็นผู้ชายอย่างคุณไผ่นั้น ไม่ใช่แค่บริหารร้าน
+                        แต่ต้องทำอาหารเป็นทุกเมนูโดยได้รับการถ่ายทอดมาจากคุณแม่อีกต่อหนึ่ง</p>
+                    <p class="txt-mid0-6 font-weight-bold my-3 mt-2">วัตถุดิบสดใหม่ หัวใจของความอร่อย</p>
+                    <p class="txt-mid0-6-1">
+                        วัตถุดิบหลักของร้านคือไก่ จะมีการสั่งจากร้านประจำย่านตลาดบ่อนไก่
+                        ซึ่งเป็นร้านดั้งเดิมที่สั่งกันมาตลอด มีความผูกพันรุ่นต่อรุ่น ซึ่งร้านประจำนี้
+                        จะเลือกไก่สดที่ดีที่สุด ไม่ผ่านการแช่แข็ง เพราะไก่ที่ผ่านการแช่แข็งจะเสียคุณภาพ
+                        ร้านเจ๊กีจะใช้เฉพาะไก่ที่ส่งให้วันต่อวัน สดทุกวันไม่มีค้าง
+                        ต้องการไก่เท่าไหร่หรือไก่ไม่พอเมื่อไหร่ คู่ค้าก็สามารถหามาให้ได้ตลอด
+                        เรียกว่าเป็นการช่วยเหลือเกื้อกูลกันและกันให้ธุรกิจโตไปได้ทั้งคู่
+                        ส่วนน้ำมันก็มั่นใจได้ในความสะอาดเพราะเปลี่ยนใหม่ตลอด นอกจากไก่ซึ่งเป็นวัตถุดิบหลักแล้ว
+                        วัตถุดิบอื่นๆ ก็สดใหม่ใช้วันต่อวันเช่นกันไม่ว่าจะเป็นหมู ปลา หรืออาหารทะเลอื่นๆ</p>
+
+                    <div id="light">
+                        <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+                        <video id="VisaChipCardVideo" width="600" controls>
+                            <source src="https://www.robinhood.in.th//wp-content/uploads/2020/09/JKee.mp4"
+                                type="video/mp4">
+                            <!--Browser does not support <video> tag -->
+                        </video>
+                    </div>
+
+                    <div id="fade" onClick="lightbox_close();"></div>
+
+                    <div>
+                        <a class="ml-3" href="#" onclick="lightbox_open();">
+                            <img class="mb-3 mt-2 ml-5" id="" src="./image_ไก่ทอดเจ๊กี/1.png" alt=""
+                                style="width: 84.5%;">
+                        </a>
+                    </div>
+
+                    <!-- <img class="mb-3 mt-2" id="" src="./image_ไก่ทอดเจ๊กี/2.jpg" alt="" style="width: 100%;"> -->
+                    <p class="txt-mid0-6 font-weight-bold my-3">วัตถุดิบสดใหม่ หัวใจของความอร่อย</p>
+                    <p class="txt-mid0-6-1">
+                        นอกเหนือจาก<span class="font-weight-bold">ไก่ทอดโรยกระเทียมเจียว</span>
+                        ทานคู่กับข้าวเหนียวที่นึ่งได้นุ่มกำลังดี
+                        กับน้ำจิ้มแจ่วพริกมะขามและน้ำจิ้มไก่สูตรเฉพาะของร้านที่เป็นเมนูหลักแล้ว
+                        ร้านไก่ทอดเจ๊กียังมีอีกกว่า 30 เมนูที่อร่อยเด็ดไม่แพ้กัน</p>
+                    <img class="mt-5 mb-4" id="" src="./image_ไก่ทอดเจ๊กี/7.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5">
+                        อาทิ <span
+                            class="font-weight-bold">ทอดมันปลากราย</span>ที่เป็นเนื้อปลากรายล้วนผสมเครื่องแกงรสกลมกล่อม
+                        ทอดชิ้นใหญ่ๆ
+                        เวลานำมาเสริ์ฟจะมีความฟูน่าทานมากๆ อร่อยไม่แพ้ภัตตาคารใหญ่ๆ เนื้อนอกกรอบ
+                        เวลาเคี้ยวเนื้อในแน่นหนึบอร่อยลืมไม่ลง
+                    </p>
+                    <img class="mt-2" id="" src="./image_ไก่ทอดเจ๊กี/8.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5">
+                        <span class="font-weight-bold">ส้มตำอันดามัน</span> ของทะเลสดใหม่ กุ้ง ปูม้า ปลาหมึก กับไข่เค็ม
+                        รสชาติเปรี้ยว หวานรสจัดจ้านพอเหมาะ
+                    </p>
+                    <img class="mb-4 mt-2" id="" src="./image_ไก่ทอดเจ๊กี/10.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5">
+                        <span class="font-weight-bold">คอหมูย่าง</span> คัดหมูคุณภาพดี เนื้อนุ่มติดมันพอเหมาะ
+                        หมักก่อนย่างบนเตาถ่านร้อนๆ จนหอมกรุ่นนุ่มลิ้น เนื้อฉ่ำ น้ำจิ้มก็อร่อย
+                        รสไม่จัดจนกลบรสหมูที่หอมกลมกล่อมอยู่แล้ว
+                    </p>
+                    <img class="mb-4 mt-2" id="" src="./image_ไก่ทอดเจ๊กี/11.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5">
+                        <span class="font-weight-bold">ปลาช่อนลุยสวน</span>ที่นำปลาช่อนทอดทั้งตัว
+                        ราดด้วยเครื่องสมุนไพรซอย ทั้งตะไคร้ ใบมะกรูด หอมแดง มะม่วง น้ำยำรสจัดกลมกล่อม
+                    </p>
+                    <img class="mb-4 mt-2" id="" src="./image_ไก่ทอดเจ๊กี/12.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5">
+                        และอีกเมนูที่ต้องสั่งคือ<span
+                            class="font-weight-bold">ลาบหมู</span>ที่เลือกเนื้อหมูอย่างดีไม่ติดมันมาก เนื้อนุ่ม
+                        รสเปรี้ยว เค็ม เผ็ด เข้ากันดี แซ่บอีหลีแท้
+                    </p>
+                    <img class="mb-4 mt-2" id="" src="./image_ไก่ทอดเจ๊กี/13.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5">
+                        นอกจากเมนูที่เล่ามา ร้านยังมีทีเด็ดอีกมากมายให้เลือก ไม่ว่าจะเป็นต้มแซ่บ ยำปลาดุกฟู น้ำตกหมู
+                        ปลาทับทิมเผาเกลือ ส้มตำปูม้า ส้มตำข้าวโพด ยำต่างๆ เรียกว่าร่ายกันไม่หมด ซึ่งทุกเมนู
+                        ทานแล้วจะรู้สึกได้ว่า
+                        เป็นอาหารอีสานรสจัดจ้านที่แฝงความใต้ไว้อย่างแนบเนียนซึ่งเป็นเอกลักษณ์ของร้านไก่ทอดเจ๊กีที่ไม่เหมือนใครจริงๆ
+                    </p>
+                    <img class="mt-4 mb-3" id="" src="./image_ไก่ทอดเจ๊กี/14.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-6 font-weight-bold my-3">รางวัลและการชื่นชมที่การันตีความอร่อย</p>
+                    <p class="txt-mid0-6-1">
+                        เป็นร้านดังระดับตำนาน ที่ฮิตติดลมบนจากรุ่นสู่รุ่นมาขนาดนี้
+                        แน่นอนว่าย่อมได้รับการการันตีความอร่อยมาจากหลายสถาบัน ทั้งเปิบพิสดาร มิชลิน ไกด์ wongnai
+                        Tripadvisor CNN Travel และ Ctrip ของจีน
+                        ซึ่งทำให้ก่อนช่วงโควิดทางร้านมีกลุ่มลูกค้านักท่องเที่ยวต่างชาติแวะเวียนมาชิมไม่ขาดสาย
+                        นอกจากการการันตีความอร่อยจากหลายสำนักและหลากหลายเว็บไซต์รวมทั้งสถานีโทรทัศน์และสื่อต่างๆ แล้ว
+                        ร้านยังได้รับคำชมจากลูกค้าตัวจริงเสียงจริงและเล่ากันปากต่อปากถึงความอร่อยของอาหารโดยเฉพาะไก่ทอดที่เป็นเอกลักษณ์
+                        รวมทั้งความรวดเร็วในการทำอาหารที่ลูกค้าไม่เคยต้องรอนาน และราคาที่จับต้องได้
+                        นี่เป็นเพียงตัวอย่างเล็กๆ ของการชื่นชมจากลูกค้าทั้งจาก wongnai และ Pantip</p>
+                    <p class="txt-mid0-5 mt-3">
+                        “เดินผ่านโซนทอดไก่ หอมมาก เมนูมีให้เลือกหลากหลาย ไก่ทอดอร่อย กระเทียมมีมาให้แล้วเมื่อสั่งไก่
+                        แต่เราสามารถสั่งมาเพิ่มได้อีกค่ะ ส้มตำอันดามันดีมาก เปรี้ยวหวานกำลังดี หอมมะนาวสุดๆ
+                        ตับหวานก้อสุกมากำลังดี อร่อยค่ะ” จาก wongnai
+                    </p>
+                    <p class="txt-mid0-5 mt-3">
+                        “เมนูที่นี่บอกเลยว่าไม่ใช่อร่อยแค่ไก่ทอดเท่านั้น แต่ยังมีเมนูอื่นๆ ที่เราถูกใจอีกหลายอย่าง เช่น
+                        ทอดมันปลากรายที่ทางร้านทอดใหม่ๆ เสิร์ฟร้อนๆ
+                        ผลที่ออกมาคือสุดยอดทอดมันหนังกรอบที่มีเนื้อข้างในเหนียวนุ่ม รสชาติถึงเครื่องแกงอร่อยอย่าบอกใคร
+                        นอกจากนี้เมนูคอหมูย่างเนื้อมีความฉ่ำ หอมกลิ่นถ่าน อร่อยชนิดที่ว่าภัตตาคารหลายแห่งยังชิดซ้าย
+                        รวมไปถึงเมนูอย่างต้มแซบที่รสเผ็ดเปรี้ยวถึงใจ สไตล์อีสานแท้ๆ” จาก Pantip
+                    </p>
+                    <p class=" mt-4 txt-mid0-6 font-weight-bold my-3">สั่งทานที่บ้านก็สด แซ่บไม่ต่างกัน</p>
+                    <p class="txt-mid0-6-1">
+                        คุณไผ่ฝากการันตี เพราะอาหารที่นี่อร่อยไม่เหมือนใคร สั่งแล้วได้ทานเร็วทันใจ
+                        ทุกเมนูมีคุณภาพสดใหม่ไม่ต่างจากทานที่ร้าน ซึ่งลูกค้าสามารถสั่งเฉพาะให้แยกน้ำยำต่างๆ
+                        ได้ตามต้องการด้วย การันตีส่งถึงมือใน 30 นาที ไม่มีรอนาน</p>
+                    <p class=" mt-3 txt-mid0-5">
+                        ร้านไก่ทอดเจ๊กีเปิดให้บริการทุกวัน ยกเว้นวันจันทร์ในทุกสัปดาห์ที่สองของเดือน วันตรุษจีน 4 วัน
+                        สารทจีน 3 วัน วันแรงงาน วันเชงเม้งและช่วงเทศกาลกินเจ 10 วัน สาขาซอยโปโลเปิดตั้งแต่ 7 โมงเช้า
+                        สาขานวมินทร์เปิด 10 โมง แต่ถ้าลูกค้ามีความจำเป็นต้องได้อาหารก่อน เช่น ทำบุญบ้าน
+                        ก็สามารถแจ้งทางร้านล่วงหน้าได้
+                    </p>
+                    <img class="mt-4 mb-3" id="" src="./image_ไก่ทอดเจ๊กี/15.jpg" alt="" style="width: 100%;">
+                    <p class="mb-4 txt-mid0-5">
+                        ในฐานะแฟนพันธุ์แท้ร้านไก่ทอดเจ๊กี ที่ทานมานานเกือบ 40 ปี
+                        การันตีได้เลยว่ามาทานกี่ครั้งก็ยังอร่อยแซ่บ แถมเสิร์ฟเร็วเหมือนเดิมไม่มีเปลี่ยน
+                        จากวันนั้นถึงวันนี้ ราคายังเริ่มต้นที่หลักสิบ ไม่เชื่อก็ต้องเชื่อว่าร้านดังระดับตำนาน
+                        อร่อยจริงในราคาที่จับต้องได้แบบนี้ยังมีอยู่จริง แต่ระยะหลังๆ อยู่ไกลไม่มีเวลาไปร้าน
+                        แต่ด้วยความคิดถึงรสชาติที่อร่อยถูกลิ้น จึงใช้บริการเดลิเวอรี่แทน
+                        ก็ต้องบอกเลยว่าส่งเร็วอย่างน่าทึ่ง อาหารมาถึงยังร้อนๆ อย่างที่คุณไผ่การันตี จะมื้อไหนๆ
+                        ไก่ทอดเอกลักษณ์กับอาหารอีสานรสเด็ดก็ยังเลอค่า ยิ่งทานกันหลายคนยิ่งสนุก ใครหิวแล้ว สั่งผ่าน
+                        Robinhood ได้เลย ราคาอาหารและค่าส่งตามจริงไม่มีบวกเพิ่ม รออะไร สั่งเลย! แล้วมาแซ่บกัน
+                    </p>
+
+                    <table class="container">
+                        <tr class="mb-4 content">
+                            <td><img src="./image_ไก่ทอดเจ๊กี/2.jpg" onclick="openLightbox();toSlide(1)"
+                                    class="img-table hover-shadow preview" style="width: 155px; height: 145px;" /></td>
+                            <td><img src="./image_ไก่ทอดเจ๊กี/3.jpg" onclick="openLightbox();toSlide(2)"
+                                    class="img-table hover-shadow preview" style="width: 155px; height: 145px;" /></td>
+                            <td><img src="./image_ไก่ทอดเจ๊กี/4.jpg" onclick="openLightbox();toSlide(3)"
+                                    class="img-table hover-shadow preview" style="width: 155px; height: 145px;" /></td>
+                            <td><img src="./image_ไก่ทอดเจ๊กี/5.jpg" onclick="openLightbox();toSlide(4)"
+                                    class="img-table hover-shadow preview" style="width: 155px; height: 145px;" /></td>
+                            <td><img src="./image_ไก่ทอดเจ๊กี/6.jpg" onclick="openLightbox();toSlide(5)"
+                                    class="img-table hover-shadow preview" style="width: 155px; height: 145px;" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="width: 100%; height: 10px;">
+                            </td>
+                        </tr>
+                        <tr class="mb-4 content">
+                            <td><img src="./image_ไก่ทอดเจ๊กี/7.jpg" onclick="openLightbox();toSlide(6)"
+                                    class="img-table hover-shadow preview" style="width: 155px; height: 145px;" /></td>
+                            <td><img src="./image_ไก่ทอดเจ๊กี/8.jpg" onclick="openLightbox();toSlide(7)"
+                                    class="img-table hover-shadow preview" style="width: 155px; height: 145px;" /></td>
+                            <td><img src="./image_ไก่ทอดเจ๊กี/10.jpg" onclick="openLightbox();toSlide(8)"
+                                    class="img-table hover-shadow preview" style="width: 155px; height: 145px;" /></td>
+                            <td><img src="./image_ไก่ทอดเจ๊กี/11.jpg" onclick="openLightbox();toSlide(9)"
+                                    class="img-table hover-shadow preview" style="width: 155px; height: 145px;" /></td>
+                            <td><img src="./image_ไก่ทอดเจ๊กี/12.jpg" onclick="openLightbox();toSlide(10)"
+                                    class="img-table hover-shadow preview" style="width: 155px; height: 145px;" /></td>
+                        </tr>
+                    </table>
+
+                    <div id="Lightbox" class="modal">
+                        <span class="close pointer" onclick="closeLightbox()">&times;</span>
+                        <div class="modal-content">
+                            <div class="slide">
+                                <img src="./image_ไก่ทอดเจ๊กี/2.jpg" class="image-slide" />
+                            </div>
+                            <div class="slide">
+                                <img src="./image_ไก่ทอดเจ๊กี/3.jpg" class="image-slide" />
+                            </div>
+                            <div class="slide">
+                                <img src="./image_ไก่ทอดเจ๊กี/4.jpg" class="image-slide" />
+                            </div>
+                            <div class="slide">
+                                <img src="./image_ไก่ทอดเจ๊กี/5.jpg" class="image-slide" />
+                            </div>
+                            <div class="slide">
+                                <img src="./image_ไก่ทอดเจ๊กี/6.jpg" class="image-slide" />
+                            </div>
+                            <div class="slide">
+                                <img src="./image_ไก่ทอดเจ๊กี/7.jpg" class="image-slide" />
+                            </div>
+                            <div class="slide">
+                                <img src="./image_ไก่ทอดเจ๊กี/8.jpg" class="image-slide" />
+                            </div>
+                            <div class="slide">
+                                <img src="./image_ไก่ทอดเจ๊กี/10.jpg" class="image-slide" />
+                            </div>
+                            <div class="slide">
+                                <img src="./image_ไก่ทอดเจ๊กี/11.jpg" class="image-slide" />
+                            </div>
+                            <div class="slide">
+                                <img src="./image_ไก่ทอดเจ๊กี/12.jpg" class="image-slide" />
+                            </div>
+                            <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+                            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                        </div>
+                    </div>
+
+                    <div class="button">
+                        <a class="isaan-food p-2 mr-2" href="">อาหารอีสาน</a><a class="chicken p-2" href="">ไก่ทอด</a>
+                    </div>
+
+                    <div class="row mt-5">
+                        <a class="col-3 nav-link txt-robinhood font-weight-bold"><img class=""
+                                src="./image/Group-1115-e1599403771374.png" width="22%">&emsp;Robinhood</a>
+                        <a class="col-5 nav-link mt-2 txt-robinhood font-weight-bold text-secondary"
+                            href="#highlight">|&emsp;<i class="far fa-calendar-alt text-secondary"
+                                style="font-size:16px"></i> ตุลาคม 22, 2020&emsp;|&emsp;watching 1,201</a>
+                    </div>
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="mid0-1">
+                        <div class="row">
+                            <div class="col-12 pt-5 pb-4">
+                                <p class="txt-content font-weight-bold color-robinhood">เนื้อหาที่เกี่ยวข้อง</p>
+                            </div>
+                            <div class="col-4">
+                                <a href="..."><img class="" id="" src="./image/เขียงs-5590-2.jpg" alt=""
+                                        style="width: 105%; height: 220px; border-radius: 10px;"></a>
+                                <a href="restaurant-story-ร้านเขียง.html">
+                                    <p class="mt-3 txt-photo font-weight-bold">"เขียง" ยกระดับอาหารตามสั่ง</p>
+                                </a>
+                                <a href="...">
+                                    <p class="color-robinhood" style="margin-top: -10px;">Robinhood</p>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="..."><img class="" id="" src="./image/สีมรกต-Thumbnail-Cover.jpg" alt=""
+                                        style="width: 105%; height: 220px; border-radius: 10px;"></a>
+                                <a href="restaurant-story-ร้านเขียง.html">
+                                    <p class="mt-3 txt-photo font-weight-bold">ข้าวหมูแดงสีมรกต ที่สุดของข้าว</p>
+                                </a>
+                                <a href="...">
+                                    <p class="color-robinhood" style="margin-top: -10px;">Robinhood</p>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="..."><img class="" id="" src="./image/คั่วกลิ้ง.jpg" alt=""
+                                        style="width: 105%; height: 220px; border-radius: 10px;"></a>
+                                <a href="restaurant-story-ร้านเขียง.html">
+                                    <p class="mt-3 txt-photo font-weight-bold">คั่วกลิ้งผักสด อาหารใต้ดีกรีมิ</p>
+                                </a>
+                                <a href="...">
+                                    <p class="color-robinhood" style="margin-top: -10px;">Robinhood</p>
+                                </a>
+                            </div>
+                            <div class="col-4 mt-3">
+                                <a href="..."><img class="" id="" src="./image/Greyhound.jpg" alt=""
+                                        style="width: 105%; height: 220px; border-radius: 10px;"></a>
+                                <a href="restaurant-story-ร้านเขียง.html">
+                                    <p class="mt-3 txt-photo font-weight-bold">Greyhound Café จากแฟชั่นสู่</p>
+                                </a>
+                                <a href="...">
+                                    <p class="color-robinhood" style="margin-top: -10px;">Robinhood</p>
+                                </a>
+                            </div>
+                            <div class="col-4 mt-3">
+                                <a href="..."><img class="" id="" src="./image/Sushi.jpg" alt=""
+                                        style="width: 105%; height: 220px; border-radius: 10px;"></a>
+                                <a href="restaurant-story-ร้านเขียง.html">
+                                    <p class="mt-3 txt-photo font-weight-bold">SUSHI HANA มื้ออาหารในวัน</p>
+                                </a>
+                                <a href="...">
+                                    <p class="color-robinhood" style="margin-top: -10px;">Robinhood</p>
+                                </a>
+                            </div>
+                            <div class="col-4 mt-3">
+                                <a href="..."><img class="" id="" src="./image/นิตยาไก่ย่าง.jpg" alt=""
+                                        style="width: 105%; height: 220px; border-radius: 10px;"></a>
+                                <a href="restaurant-story-ร้านเขียง.html">
+                                    <p class="mt-3 txt-photo font-weight-bold">นิตยาไก่ย่าง อาหารอีสานปรุง</p>
+                                </a>
+                                <a href="...">
+                                    <p class="color-robinhood" style="margin-top: -10px;">Robinhood</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <br>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-3">
+                    <div class="row">
+                        <img class="" id="" src="./image/logo-White.png" alt="" style="width: 31%;">
+                    </div>
+                    <div class="row mt-3">
+                        <p class="text-warning">ติดตามเราช่องทางอื่นๆ</p>
+                    </div>
+                    <div class="row mt-3 ml-5">
+                        <img class="ml-5" id="" src="./image/facebook.png" alt="" style="width: 25%;">
+                    </div>
+                    <div class="row mt-4 ml">
+                        <p class="text-white" style="font-size: 13px;">Call Center : <a class="ml-1">02-777-7564</a></p>
+                        <p class="text-white" style="font-size: 13px;">เปิดให้บริการทุกวัน ตลอด 24 ชั่วโมง</p>
+                    </div>
+                    <div class="row mt-4">
+
+                    </div>
+                    <div class="row ml">
+                        <p class="text-white" style="font-size: 13px;">©Robinhood</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row mt-5">
+
+                    </div>
+                    <div class="row mt-1">
+                        <p class="text-warning">ข้อกำหนดการใช้งาน Robinhood</p>
+                    </div>
+                    <div class="row">
+                        <a class="text-white mt-4" style="font-size: 11px;"
+                            href=""><u>ข้อกำหนดและเงื่อนไขการใช้บริการร้านอาหารโรบินฮู้ด</u></a>
+                    </div>
+                    <div class="row">
+                        <a class="text-white mt-3" style="font-size: 11px;"
+                            href=""><u>ข้อกำหนดและเงื่อนไขการใช้บริการสั่งอาหาร</u></a>
+                    </div>
+                    <div class="row">
+                        <p class="text-warning mt-5">ข้อกำหนดการใช้งานเว็บไซต์</p>
+                    </div>
+                    <div class="row ml">
+                        <a class="text-white" style="font-size: 12px;" href=""><u>Privacy policy</u></a>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="row mt-4">
+                        <a class="col-9 nav-link" href="merchant.html">
+                            <div class="card" style="width: 19rem;">
+                                <img class="card-img-top " src="./image/rectangle.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="row txt-10 font-weight-bold" style="font-size: 14px;">พาร์ทเนอร์ร้านอาหาร​
+                                    </p>
+                                    <p class="row txt-11 font-weight-normal" style="font-size: 12px;">มาเพิ่มยอดขายง่ายๆ
+                                        ให้ร้านอาหารของคุณ
+                                        สามารถสมัครร่วมเป็นร้านอาหารกับ Robinhood ได้แล้ววันนี้</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="col-2 nav-link" href="rider.html">
+                            <div class="card" style="width: 19rem;">
+                                <img class="card-img-top \" src="./image/Robinhood-Rider-Footer-box-edit.png"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="row txt-10 font-weight-bold" style="font-size: 14px;">โรบินฮู้ด ไรเดอร์​
+                                    </p>
+                                    <p class="row txt-11 font-weight-normal" style="font-size: 12px;">เช้ารับงาน
+                                        ค่ำรับเงิน ได้เต็มๆ ไม่ต้องสำรองเงินค่าอาหาร พร้อมรับสิทธิพิเศษมากมาย
+                                        สมัครได้แล้วเพียงโหลดแอป</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+
+            </div>
+            <div class="row mt-5 text-center ml-5">
+                <p class="text-muted ml-4 my-4">Copyright © 2021 <a class="text-white" href="index.html">Robinhood.</a>
+                    All Rights Reserved. <a class="text-white" href="#">Privacy-th</a> | Catch Foodmania by <a
+                        class="text-white" href="https://catchthemes.com/">Catch Themes</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /*video*/
+        window.document.onkeydown = function (e) {
+            if (!e) {
+                e = event;
+            }
+            if (e.keyCode == 27) {
+                lightbox_close();
+            }
+        }
+
+        function lightbox_open() {
+            var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+            window.scrollTo(0, 0);
+            document.getElementById('light').style.display = 'block';
+            document.getElementById('fade').style.display = 'block';
+            lightBoxVideo.play();
+        }
+
+        function lightbox_close() {
+            var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+            document.getElementById('light').style.display = 'none';
+            document.getElementById('fade').style.display = 'none';
+            lightBoxVideo.pause();
+        }
+
+        /*image*/
+        let slideIndex = 1;
+        showSlide(slideIndex);
+
+        function openLightbox() {
+            document.getElementById('Lightbox').style.display = 'block';
+        };
+
+        function closeLightbox() {
+            document.getElementById('Lightbox').style.display = 'none';
+        };
+
+        function changeSlide(n) {
+            showSlide(slideIndex += n);
+        };
+
+        function toSlide(n) {
+            showSlide(slideIndex = n);
+        };
+
+        function showSlide(n) {
+            const slides = document.getElementsByClassName('slide');
+            let modalPreviews = document.getElementsByClassName('modal-preview');
+
+            if (n > slides.length) {
+                slideIndex = 1;
+            };
+
+            if (n < 1) {
+                slideIndex = slides.length;
+            };
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            };
+
+            for (let i = 0; i < modalPreviews.length; i++) {
+                modalPreviews[i].className = modalPreviews[i].className.replace(' active', '');
+            };
+
+            slides[slideIndex - 1].style.display = 'block';
+            modalPreviews[slideIndex - 1].className += ' active';
+        };
+    </script>
+
+</body>
+
+</html>

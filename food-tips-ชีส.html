@@ -1,0 +1,419 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="icon" href="./image/RBH_MAIN_LOGO-crop.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/fa4852718f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="script.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles_food-tips-ชีส.css">
+    <title>ชีสเลิฟเวอร์ต้องรู้! มีกี่ชนิด & กินยังไงให้อร่อยถูกใจ</title>
+</head>
+
+<body>
+    <div id="popup_container">
+        <div id="popup">
+            <div class="container text-center">
+                <div class="row ">
+                    <p class="font-weight-bold mt-3" style="font-size: 22px;">แอปสั่งอาหารโรบินฮู้ด</p>
+                </div>
+                <div class="row">
+                    <p class="font-weight-bold" style="font-size: 30px;">สแกนเพื่อดาวน์โหลด</p>
+                </div>
+                <img class="my-3" src="./image/qrcode.png" style="width:170px;">
+                <div class="row">
+                    <div class="col-5 ml-4">
+                        <img class="ml-5" src="./image/img.png" style="width: 92px;">
+                    </div>
+                    <div class="col mt-2">
+                        <img class="row" src="./image/download_App-Store.png" style="width: 96px;">
+                        <img class="row mt-2" src="./image/download_Google-Play.png" style="width: 96px;">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="font-weight-bold" style="font-size: 16px;">Robinhood ทางเลือกใหม่ของฟู้ดเดลิเวอรี่ไทย</p>
+                </div>
+                <div class="row">
+                    <a class="pointer" onclick="hidePopup()" style="font-size: 14px; color: rgb(171,76,171);">ปิดหน้าต่างนี้</a>
+                </div>
+            </div>
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button> -->
+            
+        </div>
+    </div>
+    <div id="popup_container2">
+        <div id="popup2">
+            <div class="container text-center">
+                <div class="row ">
+                    <p class="font-weight-bold mt-3" style="font-size: 22px;">แอปสั่งอาหารโรบินฮู้ด</p>
+                </div>
+                <div class="row">
+                    <p class="font-weight-bold" style="font-size: 30px;">สแกนเพื่อดาวน์โหลด</p>
+                </div>
+                <img class="my-3" src="./image/qrcode.png" style="width:170px;">
+                <div class="row">
+                    <div class="col-5 ml-4">
+                        <img class="ml-5 " src="./image/img.png" style="width: 92px;">
+                    </div>
+                    <div class="col mt-2">
+                        <img class="row" src="./image/download_App-Store.png" style="width: 96px;">
+                        <img class="row mt-2" src="./image/download_Google-Play.png" style="width: 96px;">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="font-weight-bold" style="font-size: 16px;">Robinhood ทางเลือกใหม่ของฟู้ดเดลิเวอรี่ไทย</p>
+                </div>
+                <div class="row">
+                    <a class="pointer" onclick="hidePopup2()" style="font-size: 14px; color: rgb(171,76,171);">ปิดหน้าต่างนี้</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg_top1">
+        <nav id="navbar_top" class="navbar navbar-expand-xl navbar-dark">
+            <div class="container-fluid" id="nav_top">
+                <a href="index.html"><img src="image/RBH_MAIN_LOGO.png" width="60"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ml-4 d-flex justify-content-end" id="main_nav">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="about-us.html">รู้จักเรา</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="promotion.html">โปรโมชั่น</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="food-playlist.html">กินอะไรดี</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="zone-list.html">จานเด็ดย่านดัง</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="food-tips.html">ทิปความรู้</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark"
+                                href="restaurant-story.html">เรื่องราวร้านอาหาร</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle ms-1 text-dark" href="#"
+                                data-bs-toggle="dropdown">พาร์ทเนอร์ร้านอาหาร</a>
+                            <ul class="dropdown-menu dropdown-menu-right glyphicon glyphicon-menu-down">
+                                <li><a class="dropdown-item" href="merchant.html">สมัครเป็นพาร์ทเนอร์</a></li>
+                                <li><a class="dropdown-item" href="merchantcenter.html">คู่มือสำหรับอาหาร</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark"
+                                href="travel-partner.html">พาร์ทเนอร์ท่องเที่ยว</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="rider.html">ไรเดอร์</a></li>
+                        <a class="nav-item ms-1 ps-4 mt-1 pointer" onclick="showPopup()"><img src="image/download_App-Store.png"
+                            width="110"></a>
+                    <a class="nav-item ms-1 ps-4 mt-1 pointer" onclick="showPopup2()"><img src="image/download_Google-Play.png"
+                            width="110"></a>
+                    </ul>
+                </div> <!-- navbar-collapse.// -->
+            </div> <!-- container-fluid.// -->
+        </nav>
+    </div>
+    <!-- ============= COMPONENT ============== -->
+    <div class="mid0">
+        <div class="container">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-9 my-5 mx-5">
+                    <p class="txt-mid0-1"><a class="txt-mid0-1 mid0-1" href="...">Featured Tips Second</a> >
+                        ชีสเลิฟเวอร์ต้องรู้! มีกี่ชนิด & กินยังไงให้อร่อยถูกใจ ​</p>
+                    <p class="txt-mid0-2 color-robinhood font-weight-bold">ชีสเลิฟเวอร์ต้องรู้! มีกี่ชนิด &
+                        กินยังไงให้อร่อยถูกใจ</p>
+                    <p class="font-weight-bold">ช่วยเราแชร์ได้นะ</p>
+                    <div class="row mb-3">
+                        <div class="col-5">
+                            <a href="#" class="icon_social mr-3"><i class="fab fa-facebook"
+                                    style="font-size: 32px; color: rgb(30, 104, 245);"></i></a>
+                            <a href="#" class="icon_social mr-3"><i class="fab fa-twitter-square"
+                                    style="font-size: 32px; color: rgb(35, 183, 241);"></i></a>
+                            <a href="#" class="icon_social"><i class="fab fa-line"
+                                    style="font-size: 32px; color: green;"></i></a>
+                        </div>
+                        <div class="col-6 mx-4">
+                            <p class="txt-mid0-3 font-weight-bold">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPosted Oct 22, 2020</p>
+                            <p class="txt-mid0-4 font-weight-bold">&nbspFood Tips</p>
+                            <p class="txt-mid0-3 font-weight-bold">หมวดหมู่ : </p>
+                        </div>
+                    </div>
+                    <img class="mb-4" id="" src="./image_ชีส/1.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5">เมื่อพูดถึงชีสคนที่เป็นชีสเลิฟเวอร์ตัวจริงเสียงจริงต้องร้องว้าวถึงความอร่อย
+                        โดยเฉพาะอาหารอิตาเลี่ยนมักมีชีสเป็นส่วนประกอบที่สำคัญ
+                        แม้ว่าชีสให้พลังงานสูงปี๊ดแต่หลายคนก็อดใจไม่ได้ที่จะต้องขอลองชิมอาหารที่มีชีสแสนอร่อยสักคำให้ชื่นใจ
+                        สำหรับชีสนั้นทำมาจากนมทั้งนมวัว นมแพะ นมแกะ หรือแม้กระทั่งนมควาย
+                        โดยคัดแยกโปรตีนออกมาจนเป็นก้อนแล้วนำมาผสมกับเชื้อจุลินทรีย์ต่างๆ
+                        บ่มจนเข้าเนื้อทำให้มีรสชาติและกลิ่นที่แตกต่างกันออกไปตามแต่ละท้องถิ่น
+                        ซึ่งชีสนั้นมีหลากหลายชนิดตามแหล่งผลิต คาดว่ามีกว่า 1,000 ชนิดทั่วโลก
+                        โดยชนิดของชีสที่ชีสเลิฟเวอร์ควรรู้จักมีดังนี้</p>
+                    <img class="mt-5 mb-3" id="" src="./image_ชีส/2.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5 font-weight-bold my-3 mt-2 mb-3">พาร์มีซานชีส (Parmesan Cheese) </p>
+                    <p class="txt-mid0-5-1">มีที่มาจากประเทศอิตาลี เป็นชีสแข็ง (Very Hard Cheese) รสชาติออกเค็มมัน
+                        จะใช้กระบวนการบ่มยาวนานสูงสุดถึง 3 ปี ยิ่งบ่มนานยิ่งอร่อย จะทำให้รสชาติยิ่งเข้มข้นมาก
+                        ส่วนใหญ่ใช้เป็นวัตถุดิบหลักในการทำอาหารอิตาเลียน เช่น พิซซ่า , ซีซาร์สลัด, สปาเก็ตตี้คาโบนารา,
+                        ริซอตโต้ , เฟซตูชินี่ เป็นต้น</p>
+                    <img class="mt-5 mb-3" id="" src="./image_ชีส/3.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5 font-weight-bold my-3 mt-2 mb-3">เชดดาชีส (Cheddar Cheese)</p>
+                    <p class="txt-mid0-5-1">มีที่มาจากเมือง Cheddar ประเทศอังกฤษ เป็นชีสชนิดแข็ง (Hard Cheese)
+                        รสชาติเข้มข้น มีรสเค็มนิดๆ นิยมนำมาทานกับแซนวิส ขนมปัง หรือใช้โรยหน้าอาหารเพื่อเพิ่มความอร่อย
+                        เช่น สลัด , มันฝรั่งอบ, พาสต้า ได้เป็นอย่างดี</p>
+                    <img class="mt-5 mb-3" id="" src="./image_ชีส/4.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5 font-weight-bold my-3 mt-2 mb-3">บลูชีส (Blue Cheese)</p>
+                    <p class="txt-mid0-5-1">มีที่มาจากประเทศฝรั่งเศส
+                        เป็นชีสที่มีเอกลักษณ์เฉพาะตัวเพราะมีจุดสีฟ้าอมเขียวขึ้นอยู่บนชีส
+                        เนื่องจากใช้เชื้อราชนิดดีมีประโยชน์ต่อร่างกายที่ชื่อ Penicillium
+                        ในการบ่มจึงทำให้บลูชีสมีกลิ่นเฉพาะตัว รสเข้มข้น นิยมใช้ทำอาหารประเภทเมนูอบเป็นส่วนใหญ่ เช่น
+                        ไก่อบชีส , เบคอนอบชีส เป็นต้น</p>
+                    <img class="mt-5 mb-3" id="" src="./image_ชีส/5.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5 font-weight-bold my-3 mt-2 mb-3">มอสซาเรลลาชีส (Mozzarella Cheese) </p>
+                    <p class="txt-mid0-5-1">มีที่มาจากประเทศอิตาลี เป็นชีสชนิดกึ่งนุ่ม (Semi-Soft Cheese)
+                        มีความโดดเด่นในเรื่องความยืดหนึบหนับรสอร่อยกลมกล่อม
+                        กลิ่นของชีสชนิดนี้จะไม่แรงมากเพราะไม่ผ่านกระบวนการบ่ม
+                        อาหารที่นิยมใช้ชีสประเภทนี้คนไทยรู้จักกันดี เช่น หน้าพิซช่า , ลาซานญ่า
+                        หรืออาหารประเภททอดที่สอดไส้ชีสให้รสสัมผัสนุ่มยืดเวลากินอร่อยสุดๆ อ้วนเท่าไหร่ก็ยอม
+                    </p>
+                    <img class="mt-5 mb-3" id="" src="./image_ชีส/6.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5 font-weight-bold my-3 mt-2 mb-3">สวิสชีส (Swiss Cheese) </p>
+                    <p class="txt-mid0-5-1">แน่นอนว่ามีที่มาจากประเทศสวิตเซอร์แลนด์
+                        จะมีลักษณะที่เห็นได้ชัดคือมีรูกระจายเต็มตัวชีสจากการบ่มแล้วเกิดก๊าซคาร์บอนไดออกไซด์ภายในเนื้อชีสทำให้เป็นโพรง
+                        ใช้ระยะเวลาบ่มประมาณ 10-18 เดือน รสชาติมันให้รสสัมผัสนุ่มและกรอบในเวลาเดียวกัน
+                        สามารถทานได้ทันทีหรือจะนำไปเป็นส่วนประกอบของอาหารก็ได้ ส่วนใหญ่จะนิยมทานร่วมกับไวน์ขาวและแชมเปญ
+                    </p>
+                    <img class="mt-5 mb-3" id="" src="./image_ชีส/7.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5 font-weight-bold my-3 mt-2 mb-3">บรีชีส (Brie Cheese)</p>
+                    <p class="txt-mid0-5-1">มีที่มาจากแคว้น Brie ประเทศฝรั่งเศส เป็นชีสเนื้อนุ่ม (Semi-Soft Cheese)
+                        เนื่องจากการบ่มเพาะ 5-6 สัปดาห์ทำให้มีลักษณะสีขาวคล้ายเค้กก้อนโต ชีสประเภทนี้มักนิยมกินกับผลไม้
+                        เช่น แอปเปิ้ล ลูกแพร หรือจะทานคู่กับแครกเกอร์ แยมผลไม้ น้ำผึ้ง ถั่วธัญพืชและขนมปังก็ได้เช่นกัน
+                    </p>
+                    <img class="mt-5 mb-3" id="" src="./image_ชีส/8.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5 font-weight-bold my-3 mt-2 mb-3">กามองแบร์ชีส (Camembert Cheese)</p>
+                    <p class="txt-mid0-5-1">มีที่มาจากเมือง Camembert ประเทศฝรั่งเศส
+                        เป็นชีสยอดนิยมเพราะความกลมกล่อมของรสชาติมีรสสัมผัสของความครีมมี่ ออกหวานนิดๆ หอมๆ มันๆ
+                        จึงถูกใจชีสเลิฟเวอร์เป็นที่สุดมี นิยมทานร่วมกับไวน์แดง ขนมปัง ผลไม้
+                    </p>
+                    <img class="mt-5 mb-3" id="" src="./image_ชีส/9.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5 font-weight-bold my-3 mt-2 mb-3">กูวด้าชีส (Gouda Cheese) </p>
+                    <p class="txt-mid0-5-1">มีที่มาจากประเทศเนเธอร์แลนด์ เป็นชีสชนิดแข็ง (Hard Cheese) สีเหลืองเข้ม
+                        รสเค็ม ถ้าหากบ่มนานกลิ่นจะแรงขึ้น
+                        ลักษณะเฉพาะจะเป็นก้อนแบนกลมเคลือบด้วยไขขี้ผึ้งสีแดงหรือสีเหลือง
+                        เพื่อไม่ให้ชีสแห้งมากหลังจากตากชีส 2-3 วัน นิยมทานเปล่าๆ หรือทานคู่ผลไม้สดๆ ขนมปัง แครกเกอร์
+                        หรือถั่วชนิดต่างๆ ก็ได้
+                    </p>
+                    <img class="mt-5 mb-3" id="" src="./image_ชีส/10.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5 font-weight-bold my-3 mt-2 mb-3">มาสคาโปนชีส (Mascarpone Cheese) </p>
+                    <p class="txt-mid0-5-1">มีที่มาจากประเทศอิตาลี เป็นชีสที่มีความชื้นสูง (Soft Cheese)
+                        ละมุนลิ้นละลายในปากรสชาติดี นิยมใช้เป็นวัตถุดิบในเมนูขนมหวาน เช่น ทีรามิสุพาย , บานอฟฟี่ ,
+                        ชีสเค้กฯลฯ
+                    </p>
+                    <img class="mt-5 mb-3" id="" src="./image_ชีส/11.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5 font-weight-bold my-3 mt-2">เฟตาชีส (Feta Cheese) </p>
+                    <p class="txt-mid0-5-1">มีที่มาจากประเทศกรีซ สีขาว เนื้อนุ่ม (Semi-Soft Cheese)
+                        เป็นชีสสดที่มีรสเค็มไม่มากทำจากนมแกะหรือนมแพะ ส่วนใหญ่ใช้ปรุงเมนูกรีกสลัด ใช้ทานคู่กับสเต็ก
+                        หรือทานเพื่อตัดเลี่ยนร่วมกับเมนูปิ้งย่างก็ได้เช่นกัน
+                    </p>
+                    <img class="mt-5 mb-3" id="" src="./image_ชีส/12.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5 font-weight-bold my-3 mt-2 mb-3">คอทเทจชีส (Cottage Cheese)</p>
+                    <p class="txt-mid0-5-1">มีลักษณะเป็นเม็ดกลมคล้ายเมล็ดข้าวโพดคั่ว มีรสอ่อน มีความอมหวานของนมนิดๆ
+                        อาจผลิตจากนมพร่องมันเนยไขมันต่ำ อุดมด้วยโปรตีน และมีโปรไบโอติกที่ดีต่อลำไส้
+                        ไม่ผ่านการหมักหรือการบ่ม นิยมทานกับผลไม้ สลัด หรือของหวาน
+                    </p>
+                    <img class="mt-5 mb-3" id="" src="./image_ชีส/13.jpg" alt="" style="width: 100%;">
+                    <p class="txt-mid0-5">หากรู้จักและเข้าใจชีสแต่ละชนิด
+                        ก็ไม่ใช่เรื่องยากสำหรับชีสเลิฟเวอร์ที่จะเลือกชีสให้เหมาะกับอาหารจานโปรดของคุณ
+                        หากอยากสั่งอาหารที่มีชีสเยิ้มๆ มากินที่บ้าน เพียงแค่ดาวน์โหลดแอป Robinhood
+                        สั่งอาหารได้ทันทีจ่ายค่าอาหารและค่าส่งตามระยะทางจริงไม่มีการบวกเพิ่มแต่อย่างใด.
+                    </p>
+                    <p class="txt-mid0-5 mt-5"><span class="font-weight-bold">ที่มา<br>
+                        https://www.chonklang.com/th/บทความ/11+ประเภทชีส+ที่คนรักชีส</span>
+
+                    <div class="button">
+                        <a class="cheese p-2 mr-2 font-weight-bold" href="">ชีส</a>
+                    </div>
+
+                    <div class="row mt-5">
+                        <a class="col-3 nav-link txt-robinhood font-weight-bold"><img class=""
+                                src="./image/Group-1115-e1599403771374.png" width="22%">&emsp;Robinhood</a>
+                        <a class="col-5 nav-link mt-2 txt-robinhood font-weight-bold text-secondary"
+                            href="#highlight">|&emsp;<i class="far fa-calendar-alt text-secondary"
+                                style="font-size:16px"></i> ตุลาคม 22, 2020&emsp;|&emsp;watching 849</a>
+                    </div>
+                    <hr width="818" style="margin-top: 40px;">
+                    <div class="mid0-1">
+                        <div class="row">
+                            <div class="col-12 pt-5 pb-4">
+                                <p class="txt-content font-weight-bold color-robinhood">เนื้อหาที่เกี่ยวข้อง</p>
+                            </div>
+                            <div class="col-4">
+                                <a href="..."><img class="" id="" src="./image/why-food-delivery-thumbnail-cover.jpg"
+                                        alt="" style="width: 105%; height: 220px; border-radius: 10px;"></a>
+                                <a href="">
+                                    <p class="mt-3 txt-photo font-weight-bold">5 เหตุผลที่การสั่งอาหารเดลิเวอรี่​</p>
+                                </a>
+                                <a href="...">
+                                    <p class="color-robinhood" style="margin-top: -10px;">Robinhood</p>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="..."><img class="" id="" src="./image/Donburi-Thumbnail-Cover.jpg" alt=""
+                                        style="width: 105%; height: 220px; border-radius: 10px;"></a>
+                                <a href="">
+                                    <p class="mt-3 txt-photo font-weight-bold">“ดงบุริ” อาหารมื้อง่ายๆ ทั้งอร่อย</p>
+                                </a>
+                                <a href="...">
+                                    <p class="color-robinhood" style="margin-top: -10px;">Robinhood</p>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="..."><img class="" id="" src="./image/Cheese-Thumbnail-Cover.jpg" alt=""
+                                        style="width: 105%; height: 220px; border-radius: 10px;"></a>
+                                <a href="">
+                                    <p class="mt-3 txt-photo font-weight-bold">ชีสเลิฟเวอร์ต้องรู้! มีกี่ชนิด & กิน</p>
+                                </a>
+                                <a href="...">
+                                    <p class="color-robinhood" style="margin-top: -10px;">Robinhood</p>
+                                </a>
+                            </div>
+                            <div class="col-4 mt-3">
+                                <a href="..."><img class="" id="" src="./image/Michelin-Inspector-Thumbnail-Cover.jpg"
+                                        alt="" style="width: 105%; height: 220px; border-radius: 10px;"></a>
+                                <a href="">
+                                    <p class="mt-3 txt-photo font-weight-bold">อาชีพในฝัน Michelin</p>
+                                </a>
+                                <a href="...">
+                                    <p class="color-robinhood" style="margin-top: -10px;">Robinhood</p>
+                                </a>
+                            </div>
+                            <div class="col-4 mt-3">
+                                <a href="..."><img class="" id="" src="./image/Steak-Thumbnail-Cover.jpg" alt=""
+                                        style="width: 105%; height: 220px; border-radius: 10px;"></a>
+                                <a href="">
+                                    <p class="mt-3 txt-photo font-weight-bold">How to สั่งสเต๊กยังไงให้อร่อย?</p>
+                                </a>
+                                <a href="...">
+                                    <p class="color-robinhood" style="margin-top: -10px;">Robinhood</p>
+                                </a>
+                            </div>
+                            <div class="col-4 mt-3">
+                                <a href="..."><img class="" id="" src="./image/Sushi-Thumbnail-Cover.jpg" alt=""
+                                        style="width: 105%; height: 220px; border-radius: 10px;"></a>
+                                <a href="">
+                                    <p class="mt-3 txt-photo font-weight-bold">รู้จัก “ซูชิ” อย่างเซียน</p>
+                                </a>
+                                <a href="...">
+                                    <p class="color-robinhood" style="margin-top: -10px;">Robinhood</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <br>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-3">
+                    <div class="row">
+                        <img class="" id="" src="./image/logo-White.png" alt="" style="width: 31%;">
+                    </div>
+                    <div class="row mt-3">
+                        <p class="text-warning">ติดตามเราช่องทางอื่นๆ</p>
+                    </div>
+                    <div class="row mt-3 ml-5">
+                        <img class="ml-5" id="" src="./image/facebook.png" alt="" style="width: 25%;">
+                    </div>
+                    <div class="row mt-4 ml">
+                        <p class="text-white" style="font-size: 13px;">Call Center : <a class="ml-1">02-777-7564</a></p>
+                        <p class="text-white" style="font-size: 13px;">เปิดให้บริการทุกวัน ตลอด 24 ชั่วโมง</p>
+                    </div>
+                    <div class="row mt-4">
+
+                    </div>
+                    <div class="row ml">
+                        <p class="text-white" style="font-size: 13px;">©Robinhood</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row mt-5">
+
+                    </div>
+                    <div class="row mt-1">
+                        <p class="text-warning">ข้อกำหนดการใช้งาน Robinhood</p>
+                    </div>
+                    <div class="row">
+                        <a class="text-white mt-4" style="font-size: 11px;"
+                            href=""><u>ข้อกำหนดและเงื่อนไขการใช้บริการร้านอาหารโรบินฮู้ด</u></a>
+                    </div>
+                    <div class="row">
+                        <a class="text-white mt-3" style="font-size: 11px;"
+                            href=""><u>ข้อกำหนดและเงื่อนไขการใช้บริการสั่งอาหาร</u></a>
+                    </div>
+                    <div class="row">
+                        <p class="text-warning mt-5">ข้อกำหนดการใช้งานเว็บไซต์</p>
+                    </div>
+                    <div class="row ml">
+                        <a class="text-white" style="font-size: 12px;" href=""><u>Privacy policy</u></a>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="row mt-4">
+                        <a class="col-9 nav-link" href="merchant.html">
+                            <div class="card" style="width: 19rem;">
+                                <img class="card-img-top " src="./image/rectangle.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="row txt-10 font-weight-bold" style="font-size: 14px;">พาร์ทเนอร์ร้านอาหาร​
+                                    </p>
+                                    <p class="row txt-11 font-weight-normal" style="font-size: 12px;">มาเพิ่มยอดขายง่ายๆ
+                                        ให้ร้านอาหารของคุณ
+                                        สามารถสมัครร่วมเป็นร้านอาหารกับ Robinhood ได้แล้ววันนี้</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="col-2 nav-link" href="rider.html">
+                            <div class="card" style="width: 19rem;">
+                                <img class="card-img-top \" src="./image/Robinhood-Rider-Footer-box-edit.png"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="row txt-10 font-weight-bold" style="font-size: 14px;">โรบินฮู้ด ไรเดอร์​
+                                    </p>
+                                    <p class="row txt-11 font-weight-normal" style="font-size: 12px;">เช้ารับงาน
+                                        ค่ำรับเงิน ได้เต็มๆ ไม่ต้องสำรองเงินค่าอาหาร พร้อมรับสิทธิพิเศษมากมาย
+                                        สมัครได้แล้วเพียงโหลดแอป</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+
+            </div>
+            <div class="row mt-5 text-center ml-5">
+                <p class="text-muted ml-4 my-4">Copyright © 2021 <a class="text-white" href="index.html">Robinhood.</a>
+                    All Rights Reserved. <a class="text-white" href="#">Privacy-th</a> | Catch Foodmania by <a
+                        class="text-white" href="https://catchthemes.com/">Catch Themes</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

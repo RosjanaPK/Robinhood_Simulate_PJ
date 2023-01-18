@@ -1,0 +1,870 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="icon" href="./image/RBH_MAIN_LOGO-crop.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <script src="script_merchant.js"></script>
+    <!-- <link href="styles.css" rel="stylesheet"> -->
+    <link href="styles_merchant.css" rel="stylesheet">
+    <title>สมัครเป็นพาร์ทเนอร์</title>
+</head>
+
+<body>
+    <div id="popup_container">
+        <div id="popup">
+            <div class="container text-center">
+                <div class="row ">
+                    <p class="font-weight-bold mt-3" style="font-size: 22px;">แอปสั่งอาหารโรบินฮู้ด</p>
+                </div>
+                <div class="row">
+                    <p class="font-weight-bold" style="font-size: 30px;">สแกนเพื่อดาวน์โหลด</p>
+                </div>
+                <img class="my-3" src="./image/qrcode.png" style="width:170px;">
+                <div class="row">
+                    <div class="col-5 ml-4">
+                        <img class="ml-5" src="./image/logo-White-1.png" style="width: 92px;">
+                    </div>
+                    <div class="col mt-2">
+                        <img class="row" src="./image/download_App-Store.png" style="width: 96px;">
+                        <img class="row mt-2" src="./image/download_Google-Play.png" style="width: 96px;">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="font-weight-bold" style="font-size: 16px;">Robinhood ทางเลือกใหม่ของฟู้ดเดลิเวอรี่ไทย</p>
+                </div>
+                <div class="row">
+                    <a class="pointer" onclick="hidePopup()" style="font-size: 14px; color: rgb(171,76,171);">ปิดหน้าต่างนี้</a>
+                </div>
+            </div>
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button> -->
+            
+        </div>
+    </div>
+    <div id="popup_container2">
+        <div id="popup2">
+            <div class="container text-center">
+                <div class="row ">
+                    <p class="font-weight-bold mt-3" style="font-size: 22px;">แอปสั่งอาหารโรบินฮู้ด</p>
+                </div>
+                <div class="row">
+                    <p class="font-weight-bold" style="font-size: 30px;">สแกนเพื่อดาวน์โหลด</p>
+                </div>
+                <img class="my-3" src="./image/qrcode.png" style="width:170px;">
+                <div class="row">
+                    <div class="col-5 ml-4">
+                        <img class="ml-5 " src="./image/logo-White-1.png" style="width: 92px;">
+                    </div>
+                    <div class="col mt-2">
+                        <img class="row" src="./image/download_App-Store.png" style="width: 96px;">
+                        <img class="row mt-2" src="./image/download_Google-Play.png" style="width: 96px;">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="font-weight-bold" style="font-size: 16px;">Robinhood ทางเลือกใหม่ของฟู้ดเดลิเวอรี่ไทย</p>
+                </div>
+                <div class="row">
+                    <a class="pointer" onclick="hidePopup2()" style="font-size: 14px; color: rgb(171,76,171);">ปิดหน้าต่างนี้</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg">
+        <div class="bg_top mb-5">
+            <nav id="navbar_top" class="navbar navbar-expand-xl navbar-dark">
+                <div class="container-fluid" id="nav_top">
+                    <a href="index.html"><img src="./image/logo-White.png" width="60"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse ml-4 d-flex justify-content-end" id="main_nav">
+
+                        <ul class="navbar-nav">
+                            <li class="nav-item ms-1"><a class="nav-link" id="navbar1"
+                                    href="about-us.html">รู้จักเรา</a>
+                            </li>
+                            <li class="nav-item ms-1"><a class="nav-link" id="navbar2" href="promotion.html">โปรโมชั่น</a>
+                            </li>
+                            <li class="nav-item ms-1"><a class="nav-link" id="navbar3" href="food-playlist.html">กินอะไรดี</a>
+                            </li>
+                            <li class="nav-item ms-1"><a class="nav-link" id="navbar4" href="zone-list.html">จานเด็ดย่านดัง</a>
+                            </li>
+                            <li class="nav-item ms-1"><a class="nav-link" id="navbar5" href="food-tips.html">ทิปความรู้</a>
+                            </li>
+                            <li class="nav-item ms-1"><a class="nav-link" id="navbar6"
+                                    href="restaurant-story.html">เรื่องราวร้านอาหาร</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle ms-1" id="navbar7" href="#"
+                                    data-bs-toggle="dropdown">พาร์ทเนอร์ร้านอาหาร</a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a class="dropdown-item" id="item1" href="merchant.html">สมัครเป็นพาร์ทเนอร์</a></li>
+                                    <li><a class="dropdown-item" id="item2" href="merchantcenter.html">คู่มือสำหรับอาหาร</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item ms-1"><a class="nav-link" id="navbar8"
+                                    href="travel-partner.html">พาร์ทเนอร์ท่องเที่ยว</a></li>
+                            <li class="nav-item ms-1"><a class="nav-link" id="navbar9" href="rider.html">ไรเดอร์</a></li>
+                            <a class="nav-item ms-1 ps-4 mt-1 pointer" onclick="showPopup()"><img src="image/download_App-Store.png"
+                                width="110"></a>
+                        <a class="nav-item ms-1 ps-4 mt-1 pointer" onclick="showPopup2()"><img src="image/download_Google-Play.png"
+                                width="110"></a>
+                        </ul>
+                    </div> <!-- navbar-collapse.// -->
+                </div> <!-- container-fluid.// -->
+            </nav>
+            <div class="container">
+                <div class="row ml-5">
+                    <div class="col-6">
+
+                    </div>
+                    <div class="col-6">
+                        <div class="row mt-5">
+
+                        </div>
+                        <div class="row mt-5">
+                            <p class="text-white font-weight-bold" style="font-size: 20px;">เข้าร่วมเป็นร้านอาหารกับ</p>
+                        </div>
+                        <div class="row">
+                            <p class="text-white font-weight-bold" style="font-size: 32px;"><img
+                                    src="image/สัญลักษณ์robinhood.png" style="width: 50%;"> &ensp;ดีอย่างไร?</p>
+                        </div>
+                        <div class="row">
+                            <p class="text-white font-weight-bold" style="font-size: 24px;">&bull; เพิ่มหน้าร้านออนไลน์
+                                <br>&bull; ขายดีแบบไม่เสียค่า GP<br>&bull;
+                                มีโอกาสเข้าถึงสินเชื่อจากสถาบันการเงินเพิ่มขึ้น<br>&bull; สมัครฟรี
+                            </p>
+                        </div>
+                        <div class="row">
+                            <p class="text-white font-weight-bold" style="font-size: 14px;">ปัจจุบัน
+                                โรบินฮู้ดเปิดให้บริการในกรุงเทพฯ และปริมณฑล รวม 6 จังหวัด
+                                เรากำลังเร่งขยายพื้นที่ให้บริการเพิ่มเติมเร็วๆ นี้</p>
+                        </div>
+                        <div class="row">
+                            <p class="text-white"><u><a class="txt-1-1 font-weight-bold"
+                                        href="#">ตรวจสอบพื้นที่ให้บริการ</a></u></p>
+                        </div>
+                        <div class="row">
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="ชื่อ">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="นามสกุล">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="เบอร์โทร">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="ชื่อร้าน">
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option selected>เลือกจังหวัด</option>
+                                        <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+                                        <option value="กระบี่">กระบี่ </option>
+                                        <option value="กาญจนบุรี">กาญจนบุรี </option>
+                                        <option value="กาฬสินธุ์">กาฬสินธุ์ </option>
+                                        <option value="กำแพงเพชร">กำแพงเพชร </option>
+                                        <option value="ขอนแก่น">ขอนแก่น</option>
+                                        <option value="จันทบุรี">จันทบุรี</option>
+                                        <option value="ฉะเชิงเทรา">ฉะเชิงเทรา </option>
+                                        <option value="ชัยนาท">ชัยนาท </option>
+                                        <option value="ชัยภูมิ">ชัยภูมิ </option>
+                                        <option value="ชุมพร">ชุมพร </option>
+                                        <option value="ชลบุรี">ชลบุรี </option>
+                                        <option value="เชียงใหม่">เชียงใหม่ </option>
+                                        <option value="เชียงราย">เชียงราย </option>
+                                        <option value="ตรัง">ตรัง </option>
+                                        <option value="ตราด">ตราด </option>
+                                        <option value="ตาก">ตาก </option>
+                                        <option value="นครนายก">นครนายก </option>
+                                        <option value="นครปฐม">นครปฐม </option>
+                                        <option value="นครพนม">นครพนม </option>
+                                        <option value="นครราชสีมา">นครราชสีมา </option>
+                                        <option value="นครศรีธรรมราช">นครศรีธรรมราช </option>
+                                        <option value="นครสวรรค์">นครสวรรค์ </option>
+                                        <option value="นราธิวาส">นราธิวาส </option>
+                                        <option value="น่าน">น่าน </option>
+                                        <option value="นนทบุรี">นนทบุรี </option>
+                                        <option value="บึงกาฬ">บึงกาฬ</option>
+                                        <option value="บุรีรัมย์">บุรีรัมย์</option>
+                                        <option value="ประจวบคีรีขันธ์">ประจวบคีรีขันธ์ </option>
+                                        <option value="ปทุมธานี">ปทุมธานี </option>
+                                        <option value="ปราจีนบุรี">ปราจีนบุรี </option>
+                                        <option value="ปัตตานี">ปัตตานี </option>
+                                        <option value="พะเยา">พะเยา </option>
+                                        <option value="พระนครศรีอยุธยา">พระนครศรีอยุธยา </option>
+                                        <option value="พังงา">พังงา </option>
+                                        <option value="พิจิตร">พิจิตร </option>
+                                        <option value="พิษณุโลก">พิษณุโลก </option>
+                                        <option value="เพชรบุรี">เพชรบุรี </option>
+                                        <option value="เพชรบูรณ์">เพชรบูรณ์ </option>
+                                        <option value="แพร่">แพร่ </option>
+                                        <option value="พัทลุง">พัทลุง </option>
+                                        <option value="ภูเก็ต">ภูเก็ต </option>
+                                        <option value="มหาสารคาม">มหาสารคาม </option>
+                                        <option value="มุกดาหาร">มุกดาหาร </option>
+                                        <option value="แม่ฮ่องสอน">แม่ฮ่องสอน </option>
+                                        <option value="ยโสธร">ยโสธร </option>
+                                        <option value="ยะลา">ยะลา </option>
+                                        <option value="ร้อยเอ็ด">ร้อยเอ็ด </option>
+                                        <option value="ระนอง">ระนอง </option>
+                                        <option value="ระยอง">ระยอง </option>
+                                        <option value="ราชบุรี">ราชบุรี</option>
+                                        <option value="ลพบุรี">ลพบุรี </option>
+                                        <option value="ลำปาง">ลำปาง </option>
+                                        <option value="ลำพูน">ลำพูน </option>
+                                        <option value="เลย">เลย </option>
+                                        <option value="ศรีสะเกษ">ศรีสะเกษ</option>
+                                        <option value="สกลนคร">สกลนคร</option>
+                                        <option value="สงขลา">สงขลา </option>
+                                        <option value="สมุทรสาคร">สมุทรสาคร </option>
+                                        <option value="สมุทรปราการ">สมุทรปราการ </option>
+                                        <option value="สมุทรสงคราม">สมุทรสงคราม </option>
+                                        <option value="สระแก้ว">สระแก้ว </option>
+                                        <option value="สระบุรี">สระบุรี </option>
+                                        <option value="สิงห์บุรี">สิงห์บุรี </option>
+                                        <option value="สุโขทัย">สุโขทัย </option>
+                                        <option value="สุพรรณบุรี">สุพรรณบุรี </option>
+                                        <option value="สุราษฎร์ธานี">สุราษฎร์ธานี </option>
+                                        <option value="สุรินทร์">สุรินทร์ </option>
+                                        <option value="สตูล">สตูล </option>
+                                        <option value="หนองคาย">หนองคาย </option>
+                                        <option value="หนองบัวลำภู">หนองบัวลำภู </option>
+                                        <option value="อำนาจเจริญ">อำนาจเจริญ </option>
+                                        <option value="อุดรธานี">อุดรธานี </option>
+                                        <option value="อุตรดิตถ์">อุตรดิตถ์ </option>
+                                        <option value="อุทัยธานี">อุทัยธานี </option>
+                                        <option value="อุบลราชธานี">อุบลราชธานี</option>
+                                        <option value="อ่างทอง">อ่างทอง </option>
+                                    </select>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col">
+                                        <select id="inputState" class="form-control">
+                                            <option selected>เขต/อำเภอ</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col">
+                                        <select id="inputState" class="form-control">
+                                            <option selected>รหัสไปรษณีย์</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="g-recaptcha" id="rcaptcha" data-sitekey="site key"></div>
+                                    <span id="captcha" style="color:red" /></span>
+
+                                </div>
+                                <div class="row mt-2 ml-1">
+                                    <button class="button" type="button" data-toggle="collapse"
+                                        data-target="#collapseExample" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        สมัครเลย !</button>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="row">
+                            <p class="text-white font-weight-bold" style="font-size: 12px;">Call Center : <u><a
+                                        class="text-white" href="#">02-777-7564</a></u> <br>
+                                เปิดให้บริการทุกวัน ตลอด 24 ชั่วโมง</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5" style="margin-left: -5px;">
+        <div class="row"></div>
+        <div class="row mt-5">
+
+            <div class="col-4 mt-5"></div>
+            <div class="col-8 bg_aboutus mt-5"></div>
+        </div>
+    </div>
+    <div class="two">
+        <div class="container text-center" style="margin-top: -390px;">
+            <div class="row">
+                <div class="col-6" id="text1">
+                    <div class="hashtag mt">
+                        <img src="image/สัญลักษณ์robinhood.png" style="width: 70%;">
+                        <p class="row font-txt2 font-weight-bold ml-4" style="font-size: 50px;"> <a class="ml-1">“มาเพิ่มยอดขาย<br>
+                            ให้ร้านค้าของคุณ<br>
+                            ได้ง่ายๆ”</a></p>
+                    </div>
+                </div>
+                <div class="col-6 video" id="video">
+                    <!-- ?autoplay=1&mute=1 ใส่หลังlink youtube เพื่อให้เล่นอัตโนมัต-->
+                    <iframe class="ml-3" width="560" height="315" src="https://www.youtube.com/embed/EA-18WVFJR8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen style="border-radius: 20px;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="three" style="margin-top: -40px; margin-left: -20px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6">
+                    <img src="image/1st-Strip-Right.jpg" style="width: 120%; height: 100%;">
+                </div>
+                <div class="col-6" id="Robinhood_Shop">
+                    <br>
+                    <br>
+                    <div class="row ml-5 mt-5">
+                        <p class="text-white font-weight-bold" style="font-size: 35px;">
+                            ขั้นตอนการสมัครร่วมเป็นร้านค้ากับ
+                            Robinhood (บุคคลธรรมดา)</p>
+                    </div>
+                    <div class="row ml-5">
+                        <p class="text-white font-weight-normal" style="font-size: 24px;">1. ดาวน์โหลดแอปพลิเคชัน
+                            Robinhood Shop<br>
+                            2. ยืนยันตัวตนผ่านแอปพลิเคชัน SCB EASY<br>
+                            3. กรอกข้อมูล<br>
+                            4.เริ่มต้นใช้งานได้ทันที หลังจากได้รับอีเมล์อนุมัติ</p>
+                    </div>
+                    <br>
+                    <div class="row ml-5">
+                        <p class="text-white font-weight-bold" style="font-size: 35px;">เงื่อนไขการสมัครเบื้องต้น</p>
+                    </div>
+                    <div class="row ml-5">
+                        <p class="text-white font-weight-normal" style="font-size: 24px;">1. ต้องมีบัญชี SCB ประเภท
+                            ออมทรัพย์ หรือ เดินสะพัด<br>
+                            2. มีแอปพลิเคชัน SCB EASY<br>
+                            3. เป็นร้านขายอาหาร รวมขนม และเครื่องดื่ม พร้อมสั่ง พร้อมส่ง พร้อมทาน
+                            ไม่รวมการขายอาหารสัตว์เลี้ยง
+                        </p>
+                    </div>
+                    <br>
+                    <div class="row ml-5 mt-4">
+                        <p class="text-white font-weight-bold" style="font-size: 25px;">
+                            ดาวน์โหลดแอปพลิเคชันสำหรับร้านค้า</p>
+                    </div>
+                    <div class="row ml-5">
+                        <a class="col-3 nav-link text-dark pointer" id="app_store" onclick="showPopup()">
+                            <img class="" src="./image/download_App-Store.png" style="width:150px;">
+                        </a>
+                        <a class="col-3 nav-link text-dark ml-3 pointer "id="google_play" onclick="showPopup2()"> 
+                            <img src="./image/download_Google-Play.png" style="width:150px;">
+                        </a>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="four">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6" id="Robinhood_Shop_2" style="margin-left: -10px;">
+                    <br>
+                    <br>
+                    <div class="row ml-5 mt-2">
+                        <p class="text-white font-weight-bold ml-4" style="font-size: 34px;">
+                            ขั้นตอนการสมัครร่วมเป็นร้านค้ากับ Robinhood (นิติบุคคล)</p>
+                    </div>
+                    <div class="row ml-5">
+                        <p class="text-white font-weight-normal ml-4" style="font-size: 23px;">1. ดาวน์โหลดแอปพลิเคชัน
+                            Robinhood Shop<br>
+                            2. กรอกข้อมูล ลงทะเบียนร้านค้าผ่านเว็บไซต์<br>
+                            3. ระบบส่งเอกสารการสมัครให้ทางอีเมล<br>
+                            4.ร้านค้าลงนามเอกสาร และส่งกลับบริษัท ทั้งตัวจริงและ scan<br>
+                            5. รอผลการอนุมัติ 1 วันทำการ นับจากเอกสารส่งถึงบริษัท<br>
+                            6.ส่งรหัสผ่านเข้าระบบ ให้ทางอีเมล<br>
+                            7.เริ่มต้นใช้งานได้ทันที</p>
+                    </div>
+                    <br>
+                    <div class="row ml-5">
+                        <p class="text-white font-weight-bold ml-4" style="font-size: 34px;">เงื่อนไขการสมัครเบื้องต้น
+                        </p>
+                    </div>
+                    <div class="row ml-5">
+                        <p class="text-white font-weight-normal ml-4" style="font-size: 23px;">1. ต้องมีบัญชี SCB ประเภท
+                            ออมทรัพย์ หรือ เดินสะพัด<br>
+                            2. เป็นร้านขายอาหาร รวมขนม และเครื่องดื่ม พร้อมสั่ง<br>พร้อมส่ง พร้อมทาน
+                            ไม่รวมการขายอาหารสัตว์เลี้ยง<br>
+                        </p>
+                    </div>
+                    <br>
+                    <div class="row ml-5 mt-4">
+                        <button class="button2 ml-5" type="button" data-toggle="collapse" data-target="#collapseExample"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            สนใจสมัคร คลิกเลย!</button>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-6" style="margin-left: -15px;">
+                    <img src="image/1st-Strip-Right-1.jpg" style="width: 106.7%; height: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="five">
+        <div class="container-fluid" id="five">
+            <div class="row">
+                <div class="col-6">
+                    <div class="row ml-5 mt-5" id="book">
+                        <div class="col-4 mt-2 ml-4">
+                            <img src="image/หนังสือ.png" style="width: 90%">
+                        </div>
+                        <div class="col-7">
+                            <div class="row">
+                                <p class="font-weight-bold text-center mt-2" style="font-size: 23px;">
+                                    เริ่มต้นเปิดร้านออนไลน์<br>
+                                    และคู่มือสำหรับร้านอาหาร</p>
+                            </div>
+                            <div class="row">
+                                <button class="button ml-5" type="button" data-toggle="collapse"
+                                    data-target="#collapseExample" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    คลิกเลย!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="row mt-5" id="book">
+                        <div class="col-4 mt-2">
+                            <img src="image/แชท.png" style="width: 80%">
+                        </div>
+                        <div class="col-7">
+                            <div class="row">
+                                <p class="font-weight-bold text-center mt-2" style="font-size: 23px;">ติดตามข่าวสาร
+                                    <br>และสอบถามเพิ่มเติมทาง LINE
+                                </p>
+                            </div>
+                            <div class="row">
+                                <button class="button ml-5" type="button" data-toggle="collapse"
+                                    data-target="#collapseExample" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    คลิกเลย!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+    <div class="six">
+        <div class="container-fluid" id="bg-six">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="row-12 ml-5 ">
+                <p class="font-weight-bold" style="font-size: 20px;">เรื่องน่ารู้ของแอป Robinhood</p>
+            </div>
+            <div class="row-12 ml-5">
+                <p class="" id="txt-2-2">Food Delivery สัญชาติไทย</p>
+            </div>
+            <div class="row ml-5">
+                <p class="" id="txt-2-2-2">&bull; ให้บริการโดย บริษัท เพอร์เพิล เวนเจอร์ส จำกัด<br>
+                    (ในกลุ่มบริษัทธนาคารไทยพาณิชย์)<br>
+                    &bull; ร้านอาหารสมัครได้ฟรี<br>
+                    &bull; เข้าถึงสินเชื่อของธนาคารเพื่อขยายธุรกิจได้ง่ายขึ้น<br>
+                    &bull; ช่วงแรกเปิดให้บริการในเขตกรุงเทพและปริมณฑล</p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="seven">
+        <div class="container-fluid" id="bg-seven">
+            <br>
+            <br>
+            <div class="row text-center">
+                <p class="text-white font-weight-bold  mt-4" style="font-size: 42px;">
+                    การสมัครเข้าร่วมเป็นพาร์ทเนอร์ร้านอาหาร
+                    <br>กับ Robinhood มี 2 ประเภท
+                </p>
+            </div>
+            <div class="row text-white mt-5">
+                <div class="col ml-5">
+                    <p class="font-weight-bold ml-5" style="font-size: 30px;">1. พาร์ทเนอร์ทั่วไป
+                        <br>(Regular Partner)
+                    </p>
+                    <p class="ml-5" style="font-size: 24px;">สมัครได้ทั้งร้านอาหารที่เป็นบุคคลธรรมดาหรือนิติบุคคล
+                        ซึ่งจะไม่โดนหักค่า GP แต่อย่างใด
+                        ร้านค้าได้รับเงินเต็ม</p>
+                </div>
+                <div class="col">
+                    <p class="font-weight-bold" style="font-size: 30px;">2. พาร์ทเนอร์แนะนำ
+                        <br>(Preferred Partner)
+                    </p>
+                    <p class="" style="font-size: 24px;">สมัครได้ทั้งร้านอาหารที่เป็นบุคคลธรรมดาหรือนิติบุคคล
+                        <br>ซึ่งจะไม่โดนหักค่า GP แต่อย่างใด
+                        หากแต่จะมีการเก็บเงิน<br> ช่วยเหลือค่าขนส่ง Logistic Subsidy (LS) 8% โดยนำไป<br>
+                        ลดตรงให้กับยอดการสั่งออเดอร์นั้นให้ลูกค้า
+                    </p>
+                </div>
+            </div>
+            <br>
+        </div>
+
+    </div>
+    <div class="eight">
+        <div class="container mt-5">
+            <div class="row text-center mt-3">
+                <p class="" id="txt-3-3-3">เคล็ดลับการเพิ่มยอดขาย<br>
+                    ให้ร้านค้าด้วยการสมัคร LS</p>
+            </div>
+            <div class="row text-center">
+                <p style="font-size: 20px;">Logistic Subsidy (LS) คือส่วนลดค่าส่งอาหารจากทางร้านค้า<br>
+                    ที่ทาง Robinhood  จะส่งต่อให้ลูกค้า 100%<br>
+                    โดยนำไปเป็นส่วนลดจากยอดรวม (ค่าอาหาร+ค่าจัดส่ง) ให้กับลูกค้าในออเดอร์นั้นๆ</p>
+            </div>
+            <div class="row text-center">
+                <p class="font-weight-bold" style="font-size: 50px;">LS ≠ GP</p>
+            </div>
+            <div class="row mt-4" id="price">
+                <center><a href="#"><img class="price" src="image/อยากให้ร้านขายดี.jpg" style="width: 70%"></center></a>
+            </div>
+            <div class="row mt-5">
+                <div class="col-2">
+
+                </div>
+                <div class="col-10">
+                    <p class="font-weight-normal mt-2 ml-5" style="font-size: 23px;">&bull; เพิ่มโอกาสสร้างยอดขาย
+                        โดยร้านค้าสามารถเลือกส่วนลด LS ได้ตั้งแต่ 3% – 35%<br>
+                        เพื่อเป็นส่วนลดค่าสั่งอาหารให้กับลูกค้าโดยตรง<br>
+                        &bull; เพิ่มโอกาสในการมองเห็นบนหน้าแอปพลิเคชันโรบินฮู้ด<br>
+                        &bull; ในกรณีที่ไม่มี LS โอกาสที่ลูกค้าจะไปใช้ทางเลือกที่มี GP สูงจะเกิดขึ้น
+                        ซึ่งร้านค้าก็จะเสีย<br>
+                        ผลประโยชน์เพราะต้องเสียค่า GP ที่แพงขึ้นโดยไม่จำเป็น<br>
+                        &bull; LS จึงเปรียบเสมือนโปรโมชั่นลดค่าส่งให้กับลูกค้า ที่จะช่วยเพิ่มโอกาส ความถี่ และ<br>
+                        ยอดสั่งอาหารที่สูงขึ้นจากลูกค้า เพื่อให้ได้ส่วนลดที่ครอบคลุมค่าส่งมากขึ้น
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <center>
+                    <button class="button3 mt-3" type="button" data-toggle="collapse" data-target="#collapseExample"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        คู่มือสำหรับเข้าร่วม LS คลิก!</button>
+                </center>
+
+            </div>
+            <div class="row mt-3">
+                <center><a class="text-dark font-weight-bold" style="font-size: 22px;" href="#"><u>ดาวน์โหลดใบสมัคร
+                            LS</u></a></center>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="nine">
+        <div class="container-fluid" id="bg-nine">
+            <div class="row">
+                <div class="col-7">
+
+                </div>
+                <div class="col-5 text-white mt-5 ">
+                    <p class="row font-weight-bold mt-4 ml-5" style="font-size: 45px;"><img src="image/Group.png"
+                            style="width: 15%"> พื้นที่ให้บริการ</p>
+                    <div class="row ml-5">
+                        <p class="font-weight-bold" style="font-size: 22px;">Robinhood พร้อมให้บริการในกรุงเทพฯ
+                            และปริมณฑล</p>
+                    </div>
+                    <div class="row ml-5">
+                        <p>&bull; ทุกพื้นที่ใน กรุงเทพฯ นนทบุรี สมุทรปราการ ปทุมธานี<br>
+                            &bull; บางพื้นที่ในจังหวัดสมุทรสาคร : อำเภอเมืองและกระทุ่มแบน<br>
+                            &bull; บางพื้นที่ในจังหวัดนครปฐม : อำเภอนครชัยศรี<br>
+                            พุทธมณฑลและบางเลน</p>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="ans">
+        <div class="container mt-5">
+            <div class="row text-center">
+                <div class="col txt-16">
+                    <h1 class="txt_hihglight"><img src="./image/Group-501.png" alt="..." style="width: 5%;">
+                        ตอบทุกคำถามที่คุณสงสัย</h1>
+                </div>
+            </div>
+            <div class="row">
+                <h3 class="text-center mt-2">คลายทุกข้อสงสัยในบริการของ Robinhood ให้เรารู้จักกันมากขึ้น <i
+                        class="fa fa-heart" style="font-size:25px;"></i></h3>
+            </div>
+            <div class="row mt-5 justify-content-md-center" id="ans_div">
+                <div class="row ans1 mt-2" id="flip">
+                    <div class="col-11"><a class="ans_1 font-weight-bold ml-4">Robinhood คืออะไร</a></div>
+                    <div class="col-1 mt-2" id="down1"><img class="" id="down1" src="./image/Group-4-1.png" alt=""
+                            style="width: 50%;"></div>
+                </div>
+                <div class="row-12 ans2" id="panel">Robinhood คือ Food Delivery App สัญชาติไทย
+                    ซึ่งให้บริการโดยบริษัทในกลุ่มของธนาคารไทยพาณิชย์ เป็นอีกทางเลือกหนึ่งสำหรับผู้บริโภค
+                    ซึ่งรวบรวมร้านอาหารอันหลากหลายที่ตอบโจทย์ความต้องการของลูกค้าอย่างครบครัน ไม่ว่าจะเป็นร้านอาหาร แนว
+                    Street Food ร้านอาหารรายย่อย ร้านอาหารชั้นนำ ร้านอาหารยอดนิยม รวมไปถึงร้านอาหารในห้างสรรพสินค้า
+
+                    ในส่วนของร้านค้า เราได้จัดทำ Mobile Application เรียกว่า Robinhood Shop เพื่อให้ร้านค้าสามารถ
+                    บริหารจัดการ การขายอาหาร ผ่าน Robinhood Platform โดย ร้านค้า สามารถเพิ่มเมนู กำหนดราคา
+                    กำหนดเวลาปิด-เปิดร้านค้า ได้เอง</div>
+
+                <div class="row ans1 mt-4" id="flip2">
+                    <div class="col-11"><a class="ans_1 font-weight-bold ml-4">เข้าร่วมเป็นร้านอาหารกับ  Robinhood  ดีอย่างไร ?</a></div>
+                    <div class="col-1 mt-2" id="down2"><img class="" id="down2" src="./image/Group-4-1.png" alt=""
+                            style="width: 50%;"></div>
+                </div>
+                <div class="ans2" id="panel2">แอปพลิเคชั่น Robinhood สามารถทำให้ร้านของคุณเพิ่มหน้าร้านออนไลน์และไม่ต้องเสียค่า GP โดยสามารถสมัครฟรีแบบไม่มีค่าใช้จ่าย</div>
+
+                <div class="row ans1 mt-4" id="flip3">
+                    <div class="col-11"><a class="ans_1 font-weight-bold ml-4">สมัครเป็นร้านอาหารกับ  Robinhood  มีค่าแรกเข้าหรือไม่?</a></div>
+                    <div class="col-1 mt-2" id="down3"><img class="" id="down3" src="./image/Group-4-1.png" alt=""
+                            style="width: 50%;"></div>
+                </div>
+                <div class="ans2" id="panel3">การเข้าร่วมเป็นร้านค้ากับ Robinhood Shop ไม่มีค่าแรกเข้า หรือค่าสมัครแต่อย่างใดทั้งสิ้น
+                </div>
+
+                <div class="row ans1 mt-4" id="flip4">
+                    <div class="col-11"><a class="ans_1 font-weight-bold ml-4">สมัครเป็นร้านอาหารกับ  Robinhood  จะต้องเสียค่าบริการอะไรบ้าง?</a></div>
+                    <div class="col-1 mt-2" id="down4"><img class="" id="down4" src="./image/Group-4-1.png" alt=""
+                            style="width: 50%;"></div>
+                </div>
+                <div class="ans2" id="panel4">กรณีที่ลูกค้าสั่งอาหารและชำระด้วยบัตรเครดิต/เดบิต/เติมเงิน มีค่าธรรมเนียมในการรับบัตรที่ 1.85% (ยังไม่รวมภาษีมูลค่าเพิ่ม (VAT))
+                    หากลูกค้าชำระผ่านแอปพลิเคชั่น SCB EASY (ตัดบัญชีออมทรัพย์หรือเดินสะพัด) จะไม่มีค่าธรรมเนียมสำหรับร้านค้าในการรับเงิน</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mt-4 container justify-content-md-center" id="button">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <button class="button col-6 ml-2 text-center" width="500" type="button" id="list"
+                            onclick="list()" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
+                            aria-controls="collapseExample">
+                            คำถามทั้งหมด<img class="col img-down" src="./image/back.png" alt=""
+                                style="width: 28%;"></button>
+                        <div class="col-3"></div>
+                    </div>
+                </div>
+                <div class="col-4"></div>
+            </div>
+        </div>
+        <script>
+            function list() {
+                document.getElementById("list").style.display = "none";
+                document.getElementById("food_playlist").style.marginBottom = "-48px";
+            }
+        </script>
+        <div class="collapse" id="collapseExample">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="row ans1 mt-2" id="flip5">
+                        <div class="col-11"><a
+                                class="ans_1 font-weight-bold ml-4">สมัครเป็นร้านอาหารกับ  Robinhood  ต้องเสียค่า  GP  หรือไม่?</a>
+                        </div>
+                        <div class="col-1 mt-2" id="down5"><img class="" id="down5" src="./image/Group-4-1.png" alt=""
+                                style="width: 50%;"></div>
+                    </div>
+                    <div class="row-12 ans2" id="panel5">ไม่เสียค่า GP</div>
+
+                    <div class="row ans1 mt-4" id="flip6">
+                        <div class="col-11"><a class="ans_1 font-weight-bold ml-4">ค่า  Logistic Subsidy (LS)  คืออะไร?</a>
+                        </div>
+                        <div class="col-1 mt-2" id="down6"><img class="" id="down6" src="./image/Group-4-1.png" alt=""
+                                style="width: 50%;"></div>
+                    </div>
+                    <div class="ans2" id="panel6">LS (Logistic Subsidy) คือ ส่วนลดค่าส่งอาหารจากร้านค้า ที่จะนำไปเป็นส่วนลดโดยตรงให้กับลูกค้า โดยจะคิดที่อัตรา 3% - 35% ของยอดรวม (ค่าอาหาร+ค่าจัดส่ง)</div>
+
+                    <div class="row ans1 mt-4" id="flip7">
+                        <div class="col-11"><a class="ans_1 font-weight-bold ml-4">ร้านค้าประเภทใดสามารถสมัครใช้ Robinhood ได้บ้าง?</a>
+                        </div>
+                        <div class="col-1 mt-2" id="down7"><img class="" id="down7" src="./image/Group-4-1.png" alt=""
+                                style="width: 50%;"></div>
+                    </div>
+                    <div class="ans2" id="panel7">ร้านค้าที่ประกอบธุรกิจร้านอาหาร เครื่องดื่ม ขนม พร้อมรับประทาน ที่มีอุปกรณ์หรือภาชนะบรรจุอาหารที่สามารถขนส่งได้ ซึ่งต้องมีความพร้อมในการจะทำธุรกรรม Food Delivery โดยไม่จำเป็นที่จะต้องมีหน้าร้าน และมีบัญชีธนาคารไทยพาณิชย์เพื่อรับเงิน
+
+                        หมายเหตุ: ร้านค้าที่ยังไม่สามารถเข้าร่วมได้ในช่วงแรก ซึ่งอาจจะมีการพิจารณาให้สามารถเข้าร่วมได้ในอนาคต ได้แก่ ร้านขายอาหารสด ร้านขายขนมของฝาก ร้านขายเค้กหน้าครีม ร้านขายไอศกรีมที่ไม่มีกล่องโฟม ร้านขายอาหารสัตว์ ร้านขายสมุนไพร
+                    </div>
+
+                    <div class="row ans1 mt-4" id="flip8">
+                        <div class="col-11"><a class="ans_1 font-weight-bold ml-4">Robinhood  ให้บริการในจังหวัดใดบ้าง?</a>
+                        </div>
+                        <div class="col-1 mt-2" id="down8"><img class="" id="down8" src="./image/Group-4-1.png" alt=""
+                                style="width: 50%;"></div>
+                    </div>
+                    <div class="ans2" id="panel8">ทุกพื้นที่ใน กรุงเทพฯ , สมุทรปราการ, นนทบุรี, ปทุมธานี
+                        เฉพาะบางพื้นที่ในจังหวัดสมุทรสาคร (อำเภอเมืองและกระทุ่มแบน)
+                        เฉพาะบางพื้นที่ในจังหวัดนครปฐม (อำเภอนครชัยศรี พุทธมณฑล และบางเลน)</div>
+
+                    <div class="row ans1 mt-4" id="flip9">
+                        <div class="col-11"><a class="ans_1 font-weight-bold ml-4">สามารถสมัครเข้าร่วมเป็นร้านอาหารกับ  Robinhood  ผ่านช่องทางไหนได้บ้าง?</a>
+                        </div>
+                        <div class="col-1 mt-2" id="down9"><img class="" id="down9" src="./image/Group-4-1.png" alt=""
+                                style="width: 50%;"></div>
+                    </div>
+                    <div class="row-12 ans2" id="panel9">สำหรับร้านค้าประเภทบุคคลธรรมดา
+
+                        สามารถสมัครได้ด้วยตนเองผ่านทางแอปพลิเคชัน Robinhood Shop
+                        สำหรับร้านค้าประเภทนิติบุคคล
+                        
+                        สามารถสมัครได้ผ่านทางเว็บไซต์ https://juristic.robinhood.in.th
+                        และส่งเอกสารไปที่ บริษัท เพอร์เพิล เวนเจอร์ส จำกัด คุณสุชาวดี เอื้ออารักษ์ (RBH Operations)
+                        19 อาคาร 3 ชั้น 22 ไทยพาณิชย์ ปาร์ค พลาซ่า ถ.รัชดาภิเษก แขวงจตุจักร เขตจตุจักร กรุงเทพฯ 10900 
+                        โดยต้องระบุหน้าซองว่า “สมัครร้านค้าโรบินฮู้ด”
+                        สามารถติดต่อสอบถามข้อมูลสำหรับร้านค้าได้ทาง
+                        
+                        Call Center : 02-777-7564 (ทุกวัน ตลอด 24 ชั่วโมง)
+                        Line : @robinhoodshop
+                        Email : help_merchant@robinhood.in.th</div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="margin-top: -290px;">
+        <div class="row mt-5">
+            <div class="col-3"></div>
+            <div class="col-9 bg_aboutus"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <br>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-3">
+                    <div class="row">
+                        <img class="" id="" src="./image/logo-White.png" alt="" style="width: 31%;">
+                    </div>
+                    <div class="row mt-3">
+                        <p class="text-warning">ติดตามเราช่องทางอื่นๆ</p>
+                    </div>
+                    <div class="row mt-3 ml-5">
+                        <img class="ml-5" id="" src="./image/facebook.png" alt="" style="width: 25%;">
+                    </div>
+                    <div class="row mt-4 ml">
+                        <p class="text-white" style="font-size: 13px;">Call Center : <a class="ml-1">02-777-7564</a></p>
+                        <p class="text-white" style="font-size: 13px;">เปิดให้บริการทุกวัน ตลอด 24 ชั่วโมง</p>
+                    </div>
+                    <div class="row mt-4">
+
+                    </div>
+                    <div class="row ml">
+                        <p class="text-white" style="font-size: 13px;">©Robinhood</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row mt-5">
+
+                    </div>
+                    <div class="row mt-1">
+                        <p class="text-warning">ข้อกำหนดการใช้งาน Robinhood</p>
+                    </div>
+                    <div class="row">
+                        <a class="text-white mt-4" style="font-size: 11px;"
+                            href=""><u>ข้อกำหนดและเงื่อนไขการใช้บริการร้านอาหารโรบินฮู้ด</u></a>
+                    </div>
+                    <div class="row">
+                        <a class="text-white mt-3" style="font-size: 11px;"
+                            href=""><u>ข้อกำหนดและเงื่อนไขการใช้บริการสั่งอาหาร</u></a>
+                    </div>
+                    <div class="row">
+                        <p class="text-warning mt-5">ข้อกำหนดการใช้งานเว็บไซต์</p>
+                    </div>
+                    <div class="row ml">
+                        <a class="text-white" style="font-size: 12px;" href=""><u>Privacy policy</u></a>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="row mt-4">
+                        <a class="col-9 nav-link text-dark" href="merchant.html">
+                            <div class="card" style="width: 19rem;">
+                                <img class="card-img-top " src="./image/rectangle.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="row txt-10 font-weight-bold" style="font-size: 14px;">พาร์ทเนอร์ร้านอาหาร​
+                                    </p>
+                                    <p class="row txt-11 font-weight-normal" style="font-size: 12px;">มาเพิ่มยอดขายง่ายๆ
+                                        ให้ร้านอาหารของคุณ
+                                        สามารถสมัครร่วมเป็นร้านอาหารกับ Robinhood ได้แล้ววันนี้</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="col-2 nav-link text-dark" href="rider.html">
+                            <div class="card" style="width: 19rem;">
+                                <img class="card-img-top \" src="./image/Robinhood-Rider-Footer-box-edit.png"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="row txt-10 font-weight-bold" style="font-size: 14px;">โรบินฮู้ด ไรเดอร์​
+                                    </p>
+                                    <p class="row txt-11 font-weight-normal" style="font-size: 12px;">เช้ารับงาน
+                                        ค่ำรับเงิน ได้เต็มๆ ไม่ต้องสำรองเงินค่าอาหาร พร้อมรับสิทธิพิเศษมากมาย
+                                        สมัครได้แล้วเพียงโหลดแอป</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+
+            </div>
+            <div class="row mt-5 text-center ml-5">
+                <p class="text-muted ml-4 my-4">Copyright © 2021 <a class="text-white" href="index.html">Robinhood.</a>
+                    All Rights Reserved. <a class="text-white" href="#">Privacy-th</a> | Catch Foodmania by <a
+                        class="text-white" href="https://catchthemes.com/">Catch Themes</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script>
+
+    function get_action(form) {
+        var v = grecaptcha.getResponse();
+        if (v.length == 0) {
+            document.getElementById('captcha').innerHTML = "You can't leave Captcha Code empty";
+            return false;
+        }
+        else {
+            document.getElementById('captcha').innerHTML = "Captcha completed";
+            return true;
+        }
+    }
+
+</script>
+
+</script>
+
+</html>

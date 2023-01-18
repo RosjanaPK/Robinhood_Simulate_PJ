@@ -1,0 +1,558 @@
+*{
+    font-family: 'Kanit', sans-serif;
+}
+.pointer {cursor: pointer;}
+#popup_container {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(50, 50, 50, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 500;
+}
+
+#popup {
+    background: white;
+    width: 400px;
+    height: 500px;
+    margin: 90px auto;
+    border-radius: 10px;
+}
+#popup_container2 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(50, 50, 50, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 500;
+}
+
+#popup2 {
+    background: white;
+    width: 400px;
+    height: 500px;
+    margin: 90px auto;
+    border-radius: 10px;
+}
+
+.bg_another_bg{
+    width: 100%;
+    height: 1100px;
+    background-image: url(./image/คนหันตูด.png);
+     position: absolute;
+     z-index: -100;
+     background-size: cover;
+}
+
+/* .bg_top{
+    width: 100%;
+    height: 100%;
+} */
+
+#nav_top{
+    padding-top: 20px;
+    font-family: 'Kanit', sans-serif;
+    font-weight:bold;
+}
+
+#navbar9{
+    color: rgb(156, 55, 156);
+}
+
+.fixed-top {
+    top: -40px;
+    transform: translateY(40px);
+    transition: transform .3s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    /* padding: 12px 16px; */
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown:hover .dropdown-toggle {
+    background-color: none
+}
+.nav-item{
+    font-size: 14px;
+}
+
+.txt-regis{
+    font-weight: bolder;
+    font-size: 2.9rem;
+}
+
+.rider_icon{
+    width: 8vw;
+}
+
+.robinhood_rider{
+    width: 40vw;
+}
+
+.txt-regis2{
+    font-weight: 700;
+}
+
+#test{
+    margin-top: 120px;
+}
+
+.btn_rider_regis{
+    color: black;
+    text-align: center;
+    padding: 8px;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    border: 3px solid rgb(243, 113, 26);
+    border-radius: 30px;
+}
+
+#div_btn :hover{
+    color: white;
+    background-color: rgb(240, 146, 23);
+}
+
+.vdo_rider{
+    width: 1100px;
+    height: 600px;
+    border-radius: 20px;
+}
+
+#benefit{
+    margin-top: 22px;
+}
+
+.box{
+    width: 500px;
+    height: 600px;
+    border: 1px solid rgb(226, 226, 226);
+    box-shadow: 2px 2px 4px rgb(226, 226, 226);
+    border-radius: 15px;
+    background-image: url(./image/Group-1137-new.png);
+    background-repeat: no-repeat;
+}
+.txt-circle.button1{
+    height: 45px;
+    width: 45px;
+    background-image: linear-gradient(to right, #c9249f, #8949ad);
+    color: white;
+    height: 45px;
+    width: 45px;
+    border-color: rgb(168,9,124);
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 24px;
+}
+.txt-circle.button2{
+    height: 45px;
+    width: 45px;
+    /* background-color: linear-gradient(to right, #c9249f, #8949ad); */
+    background-image: white;
+    color: rgb(168,9,124);
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border-color: rgb(168,9,124);
+    font-weight: bold;
+    font-size: 24px;
+    /* padding-left: 2%; */
+    /* margin-left: 1px; */
+    /* display: inline-block; */
+}
+.txt-circle.button3{
+    height: 45px;
+    width: 45px;
+    /* background-color: linear-gradient(to right, #c9249f, #8949ad); */
+    background-image: white;
+    color: rgb(168,9,124);
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border-color: rgb(168,9,124);
+    font-weight: bold;
+    font-size: 24px;
+    /* padding-left: 2%; */
+    /* margin-left: 1px; */
+    /* display: inline-block; */
+}
+.txt-circle.button4{
+    height: 45px;
+    width: 45px;
+    /* background-color: linear-gradient(to right, #c9249f, #8949ad); */
+    background-image: white;
+    color: rgb(168,9,124);
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border-color: rgb(168,9,124);
+    font-weight: bold;
+    font-size: 24px;
+    /* padding-left: 2%; */
+    /* margin-left: 1px; */
+    /* display: inline-block; */
+}
+.txt-circle.button5{
+    height: 45px;
+    width: 45px;
+    /* background-color: linear-gradient(to right, #c9249f, #8949ad); */
+    background-image: white;
+    color: rgb(168,9,124);
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border-color: rgb(168,9,124);
+    font-weight: bold;
+    font-size: 24px;
+    /* padding-left: 2%; */
+    /* margin-left: 1px; */
+    /* display: inline-block; */
+}
+.txt-circle.button6{
+    height: 45px;
+    width: 45px;
+    /* background-color: linear-gradient(to right, #c9249f, #8949ad); */
+    background-image: white;
+    color: rgb(168,9,124);
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border-color: rgb(168,9,124);
+    font-weight: bold;
+    font-size: 24px;
+    /* padding-left: 2%; */
+    /* margin-left: 1px; */
+    /* display: inline-block; */
+}
+.app{
+    /* margin: auto; */
+    width: 50%;
+    margin-left: 410px;
+}
+.ans1 {
+    background-color: #FFF;
+    width: 70%;
+    height: 100%;
+    /* font-size: 25px; */
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #111;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 3px 10px 0 rgb(162 143 163 / 20%);
+}
+#panel, #flip, #panel2, #flip2, #panel3, #flip3, #panel4, #flip4, #panel5, #flip5, #panel6, #flip6, #panel7, #flip7, #panel8, #flip8, #panel9, #flip9, #panel10, #flip10, #panel11, #flip11, #panel12, #flip12{
+    padding: 5px;
+    background-color: #ffffff;
+    border: solid 1px #000000;
+    /* font-size: 24px; */
+  }
+  
+#panel, #panel2, #panel3, #panel4, #panel5, #panel6, #panel7, #panel8, #panel9, #panel10, #panel11, #panel12{
+    padding: 10px;
+    display: none;
+}
+
+/* .ans{ */
+    /* width: 100%;
+    height: 100%;
+    background-image: url(./image/Mask-Group-1.png); */
+    /* position: absolute; */
+    /* z-index: -100;
+    background-size: cover; */
+    /* background-position: center; */
+/* } */
+.bg_aboutus{
+    width: 100%;
+    height: 350px;
+    
+    background-image: url(./image/banner-หน้ารู้จักเรา.png);
+    /* position: absolute; */
+    z-index: -100;
+    background-size: cover;
+    /* background-position: center; */
+    opacity: 0.5;
+    filter: alpha(opacity=40);
+}
+.ans1{
+    width: 72%;
+    height: 75px;
+}
+.ans2{
+    font-size: 16px;
+    background-color: #FFF;
+    width: 72%;
+    height: 100%;
+    /* font-size: 25px; */
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #111;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 3px 10px 0 rgb(162 143 163 / 20%);
+}
+.ans3{
+    background-color: #FFF;
+    /* font-size: 25px; */
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #111;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 3px 10px 0 rgb(162 143 163 / 20%);
+    width: 72%;
+    height: 75px;
+}
+.ans_1{
+    
+    font-size: 22px;
+}
+.ans_div{
+    margin-left: 10%;
+}
+#list{
+    height: 40px;
+    width: 135px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-decoration: none;
+    border-radius: 20px;
+    background: linear-gradient( 45deg, #c428a0, #8b4aae);
+    border: none;
+    z-index: 0;
+}
+.footer{
+    background-color: black;
+}
+.txt-1, .txt-3, .txt-5, .txt-6{
+    font-weight: bold;
+    font-size: 24px;
+}
+/* #img-1:hover{
+        content: url('./image/Vector-play-hover.png');
+    
+} */
+/* .swap-on-hover img {
+
+    top:0;
+    left:0;
+    overflow: hidden;
+
+  }
+.swap-on-hover .swap-on-hover__front-image {
+    z-index: 9999;
+    transition: opacity .5s linear;
+    cursor: pointer;
+  }
+  
+.swap-on-hover:hover > .swap-on-hover__front-image{
+    opacity: 0;
+} */
+.figure {
+    position: relative;
+    /* width: 360px; 
+    max-width: 100%; */
+}
+.figure img.image-hover {
+  position: absolute;
+  width: 20%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .1s;
+}
+.figure:hover img.image-main {
+    opacity: 0;
+  }
+  
+.figure:hover img.image-hover {
+  opacity: 1;
+}
+.txt-7{
+    /* width: 125px; */
+    background: linear-gradient(45deg, rgb(173,52,167), rgb(134,75,176));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    /* font-weight: bold; */
+    /* font-size: 23px; */
+}
+
+#div_btn :hover{
+    color: white;
+    background: linear-gradient(45deg, rgb(225,139,51), rgb(251,224,100));
+}
+span {
+    content: "\2022";
+  }
+#book{
+    background-image: url(./image/ข้อกำหนดและเงื่อนไข.png);
+    height: 90%;
+    width: 92%;
+    /* background: white; */
+    background-size: cover;
+    position: relative;
+
+    border: 2px  black;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 2px;
+}
+#book2{
+    background-image: url(./image/เงื่อนไขการขอคืนเงินประกัน-1.png);
+    height: 90%;
+    width: 92%;
+    background-size: cover;
+    /* position: relative; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* background: white; */
+    border-radius: 8px;
+    
+    padding: 2px;
+}
+.txt-regis3{
+    font-weight: bolder;
+    font-size: 2.1rem;
+}
+.rider_icon2{
+    width: 9.3vw;
+}
+.ans1 {
+    background-color: #FFF;
+    width: 70%;
+    height: 100%;
+    /* font-size: 25px; */
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #111;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 3px 10px 0 rgb(162 143 163 / 20%);
+}
+#panel, #flip, #panel2, #flip2, #panel3, #flip3, #panel4, #flip4, #panel5, #flip5, #panel6, #flip6, #panel7, #flip7, #panel8, #flip8, #panel9, #flip9, #panel10, #flip10, #panel11, #flip11, #panel12, #flip12, #panel13, #flip13{
+    padding: 5px;
+    background-color: #ffffff;
+    border: solid 2px rgb(255,194,14);
+    /* font-size: 24px; */
+  }
+  
+#panel, #panel2, #panel3, #panel4, #panel5, #panel6, #panel7, #panel8, #panel9, #panel10, #panel11, #panel12, #panel13{
+    padding: 10px;
+    display: none;
+}
+
+/* .ans{ */
+    /* width: 100%;
+    height: 100%;
+    background-image: url(./image/Mask-Group-1.png); */
+    /* position: absolute; */
+    /* z-index: -100;
+    background-size: cover; */
+    /* background-position: center; */
+/* } */
+.bg_aboutus{
+    width: 100%;
+    height: 350px;
+    
+    background-image: url(./image/banner-หน้ารู้จักเรา.png);
+    /* position: absolute; */
+    z-index: -100;
+    background-size: cover;
+    /* background-position: center; */
+    opacity: 0.5;
+    filter: alpha(opacity=40);
+}
+.ans1{
+    width: 72%;
+    height: 75px;
+}
+.ans2{
+    font-size: 16px;
+    background-color: #FFF;
+    width: 72%;
+    height: 100%;
+    /* font-size: 25px; */
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #111;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 3px 10px 0 rgb(162 143 163 / 20%);
+}
+.ans3{
+    background-color: #FFF;
+    /* font-size: 25px; */
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #111;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 3px 10px 0 rgb(162 143 163 / 20%);
+    width: 72%;
+    height: 75px;
+}
+.ans_1{
+    
+    font-size: 22px;
+}
+.ans_div{
+    margin-left: 10%;
+}
+#list{
+    height: 40px;
+    width: 135px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-decoration: none;
+    border-radius: 20px;
+    background: linear-gradient( 45deg, #c428a0, #8b4aae);
+    border: none;
+    z-index: 0;
+}
+.footer{
+    margin-left: -150px;
+    width: 120.2%;
+    background-color: black;
+}
+.txt-16{
+    font-family: 'Kanit', sans-serif;
+    margin-top: 5px;
+    background: linear-gradient( 45deg, rgb(222,129,45), rgb(251,222,99));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 24px;
+}
+.txt_hihglight{
+    font-size: 50px;
+    font-weight: 1000;
+}

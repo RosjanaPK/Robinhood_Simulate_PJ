@@ -1,0 +1,923 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="icon" href="./image/RBH_MAIN_LOGO-crop.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="script.js"></script>
+    <link href="styles_reataurant-story-ilovebobatea.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fa4852718f.js" crossorigin="anonymous"></script>
+    <title>มหากรรมชานมไข่มุก - ร้านชานมเด็ดดีการันตีความอร่อย - Robinhood</title>
+</head>
+
+<body>
+    <div id="popup_container">
+        <div id="popup">
+            <div class="container text-center">
+                <div class="row ">
+                    <p class="font-weight-bold mt-3" style="font-size: 22px;">แอปสั่งอาหารโรบินฮู้ด</p>
+                </div>
+                <div class="row">
+                    <p class="font-weight-bold" style="font-size: 30px;">สแกนเพื่อดาวน์โหลด</p>
+                </div>
+                <img class="my-3" src="./image/qrcode.png" style="width:170px;">
+                <div class="row">
+                    <div class="col-5 ml-4">
+                        <img class="ml-5" src="./image/img.png" style="width: 92px;">
+                    </div>
+                    <div class="col mt-2">
+                        <img class="row" src="./image/download_App-Store.png" style="width: 96px;">
+                        <img class="row mt-2" src="./image/download_Google-Play.png" style="width: 96px;">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="font-weight-bold" style="font-size: 16px;">Robinhood ทางเลือกใหม่ของฟู้ดเดลิเวอรี่ไทย</p>
+                </div>
+                <div class="row">
+                    <a class="pointer" onclick="hidePopup()" style="font-size: 14px; color: rgb(171,76,171);">ปิดหน้าต่างนี้</a>
+                </div>
+            </div>
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button> -->
+            
+        </div>
+    </div>
+    <div id="popup_container2">
+        <div id="popup2">
+            <div class="container text-center">
+                <div class="row ">
+                    <p class="font-weight-bold mt-3" style="font-size: 22px;">แอปสั่งอาหารโรบินฮู้ด</p>
+                </div>
+                <div class="row">
+                    <p class="font-weight-bold" style="font-size: 30px;">สแกนเพื่อดาวน์โหลด</p>
+                </div>
+                <img class="my-3" src="./image/qrcode.png" style="width:170px;">
+                <div class="row">
+                    <div class="col-5 ml-4">
+                        <img class="ml-5 " src="./image/img.png" style="width: 92px;">
+                    </div>
+                    <div class="col mt-2">
+                        <img class="row" src="./image/download_App-Store.png" style="width: 96px;">
+                        <img class="row mt-2" src="./image/download_Google-Play.png" style="width: 96px;">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="font-weight-bold" style="font-size: 16px;">Robinhood ทางเลือกใหม่ของฟู้ดเดลิเวอรี่ไทย</p>
+                </div>
+                <div class="row">
+                    <a class="pointer" onclick="hidePopup2()" style="font-size: 14px; color: rgb(171,76,171);">ปิดหน้าต่างนี้</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg_top">
+        <nav id="navbar_top" class="navbar navbar-expand-xl navbar-dark">
+            <div class="container-fluid" id="nav_top">
+                <a href="index.html"><img src="image/RBH_MAIN_LOGO.png" width="60"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ml-4 d-flex justify-content-end" id="main_nav">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="about-us.html">รู้จักเรา</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="promotion.html">โปรโมชั่น</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="food-playlist.html">กินอะไรดี</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="zone-list.html">จานเด็ดย่านดัง</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="food-tips.html">ทิปความรู้</a>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark"
+                                href="restaurant-story.html">เรื่องราวร้านอาหาร</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle ms-1 text-dark" href="#"
+                                data-bs-toggle="dropdown">พาร์ทเนอร์ร้านอาหาร</a>
+                            <ul class="dropdown-menu dropdown-menu-right glyphicon glyphicon-menu-down">
+                                <li><a class="dropdown-item" href="merchant.html">สมัครเป็นพาร์ทเนอร์</a></li>
+                                <li><a class="dropdown-item" href="merchantcenter.html">คู่มือสำหรับอาหาร</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark"
+                                href="travel-partner.html">พาร์ทเนอร์ท่องเที่ยว</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="rider.html">ไรเดอร์</a></li>
+                        <a class="nav-item ms-1 ps-4 mt-1 pointer" onclick="showPopup()"><img src="image/download_App-Store.png"
+                            width="110"></a>
+                    <a class="nav-item ms-1 ps-4 mt-1 pointer" onclick="showPopup2()"><img src="image/download_Google-Play.png"
+                            width="110"></a>
+                    </ul>
+                </div> <!-- navbar-collapse.// -->
+            </div> <!-- container-fluid.// -->
+        </nav>
+    </div>
+    <div class="container-fluid" id="content">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="row">
+                    <p>Food Playlist > มหกรรมชานมไข่มุก</p>
+                    <h2 class="color-robinhood"><b>มหกรรมชานมไข่มุก</b></h2>
+                    <h6 style="margin-top: 20px;"><b>ช่วยเราแชร์ได้นะ</b></h6>
+                    <div class="row" >
+                        <div class="col-8">
+                            <a href="#" class="icon_social"><i class="fab fa-facebook" style="font-size: 32px;"></i></a>
+                            <a href="#" class="icon_social"><i class="fab fa-twitter-square"
+                                    style="font-size: 32px; color: rgb(35, 183, 241);"></i></a>
+                            <a href="#" class="icon_social"><i class="fab fa-line"
+                                    style="font-size: 32px; color: green;"></i></a>
+
+                        </div>
+                        <div class="col-4 mt-3">
+                            <p style="font-size: 12px;">หมวดหมู่ : <b>Food Playlist</b> Posted Oct 22, 2020</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="./image_มหกรรมชานมไข่มุก/1.jpg">
+                    </div>
+                    <div class="row mt-5">
+                        <h4><b>ทั้งร้อน ทั้งเหนื่อย จัดชานมหวานๆ เย็นๆ มันๆ มาชื่นใจกันดีกว่า</b></h4>
+                    </div>
+                    <div class="row mt-4">
+                        <p style="font-weight: 600; color: rgb(71, 71, 71);">เราคัดสรรร้านชานมเด็ดดีที่การันตีความอร่อย ทั้งร้านเชนชื่อดังและร้านโฮมเมดแบบยูนีค ชอบเมนูไหน จะชานมธรรมดา บราวน์ชูก้า หรือชาแบบใสๆ สไตล์ผลไม้เพื่อสุขภาพก็มีให้ครบ เลือกเมนูที่ใช่ถูกใจคุณ แล้วกดสั่งเลย Robinhood ส่งไว สดชื่น ดีต่อใจเหมือนดื่มที่ร้าน</p>
+                    </div>
+                    <div class="row mt-4 pb-4 mb-4" id="txt-head">
+                        <h1 style="text-align: center;" class="color-robinhood"><b>หิวแล้ว! สั่งเลยผ่านแอป Robinhood</b></h1>
+                    </div>
+                    <div class="row my-5 pb-5" id="txt-boba">
+                        <div class="col-7">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/2.jpg" alt=""
+                                            style="width: 235px; height: 455px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_มหกรรมชานมไข่มุก/3.jpg" alt=""
+                                            style="width: 240px; height: 227px;border-radius: 10px;margin-top: 7px;">
+                                        <img class="img-table mx-2" id="" src="./image_มหกรรมชานมไข่มุก/4.jpg" alt=""
+                                            style="width: 240px; height: 227px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5">
+                            <h4 style="margin-left: 25px; margin-top: 10px; font-weight: 600;" class="color-robinhood">722 Organic Milk Tea</h4>
+                            <p style="margin-left: 25px; margin-top: 10px; font-weight: 500;">อร่อยแบบรักสุขภาพด้วยวัตถุดิบธรรมชาติ 100% ที่ร้านใช้นมออแกนิก ไข่มุกแบบไร้สารกันบูด และ
+                                น้ำตาลแคลอรี่ต่ำ กินชานมแบบรู้สึกผิดน้อยลงได้อีกด้วย ถูกใจที่สุด เมนูแนะนำ นมซีเรียลไข่มุก
+                                นมหอมละมุนกับซีเรียลกรุบๆ ดีต่อใจ, ชานมไข่มุก ชานมที่ออแกนิค แคลน้อยอร่อยเพลิน, ชาพีทเพิ่มบุก สดชื่นหอมกลิ่นพีท, ชาเขียวมะลิน้ำผึ้งเฉาก๊วย นุ่ม เด้ง เคี้ยวเพลิน</p>
+                                <p style="margin-left: 25px; margin-top: 10px; font-weight: 500; font-size: 12px;"><b>ตั้งอยู่ที่</b> สาขาเซ็นทรัล เวิลด์ 999/9 ถนนพระรามที่ 1 ปทุมวัน ปทุมวัน กรุงเทพฯ 10330
+                                    <br><b>เบอร์ติดต่อ</b> 086 945 4469</p>
+                        </div>
+                    </div>
+                    <div class="row my-5 pb-5"  id="txt-boba">
+                        <div class="col-5">
+                            <h4 style="margin-left: 25px; margin-top: 10px; font-weight: 600;" class="color-robinhood">Air Asia</h4>
+                            <p style="margin-left: 25px; margin-top: 10px; font-weight: 500;">Air Asia ส่งความอร่อยจากน่านฟ้า ถึงมือคุณ ด้วยเมนูยอดฮิตบนเครื่องบินที่มีคนกล่าวถึงมากที่สุด อย่าง “ชานมไต้หวันไข่มุกบุก” ด้วยรสชาติ เข้มข้น เเละบุกรูปเพชรเคี้ยวกรุบที่เป็นเอกลักษณ์ และอีกหลายเมนู ทั้ง ชาไทยไข่มุกบุก น้ำอัญชัน ผสมส้มยูซุ กาแฟฟองครีมสไตล์เกาหลี น้ำชาส้มยูซุ ไปลองเลยวันนี้ ไม่ต้องบินก็ฟินได้</p>
+                                <p style="margin-left: 25px; margin-top: 10px; font-weight: 500; font-size: 12px;"><b>ตั้งอยู่ที่</b> สาขาดอนเมือง 36/22 คลังสินค้า CTI ถนนวิภาวดี สนามบิน ดอนเมือง กรุงเทพฯ 10210
+                                    <br><b>เบอร์ติดต่อ</b> 092 259 0925</p>
+                        </div>
+                        <div class="col-7">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/5.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/6.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/7.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/8.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row my-5 pb-5" id="txt-boba">
+                        <div class="col-7">
+                            <img class="" id="" src="./image_มหกรรมชานมไข่มุก/9.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/10.jpg" alt=""
+                                            style="width: 140px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_มหกรรมชานมไข่มุก/11.jpg" alt=""
+                                            style="width: 140px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/12.jpg" alt=""
+                                            style="width: 140px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5">
+                            <h4 style="margin-left: 25px; margin-top: 10px; font-weight: 600;" class="color-robinhood">ATM Tea Bar</h4>
+                            <p style="margin-left: 25px; margin-top: 10px; font-weight: 500;">สนุกสนานกับการดื่มชาคุณภาพ ด้วยรสชาติและวัตถุดิบอย่างดี แถมสีสันยังโดนใจ แชะภาพกันรัวๆ แนะนำ Milk tea bomb เมนูซิกเนเจอร์ล่าสุดที่นำท็อปปิ้งแสนอร่อย 4 ชนิดมารวมตัวกัน ยิ่งดื่มยิ่งเพลิน , Bangkok snow ชานมเกล็ดหิมะ เข้มข้นตั้งแต่คำแรกจนหยดสุดท้าย , Ovantine shake ที่สุดของความนัวด้วยโอวันตินแบบเข้มข้น กับ
+                                ท๊อปปิ้งสุดอร่อย ฟินสุดหยุดไม่อยู่, Galaxy crystal ชามะนาวแกแล็คซีพร้อมไข่มุกบุกคริสตัล
+                                สีสวยโดนใจกันไปเลย หรือจะเป็น Pink mucha caramel bubble ชานมสตรอว์เบอร์รี รสกลม กล่อม สาวๆ เลิฟกันถ้วนหน้า</p>
+                                <p style="margin-left: 25px; margin-top: 10px; font-weight: 500; font-size: 12px;"><b>ตั้งอยู่ที่</b> 432/9 สยามสแควร์ซอย 9 ถนนพระราม 1 ปทุมวัน ปทุมวัน 10330
+                                    <br><b>เบอร์ติดต่อ</b> 089 287 7775</p>
+                        </div>
+                    </div>
+                    <div class="row my-5 pb-5" id="txt-boba">
+                        <div class="col-5">
+                            <h4 style="margin-top: 10px; font-weight: 600;" class="color-robinhood">Brew Bar</h4>
+                            <p class="txt-mid0-6">"เปิดประสบการณ์ทุกอย่างที่คุณเคยเห็น ในรสชาติที่ไม่เคยลอง” ชงกันสดๆ แก้วต่อแก้ว! ไอเดียเลิศ แถมอร่อยถูกใจ ต้องลอง! แนะนำ ทองมณี Signature เมนู เป็นชาไทยท๊อปด้วยทองม้วนและขนมผิงอีก Johny Junior ชาเสาวรส ผสมกับยาคูลท์ หวานอมเปรี้ยวสดชื่นสุดๆ Bangkok lava ขนมเค้กราดซอสชาไทยลาวาเยิ้มๆ Black Bomb โกโก้แบบเข้มข้น โปะวิปบอมบ์ สะใจกันไปเลย Never Enough ชานมหอมบราวน์ชูก้าร์เบาๆ ไข่มุกหนึบหนับ นัวสุดๆ</p>
+                            <p style=" margin-top: 10px; font-weight: 500; font-size: 12px;"><b>ตั้งอยู่ที่</b> สาขาเซ็นทรัล ลาดพร้าว 1693 ถนนพหลโยธิน จตุจักร จตุจักร กรุงเทพฯ 10900
+                                <br><b>เบอร์ติดต่อ</b> 094 986 4114</p>
+                        </div>
+                        <div class="col-7">
+                            <img class="" id="" src="./image_มหกรรมชานมไข่มุก/13.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/15.jpg" alt=""
+                                            style="width: 141px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_มหกรรมชานมไข่มุก/16.jpg" alt=""
+                                            style="width: 141px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/14.jpg" alt=""
+                                            style="width: 141px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row my-5 pb-5" id="txt-boba">
+                        <div class="col-7">
+                            <img class="" id="" src="./image_มหกรรมชานมไข่มุก/17.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/18.jpg" alt=""
+                                            style="width: 140px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_มหกรรมชานมไข่มุก/19.jpg" alt=""
+                                            style="width: 140px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/20.jpg" alt=""
+                                            style="width: 140px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5">
+                            <h4 style="margin-left: 25px; margin-top: 10px; font-weight: 600;" class="color-robinhood">BRIX Dessert Bar</h4>
+                            <p style="margin-left: 25px; margin-top: 10px; font-weight: 500;">เอาใจสายของหวานที่ BRIX DESSERT BAR ร้านขนมหวานโฮมเมดสุดครีเอท ที่พร้อมเสิร์ฟความสุขให้ทุกคน ด้วยเมนูสุดอลังการ รสชาติไม่แพ้ใคร อยากให้ลองทั้ง Mixed Beignet โดนัทฝรั่งเศส
+                                ไส้รวมรส Strawberry Cheesecake Miracle Pancake Parfait, Strawberry Fresh Cram Panburger เมนูขวัญใจของใครหลายคน อร่อยนุ่มลิ้นจนแทบละลาย แบบ To go อยู่ที่ไหนก็อร่อยสุดฟินได้เหมือนทานที่ร้าน Brown Sugar Bubble Milk Tea ชาไข่มุกบราวน์ชูการ์ยอดฮิตของทางร้าน ใครลองก็ติดใจ Black Sugar Bubble Milk Tea ชาดำบราวน์ชูการ์ เข้มข้นอีกระดับ หวานหอมเหมือนเดิม</p>
+                                <p style="margin-left: 25px; margin-top: 10px; font-weight: 500; font-size: 12px;"><b>ตั้งอยู่ที่</b> 13 ซอยโรงพิมพ์กองสลากเอกมัย ถนนสุขุมวิท 63 คลองตันเหนือ วัฒนา กรุงเทพฯ 10110
+                                    <br><b>เบอร์ติดต่อ</b> 02 005 1963</p>
+                        </div>
+                    </div>
+                    <div class="row my-5 pb-5"  id="txt-boba">
+                        <div class="col-5">
+                            <h4 style="margin-left: 25px; margin-top: 10px; font-weight: 600;" class="color-robinhood">Brown Café</h4>
+                            <p style="margin-left: 25px; margin-top: 10px; font-weight: 500;">สดชื่นแบบฟินๆ กับ “มุกออแกนิค" จาก Brown café ที่ใส่ใจคัดสรรวัตถุดิบจากธรรมชาติเพื่อทุกคนได้แล้ววันนี้ ยกทัพจัดเต็มด้วยเมนูยอดฮิต ทั้ง Brown café Milk Tea, Brown café Thai Tea, Brown café Fresh Milk และอีกหลากหลายที่
+                                ต้องลอง!</p>
+                                <p style="margin-left: 25px; margin-top: 10px; font-weight: 500; font-size: 12px;"><b>ตั้งอยู่ที่</b> 306 เซ็นทรัลสีลมทาวเวอร์ ชั้น 5,6,7,8 ถนนสีลม สุริยวงศ์ บางรัก กรุงเทพฯ 10500
+                                    <br><b>เบอร์ติดต่อ</b> 026357930</p>
+                        </div>
+                        <div class="col-7">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/21.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/22.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/23.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/24.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row my-5 pb-5" id="txt-boba">
+                        <div class="col-7">
+                            <img class="" id="" src="./image_มหกรรมชานมไข่มุก/25.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/26.jpg" alt=""
+                                            style="width: 140px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_มหกรรมชานมไข่มุก/27.jpg" alt=""
+                                            style="width: 140px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/28.jpg" alt=""
+                                            style="width: 140px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5">
+                            <h4 style="margin-left: 25px; margin-top: 10px; font-weight: 600;" class="color-robinhood">Buddy Bear</h4>
+                            <p style="margin-left: 25px; margin-top: 10px; font-weight: 500;">Buddy Bear ชานมสัญชาติไต้หวัน สามารถเลือกระดับความหวานได้ ให้คุณสดชื่นได้ทั้งวัน เชื่อหมีเถอะ ชาไข่มุกจะเยียวยาได้ทุกสิ่งจริงๆ นะ</p>
+                                <p style="margin-left: 25px; margin-top: 10px; font-weight: 500; font-size: 12px;"><b>ตั้งอยู่ที่</b> สาขาหลัง ม.รังสิต 89/2 หลักหก เมือง ปทุมธานี 12000
+                                    <br><b>เบอร์ติดต่อ</b> 081 3322 500</p>
+                        </div>
+                    </div>
+                    <div class="row my-5 pb-5" id="txt-boba">
+                        <div class="col-5">
+                            <h4 style="margin-left: 25px; margin-top: 10px; font-weight: 600;" class="color-robinhood">Craft Tea & CO</h4>
+                            <p style="margin-left: 25px; margin-top: 10px; font-weight: 500;">ที่สุดของสายชามาทางนี้ Craft Tea & CO คัดสรรชาคุณภาพดีจากทั่วทุกมุมโลก เพื่อให้ได้รสชาติแบบดั้งเดิม พร้อมขนมหวานที่มีรสชาติเป็นเอกลักษณ์ กว่า 30 เมนู อยากสดชื่นก็จัดไป หรืออยากโดปความสดใสก็จัดมาเลยจ้า</p>
+                                <p style="margin-left: 25px; margin-top: 10px; font-weight: 500; font-size: 12px;"><b>ตั้งอยู่ที่</b> สาขาเซ็นทรัลเวิลด์ ชั้น 3 เลขที่ 4,4/1-4/2,4/4 ปทุมวัน ปทุมวัน กรุงเทพฯ 10330
+                                    <br><b>เบอร์ติดต่อ</b> 02 252 3110</p>
+                        </div>
+                        <div class="col-7">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/29.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/30.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/31.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/32.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row my-5" id="txt-boba">
+                        <div class="col-7">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/33.jpg" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/34.png" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/35.png" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/36.png" alt=""
+                                            style="width: 225px; height: 210px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5">
+                            <h4 style="margin-top: 10px; font-weight: 600;" class="color-robinhood">Dakasi</h4>
+                            <p class="txt-mid0-6">สาวกชานมไข่มุกยกมือขึ้น Dakasi คัดสรรมัทฉะพรีเมียมมาให้ลอง อร่อยแบบนี้ ไม่กินไม่ได้แล้ว ยิ่งมาเจอ Topping ในแก้วต่างๆที่แตกต่างกัน เข้ากับรสชาติของชาเขียวหอมๆขมๆ ดีมากมาย</p>
+                            <p style="margin-top: 10px; font-weight: 500; font-size: 12px;"><b>ตั้งอยู่ที่</b> 208 อาคาร 208 วายเลสโร้ด ยูนิต 405 ชั้น 4 ถนนวิทยุ ลุมพินี ปทุมวัน กรุงเทพฯ 10330
+                                    <br><b>เบอร์ติดต่อ</b> 021238799</p>
+                        </div>
+                    </div>
+                    <div class="row my-5 pb-5" id="txt-boba">
+                        <div class="col-5">
+                            <h4 style="margin-top: 10px; font-weight: 600;" class="color-robinhood">Fresh Me</h4>
+                            <p class="txt-mid0-6">เฟรชมี สาวกชานมไต้หวัน เคี้ยวมันส์ห้ามพลาด ต้องลอง! #FreshmeEveryday ถ้านึกอะไรไม่ออกให้เริ่มจากแก้วนี้ Freshme milktea ชานม หวานหอมละมุน หรือจะลอง Dark coco โกโก้เข้มข้น หวานหอม ชื่นใจ Freshmilk brown sugar ชานม Brown Sugar โรยน้ำตาลแดงเบิร์นนิดๆ Signature milktea ชาหอมๆ ชงด้วยนมสด และอีกหลากหลายเมนู บอกคำเดียวว่าฟิน!</p>
+                            <p style=" margin-top: 10px; font-weight: 500; font-size: 12px;"><b>ตั้งอยู่ที่</b> 63 ถนนงามวงศ์วาน บางเขน เมืองนนทบุรี นนทบุรี 11000
+                                <br><b>เบอร์ติดต่อ</b> 080 0722192</p>
+                        </div>
+                        <div class="col-7">
+                            <img class="" id="" src="./image_มหกรรมชานมไข่มุก/37.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/38.jpg" alt=""
+                                            style="width: 141px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_มหกรรมชานมไข่มุก/39.jpg" alt=""
+                                            style="width: 141px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/40.jpg" alt=""
+                                            style="width: 141px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row my-5 pb-5" id="txt-boba">
+                        <div class="col-7">
+                            <img class="" id="" src="./image_มหกรรมชานมไข่มุก/41.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/42.jpg" alt=""
+                                            style="width: 140px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_มหกรรมชานมไข่มุก/43.jpg" alt=""
+                                            style="width: 140px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/44.jpg" alt=""
+                                            style="width: 140px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5">
+                            <h4 style="margin-left: 25px; margin-top: 10px; font-weight: 600;" class="color-robinhood">Fuku Matcha</h4>
+                            <p style="margin-left: 25px; margin-top: 10px; font-weight: 500;">สายมัทฉะต้องร้องว้าว กับชานมคุณภาพดี มัทฉะ พรีเมี่ยม หอม เข้มข้นที่สุดๆ บอกเลยว่าเลิฟมาก มาลองนะทั้ง มัจฉะนมสด เข้มข้น ลงตัว ปรับความหวานได้ตามใจ, บราวน์ชูการ์ หอมแบบเฉพาะแบบ ไม่เลี่ยน กินแล้วชอบสุดๆ, ชาไทย ชาเข้มข้น
+                                คอชาไทยแนะนำต้องลอง, ชาไข่มุก ที่มีทีเด็ดตรง
+                                น้ำผึ้ง สัมผัสนุ่ม เข้มข้นแบบลึกๆ รับรองติดใจ,
+                                นมสดช๊อคโกแลตนูเทลล่า เข้มข้นจนฟินสุดๆ
+                                หยุดไม่ได้</p>
+                                <p style="margin-left: 25px; margin-top: 10px; font-weight: 500; font-size: 12px;"><b>ตั้งอยู่ที่</b> 1277 ซอยลาดพร้าว 94 ถนนลาดพร้าว พลับพลา วังทองหลาง กรุงเทพฯ 10310
+                                    <br><b>เบอร์ติดต่อ</b> 02 934 6693</p>
+                        </div>
+                    </div>
+                    <div class="row my-5 pb-5" id="txt-boba">
+                        <div class="col-5">
+                            <h4 style="margin-top: 10px; font-weight: 600;" class="color-robinhood">Kamu Kamu</h4>
+                            <p class="txt-mid0-6">Kamu Kamu ชานมยอดฮิตสัญชาติไทย แต่รสชาติต้นตำรับแบบฉบับชานมไต้หวัน ตามคอนเซ็ปต์
+                                “ชาเคี้ยวได้” มุกนุ่มหนึบแบบนี้รับลองติดใจแน่นอน อยากให้ลอง Strawberry Lemon Soda Crystal Pearl สตอเบอร์รี่เลมอนสุดจี๊ดผสมโซดา Honey Lemon Green Tea Aloe Vera เลมอนตัดความหวานด้วยน้ำผึ้งชื่นใจ Dino Milo ไมโลรสกลมกล่อม พร้อมโกโก้ครัมเบิล vs ไมโลฟอสซิล Premium Matcha Milk Tea Azuki มัทฉะชั้นดี พร้อมถั่วแดงญี่ปุ่น เข้มข้น ชื่นใจ Crytal Emerald Green Tea พรีเมี่ยมมัทฉะกับน้ำผึ้งเลม่อน
+                                แคลน้อย อร่อยเพลิน</p>
+                            <p style=" margin-top: 10px; font-weight: 500; font-size: 12px;"><b>ตั้งอยู่ที่</b> 165/33 โซนไอ โครงการเนอวานา แอทเวิร์ค รามอินทรา อนุเสาวรีย์ บางเขน กรุงเทพฯ 10220
+                                <br><b>เบอร์ติดต่อ</b> 066 121 3524</p>
+                        </div>
+                        <div class="col-7">
+                            <img class="" id="" src="./image_มหกรรมชานมไข่มุก/45.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/46.jpg" alt=""
+                                            style="width: 141px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_มหกรรมชานมไข่มุก/47.jpg" alt=""
+                                            style="width: 141px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/48.jpg" alt=""
+                                            style="width: 141px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row my-5 pb-5" id="txt-boba">
+                        <div class="col-7">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/49.jpg" alt=""
+                                            style="width: 235px; height: 455px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_มหกรรมชานมไข่มุก/50.jpg" alt=""
+                                            style="width: 240px; height: 227px;border-radius: 10px;margin-top: 7px;">
+                                        <img class="img-table mx-2" id="" src="./image_มหกรรมชานมไข่มุก/51.jpg" alt=""
+                                            style="width: 240px; height: 227px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5">
+                            <h4 style="margin-left: 25px; margin-top: 10px; font-weight: 600;" class="color-robinhood">KOI Thé</h4>
+                            <p style="margin-left: 25px; margin-top: 10px; font-weight: 500;">KOI Thé หรือ โคอิ เตะ แบรนด์ชาพรีเมี่ยมจากไต้หวันแท้ๆ ต้มสดๆ ไม่ค้างคืนมาพร้อมกับ Golden Bubble ไข่มุก Signature ของโคอิ เตะ เม็ดเล็ก สีทอง นุ่มละมุนลิ้นสุดๆ หรือ ใครที่ชอบ ชาใส ที่นี่ก็มีให้เลือกเพียบ จะดื่มคู่กับท๊อปปิ้งตัวไหนก็อร่อย สดชื่นนไปอีกแบบค่า</p>
+                                <p style="margin-left: 25px; margin-top: 10px; font-weight: 500; font-size: 12px;"><b>ตั้งอยู่ที่</b> 127 ถนนราชดำริ ลุมพินี ปทุมวัน กรุงเทพฯ 10330
+                                    <br><b>เบอร์ติดต่อ</b> 065 526 0737</p>
+                        </div>
+                    </div>
+                    <div class="row my-5 pb-5" id="txt-boba">
+                        <div class="col-5">
+                            <h4 style="margin-top: 10px; font-weight: 600;" class="color-robinhood">MR. Shake</h4>
+                            <p class="txt-mid0-6">มิสเตอร์เชค ที่ครองใจวัยรุ่นไทยหว่า 20 ปี ด้วยรสชาติชานมที่คุ้นเคยกับไข่มุกหนึบหนับ แบบคุณภาพเกินราคา ขาประจำเมนูไหนไปสั่งกันเลย ทั้ง ชานมไข่มุก หนึบๆหนับๆ อร่อยเหมือนเคย ชานมไทย เข้มข้นสะใจ หรือจะลอง ชาเขียวมะลิวุ้น
+                                แอปเปิ้ล สดชื่นแบบใสๆ ชาไทยมะนาว เข้มข้นจี๊ดจ๊าด ช็อคโกแลตพุดดิ้ง หวานมันหอมอร่อย</p>
+                            <p style=" margin-top: 10px; font-weight: 500; font-size: 12px;"><b>ตั้งอยู่ที่</b> 50 กรุงเทพนนท์ ซอยกรุงเทพนนท์ 7 บางเขน เมืองนนทบุรี นนทบุรี
+                                <br><b>เบอร์ติดต่อ</b> 02-2970761</p>
+                        </div>
+                        <div class="col-7">
+                            <img class="" id="" src="./image_มหกรรมชานมไข่มุก/52.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/53.jpg" alt=""
+                                            style="width: 141px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_มหกรรมชานมไข่มุก/54.jpg" alt=""
+                                            style="width: 141px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/55.jpg" alt=""
+                                            style="width: 141px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row my-5 pb-5" id="txt-boba">
+                        <div class="col-7">
+                            <img class="" id="" src="./image_มหกรรมชานมไข่มุก/56.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/57.jpg" alt=""
+                                            style="width: 140px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_มหกรรมชานมไข่มุก/58.jpg" alt=""
+                                            style="width: 140px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/59.jpg" alt=""
+                                            style="width: 140px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5">
+                            <h4 style="margin-left: 25px; margin-top: 10px; font-weight: 600;" class="color-robinhood">Tea65</h4>
+                            <p style="margin-left: 25px; margin-top: 10px; font-weight: 500;">Tea65 ร้านชาไข่มุกสุดคิ้วท์ ที่มีทีเด็ดที่กรรมวิธีการสกัดชา และชงสดใหม่แบบแก้วต่อแก้ว ให้คุณสดชื่นทั้งวันด้วยเมนูมากมาย พร้อมแล้วไปสั่งเลย</p>
+                                <p style="margin-left: 25px; margin-top: 10px; font-weight: 500; font-size: 12px;"><b>ตั้งอยู่ที่</b> 388 ถนนพระรามที่ 1 ปทุมวัน ปทุมวัน กรุงเทพฯ 10330
+                                    <br><b>เบอร์ติดต่อ</b> 061 509 9290</p>
+                        </div>
+                    </div>
+                    <div class="row my-5 pb-5" id="txt-boba">
+                        <div class="col-5">
+                            <h4 style="margin-top: 10px; font-weight: 600;" class="color-robinhood">The Alley</h4>
+                            <p class="txt-mid0-6">ลิ้มรสชานมไข่มุกจากประเทศต้นตำรับ The Alley แบรนด์เครื่องดื่มชื่อดังจากประเทศไต้หวัน ที่พิถีพิถันในการคัดเลือกวัตถุดิบหรือแม้แต่กรรมวิธีในการทำที่เป็นสูตรลับเฉพาะของทางแบรนด์เท่านั้น ชอบเมนูไหนสั่งเลยทั้งเมนูเข้มข้น หอมชา ไข่มุกหนึบนับ เคี้ยวเพลินๆ กันไปเลย</p>
+                            <p style=" margin-top: 10px; font-weight: 500; font-size: 12px;"><b>ตั้งอยู่ที่</b> 23 ซอยสุขุมวิท 62 แยก 4 บางจาก พระโขนง กรุงเทพฯ 10260
+                                <br><b>เบอร์ติดต่อ</b> 098 915 6550</p>
+                        </div>
+                        <div class="col-7">
+                            <img class="" id="" src="./image_มหกรรมชานมไข่มุก/60.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/61.jpg" alt=""
+                                            style="width: 141px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_มหกรรมชานมไข่มุก/62.jpg" alt=""
+                                            style="width: 141px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/63.jpg" alt=""
+                                            style="width: 141px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row my-5 pb-5" id="txt-boba">
+                        <div class="col-7">
+                            <img class="" id="" src="./image_มหกรรมชานมไข่มุก/64.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/65.jpg" alt=""
+                                            style="width: 140px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_มหกรรมชานมไข่มุก/66.jpg" alt=""
+                                            style="width: 140px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/67.jpg" alt=""
+                                            style="width: 140px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5">
+                            <h4 style="margin-left: 25px; margin-top: 10px; font-weight: 600;" class="color-robinhood">Tiger Sugar</h4>
+                            <p style="margin-left: 25px; margin-top: 10px; font-weight: 500;">ชาไข่มุกแบรนด์ดังจากไต้หวัน การันตีความอร่อยเข้มจากชาคุณภาพดี และ ไข่มุกที่ทำมาจากน้ำตาลทรายแดง รสชาตินุ่ม ละมุนลิ้น สาวก Tiger ไม่ต้องต่อแถวยาวอีกต่อไป อยากทานแก้วไหนจัดเลย มีให้เลือกมากมาย ทั้ง Brown Sugar Boba Milk with Cream Moose, Black Tea, Green Tea, Black Tea Latte, Green Tea Latte เคล็บ(ไม่)ลับ เพื่อให้ดื่มเให้อร่อย คือ ต้องเขย่าแก้ว 15 ครั้ง (เพื่อให้ส่วนผสมในแก้วเข้ากันได้เป็นอย่างดี) รีบลองเลย!</p>
+                                <p style="margin-left: 25px; margin-top: 10px; font-weight: 500; font-size: 12px;"><b>ตั้งอยู่ที่</b> สาขาเซ็นเตอร์พ้อยท์ออฟ สยาม 292 ถนนพระราม 1 ปทุมวัน ปทุมวัน กรุงเทพฯ 10330
+                                    <br><b>เบอร์ติดต่อ</b> 063 157 1565</p>
+                        </div>
+                    </div>
+                    <div class="row my-5 pb-5" id="txt-boba">
+                        <div class="col-5">
+                            <h4 style="margin-top: 10px; font-weight: 600;" class="color-robinhood">Tora Cha</h4>
+                            <p class="txt-mid0-6">จากวัตถุดิบที่ดีที่สุด สู่ชาพ่นไฟอย่าง Tora Cha
+                                ดูเรียบหรูหรา แต่ราคาเริ่มต้นเพียง 25 บาท! ลองเมนู Tora cha ชานมไต้หวันที่ใช้เวลาเคี่ยวชาถึง 7 ช.ม. เคี้ยวมันด้วยเจลลี่บราวน์ชูก้า เข้มข้นหวานมันอย่างลงตัว Tora coffee กาแฟอาราบิก้า100% หอมกลมกล่อม ลองแล้วจะติดใจ Dark choc cheese ช็อกโกแล็ตเข้มข้น ผสมชีส ลงตัวที่ความอร่อย Smoothy peach สดชื่น หอมหวานของพีซ ดับร้อนได้ดีจริงๆ และเมนูน้องใหม่ Tora waffle วาฟเฟิลกรอบนอกนุ่มใน มีท๊อปปิ้งให้เลือกมากมาย</p>
+                            <p style=" margin-top: 10px; font-weight: 500; font-size: 12px;"><b>ตั้งอยู่ที่</b> สาขาเอแบค บางนา 86/3 ห้องเลขที่ 5 ถนนบางนาขตราด บางบ่อ บางบ่อ สมุทรปราการ 10560
+                                <br><b>เบอร์ติดต่อ</b> 085 563 9644</p>
+                        </div>
+                        <div class="col-7">
+                            <img class="" id="" src="./image_มหกรรมชานมไข่มุก/68.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/69.jpg" alt=""
+                                            style="width: 141px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_มหกรรมชานมไข่มุก/70.jpg" alt=""
+                                            style="width: 141px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/71.jpg" alt=""
+                                            style="width: 141px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row my-5 pb-5" id="txt-boba">
+                        <div class="col-7">
+                            <img class="" id="" src="./image_มหกรรมชานมไข่มุก/72.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/73.jpg" alt=""
+                                            style="width: 140px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_มหกรรมชานมไข่มุก/74.jpg" alt=""
+                                            style="width: 140px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/75.jpg" alt=""
+                                            style="width: 140px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5">
+                            <h4 style="margin-left: 25px; margin-top: 10px; font-weight: 600;" class="color-robinhood">Wawa Cha</h4>
+                            <p style="margin-left: 25px; margin-top: 10px; font-weight: 500;">สดใสรับวันใหม่ด้วยชานมไข่มุกไต้หวัน ที่คัดสรรวัตถุดิบอย่างดี จากแหล่งคุณภาพ ชงสดใหม่แบบแก้วต่อแก้ว พร้อมอีกหลายเมนูให้เลือกตามใจคุณ ทั้งชานมไต้หวัน ที่เลือกระดับความหวานได้ตามใจ, จัสมินเฉ่าก๊วย ในชามะลิหวานหอม สดชื่นคลายร้อนได้ดีที่สุด, ชานมฮ่องกงพุดดิ้งไข่ ชาฮ่องกงเข้มข้น พร้อมพุดดิ้งเนื้อนุ่ม เคี้ยวเพลิน, ชาโรสวิ้ง หวานหอมกุหลาบทานแล้วรู้สึกดีที่สุด หรือเมนูขวัญใจเด็กๆ อย่างโกโก้เยลลี่สตอเบอรี่ กินแล้วติดใจชัวร์</p>
+                                <p style="margin-left: 25px; margin-top: 10px; font-weight: 500; font-size: 12px;"><b>ตั้งอยู่ที่</b> สาขาเซ็นทรัลพลาซ่าแกรนด์พระราม 9 ชั้น 6 เลขที่ 9/8 ถนนพระราม 9 ห้วยขวาง ห้วยขวาง กรุงเทพฯ 10310
+                                    <br><b>เบอร์ติดต่อ</b> 02 160 2422</p>
+                        </div>
+                    </div>
+                    <div class="row my-5 pb-5" id="txt-boba">
+                        <div class="col-5">
+                            <h4 style="margin-top: 10px; font-weight: 600;" class="color-robinhood">GAGA • Attitude In A Cup</h4>
+                            <p class="txt-mid0-6">กาก้า แบรนด์เครื่องดื่มเมนูสุดครีเอทีฟ! ทั้งชานม ชาใส ช็อกโกแลต ชาไทย น้ำผลไม้ มีให้เลือกเต็มที่ เสริฟพร้อมท็อปปิ้งสูตรเฉพาะของกาก้า เช่นเม็ดน้ำผึ้ง ที่มีส่วนผสมน้ำผึ้งแท้ 100% หรือ Mousse-on-Top ที่การันตีความเข้มข้น หอมหวาน ไม่เหมือนใคร แบรนด์ไทยมาแรงที่ได้รับรีวิวความอร่อยมากมาย เพราะใส่ attitude จัดเต็มทุกแก้ว ที่สำคัญทุกแก้วไร้ไขมันทรานซ์!</p>
+                            <p style=" margin-top: 10px; font-weight: 500; font-size: 12px;"><b>ตั้งอยู่ที่</b> 999/9 ถนน พระรามที่ 1 กรุงเทพมหานคร (ชั้น 6 โซนหน้า Zen)
+                                <br><b>เบอร์ติดต่อ</b> 022520502</p>
+                        </div>
+                        <div class="col-7">
+                            <img class="" id="" src="./image_มหกรรมชานมไข่มุก/76.jpg" alt=""
+                                style="width: 100%; border-radius: 10px;">
+                            <table class="container">
+                                <tr class="mb-4">
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/77.jpg" alt=""
+                                            style="width: 141px; height: 155px;border-radius: 10px; margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table mx-2" id="" src="./image_มหกรรมชานมไข่มุก/78.jpg" alt=""
+                                            style="width: 141px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                    <td><img class="img-table" id="" src="./image_มหกรรมชานมไข่มุก/79.jpg" alt=""
+                                            style="width: 141px; height: 155px;border-radius: 10px;margin-top: 7px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="" style="margin-top: 10px;">
+                        <a class="Yellow font-weight-bold" href="..." style="width: 320px;
+                        padding: 7px;
+                        border: 1px solid rgb(255, 255, 255);
+                        border-color: rgb(219, 219, 219);
+                        margin: 0; text-decoration: none; color: black;">Highlight
+                        </a>
+                        <a href="..." class="Yellow font-weight-bold mx-2 " style="width: 320px;
+                        padding: 7px;
+                        border: 1px solid rgb(255, 255, 255);
+                        border-color: rgb(219, 219, 219);
+                        margin: 0; text-decoration: none; color: black;">ชานม
+
+                        </a>
+                        <a class="Yellow font-weight-bold" href="..." style="width: 320px;
+                        padding: 7px;
+                        border: 1px solid rgb(255, 255, 255);
+                        border-color: rgb(219, 219, 219);
+                        margin: 0; text-decoration: none; color: black;">ชานมไข่มุก
+                        </a>
+                    </div>
+                    <div class="row py-5 pb-5" id="txt-boba">
+                        <a class="col-3 nav-link txt-mid0-7-1 font-weight-bold text-secondary" href="#highlight"><img class=""
+                                src="./image/Group-1115-e1599403771374.png" width="22%">&emsp;Robinhood</a>
+                        <a class="col-5 nav-link mt-2 txt-mid0-7-1 font-weight-bold text-secondary"
+                            href="#highlight">|&emsp;<i class="far fa-calendar-alt text-secondary"
+                                style="font-size:16px"></i> กันยายน 20, 2021&emsp;|&emsp;watching 33,533</a>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 py-5">
+                            <h3 class="txt-mid0-1-1 font-weight-bold color-robinhood">เนื้อหาที่เกี่ยวข้อง</h3>
+                        </div>
+                        <div class="col-4">
+                            <a href="..."><img class="img1" id="" src="./image/SSSxRBH-Opening-Picture.png"
+                                    alt="" style="width: 106%;height: 235; border-radius: 10px;"></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="..."><img class="" id="" src="./image/Seafood272x272.jpg" alt=""
+                                    style="width: 106%;height: 235; border-radius: 10px;"></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="..."><img class="" id="" src="./image_มหกรรมชานมไข่มุก/81.jpg" alt=""
+                                    style="width: 106%;height: 235; border-radius: 10px;"></a>
+                        </div>
+                        <div class="col-4 py-3">
+                            <a href="..."><img class="" id="" src="./image/Sugar272x272.jpg" alt=""
+                                    style="width: 106%;height: 235; border-radius: 10px;"></a>
+                        </div>
+                        <div class="col-4 py-3">
+                            <a href="..."><img class="" id="" src="./image/Morning272x272.jpg" alt=""
+                                    style="width: 106%;height: 235; border-radius: 10px;"></a>
+                        </div>
+                        <div class="col-4 py-3">
+                            <a href="..."><img class="" id="" src="./image_มหกรรมชานมไข่มุก/80.jpg" alt=""
+                                    style="width: 106%;height: 235; border-radius: 10px;"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <br>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-3">
+                    <div class="row">
+                        <img class="" id="" src="./image/logo-White.png" alt="" style="width: 31%;">
+                    </div>
+                    <div class="row mt-3">
+                        <p class="text-warning">ติดตามเราช่องทางอื่นๆ</p>
+                    </div>
+                    <div class="row mt-3 ml-5">
+                        <img class="ml-5" id="" src="./image/facebook.png" alt="" style="width: 25%;">
+                    </div>
+                    <div class="row mt-4 ml">
+                        <p class="text-white" style="font-size: 13px;">Call Center : <a class="ml-1">02-777-7564</a></p>
+                        <p class="text-white" style="font-size: 13px;">เปิดให้บริการทุกวัน ตลอด 24 ชั่วโมง</p>
+                    </div>
+                    <div class="row mt-4">
+
+                    </div>
+                    <div class="row ml">
+                        <p class="text-white" style="font-size: 13px;">©Robinhood</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row mt-5">
+
+                    </div>
+                    <div class="row mt-1">
+                        <p class="text-warning">ข้อกำหนดการใช้งาน Robinhood</p>
+                    </div>
+                    <div class="row">
+                        <a class="text-white mt-4" style="font-size: 11px;"
+                            href=""><u>ข้อกำหนดและเงื่อนไขการใช้บริการร้านอาหารโรบินฮู้ด</u></a>
+                    </div>
+                    <div class="row">
+                        <a class="text-white mt-3" style="font-size: 11px;"
+                            href=""><u>ข้อกำหนดและเงื่อนไขการใช้บริการสั่งอาหาร</u></a>
+                    </div>
+                    <div class="row">
+                        <p class="text-warning mt-5">ข้อกำหนดการใช้งานเว็บไซต์</p>
+                    </div>
+                    <div class="row ml">
+                        <a class="text-white" style="font-size: 12px;" href=""><u>Privacy policy</u></a>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="row mt-4">
+                        <a class="col-9 nav-link" href="merchant.html">
+                            <div class="card" style="width: 19rem;">
+                                <img class="card-img-top " src="./image/rectangle.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="row txt-10 font-weight-bold text-dark" style="font-size: 14px;">
+                                        พาร์ทเนอร์ร้านอาหาร​
+                                    </p>
+                                    <p class="row txt-11 font-weight-normal text-dark" style="font-size: 12px;">
+                                        มาเพิ่มยอดขายง่ายๆ ให้ร้านอาหารของคุณ
+                                        สามารถสมัครร่วมเป็นร้านอาหารกับ Robinhood ได้แล้ววันนี้</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="col-2 nav-link" href="rider.html">
+                            <div class="card" style="width: 19rem;">
+                                <img class="card-img-top \" src="./image/Robinhood-Rider-Footer-box-edit.png"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="row txt-10 font-weight-bold text-dark" style="font-size: 14px;">โรบินฮู้ด
+                                        ไรเดอร์​
+                                    </p>
+                                    <p class="row txt-11 font-weight-normal text-dark" style="font-size: 12px;">เช้ารับงาน
+                                        ค่ำรับเงิน ได้เต็มๆ ไม่ต้องสำรองเงินค่าอาหาร พร้อมรับสิทธิพิเศษมากมาย
+                                        สมัครได้แล้วเพียงโหลดแอป</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+
+            </div>
+            <div class="row mt-5 text-center ml-5">
+                <p class="text-muted ml-4 my-4">Copyright © 2021 <a class="text-white" href="index.html">Robinhood.</a>
+                    All Rights Reserved. <a class="text-white" href="#">Privacy-th</a> | Catch Foodmania by <a
+                        class="text-white" href="https://catchthemes.com/">Catch Themes</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="footer">
+        <br>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-3">
+                    <div class="row">
+                        <img class="" id="" src="./image/logo-White.png" alt="" style="width: 31%;">
+                    </div>
+                    <div class="row mt-3">
+                        <p class="text-warning">ติดตามเราช่องทางอื่นๆ</p>
+                    </div>
+                    <div class="row mt-3 ml-5">
+                        <img class="ml-5" id="" src="./image/facebook.png" alt="" style="width: 25%;">
+                    </div>
+                    <div class="row mt-4 ml">
+                        <p class="text-white" style="font-size: 13px;">Call Center : <a class="ml-1">02-777-7564</a></p>
+                        <p class="text-white" style="font-size: 13px;">เปิดให้บริการทุกวัน ตลอด 24 ชั่วโมง</p>
+                    </div>
+                    <div class="row mt-4">
+
+                    </div>
+                    <div class="row ml">
+                        <p class="text-white" style="font-size: 13px;">©Robinhood</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row mt-5">
+
+                    </div>
+                    <div class="row mt-1">
+                        <p class="text-warning">ข้อกำหนดการใช้งาน Robinhood</p>
+                    </div>
+                    <div class="row">
+                        <a class="text-white mt-4" style="font-size: 11px;"
+                            href=""><u>ข้อกำหนดและเงื่อนไขการใช้บริการร้านอาหารโรบินฮู้ด</u></a>
+                    </div>
+                    <div class="row">
+                        <a class="text-white mt-3" style="font-size: 11px;"
+                            href=""><u>ข้อกำหนดและเงื่อนไขการใช้บริการสั่งอาหาร</u></a>
+                    </div>
+                    <div class="row">
+                        <p class="text-warning mt-5">ข้อกำหนดการใช้งานเว็บไซต์</p>
+                    </div>
+                    <div class="row ml">
+                        <a class="text-white" style="font-size: 12px;" href=""><u>Privacy policy</u></a>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="row mt-4">
+                        <a class="col-9 nav-link" href="merchant.html">
+                            <div class="card" style="width: 19rem;">
+                                <img class="card-img-top " src="./image/rectangle.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="row txt-10 font-weight-bold" style="font-size: 14px;">พาร์ทเนอร์ร้านอาหาร​
+                                    </p>
+                                    <p class="row txt-11 font-weight-normal" style="font-size: 12px;">มาเพิ่มยอดขายง่ายๆ
+                                        ให้ร้านอาหารของคุณ
+                                        สามารถสมัครร่วมเป็นร้านอาหารกับ Robinhood ได้แล้ววันนี้</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="col-2 nav-link" href="rider.html">
+                            <div class="card" style="width: 19rem;">
+                                <img class="card-img-top \" src="./image/Robinhood-Rider-Footer-box-edit.png"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="row txt-10 font-weight-bold" style="font-size: 14px;">โรบินฮู้ด ไรเดอร์​
+                                    </p>
+                                    <p class="row txt-11 font-weight-normal" style="font-size: 12px;">เช้ารับงาน
+                                        ค่ำรับเงิน ได้เต็มๆ ไม่ต้องสำรองเงินค่าอาหาร พร้อมรับสิทธิพิเศษมากมาย
+                                        สมัครได้แล้วเพียงโหลดแอป</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+
+            </div>
+            <div class="row mt-5 text-center ml-5">
+                <p class="text-muted ml-4 my-4">Copyright © 2021 <a class="text-white" href="index.html">Robinhood.</a>
+                    All Rights Reserved. <a class="text-white" href="#">Privacy-th</a> | Catch Foodmania by <a
+                        class="text-white" href="https://catchthemes.com/">Catch Themes</a></p>
+            </div>
+        </div>
+    </div> -->
+</body>
+
+</html>

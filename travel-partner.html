@@ -1,0 +1,597 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link rel="icon" href="./image/RBH_MAIN_LOGO-crop.png">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <!-- <script src="script.js"></script> -->
+    <script src="script_travel-partner.js"></script>
+    <!-- <link href="styles.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="styles_travel-partner.css">
+    <title>Robinhood Travel - Robinhood</title>
+</head>
+
+<body>
+    <div id="popup_container">
+        <div id="popup">
+            <div class="container text-center">
+                <div class="row ">
+                    <p class="font-weight-bold mt-3" style="font-size: 22px;">แอปสั่งอาหารโรบินฮู้ด</p>
+                </div>
+                <div class="row">
+                    <p class="font-weight-bold" style="font-size: 30px;">สแกนเพื่อดาวน์โหลด</p>
+                </div>
+                <img class="my-3" src="./image/qrcode.png" style="width:170px;">
+                <div class="row">
+                    <div class="col-5 ml-4">
+                        <img class="ml-5" src="./image/img.png" style="width: 92px;">
+                    </div>
+                    <div class="col mt-2">
+                        <img class="row" src="./image/download_App-Store.png" style="width: 96px;">
+                        <img class="row mt-2" src="./image/download_Google-Play.png" style="width: 96px;">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="font-weight-bold" style="font-size: 16px;">Robinhood ทางเลือกใหม่ของฟู้ดเดลิเวอรี่ไทย</p>
+                </div>
+                <div class="row">
+                    <a class="pointer" onclick="hidePopup()"
+                        style="font-size: 14px; color: rgb(171,76,171);">ปิดหน้าต่างนี้</a>
+                </div>
+            </div>
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button> -->
+
+        </div>
+    </div>
+    <div id="popup_container2">
+        <div id="popup2">
+            <div class="container text-center">
+                <div class="row ">
+                    <p class="font-weight-bold mt-3" style="font-size: 22px;">แอปสั่งอาหารโรบินฮู้ด</p>
+                </div>
+                <div class="row">
+                    <p class="font-weight-bold" style="font-size: 30px;">สแกนเพื่อดาวน์โหลด</p>
+                </div>
+                <img class="my-3" src="./image/qrcode.png" style="width:170px;">
+                <div class="row">
+                    <div class="col-5 ml-4">
+                        <img class="ml-5 " src="./image/img.png" style="width: 92px;">
+                    </div>
+                    <div class="col mt-2">
+                        <img class="row" src="./image/download_App-Store.png" style="width: 96px;">
+                        <img class="row mt-2" src="./image/download_Google-Play.png" style="width: 96px;">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="font-weight-bold" style="font-size: 16px;">Robinhood ทางเลือกใหม่ของฟู้ดเดลิเวอรี่ไทย</p>
+                </div>
+                <div class="row">
+                    <a class="pointer" onclick="hidePopup2()"
+                        style="font-size: 14px; color: rgb(171,76,171);">ปิดหน้าต่างนี้</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg">
+        <!-- <video playsinline autoplay muted loop class="youtube1" width="100%" height="700">
+            <source src="https://www.youtube.com/embed/kK540jZW6ag?autoplay=1&mute=1" type="video/mp4">
+        </video> -->
+        <iframe width="100%" height="700" class="youtube1"
+            src="https://www.youtube.com/embed/kK540jZW6ag?controls=0&rel=0&playsinline=1&enablejsapi=1&origin=https%3A%2F%2Fwww.robinhood.in.th&widgetid=1&autoplay=1&mute=1&loop=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen="1"></iframe>
+        <div class="bg_top mb-5">
+            <nav id="navbar_top" class="navbar navbar-expand-xl navbar-dark">
+                <div class="container-fluid" id="nav_top">
+                    <a href="index.html"><img src="image/RBH_MAIN_LOGO.png" width="60"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse ml-4 d-flex justify-content-end" id="main_nav">
+
+                        <ul class="navbar-nav">
+                            <li class="nav-item ms-1"><a class="nav-link" id="navbar1" href="about-us.html">รู้จักเรา</a>
+                            </li>
+                            <li class="nav-item ms-1"><a class="nav-link" id="navbar2" href="promotion.html">โปรโมชั่น</a>
+                            </li>
+                            <li class="nav-item ms-1"><a class="nav-link" id="navbar3"
+                                    href="food-playlist.html">กินอะไรดี</a>
+                            </li>
+                            <li class="nav-item ms-1"><a class="nav-link" id="navbar4"
+                                    href="zone-list.html">จานเด็ดย่านดัง</a>
+                            </li>
+                            <li class="nav-item ms-1"><a class="nav-link" id="navbar5" href="food-tips.html">ทิปความรู้</a>
+                            </li>
+                            <li class="nav-item ms-1"><a class="nav-link" id="navbar6"
+                                    href="restaurant-story.html">เรื่องราวร้านอาหาร</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle ms-1" id="navbar7" href="#"
+                                    data-bs-toggle="dropdown">พาร์ทเนอร์ร้านอาหาร</a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a class="dropdown-item" href="merchant.html">สมัครเป็นพาร์ทเนอร์</a></li>
+                                    <li><a class="dropdown-item" href="merchantcenter.html">คู่มือสำหรับอาหาร</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item ms-1"><a class="nav-link" id="navbar8"
+                                    href="travel-partner.html">พาร์ทเนอร์ท่องเที่ยว</a></li>
+                            <li class="nav-item ms-1"><a class="nav-link" id="navbar9" href="rider.html">ไรเดอร์</a></li>
+                            <a class="nav-item ms-1 ps-4 mt-1 pointer" onclick="showPopup()"><img
+                                    src="image/download_App-Store.png" width="110"></a>
+                            <a class="nav-item ms-1 ps-4 mt-1 pointer" onclick="showPopup2()"><img
+                                    src="image/download_Google-Play.png" width="110"></a>
+                        </ul>
+                    </div> <!-- navbar-collapse.// -->
+                </div> <!-- container-fluid.// -->
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <a class="col-9 txt-1-1 text-white font-weight-bold">ร่วมเป็นพาร์ทเนอร์กับ
+                    </a>
+                    <a class="col-9 txt-1-2 text-white font-weight-bold">
+                        Robinhood Travel
+                    </a>
+                    <a class="col-12 box-button-1 font-weight-bold">
+                        <button class="sign-up text-white">สมัครฟรี!</button>
+                    </a>
+                    <a class="col-4 txt-1-3 text-white font-weight-bold">
+                        สอบถามรายละเอียดเพิ่มเติม
+                    </a>
+                    <a class="col-4 txt-1-3 text-white font-weight-bold" id="call" href="tel:02-777-7564">
+                        02-777-7564
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="travel-partner" id="travel-partner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 txt-1-4 text-center">
+                    Robinhood Travel<br>คืออะไร?
+                </div>
+                <div class="col-12 mt-5 txt-1-3 txt-1-3-1 text-center">
+                    <b>ผู้ให้บริการการท่องเที่ยวออนไลน์ที่พร้อมอำนวยความสะดวก<br>
+                        ในการจัดการการท่องเที่ยวของคุณให้เป็นเรื่องง่าย ครบ จบ ในแอปเดียว<br>
+                        ด้วยบริการต่างๆเช่น บริการจองที่พัก บริการจองตั๋วเครื่องบิน แพ็กเกจทัวร์<br>
+                        บัตรเข้าชมกิจกรรมต่างๆ รถเช่า และ ประกันภัยการเดินทาง</b>
+                </div>
+
+
+                <div class="row mt-5" id="activity">
+                    <div class="box-img-act" id="img-activity1" onmouseover="bigImg1(this)" onmouseout="normalImg1(this)"></div>
+                    <div class="box-img-act" id="img-activity2" onmouseover="bigImg2(this)" onmouseout="normalImg2(this)"></div>
+                    <div class="box-img-act" id="img-activity3" onmouseover="bigImg3(this)" onmouseout="normalImg3(this)"></div>
+                    <div class="box-img-act" id="img-activity4" onmouseover="bigImg4(this)" onmouseout="normalImg4(this)"></div>
+                    <div class="box-img-act" id="img-activity5" onmouseover="bigImg5(this)" onmouseout="normalImg5(this)"></div>
+                </div>
+
+
+                <div class="col-12 mb-3 txt-1-5 txt-1-1-1 text-center">ข้อดีของการเป็นพาร์ทเนอร์กับเรา</div>
+                <div class="row mt-5 mx-5 ml-4">
+                    <a class="col-1"></a>
+                    <a class="col-3 ml-3 nav-link">
+                        <div class="box-img" id="img-advantage1"></div>
+                        <div class="txt-1-3 txt-1-3-2 txt-1-1-1 text-center"><b>ลูกค้าบนแอป Robinhood</b></div>
+                    </a>
+                    <a class="col-3 nav-link">
+                        <div class="box-img" id="img-advantage2"></div>
+                        <div class="txt-1-3 txt-1-3-2 txt-1-1-1 text-center"><b>คอมมิชชัน</b></div>
+                    </a>
+                    <a class="col-3 nav-link">
+                        <div class="box-img" id="img-advantage3"></div>
+                        <div class="txt-1-3 txt-1-3-2 txt-1-1-1 text-center"><b>ช่องทางการเพิ่มยอดขาย</b></div>
+                    </a>
+                    <a class="col-2"></a>
+                </div>
+
+                <div class="row mt-5 mx-5 ml-4">
+                    <a class="col-1"></a>
+                    <a class="col-3 nav-link">
+                        <div class="box-img" id="img-advantage4"></div>
+                        <div class="txt-1-3-4 txt-1-3-2 txt-1-1-1 text-center"><b>โอนเงินเข้ารวดเร็ว ภายใน 1 ชม. หลังจาก
+                                เช็คเอ้าท์</b></div>
+                    </a>
+                    <a class="col-3 nav-link">
+                        <div class="box-img" id="img-advantage5"></div>
+                        <div class="txt-1-3-4 txt-1-3-2 txt-1-1-1 text-center"><b>ช่วยเหลือด้านการตลาด
+                                และสื่อออนไลน์จากผู้เชี่ยวชาญ</b></div>
+                    </a>
+                    <a class="col-3 nav-link">
+                        <div class="box-img" id="img-advantage6"></div>
+                        <div class="txt-1-3-4 txt-1-3-2 txt-1-1-1 text-center"><b>จัดการแพ็กเกจ และดีลต่างๆ
+                                ได้ด้วยตัวเอง</b>
+                        </div>
+                    </a>
+                    <a class="col-2"></a>
+                </div>
+
+                <div class="row mt-5 mx-5 ml-4">
+                    <a class="col-1"></a>
+                    <a class="col-3 nav-link">
+                        <div class="box-img" id="img-advantage7"></div>
+                        <div class="txt-1-3-4 txt-1-3-2 txt-1-1-1 text-center"><b>บริการบริหารเงิน
+                                เพื่อธุรกิจครบวงจร</b>
+                        </div>
+                    </a>
+                    <a class="col-3 nav-link">
+                        <div class="box-img" id="img-advantage8"></div>
+                        <div class="txt-1-3-4 txt-1-3-2 txt-1-1-1 text-center"><b>บริการช่วยเหลือตลอด 24 ชม.
+                                ผ่านศูนย์บริการลูกค้า</b></div>
+                    </a>
+                    <a class="col-3 nav-link">
+                        <div class="box-img" id="img-advantage9"></div>
+                        <div class="txt-1-3-4 txt-1-3-2 txt-1-1-1 text-center"><b>บริการหักภาษี ณ ที่จ่าย
+                                อิเล็กทรอนิกส์</b>
+                        </div>
+                    </a>
+                    <a class="col-2"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="prepare" id="prepare">
+        <div class="container">
+            <div class="row-1 txt-1-5 txt-1-1-1 text-center">เตรียมพบกับเราเร็วๆ นี้</div>
+            <div class="row mt-5">
+                <div class="col-6 text-center font-weight-bold">วันนี้</div>
+                <div class="col-6 text-center font-weight-bold">ต้นปี 2565</div>
+            </div>
+
+            <div class="row imagetest mt-2">
+                <div id="img-arrow"></div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-6 text-size text-center mt-5"><b>คลิกสมัครและกรอกข้อมูลรายละเอียด<br>
+                        ต่างๆ เข้าระบบ พร้อมนำส่งเอกสาร<br>
+                        ประกอบการสมัคร แล้วรออนุมัติขึ้น<br>
+                        ระบบ</b></div>
+                <div class="col-6 text-size text-center mt-5"><b>พร้อมให้บริการ</b></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="join_partner">
+        <div class="container">
+            <div class="row">
+                <a class="col-9 txt-1-1 text-white font-weight-bold">ร่วมเป็นพาร์ทเนอร์กับ</a>
+                <a class="col-9 txt-1-2 text-white font-weight-bold">Robinhood Travel</a>
+                <a class="col-12 box-button-1 font-weight-bold">
+                    <button class="sign-up text-white">สมัครฟรี!</button>
+                </a>
+                <a class="col-4 txt-1-3 text-white font-weight-bold">
+                    สอบถามรายละเอียดเพิ่มเติม
+                </a>
+                <a class="col-4 txt-1-3 text-white font-weight-bold" id="call" href="tel:02-777-7564">
+                    02-777-7564
+                </a>
+                <a class="col-12 txt-1-3-3 text-white font-weight-bold">
+                    เปิดให้บริการตลอด 24 ชม.
+                </a>
+                <a class="col-1 txt-1-3-3 text-white font-weight-bold">
+                    อีเมล
+                </a>
+                <a class="col-4 txt-1-3-3 text-white font-weight-bold" id="email" href="tel:02-777-7564">
+                    help_travel@robinhood.in.th
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="how_to_register" id="how_to_register">
+        <div class="container">
+            <div class="row-1 txt-1-5 txt-1-1-1 font-weight-bold text-center">วิธีลงทะเบียนเป็นพาร์ทเนอร์โรงแรม</div>
+            <div class="row mt-5">
+                <div class="col-2"></div>
+                <div class="col-4 text-right font-weight-bold" id="txt-register1"><button id="click1"
+                        onclick="register1()">บุคคลธรรมดา</button></div>
+                <div class="col-4 font-weight-bold" id="txt-register2"><button id="click2" onclick="register2()">
+                        นิติบุคคล</button></div>
+                <div class="col-2"></div>
+            </div>
+            <div class="row somerow mt-5">
+                <iframe class="youtube2-1" id="youtube2-1"
+                    src="https://player.vimeo.com/video/639646167?autopause=0&autoplay=0&loop=0&muted=0#t="
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <iframe class="youtube2-2" id="youtube2-2"
+                    src="https://player.vimeo.com/video/639466605?autopause=0&autoplay=0&loop=0&muted=0#t="
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ans mt-5" id="ans">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col txt-16">
+                    <h1 class="txt_hihglight mt-5"><img src="./image/Group-501.png" alt="..." style="width: 5%;">
+                        ตอบทุกคำถามที่คุณสงสัย</h1>
+                </div>
+            </div>
+            <div class="row">
+                <h3 class="text-center mt-2">คลายทุกข้อสงสัยในบริการของ Robinhood ให้เรารู้จักกันมากขึ้น <i
+                        class="fa fa-heart" style="font-size:25px;"></i></h3>
+            </div>
+            <div class="row mt-5 justify-content-md-center" id="ans_div">
+                <div class="row ans1 mt-2" id="flip">
+                    <div class="col-11"><a class="ans_1 font-weight-bold ml-4">ต้องการเข้าร่วม Robinhood Travel
+                            ทำได้อย่างไร</a></div>
+                    <div class="col-1 mt-2" id="down1"><img class="" id="down1" src="./image/Group-4-1.png" alt=""
+                            style="width: 50%;"></div>
+                </div>
+                <div class="row-12 ans2" id="panel">ลงทะเบียนต้องการเข้าร่วมผ่าน 3 ช่องทาง<br>
+                    1. กรอกจาก link ใน website Robinhood.in.th<br>
+                    2. ติดต่อเจ้าหน้าที่ SCB หรือสาขาธนาคาร SCB ที่สะดวก<br>
+                    3. ติดต่อ Call Center: 02-777-7564 เพื่อสอบถามการลงทะเบียนเข้าร่วม Robinhood Travel ผ่านเว็บไซด์
+                </div>
+
+                <div class="row ans1 mt-5" id="flip2">
+                    <div class="col-11"><a
+                            class="ans_1 font-weight-bold ml-4">มีค่าใช้จ่ายในการสมัครเป็นพาร์ทเนอร์หรือไม่</a></div>
+                    <div class="col-1 mt-2" id="down2"><img class="" id="down2" src="./image/Group-4-1.png" alt=""
+                            style="width: 50%;"></div>
+                </div>
+                <div class="ans2" id="panel2">ไม่มีค่าใช้จ่ายในการสมัคร</div>
+
+                <div class="row ans1 mt-5" id="flip3">
+                    <div class="col-11"><a class="ans_1 font-weight-bold ml-4">Robinhood Travel เปิดให้บริการเมื่อไร</a>
+                    </div>
+                    <div class="col-1 mt-2" id="down3"><img class="" id="down3" src="./image/Group-4-1.png" alt=""
+                            style="width: 50%;"></div>
+                </div>
+                <div class="ans2" id="panel3">Robinhood Travel มีกำหนดการเปิดให้บริการ OTA service ประมาณเดือนกุมภาพันธ์
+                    2565<br>
+                    โดยทางทีม Robinhood จะอัพเดตข่าวสารการเปิดให้บริการกับพาร์ทเนอร์ผ่านอีเมลที่ลงทะเบียนเข้ามา
+                </div>
+
+                <div class="row ans1 mt-5" id="flip4">
+                    <div class="col-11"><a class="ans_1 font-weight-bold ml-4">สำหรับพาร์ทเนอร์ จุดเด่นของ Robinhood
+                            Travel</a></div>
+                    <div class="col-1 mt-2" id="down4"><img class="" id="down4" src="./image/Group-4-1.png" alt=""
+                            style="width: 50%;"></div>
+                </div>
+                <div class="ans2" id="panel4">- ไม่มีค่าคอมมิชชั่นสำหรับพาร์ทเนอร์โรงแรม<br>
+                    - Settlement เงินให้พาร์ทเนอร์ได้รวดเร็ว (เร็วที่สุดภายใน 1 ชั่วโมงหลังลูกค้า check out)<br>
+                    - Robinhood มีช่องทางส่งเสริมการขายให้กับพาร์ทเนอร์ที่หลากหลาย<br>
+                    พร้อมเครื่องมือให้พาร์ทเนอร์สามารถจัดการโปรโมชั่นและแคมเปญได้<br>
+                    - Robinhoodมีบริการนำส่งภาษีหัก ณ ที่จ่ายผ่าน e-tax<br>
+                    - มี partner support ทุกวัน 24 ชั่วโมง โทร 02-777-7564</div>
+
+                <div class="row ans1 mt-5" id="flip5">
+                    <div class="col-11"><a class="ans_1 font-weight-bold ml-4">สำหรับลูกค้า จุดเด่นของ Robinhood
+                            Travel</a></div>
+                    <div class="col-1 mt-2" id="down5"><img class="" id="down5" src="./image/Group-4-1.png" alt=""
+                            style="width: 50%;"></div>
+                </div>
+                <div class="row-12 ans2" id="panel5">- สามารถวางแผนการเดินทาง จองโรงแรม ซื้อตั๋วเครื่องบิน เช่ารถ
+                    จองกิจกรรมและทัวร์ได้ภายในรายการเดียว<br>
+                    - สามารถเลือกผ่อนชำระได้<br>
+                    - สามารถใช้คะแนนสะสมต่างๆของธนาคารและของพาร์ทเนอร์เป็นส่วนลดหรือโปรโมชั่นได้<br>
+                    - มีบริการออกใบกำกับภาษีให้ลูกค้าได้<br>
+                    - มี customer support คอยให้บริการทุกวันตลอด 24 ชั่วโมง โทร 02-777-7564
+                </div>
+
+                <div class="row ans1 mt-5" id="flip6">
+                    <div class="col-11"><a class="ans_1 font-weight-bold ml-4">ไม่ได้รับอีเมลยืนยัน /
+                            หาเมลยืนยันไม่เจอ</a></div>
+                    <div class="col-1 mt-2" id="down6"><img class="" id="down6" src="./image/Group-4-1.png" alt=""
+                            style="width: 50%;"></div>
+                </div>
+                <div class="row-12 ans2" id="panel6">หากพาร์ทเนอร์หาอีเมล์ยืนยันการลงทะเบียนไม่พบ<br>
+                    แนะนำให้ค้นหาใน Junk mail ก่อน หากยังไม่เจอ กรุณา Call Center: 02-777-7564
+                </div>
+
+                <div class="row ans1 mt-5" id="flip7">
+                    <div class="col-11"><a class="ans_1 font-weight-bold ml-4">หากกรอกอีเมลผิด
+                            แล้วกดสมัครไปเรียบร้อยแล้วต้องทำอย่างไร</a></div>
+                    <div class="col-1 mt-2" id="down7"><img class="" id="down7" src="./image/Group-4-1.png" alt=""
+                            style="width: 50%;"></div>
+                </div>
+                <div class="row-12 ans2" id="panel7">โทรเข้า 027777564 แจ้งเรื่องกับทีมงาน
+                    เพื่อทำการแจ้งทีมงานทำการเปลี่ยนอีเมลให้ถูกต้อง
+                </div>
+
+                <div class="row ans1 mt-5" id="flip8">
+                    <div class="col-11"><a class="ans_1 font-weight-bold ml-4">หากใส่ข้อมูลไม่ครบ
+                            แล้วกดสมัครเสร็จเรียบร้อยแล้ว ต้องทำอย่างไร</a></div>
+                    <div class="col-1 mt-2" id="down8"><img class="" id="down8" src="./image/Group-4-1.png" alt=""
+                            style="width: 50%;"></div>
+                </div>
+                <div class="row-12 ans2" id="panel8">สามารถเข้าระบบเพื่อการแก้ไขข้อมูลอีกครั้ง</div>
+
+                <div class="row ans1 mt-5" id="flip9">
+                    <div class="col-11"><a class="ans_1 font-weight-bold ml-4">เมื่อลงทะเบียนสำเร็จแล้ว
+                            กี่วันถึงจะได้รับการอนุมัติ</a></div>
+                    <div class="col-1 mt-2" id="down9"><img class="" id="down9" src="./image/Group-4-1.png" alt=""
+                            style="width: 50%;"></div>
+                </div>
+                <div class="row-12 ans2" id="panel9">ใช้เวลาอนุมัติ 3 - 5 วันทำการ</div>
+
+                <div class="row ans1 mt-5" id="flip10">
+                    <div class="col-11"><a class="ans_1 font-weight-bold ml-4">หากไม่มีสมุดบัญชีธนาคาร
+                            เนื่องจากเป็นบัญชีออนไลน์ สามารถสมัครได้ไหม</a></div>
+                    <div class="col-1 mt-2" id="down10"><img class="" id="down10" src="./image/Group-4-1.png" alt=""
+                            style="width: 50%;"></div>
+                </div>
+                <div class="row-12 ans2" id="panel10">ได้ อนุโลมให้สามารถ screenshot
+                    หน้าจอที่แสดงเลขที่บัญชีพร้อมชื่อบัญชี<br>
+                    ทั้งนี้แนะนำให้ ติดต่อสาขาธนาคารSCB เพื่อพิมพ์ปกสมุดธนาคาร
+                </div>
+
+                <div class="row ans1 mt-5" id="flip11">
+                    <div class="col-11"><a class="ans_1 font-weight-bold ml-4">เอกสารที่ต้องใช้ในการสมัครมีอะไรบ้าง</a>
+                    </div>
+                    <div class="col-1 mt-2" id="down11"><img class="" id="down11" src="./image/Group-4-1.png" alt=""
+                            style="width: 50%;"></div>
+                </div>
+                <div class="row-12 ans2" id="panel11">กรณีนิติบุคคล<br>
+                    1. ใบสมัครพาร์ทเนอร์ท่องเที่ยว​<br>
+                    แบบฟอร์มใบสมัครเข้าร่วมเป็น Partner กับ Robinhood Travel (Application Form)<br>
+                    2. สำเนาบัตรประชาชนสำหรับผู้มีอำนาจลงนาม<br>
+                    3. สำเนาหน้าแรกของสมุดบัญชีธนาคารไทยพาณิชย์ (ออมทรัพย์/กระแสรายวัน)<br>
+                    4. สำเนาใบทะเบียนภาษีมูลค่าเพิ่ม (ภ.พ.20)*<br>
+                    5. สำเนาหนังสือรับรองบริษัท ที่ออกโดย DBD กรมพัฒนาธุรกิจการค้า อายุไม่เกิน 6 เดือน<br>
+                    6. สำเนาใบอนุญาตประกอบธุรกิจโรงแรม หรือหนังสือแจ้งนายทะเบียนกรณีสถานที่พักไม่เข้าข่ายเป็นโรงแรม<br>
+                    7. สำเนาใบจดทะเบียนการค้า (ใบทะเบียนพาณิชย์) (ถ้ามี)<br>
+                    8. หนังสือมอบอำนาจผู้แทนผู้มีอำนาจลงนาม (ถ้ามี)<br><br>
+
+                    กรณีบุคคลธรรมดา<br>
+                    1. แบบฟอร์มใบสมัครเข้าร่วมเป็น Partner กับ Robinhood Travel (Application Form)<br>
+                    2. สำเนาบัตรประชาชน สำหรับผู้มีอำนาจลงนาม<br>
+                    3. สำเนาหน้าแรกของสมุดบัญชีธนาคารไทยพาณิชย์<br>
+                    (ออมทรัพย์/กระแสรายวัน)<br>
+                    4. สำเนาใบอนุญาตประกอบธุรกิจโรงแรม หรือหนังสือแจ้งนายทะเบียนกรณีสถานที่พักไม่เข้าข่ายเป็นโรงแรม
+                </div>
+
+                <div class="row ans1 mt-5" id="flip12">
+                    <div class="col-11"><a class="ans_1 font-weight-bold ml-4">ต้องจัดส่งเอกสารสมัครไปที่ใด</a></div>
+                    <div class="col-1 mt-2" id="down12"><img class="" id="down12" src="./image/Group-4-1.png" alt=""
+                            style="width: 50%;"></div>
+                </div>
+                <div class="row-12 ans2" id="panel12">กรุณาส่งเอกสารตัวจริงที่ใช้ประกอบการสมัครมาที่<br><br>
+
+                    ที่อยู่ภาษาไทย<br>
+                    บริษัท เพอร์เพิล เวนเจอร์ส จำกัด (สำนักงานใหญ่)<br>
+                    คุณสุชาวดี เอื้ออารักษ์ (Robinhood Operations)<br>
+                    ตึก CAREER@SCB (RCP) ชั้น 1<br>
+                    ธนาคารไทยพาณิชย์ จำกัด (มหาชน) สำนักงานใหญ่<br>
+                    (ตึกหัวมุมฝั่งถนนรัชดาภิเษก)<br>
+                    9 ถนนรัชดาภิเษก แขวงจตุจักร เขตจตุจักร กรุงเทพฯ 10900<br>
+                    โทร 0957645171, 0993408819, 0957642098<br><br>
+
+                    English Address<br>
+                    Purple Ventures Company Limited (Head office)<br>
+                    Suchavadee Ua-arak (Robinhood Operations)<br>
+                    CAREER@SCB (RCP) Building, 1st flr., SCB Park Plaza,<br>
+                    9 Ratchadapisek Rd., Jatujak, Jatujak, Bangkok 10900<br>
+                    Call: 0957645171, 0993408819, 0957642098
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
+        <iframe frameborder="0" height="100%" width="100%"
+            src="https://www.youtube.com/embed/kK540jZW6ag?autoplay=1&mute=1">
+        </iframe>
+    </div>
+    <div class="container-fluid" style="margin-top: -290px;">
+        <div class="row mt-5">
+            <div class="col-3"></div>
+            <div class="col-9 bg_aboutus"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <br>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-3">
+                    <div class="row">
+                        <img class="" id="" src="./image/logo-White.png" alt="" style="width: 31%;">
+                    </div>
+                    <div class="row mt-3">
+                        <p class="text-warning">ติดตามเราช่องทางอื่นๆ</p>
+                    </div>
+                    <div class="row mt-3 ml-5">
+                        <img class="ml-5" id="" src="./image/facebook.png" alt="" style="width: 25%;">
+                    </div>
+                    <div class="row mt-4 ml">
+                        <p class="text-white" style="font-size: 13px;">Call Center : <a class="ml-1">02-777-7564</a></p>
+                        <p class="text-white" style="font-size: 13px;">เปิดให้บริการทุกวัน ตลอด 24 ชั่วโมง</p>
+                    </div>
+                    <div class="row mt-4">
+
+                    </div>
+                    <div class="row ml">
+                        <p class="text-white" style="font-size: 13px;">©Robinhood</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row mt-5">
+
+                    </div>
+                    <div class="row mt-1">
+                        <p class="text-warning">ข้อกำหนดการใช้งาน Robinhood</p>
+                    </div>
+                    <div class="row">
+                        <a class="text-white mt-4" style="font-size: 11px;"
+                            href=""><u>ข้อกำหนดและเงื่อนไขการใช้บริการร้านอาหารโรบินฮู้ด</u></a>
+                    </div>
+                    <div class="row">
+                        <a class="text-white mt-3" style="font-size: 11px;"
+                            href=""><u>ข้อกำหนดและเงื่อนไขการใช้บริการสั่งอาหาร</u></a>
+                    </div>
+                    <div class="row">
+                        <p class="text-warning mt-5">ข้อกำหนดการใช้งานเว็บไซต์</p>
+                    </div>
+                    <div class="row ml">
+                        <a class="text-white" style="font-size: 12px;" href=""><u>Privacy policy</u></a>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="row mt-4">
+                        <a class="col-9 nav-link" href="merchant.html">
+                            <div class="card" style="width: 19rem;">
+                                <img class="card-img-top " src="./image/rectangle.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="row txt-10 font-weight-bold" style="font-size: 14px;">พาร์ทเนอร์ร้านอาหาร​
+                                    </p>
+                                    <p class="row txt-11 font-weight-normal" style="font-size: 12px;">มาเพิ่มยอดขายง่ายๆ
+                                        ให้ร้านอาหารของคุณ
+                                        สามารถสมัครร่วมเป็นร้านอาหารกับ Robinhood ได้แล้ววันนี้</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="col-2 nav-link" href="rider.html">
+                            <div class="card" style="width: 19rem;">
+                                <img class="card-img-top \" src="./image/Robinhood-Rider-Footer-box-edit.png"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="row txt-10 font-weight-bold" style="font-size: 14px;">โรบินฮู้ด ไรเดอร์​
+                                    </p>
+                                    <p class="row txt-11 font-weight-normal" style="font-size: 12px;">เช้ารับงาน
+                                        ค่ำรับเงิน ได้เต็มๆ ไม่ต้องสำรองเงินค่าอาหาร พร้อมรับสิทธิพิเศษมากมาย
+                                        สมัครได้แล้วเพียงโหลดแอป</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+
+            </div>
+            <div class="row mt-5 text-center ml-5">
+                <p class="text-muted ml-4 my-4">Copyright © 2021 <a class="text-white" href="index.html">Robinhood.</a>
+                    All Rights Reserved. <a class="text-white" href="#">Privacy-th</a> | Catch Foodmania by <a
+                        class="text-white" href="https://catchthemes.com/">Catch Themes</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

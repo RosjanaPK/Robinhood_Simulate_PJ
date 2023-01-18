@@ -1,0 +1,90 @@
+*{
+    font-family: 'Kanit', sans-serif;
+}
+.bg_top1{
+    width: 100%;
+    height: 275px;
+    background-image: url(./image_ดงบุริ/Donburi-Top-Banner.jpg);
+    /* position: absolute; */
+    z-index: -100;
+    background-size: cover;
+    background-position: center;
+}
+.color-robinhood{
+    font-weight: bold;
+    background: linear-gradient( 45deg, #c428a0, #8b4aae);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.txt-top{
+    color:rgb(255, 255, 255);
+    margin-top: 115px;
+    font-size: 46px;
+}
+.txt-mid0-1{
+    color:rgb(0, 0, 0);
+    margin-top: 10px;
+    font-size: 12px;
+}
+.mid0-1{
+    font-weight: 600;
+}
+.txt-mid0-2{
+    margin-top: -15px;
+    font-size: 35px;
+}
+.txt-mid0-3{
+    color: rgb(167, 167, 167);
+    margin-top: -15px;
+    font-size: 12px;
+    float:right;
+}
+.txt-mid0-4{
+    color: rgb(0, 0, 0);
+    margin-top: -15px;
+    font-size: 12px;
+    float:right;
+}
+.txt-mid0-5{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    margin-top: 10px;
+}
+.txt-mid0-6{
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+}
+.txt-mid0-6-1{
+    margin-top: -14px;
+}
+.img-table{
+    background-size: cover;
+    background-position: center;
+}
+.txt-robinhood{
+    color: #777783;
+}
+.txt-content{
+    font-size: 26px;
+}
+.txt-photo{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+    text-decoration: none;
+}
+.button{
+    margin-top: 90px;
+}
+.japanese-food{
+    color: black;
+    border: solid 1px #dbdbdb;
+}
+.japanese-food:hover{
+    color: rgb(228, 173, 54);
+    text-decoration: none;
+}
+
